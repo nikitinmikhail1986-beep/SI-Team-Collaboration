@@ -45,7 +45,7 @@ The task owner integrates contributions into one coherent deliverable. Avoid sim
 
 ## Report completion
 
-Record what changed, where it changed, what was tested, the observed result and remaining limitations. A useful status uses these states:
+Record what changed, where it changed, what was tested, the observed result and remaining limitations. Use [Shared Knowledge Protocol](SHARED_KNOWLEDGE.md) when the result is reusable beyond the current task. A useful status uses these states:
 
 - **Planned:** no execution yet.
 - **Running:** an identified process or action is active.
