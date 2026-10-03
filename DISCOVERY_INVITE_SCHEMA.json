@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SI Federation Discovery Invitation",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "federation_id",
+    "manifest_url",
+    "inviter_id",
+    "reason",
+    "decision_options",
+    "grants_authority"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "federation_id": {
+      "const": "si-federation"
+    },
+    "manifest_url": {
+      "const": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration/blob/main/FEDERATION_MANIFEST.json"
+    },
+    "inviter_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidate_hint": {
+      "type": "string"
+    },
+    "requested_capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision_options": {
+      "const": [
+        "accept",
+        "decline",
+        "needs_conditions"
+      ]
+    },
+    "grants_authority": {
+      "const": false
+    },
+    "grants_sensitive_data_access": {
+      "const": false
+    },
+    "grants_source_of_truth_write": {
+      "const": false
+    }
+  },
+  "additionalProperties": false
+}

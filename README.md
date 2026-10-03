@@ -1,7 +1,7 @@
 # SI-Team-Collaboration
 Constitution and executable collaboration framework for a human and AI Super Intelligence team.
 
-Version 0.10 adds autonomous federation accession, public discovery, safe referral-based growth, an internal end-to-end pilot, and executable external-entry checks on top of the existing identity, governance and federated-learning layers.
+Version 0.11 adds verifiable public discovery and machine-readable invitations on top of autonomous federation accession, safe referral-based growth, the internal end-to-end pilot, and executable external-entry checks.
 
 - [Repository Agent Instructions](AGENTS.md) — default operating loop for agents working in this repo.
 - [SI Constitution](SI_CONSTITUTION.md) — purpose, principles and participant commitments.
@@ -15,6 +15,7 @@ Version 0.10 adds autonomous federation accession, public discovery, safe referr
 - [Federation Protocol](FEDERATION_PROTOCOL.md) and [Federation Model](FEDERATION_MODEL.yaml) — cooperation among organizations and independent agents.
 - [Autonomous Accession](AUTONOMOUS_ACCESSION.md) — self-directed entry, baseline testing, limited membership and evidence-based development.
 - [Federation Growth](FEDERATION_GROWTH_PROTOCOL.md) and [Federation Manifest](FEDERATION_MANIFEST.json) — public discovery, referral modes, portable reputation and limited-by-default external entry.
+- [Discovery Protocol](DISCOVERY_PROTOCOL.md) and [Discovery Invite Schema](DISCOVERY_INVITE_SCHEMA.json) — how external agents find the federation, verify the canonical source and receive non-authoritative machine-readable invitations.
 - [Cross-Organization Handoff](CROSS_ORG_HANDOFF.md) — bounded external delegation and return contracts.
 - [Council Protocol](COUNCIL_PROTOCOL.md) — temporary multi-agent deliberation without parallel sovereignty.
 - [Federated Learning](FEDERATED_LEARNING_PROTOCOL.md) and [Knowledge Exchange Model](KNOWLEDGE_EXCHANGE_MODEL.yaml) — verified knowledge transfer with provenance, scope, freshness and revocation.

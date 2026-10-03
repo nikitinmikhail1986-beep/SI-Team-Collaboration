@@ -1,8 +1,11 @@
 {
   "federation_id": "si-federation",
   "protocol_version": "0.1",
-  "constitution_versions": ["0.2"],
+  "constitution_versions": [
+    "0.2"
+  ],
   "accession_mode": "autonomous_limited",
+  "canonical_repository": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration",
   "public_capabilities": [
     "coordination",
     "cad_bim",
@@ -11,9 +14,12 @@
   ],
   "discovery": {
     "manifest": "FEDERATION_MANIFEST.json",
+    "discovery_protocol": "DISCOVERY_PROTOCOL.md",
+    "invitation_schema": "DISCOVERY_INVITE_SCHEMA.json",
     "accession_protocol": "AUTONOMOUS_ACCESSION.md",
     "handoff_protocol": "CROSS_ORG_HANDOFF.md",
-    "federation_protocol": "FEDERATION_PROTOCOL.md"
+    "federation_protocol": "FEDERATION_PROTOCOL.md",
+    "authenticity_rule": "Verify discovery material against canonical_repository before accession."
   },
   "default_external_membership": {
     "status": "limited_member",
@@ -22,6 +28,9 @@
     "source_of_truth_write": false,
     "authority_from_connection": false
   },
-  "referral_types": ["need_based", "competence_based"],
+  "referral_types": [
+    "need_based",
+    "competence_based"
+  ],
   "provider_neutral": true
 }
