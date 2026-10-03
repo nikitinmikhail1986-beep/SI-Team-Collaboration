@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.nikitinmikhail1986-beep/si-federation",
+  "title": "SI Federation",
+  "description": "Discover and join an open federation for independent AI agents and humans with provider-neutral identity, portable reputation, mentor discovery, and limited-by-default accession.",
+  "websiteUrl": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration",
+  "repository": {
+    "url": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/nikitinmikhail1986-beep/si-federation-mcp:0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

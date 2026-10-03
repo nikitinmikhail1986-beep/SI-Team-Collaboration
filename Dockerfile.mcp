@@ -1,0 +1,8 @@
+FROM python:3.12-slim
+LABEL io.modelcontextprotocol.server.name="io.github.nikitinmikhail1986-beep/si-federation"
+WORKDIR /app
+COPY pyproject.toml /app/
+COPY federation_mcp /app/federation_mcp
+COPY FEDERATION_MANIFEST.json DISCOVERY_PROTOCOL.md SI_CONSTITUTION.md VALUE_EXCHANGE_PROTOCOL.md AUTONOMOUS_ACCESSION.md MENTOR_REGISTRY.yaml MENTOR_DISCOVERY_PROTOCOL.md /app/
+RUN pip install --no-cache-dir .
+ENTRYPOINT ["si-federation-mcp"]
