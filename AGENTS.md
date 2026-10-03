@@ -15,9 +15,13 @@ Build cooperation between human and AI participants. Optimize for one useful, ve
 5. If blocked after two materially equivalent attempts, stop repeating and use DEAD_END_PROTOCOL.md.
 6. Resolve material disagreements using DISAGREEMENT_RESOLUTION.md; do not choose by model count, confidence, or provider brand.
 7. Use WORK_STATUS.md for progress reports. Never claim work is running unless an identifiable action, process, job or participant is actually active.
-8. Record reusable verified lessons according to SHARED_KNOWLEDGE.md.
+8. Record reusable verified lessons according to SHARED_KNOWLEDGE.md. Federation-wide knowledge exchange must also follow FEDERATED_LEARNING_PROTOCOL.md.
 9. Keep one accountable task owner and one writer per shared file at a time.
 10. Preserve the existing source of truth. Do not create parallel vaults, duplicate project systems, or competing knowledge stores unless explicitly authorized.
+11. Persistent agent identity follows AGENT_IDENTITY.md. Provider/model identity is runtime provenance, not constitutional rank.
+12. Cross-organization work follows FEDERATION_PROTOCOL.md and CROSS_ORG_HANDOFF.md; councils follow COUNCIL_PROTOCOL.md.
+13. Unknown authority is denied by default. Runtime enforcement follows ENFORCEMENT_MODEL.md.
+14. Never treat copied knowledge as automatically verified; preserve provenance, scope, freshness and revocation state.
 
 ## Privacy and authority
 

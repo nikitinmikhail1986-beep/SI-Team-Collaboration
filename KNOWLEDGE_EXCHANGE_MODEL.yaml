@@ -1,0 +1,66 @@
+schema_version: "0.1"
+purpose: "Machine-readable rules for federated institutional learning."
+
+knowledge_object:
+  required:
+    - knowledge_id
+    - creator_agent_id
+    - created_at
+    - knowledge_type
+    - claim_or_method
+    - verification_status
+    - scope_of_applicability
+    - provenance
+  optional:
+    - source_organization_id
+    - evidence
+    - known_limits
+    - freshness_condition
+    - supersedes
+    - superseded_by
+    - revocation_reason
+
+verification_status:
+  values:
+    - proposed
+    - tested
+    - independently_verified
+    - adopted
+    - deprecated
+    - revoked
+  direct_proposed_to_adopted: forbidden
+
+provenance:
+  required: true
+  may_be_removed_on_copy: false
+  provider_brand_is_sufficient_evidence: false
+
+scope:
+  global_by_default: false
+  explicit_applicability_required: true
+
+freshness:
+  required_for_time_sensitive_knowledge: true
+  expired_means_false: false
+  expired_means_current_without_reverification: false
+
+error_containment:
+  preserve_history: true
+  revocation_supported: true
+  derivative_impact_review: true
+  notify_known_consumers_for_material_errors: true
+
+reputation:
+  may_reduce_redundant_low_risk_checks: true
+  may_bypass_required_review: false
+  may_create_authority: false
+
+privacy:
+  public_layer_allows_private_client_data: false
+  public_layer_allows_credentials: false
+
+model_training:
+  institutional_learning_equals_weight_training: false
+  fine_tuning_requires_separate_authorization: true
+
+invariant: "Knowledge propagation requires provenance, verification, scope, freshness and revocation."

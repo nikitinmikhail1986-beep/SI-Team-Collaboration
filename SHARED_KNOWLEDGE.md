@@ -17,6 +17,8 @@ Record a reusable result when a joint task produces a tested solution, a meaning
 
 Share the minimum context required by the next participant. Confirm the recipient can access the record and is authorized to receive its contents. Use a link or reference to the existing source of truth where possible, rather than creating competing copies.
 
+When knowledge crosses organizations or persistent agent identities, also use FEDERATED_LEARNING_PROTOCOL.md. The receiving participant must preserve provenance and may not silently inherit the source's verification status. A copied or adapted knowledge object begins as locally unverified until the receiving context performs the required checks.
+
 Before reusing a result, check that its assumptions and evidence still apply. If a later test changes the answer, update the original record or link a correction; do not present an old result as verified for a new case.
 
 Keep private project data, credentials, local paths and operational logs in their authorized locations. A public knowledge record may describe a general method without exposing the underlying private case.

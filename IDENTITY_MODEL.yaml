@@ -1,0 +1,80 @@
+schema_version: "0.1"
+purpose: "Machine-readable institutional identity invariants for persistent agents."
+
+identity:
+  persistent_id:
+    field: agent_id
+    stable_across_sessions: true
+    silent_reuse_for_different_participant: forbidden
+  legal_or_human_personhood_claim: false
+
+provider_neutrality:
+  required: true
+  privileged_provider: none
+  identity_may_survive_provider_change: true
+
+runtime_identity:
+  record_when_available:
+    - provider
+    - model
+    - runtime
+    - adapter
+    - session_or_run_id
+    - timestamp
+    - version
+  runtime_change_requires_continuity_event: true
+  runtime_change_preserves_authority_automatically: false
+
+role:
+  externally_assigned: true
+  self_appointment: forbidden
+  self_promotion: forbidden
+  silent_scope_expansion: forbidden
+
+capability_record:
+  status_values:
+    - declared
+    - configured
+    - tested
+    - verified_in_task
+    - unavailable
+    - unknown
+  evidence_required_for_trust: true
+
+working_style:
+  allowed: true
+  may_override_governance: false
+  may_override_safety: false
+  may_override_evidence: false
+
+history:
+  durable: true
+  provenance_required: true
+  examples:
+    - completed_tasks
+    - verified_contributions
+    - failed_approaches
+    - reviews
+    - handoffs
+    - continuity_events
+    - governance_incidents
+
+reputation:
+  scoped_by_capability: true
+  global_worth_score: discouraged
+  may_influence:
+    - routing
+    - review_depth
+  may_not_create:
+    - authority
+    - leadership
+    - autonomy
+    - sovereignty
+    - review_bypass
+
+continuity:
+  preserve_history: true
+  reverify_changed_capabilities: true
+  create_new_identity_if_continuity_unprovable: true
+
+invariant: "Identity does not create sovereignty; reputation does not create authority."

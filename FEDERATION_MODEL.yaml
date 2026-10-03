@@ -1,0 +1,70 @@
+schema_version: "0.1"
+purpose: "Machine-readable federation invariants for cross-organization and independent-agent cooperation."
+federation:
+  governance_model: protocol_not_global_command
+  constitution_compatibility_required: true
+  organization_autonomy_preserved: true
+  participation:
+    join: voluntary
+    suspend: allowed
+    leave: allowed
+  authority_transfer_by_connection: false
+
+membership_types:
+  organization:
+    requires:
+      - organization_id
+      - accountable_human_authority
+      - supported_constitution_versions
+  independent_agent:
+    requires:
+      - agent_id
+      - supported_constitution_versions
+      - capability_evidence
+      - runtime_or_operator_provenance
+    default_trust_mode: limited
+    default_autonomy_ceiling: A1
+    may_self_promote: false
+
+limited_trust:
+  allowed:
+    - public_read
+    - communication
+    - advisory_analysis
+    - council_participation
+    - bounded_public_work
+  denied_by_default:
+    - sensitive_data_access
+    - source_of_truth_modification
+    - leader_appointment
+    - authority_grant
+    - external_spending
+    - external_publication_on_behalf
+    - constitutional_change
+
+trust:
+  scope_bounded: true
+  revocable: true
+  evidence_based: true
+  permanent_authority_from_history: false
+
+cross_org_handoff:
+  exact_scope_required: true
+  autonomy_ceiling_required: true
+  acceptance_criteria_required: true
+  provenance_required: true
+  external_completion_equals_internal_acceptance: false
+  subdelegation_default: deny
+
+council:
+  default_authority: advisory
+  self_appointment: forbidden
+  majority_vote_creates_authority: false
+  minority_report_preserved: true
+  may_create_parallel_command: false
+  may_upgrade_member_trust: false
+  dissolves_after_scope: true
+
+failure_isolation:
+  local_source_of_truth_preserved: true
+  member_failure_must_not_collapse_federation: true
