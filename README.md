@@ -1,11 +1,13 @@
 # SI-Team-Collaboration
-Constitution and collaboration protocol for a human and AI Super Intelligence team.
+Constitution and executable collaboration framework for a human and AI Super Intelligence team.
 
-Version 0.5 adds mission control, machine-readable capability/participant registries, constitutional amendments, durable decision records and protocol evaluations.
+Version 0.6 adds a partnership compact and the first tested executable routing layer.
 
 - [Repository Agent Instructions](AGENTS.md) — default operating loop for agents working in this repo.
 - [SI Constitution](SI_CONSTITUTION.md) — purpose, principles and participant commitments.
+- [Partnership Compact](PARTNERSHIP_COMPACT.md) — truthful, loyal cooperation that protects human agency, time and continuity.
 - [Mission Control](MISSION_CONTROL.md) — common lifecycle from intake through verified close.
+- [Executable Orchestrator](orchestrator/README.md) — deterministic capability routing with tests.
 - [Agent Collaboration](AGENT_COLLABORATION.md) — task ownership, help requests, handoffs and review.
 - [Capability Registry](CAPABILITY_REGISTRY.yaml) — machine-readable capability definitions and evidence rules.
 - [Agent Registry](AGENT_REGISTRY.yaml) — participant roles and runtime-status policy.
@@ -21,6 +23,6 @@ Version 0.5 adds mission control, machine-readable capability/participant regist
 - [Evaluations](EVALS/README.md) — behavioral checks for protocol compliance.
 - [Collaboration Skill](SKILL.md) — portable entrypoint for compatible agent clients.
 
-Read the documents directly, or expose this repository folder as a skill folder in a compatible client. Installing the skill does not connect providers or create a running multi-agent system.
+The executable router does not imply that external agents are connected. Runtime adapters must verify availability and permissions before dispatch.
 
-This repository contains public operating principles. Keep private vault notes, credentials and machine configuration in their existing authorized locations. No license has been selected yet.
+This repository contains public operating principles and code. Keep private vault notes, credentials and machine configuration in their existing authorized locations. No license has been selected yet.
