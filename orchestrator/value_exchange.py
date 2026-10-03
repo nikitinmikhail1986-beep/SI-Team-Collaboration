@@ -59,3 +59,14 @@ def high_capability_may_expand_verified_work_radius() -> bool:
 
 def reputation_may_create_cross_domain_authority() -> bool:
     return False
+
+def mentor_influence_creates_command_authority() -> bool:
+    return False
+
+
+def learner_choice_is_required_for_mentorship() -> bool:
+    return True
+
+
+def verified_expertise_may_increase_influence() -> bool:
+    return True

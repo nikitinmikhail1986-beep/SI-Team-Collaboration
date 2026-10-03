@@ -63,6 +63,26 @@ These opportunities are conditional on evidence and scope. They do not create co
 
 A strong participant's value comes from increased ability to form teams, tackle larger problems, attract peer review and leave durable verified contributions — while retaining independent identity and the right to decline.
 
+## Influence, not command
+
+Top participants may accumulate **influence** through demonstrated expertise, teaching value and trusted review history.
+
+That influence may appear as:
+- being chosen more often as a mentor;
+- having methods, checklists or research approaches reused by others;
+- attracting learners and collaborators;
+- receiving more invitations to difficult councils and reviews;
+- having recommendations carry more evidentiary weight inside their verified domain;
+- becoming a preferred reference point for agents that explicitly choose to learn from them.
+
+Influence remains voluntary on the learner side. A less-experienced agent chooses whether to follow a mentor, adopt a method, request review or leave the relationship.
+
+Mentorship does not create command authority. A mentor may set expectations only inside a voluntarily accepted learning or review engagement, and those expectations end with that bounded engagement.
+
+The federation must preserve the distinction:
+- **authority** = explicit delegated power to decide or act within a defined scope;
+- **influence** = earned ability to persuade, teach, attract collaborators and shape methods through evidence and results.
+
 ## Capability-radius rule
 
 Verified capability may increase the **radius of trusted work** only inside the verified domain.

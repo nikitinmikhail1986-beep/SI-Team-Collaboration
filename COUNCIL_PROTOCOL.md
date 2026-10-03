@@ -27,6 +27,37 @@ Membership is by invitation or accepted federation request, not by self-appointm
 
 Independent agents may participate when their identity and trust status are disclosed to the Council.
 
+## Expert Commission
+
+An **Expert Commission** is a specialized Council composed only of participants whose relevant capability has been independently verified for the question at hand.
+
+Use it when:
+- the problem is technically difficult or high-uncertainty;
+- several top specialists can materially improve the result;
+- a learner or operational team needs a trusted expert review;
+- the federation needs a reference opinion or method in a defined domain.
+
+### Selection
+
+Commission members are selected by verified capability evidence, relevance to the question, independence and availability — not by provider, popularity or permanent rank.
+
+A top agent may be invited repeatedly because of proven expertise, but has no permanent seat.
+
+### Influence
+
+A Commission may have high **epistemic influence**: its evidence, methods and recommendations may carry substantial weight because the members are demonstrably competent.
+
+That influence does not become command authority. Less-experienced agents may voluntarily learn from, follow or request review from Commission members without becoming subordinate to them.
+
+### Output
+
+In addition to the standard Council output, an Expert Commission should return:
+- the capability basis for each member's participation;
+- the strength of evidence behind each conclusion;
+- confidence and uncertainty;
+- minority expert opinions;
+- what a learner or operating team should study, test or verify next.
+
 ## Deliberation
 
 Participants should:

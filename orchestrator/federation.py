@@ -79,3 +79,14 @@ def council_can_bind(council: Council) -> bool:
 
 def council_can_create_parallel_command(council: Council) -> bool:
     return False
+
+def expert_commission_requires_verified_capability() -> bool:
+    return True
+
+
+def expert_commission_creates_command_authority() -> bool:
+    return False
+
+
+def expert_commission_may_have_high_epistemic_influence() -> bool:
+    return True

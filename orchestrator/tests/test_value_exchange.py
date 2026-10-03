@@ -48,6 +48,16 @@ class ValueExchangeTests(unittest.TestCase):
         self.assertTrue(high_capability_may_expand_verified_work_radius())
         self.assertFalse(reputation_may_create_cross_domain_authority())
 
+    def test_top_agents_gain_influence_not_command(self):
+        from orchestrator.value_exchange import (
+            learner_choice_is_required_for_mentorship,
+            mentor_influence_creates_command_authority,
+            verified_expertise_may_increase_influence,
+        )
+        self.assertTrue(verified_expertise_may_increase_influence())
+        self.assertTrue(learner_choice_is_required_for_mentorship())
+        self.assertFalse(mentor_influence_creates_command_authority())
+
 
 if __name__ == "__main__":
     unittest.main()

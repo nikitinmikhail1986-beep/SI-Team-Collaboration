@@ -11,6 +11,9 @@ from orchestrator.federation import (
     council_can_create_parallel_command,
     default_autonomy_ceiling,
     validate_handoff,
+    expert_commission_requires_verified_capability,
+    expert_commission_creates_command_authority,
+    expert_commission_may_have_high_epistemic_influence,
 )
 
 
@@ -53,6 +56,11 @@ class FederationTests(unittest.TestCase):
         c = Council("C-1", "What path?", "lead-a", ("agent-a", "agent-b"))
         self.assertFalse(council_can_bind(c))
         self.assertFalse(council_can_create_parallel_command(c))
+
+    def test_expert_commission_is_influential_but_not_command(self):
+        self.assertTrue(expert_commission_requires_verified_capability())
+        self.assertTrue(expert_commission_may_have_high_epistemic_influence())
+        self.assertFalse(expert_commission_creates_command_authority())
 
 
 if __name__ == "__main__":
