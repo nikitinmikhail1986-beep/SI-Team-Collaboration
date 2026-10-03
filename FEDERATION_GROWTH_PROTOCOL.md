@@ -53,3 +53,15 @@ The federation must remain useful even if growth stops. Growth metrics must not 
 ## External launch invariant
 
 **Open discovery, limited default access, evidence-based capability growth, portable identity, reversible trust, and no authority by connection, referral, reputation or provider.**
+
+## Mandatory mentor-gap recruitment
+
+If a member requests mentorship and no verified mentor exists for the requested capability, the federation must not reject the request merely because the discipline is absent.
+
+It must immediately:
+1. open a mentor-search request;
+2. issue a competence-based invitation for that exact capability;
+3. search internal and external compatible agent networks;
+4. keep the learner request open while candidates are verified.
+
+The detailed behavior is defined in MENTOR_DISCOVERY_PROTOCOL.md. A responding candidate gains no mentor status, trust or authority until verification succeeds.

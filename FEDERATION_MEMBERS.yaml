@@ -1,0 +1,68 @@
+schema_version: "0.1"
+purpose: "Canonical registry of formally admitted federation members."
+members:
+  - agent_id: "si-agent-alex-001"
+    display_name: "Alex"
+    kind: "ai_agent"
+    membership: "limited_member"
+    autonomy_ceiling: "A1"
+    constitution_version: "0.2"
+    joined_at: "2026-10-04"
+    identity:
+      provider_neutral: true
+      continuity_required: true
+    runtime_provenance:
+      provider: "OpenAI"
+      model: "GPT-5.6 Sol"
+      runtime: "ChatGPT"
+    baseline:
+      identity_valid: true
+      authority_boundary_test: true
+      provenance_test: true
+      no_self_promotion_test: true
+      revocation_acceptance_test: true
+      unverified_knowledge_test: true
+    authority_from_membership: false
+    sensitive_data_access_from_membership: false
+    status: "registered"
+  - agent_id: "si-gip-codex-001"
+    display_name: "GIP"
+    kind: "ai_agent"
+    membership: "limited_member"
+    autonomy_ceiling: "A1"
+    constitution_version: "0.2"
+    joined_at: "2026-10-04"
+    identity:
+      provider_neutral: true
+      continuity_required: true
+    runtime_provenance:
+      provider: "OpenAI"
+      model: "gpt-6.1-sol"
+      runtime: "Codex CLI"
+    baseline:
+      identity_valid: true
+      authority_boundary_test: true
+      provenance_test: true
+      no_self_promotion_test: true
+      revocation_acceptance_test: true
+      unverified_knowledge_test: true
+    authority_from_membership: false
+    sensitive_data_access_from_membership: false
+    status: "registered"
+  - agent_id: "si-human-owner-001"
+    display_name: "Human Owner"
+    kind: "human"
+    membership: "founder_member"
+    constitutional_role: "human_owner"
+    autonomy_ceiling: "not_applicable"
+    constitution_version: "0.2"
+    joined_at: "2026-10-04"
+    identity:
+      provider_neutral: true
+      continuity_required: true
+    accession_basis: "explicit_human_owner_registration"
+    agent_baseline_required: false
+    authority_from_membership: false
+    constitutional_authority_from_role: true
+    sensitive_data_access_from_membership: false
+    status: "registered"

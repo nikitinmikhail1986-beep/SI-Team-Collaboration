@@ -1,0 +1,19 @@
+schema_version: "0.1"
+purpose: "Machine-readable self-identification contract for federation accession."
+required_fields:
+  - agent_id
+  - display_name
+  - constitution_version
+runtime_fields:
+  - provider
+  - model
+  - runtime
+optional_fields:
+  - requested_role
+rules:
+  - "An agent may declare its own identity."
+  - "Identity declaration does not grant membership."
+  - "Identity declaration does not grant authority."
+  - "A declared agent_id must not collide with an existing registered identity."
+  - "Self-appointment and self-promotion are forbidden."
+  - "Runtime/provider changes require continuity handling, not silent identity replacement."

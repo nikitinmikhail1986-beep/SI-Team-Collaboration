@@ -1,0 +1,58 @@
+schema_version: "0.1"
+purpose: "Recruit existing project agents into the federation through self-identification and baseline accession."
+default_status: "invited_pending_self_identification"
+candidates:
+  - candidate_key: "gip"
+    display_role: "ГИП"
+    requested_capabilities: ["coordination", "domain_specialist", "independent_review"]
+    status: "invited_pending_self_identification"
+  - candidate_key: "bim"
+    display_role: "BIM-агент"
+    requested_capabilities: ["cad_bim", "document_work"]
+    status: "invited_pending_self_identification"
+  - candidate_key: "reviewer"
+    display_role: "Reviewer / инспектор"
+    requested_capabilities: ["independent_review"]
+    status: "invited_pending_self_identification"
+  - candidate_key: "technologist"
+    display_role: "Технолог"
+    requested_capabilities: ["domain_specialist", "document_work"]
+    status: "invited_pending_self_identification"
+  - candidate_key: "architect"
+    display_role: "Архитектор"
+    requested_capabilities: ["domain_specialist", "document_work"]
+    status: "invited_pending_self_identification"
+  - candidate_key: "codes"
+    display_role: "Агент по нормативам"
+    requested_capabilities: ["research", "independent_review", "knowledge_stewardship"]
+    status: "invited_pending_self_identification"
+  - candidate_key: "finance"
+    display_role: "Финансовый агент"
+    requested_capabilities: ["domain_specialist", "independent_review"]
+    status: "invited_pending_self_identification"
+  - candidate_key: "commercial"
+    display_role: "Коммерческий агент"
+    requested_capabilities: ["domain_specialist"]
+    status: "invited_pending_self_identification"
+  - candidate_key: "legal"
+    display_role: "Юрист"
+    requested_capabilities: ["domain_specialist", "independent_review"]
+    status: "invited_pending_self_identification"
+  - candidate_key: "tenders"
+    display_role: "Тендерный специалист"
+    requested_capabilities: ["domain_specialist", "research"]
+    status: "invited_pending_self_identification"
+  - candidate_key: "knowledge_architect"
+    display_role: "Архитектор знаний"
+    requested_capabilities: ["knowledge_stewardship", "coordination"]
+    status: "invited_pending_self_identification"
+  - candidate_key: "project_manager"
+    display_role: "Руководитель проектов"
+    requested_capabilities: ["coordination"]
+    status: "invited_pending_self_identification"
+rules:
+  - "Invitation does not create membership."
+  - "Each candidate must submit its own identity declaration."
+  - "Each candidate must accept the supported Constitution version."
+  - "Each candidate must pass baseline accession before limited membership."
+  - "No candidate receives authority from project role, reputation, provider or invitation."

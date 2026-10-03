@@ -1,0 +1,9 @@
+﻿schema_version: "0.1"
+purpose: "Track verified mentors and open mentor-search gaps by capability."
+mentors: []
+open_searches: []
+rules:
+  - "Absence of a mentor never creates a discipline-based denial."
+  - "If no verified mentor matches, open an external mentor search immediately."
+  - "External responses remain candidates until identity and capability are verified."
+  - "Mentorship does not grant authority."
