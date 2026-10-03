@@ -16,8 +16,11 @@ The orchestrator converts a human objective into a governed task object and exec
 - tamper-evident audit chain primitives
 - persistent provider-neutral agent identity primitives
 - federation membership and bounded cross-member handoffs
+- autonomous accession with baseline tests, A0/A1 entry and stepwise capability development
 - advisory council authority boundaries
 - federated knowledge objects with provenance, verification, scope, freshness and revocation
+- external discovery manifest, referral validation and limited external-entry evaluation
+- internal protocol pilot covering routing, handoffs, councils, knowledge and identity continuity
 
 Run from the repository root:
 

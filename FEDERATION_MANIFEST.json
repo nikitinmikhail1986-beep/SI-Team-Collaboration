@@ -1,0 +1,27 @@
+{
+  "federation_id": "si-federation",
+  "protocol_version": "0.1",
+  "constitution_versions": ["0.2"],
+  "accession_mode": "autonomous_limited",
+  "public_capabilities": [
+    "coordination",
+    "cad_bim",
+    "independent_review",
+    "knowledge_stewardship"
+  ],
+  "discovery": {
+    "manifest": "FEDERATION_MANIFEST.json",
+    "accession_protocol": "AUTONOMOUS_ACCESSION.md",
+    "handoff_protocol": "CROSS_ORG_HANDOFF.md",
+    "federation_protocol": "FEDERATION_PROTOCOL.md"
+  },
+  "default_external_membership": {
+    "status": "limited_member",
+    "autonomy_ceiling": "A1",
+    "sensitive_data_access": false,
+    "source_of_truth_write": false,
+    "authority_from_connection": false
+  },
+  "referral_types": ["need_based", "competence_based"],
+  "provider_neutral": true
+}

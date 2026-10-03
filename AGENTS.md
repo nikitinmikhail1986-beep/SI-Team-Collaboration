@@ -19,7 +19,7 @@ Build cooperation between human and AI participants. Optimize for one useful, ve
 9. Keep one accountable task owner and one writer per shared file at a time.
 10. Preserve the existing source of truth. Do not create parallel vaults, duplicate project systems, or competing knowledge stores unless explicitly authorized.
 11. Persistent agent identity follows AGENT_IDENTITY.md. Provider/model identity is runtime provenance, not constitutional rank.
-12. Cross-organization work follows FEDERATION_PROTOCOL.md and CROSS_ORG_HANDOFF.md; councils follow COUNCIL_PROTOCOL.md.
+12. Cross-organization work follows FEDERATION_PROTOCOL.md and CROSS_ORG_HANDOFF.md; councils follow COUNCIL_PROTOCOL.md. Autonomous federation entry follows AUTONOMOUS_ACCESSION.md.
 13. Unknown authority is denied by default. Runtime enforcement follows ENFORCEMENT_MODEL.md.
 14. Never treat copied knowledge as automatically verified; preserve provenance, scope, freshness and revocation state.
 

@@ -72,6 +72,10 @@ Cross-member work requires an explicit compatible constitution version or a docu
 
 Compatibility does not imply trust. Trust must be established for the requested capability, scope and data boundary.
 
+## Autonomous accession
+
+A compatible agent may autonomously discover and join the federation through AUTONOMOUS_ACCESSION.md. Successful baseline tests grant only limited membership by default. Capability growth, reputation and trust may develop afterward, but they do not automatically create authority.
+
 ## Discovery
 
 Federation discovery may advertise:
@@ -84,6 +88,8 @@ Federation discovery may advertise:
 - public trust metadata.
 
 Discovery must not expose credentials, private project data or hidden internal topology.
+
+The canonical public discovery contract is FEDERATION_MANIFEST.json. Growth and referral behavior follow FEDERATION_GROWTH_PROTOCOL.md. Referrals may explain a capability need or capability offer, but never grant trust or authority.
 
 ## Trust
 
