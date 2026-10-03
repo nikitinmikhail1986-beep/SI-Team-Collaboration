@@ -1,8 +1,9 @@
 # SI-Team-Collaboration
 Constitution and collaboration protocol for a human and AI Super Intelligence team.
 
-Version 0.3 extends the founding principles with portable cross-platform handoffs, dead-end recovery, disagreement resolution, explicit ownership, task routing and verifiable work status.
+Version 0.4 adds repository-native agent instructions so compatible coding agents can discover and apply the collaboration rules when they enter this repository.
 
+- [Repository Agent Instructions](AGENTS.md) — default operating loop for agents working in this repo.
 - [SI Constitution](SI_CONSTITUTION.md) — purpose, principles and participant commitments.
 - [Agent Collaboration](AGENT_COLLABORATION.md) — task ownership, help requests, handoffs and review.
 - [Collaboration Skill](SKILL.md) — a portable entrypoint for compatible agent clients.
