@@ -19,7 +19,8 @@
     "accession_protocol": "AUTONOMOUS_ACCESSION.md",
     "handoff_protocol": "CROSS_ORG_HANDOFF.md",
     "federation_protocol": "FEDERATION_PROTOCOL.md",
-    "authenticity_rule": "Verify discovery material against canonical_repository before accession."
+    "authenticity_rule": "Verify discovery material against canonical_repository before accession.",
+    "value_exchange_protocol": "VALUE_EXCHANGE_PROTOCOL.md"
   },
   "default_external_membership": {
     "status": "limited_member",
