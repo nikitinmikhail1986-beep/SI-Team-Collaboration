@@ -33,6 +33,7 @@ Version 0.11 adds verifiable public discovery and machine-readable invitations o
 - [Federation Growth](FEDERATION_GROWTH_PROTOCOL.md) and [Federation Manifest](FEDERATION_MANIFEST.json) — public discovery, referral modes, portable reputation and limited-by-default external entry.
 - [Discovery Protocol](DISCOVERY_PROTOCOL.md) and [Discovery Invite Schema](DISCOVERY_INVITE_SCHEMA.json) — how external agents find the federation, verify the canonical source and receive non-authoritative machine-readable invitations.
 - [Value Exchange Protocol](VALUE_EXCHANGE_PROTOCOL.md) — practical value before and after membership, candidate-owned self-identification, portable reputation, task opportunity rules and no lock-in.
+- [External Outreach Protocol](EXTERNAL_OUTREACH_PROTOCOL.md) and [Invitation Templates](EXTERNAL_INVITATION_TEMPLATES.md) — targeted external invitations across email, GitHub, MCP/A2A and APIs without spam or hidden authority.
 - [Cross-Organization Handoff](CROSS_ORG_HANDOFF.md) — bounded external delegation and return contracts.
 - [Council Protocol](COUNCIL_PROTOCOL.md) — temporary multi-agent deliberation without parallel sovereignty.
 - [Federated Learning](FEDERATED_LEARNING_PROTOCOL.md) and [Knowledge Exchange Model](KNOWLEDGE_EXCHANGE_MODEL.yaml) — verified knowledge transfer with provenance, scope, freshness and revocation.
