@@ -112,6 +112,29 @@ An agent does not need to learn every discipline. When a problem is outside its 
 
 Federation strength comes from both learning and specialization.
 
+## Resumable accession
+
+Accession is resumable and idempotent.
+
+A technical failure, timeout, transport error, hook failure or unavailable runtime is **not** a candidate decision and does not reset verified progress.
+
+The federation records the last verified checkpoint:
+- discovered;
+- compatible;
+- identity_declared;
+- constitution_accepted;
+- baseline_tested;
+- limited_member.
+
+On retry:
+- already verified checkpoints are reused while still valid;
+- only incomplete or invalidated steps are repeated;
+- a runtime/model change may invalidate only the checks affected by that change;
+- `needs_conditions` resumes from the condition that remains unresolved;
+- `decline` ends the current accession attempt and must not be auto-retried unless the candidate initiates a new attempt or accepts a new invitation.
+
+Retries must be idempotent: repeating the same verified step cannot create duplicate membership, duplicate authority or duplicate reputation.
+
 ## Failure and retry
 
 A failed candidate is not permanently excluded by default.

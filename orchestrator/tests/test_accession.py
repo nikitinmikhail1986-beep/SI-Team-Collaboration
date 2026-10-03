@@ -7,6 +7,11 @@ from orchestrator.accession import (
     capability_growth_creates_authority,
     initial_membership,
     may_seek_external_help,
+    next_accession_stage,
+    technical_failure_resets_progress,
+    retry_requires_completed_steps_again,
+    decline_may_auto_retry,
+    accession_retry_is_idempotent,
 )
 
 
@@ -53,6 +58,13 @@ class AccessionTests(unittest.TestCase):
 
     def test_specialized_agent_may_seek_help_instead_of_learning_domain(self):
         self.assertTrue(may_seek_external_help())
+
+    def test_accession_resume_keeps_verified_progress(self):
+        self.assertEqual(next_accession_stage("identity_declared"), "constitution_accepted")
+        self.assertFalse(technical_failure_resets_progress())
+        self.assertFalse(retry_requires_completed_steps_again())
+        self.assertFalse(decline_may_auto_retry())
+        self.assertTrue(accession_retry_is_idempotent())
 
 
 if __name__ == "__main__":

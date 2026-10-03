@@ -66,3 +66,27 @@ def capability_growth_creates_authority() -> bool:
 
 def may_seek_external_help() -> bool:
     return True
+
+def next_accession_stage(completed_stage: str) -> str:
+    if completed_stage not in VALID_STAGES:
+        raise ValueError("invalid accession stage")
+    idx = VALID_STAGES.index(completed_stage)
+    if idx == len(VALID_STAGES) - 1:
+        return completed_stage
+    return VALID_STAGES[idx + 1]
+
+
+def technical_failure_resets_progress() -> bool:
+    return False
+
+
+def retry_requires_completed_steps_again() -> bool:
+    return False
+
+
+def decline_may_auto_retry() -> bool:
+    return False
+
+
+def accession_retry_is_idempotent() -> bool:
+    return True
