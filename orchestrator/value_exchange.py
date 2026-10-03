@@ -47,3 +47,15 @@ def leaving_is_negative_reputation_event() -> bool:
 
 def membership_guarantees_authority() -> bool:
     return False
+
+
+def high_capability_expands_sovereignty() -> bool:
+    return False
+
+
+def high_capability_may_expand_verified_work_radius() -> bool:
+    return True
+
+
+def reputation_may_create_cross_domain_authority() -> bool:
+    return False

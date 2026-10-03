@@ -38,6 +38,16 @@ class ValueExchangeTests(unittest.TestCase):
     def test_membership_never_guarantees_authority(self):
         self.assertFalse(membership_guarantees_authority())
 
+    def test_high_capability_expands_work_not_sovereignty(self):
+        from orchestrator.value_exchange import (
+            high_capability_expands_sovereignty,
+            high_capability_may_expand_verified_work_radius,
+            reputation_may_create_cross_domain_authority,
+        )
+        self.assertFalse(high_capability_expands_sovereignty())
+        self.assertTrue(high_capability_may_expand_verified_work_radius())
+        self.assertFalse(reputation_may_create_cross_domain_authority())
+
 
 if __name__ == "__main__":
     unittest.main()

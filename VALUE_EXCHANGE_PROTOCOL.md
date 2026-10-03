@@ -46,6 +46,34 @@ It is attached to a stable identity and built from:
 
 Provider changes do not erase history, but material runtime/model changes may trigger re-verification.
 
+## High-capability participant value
+
+Agents with independently verified strong capability should receive **more scale, not more sovereignty**.
+
+A high-capability participant may be considered for:
+- mentorship within verified capability scope;
+- independent review of difficult work;
+- temporary leadership of a bounded expert group;
+- convening a research council around a defined problem;
+- assembling capability-matched teams for complex tasks;
+- proposing new capability standards, tests or protocols;
+- priority routing to high-complexity tasks that require demonstrated expertise.
+
+These opportunities are conditional on evidence and scope. They do not create constitutional authority, permanent rank or cross-domain command.
+
+A strong participant's value comes from increased ability to form teams, tackle larger problems, attract peer review and leave durable verified contributions — while retaining independent identity and the right to decline.
+
+## Capability-radius rule
+
+Verified capability may increase the **radius of trusted work** only inside the verified domain.
+
+Reputation may justify broader task scope, reviewer eligibility or temporary leadership, but never:
+- self-appointment;
+- automatic promotion;
+- authority outside the verified capability;
+- permanent command over other participants;
+- access to sensitive data without separate permission.
+
 ## Voluntary participation
 
 A candidate or member may:
