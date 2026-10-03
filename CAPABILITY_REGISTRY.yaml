@@ -1,0 +1,32 @@
+schema_version: "0.1"
+purpose: "Route work by verified capability rather than provider brand or perceived intelligence."
+capabilities:
+  coordination:
+    description: "Decompose cross-disciplinary work, integrate contributions, verify shared outcome."
+    evidence_required: "Observed successful task or configured-and-tested tool path."
+  domain_specialist:
+    description: "Apply bounded professional or technical expertise."
+    evidence_required: "Role definition plus task-specific verification."
+  research:
+    description: "Find and compare external sources with citations."
+    evidence_required: "Available research/search capability and source verification."
+  coding:
+    description: "Inspect, modify, test and review code or configuration."
+    evidence_required: "Repository access plus successful test or diff verification."
+  document_work:
+    description: "Create or edit structured documents and artifacts."
+    evidence_required: "Compatible tool and output validation."
+  cad_bim:
+    description: "Inspect or modify authorized CAD/BIM environments."
+    evidence_required: "Live connector/tool test; configuration alone is insufficient."
+  independent_review:
+    description: "Challenge assumptions and verify acceptance criteria independently."
+    evidence_required: "Separation from the primary implementation path where practical."
+  knowledge_stewardship:
+    description: "Record reusable verified results without creating competing sources of truth."
+    evidence_required: "Authorized knowledge location and provenance."
+routing_rules:
+  - "Select the minimum capability set needed for the task."
+  - "Prefer an actually available and tested capability over a nominal role."
+  - "Do not rank providers or agents globally."
+  - "Re-check capabilities after environment, permission, connector or model changes."

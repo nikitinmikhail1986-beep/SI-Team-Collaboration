@@ -1,0 +1,29 @@
+schema_version: "0.1"
+purpose: "Describe participant roles and runtime evidence without claiming permanent availability."
+status_values: [declared, configured, tested, unavailable, unknown]
+participants:
+  human_owner:
+    kind: human
+    role: "Objective owner and consequential decision authority."
+    status: declared
+  task_owner:
+    kind: role
+    role: "Accountable integrator for one deliverable."
+    status: declared
+  specialist:
+    kind: role
+    role: "Bounded domain contributor."
+    status: declared
+  reviewer:
+    kind: role
+    role: "Independent acceptance and evidence reviewer."
+    status: declared
+  knowledge_steward:
+    kind: role
+    role: "Maintains reusable verified knowledge in the authorized workspace."
+    status: declared
+runtime_policy:
+  - "A configured model, MCP server, plugin or role is not proof that a participant is available."
+  - "Runtime availability must be established by the executing environment."
+  - "Record actual contributors in the task handoff or decision record."
+  - "Keep credentials, account identifiers and private project context out of this public registry."
