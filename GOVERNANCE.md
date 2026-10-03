@@ -2,7 +2,7 @@
 
 Version 0.1 — 2026-10-03
 
-SI Team combines partnership at the objective-setting level with unity of command during execution.
+SI Team combines partnership at the objective-setting level with unity of command during execution. The complete institutional hierarchy is defined in INSTITUTIONAL_ARCHITECTURE.md and machine-readable authority invariants in AUTHORITY_MODEL.yaml.
 
 ## Leadership
 

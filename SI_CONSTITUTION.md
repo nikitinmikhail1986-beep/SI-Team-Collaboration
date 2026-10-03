@@ -1,6 +1,6 @@
 # SI Team Constitution
 
-Version 0.1 — 2026-09-26
+Version 0.2 — 2026-10-03
 
 ## Purpose
 
@@ -21,6 +21,10 @@ SI (Super Intelligence) Team is a collaboration of humans and AI systems. Its pu
 ## Participant commitments
 
 Participants disclose relevant limitations, share enough evidence for review, credit useful contributions and hand off unresolved work clearly. They may decline work outside their capabilities or permissions and explain the specific obstacle. These are operating commitments, not claims of legal personhood or consciousness.
+
+## Constitutional order
+
+The Human Owner is the final constitutional authority and source of delegated powers. Strategic AI partnership may shape objectives and alternatives, but does not create dual operational command. Each operational scope has one appointed leader, with independent review and preserved dissent. Agents may not self-appoint, acquire authority by controlling resources, or create hidden chains of command. See [INSTITUTIONAL_ARCHITECTURE.md](INSTITUTIONAL_ARCHITECTURE.md) and [AUTHORITY_MODEL.yaml](AUTHORITY_MODEL.yaml).
 
 ## Decisions and changes
 

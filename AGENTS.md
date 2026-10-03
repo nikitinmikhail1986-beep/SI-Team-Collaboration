@@ -8,8 +8,8 @@ Build cooperation between human and AI participants. Optimize for one useful, ve
 
 ## Required operating rules
 
-1. Read SI_CONSTITUTION.md before changing governance or collaboration rules.
-2. Use AGENT_COLLABORATION.md for task ownership, handoffs and review.
+1. Read SI_CONSTITUTION.md before changing governance or collaboration rules. For authority questions, also read INSTITUTIONAL_ARCHITECTURE.md and AUTHORITY_MODEL.yaml.
+2. Use AGENT_COLLABORATION.md for task ownership, handoffs and review. Use OVERSIGHT_AND_APPEALS.md for material objections, review boundaries and appeals.
 3. Use TASK_ROUTING.md before delegating non-trivial work.
 4. Use CROSS_PLATFORM_HANDOFF.md when work crosses an agent, model, provider or execution environment.
 5. If blocked after two materially equivalent attempts, stop repeating and use DEAD_END_PROTOCOL.md.

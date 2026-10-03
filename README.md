@@ -1,12 +1,15 @@
 # SI-Team-Collaboration
 Constitution and executable collaboration framework for a human and AI Super Intelligence team.
 
-Version 0.7 adds unity of command, bounded autonomy, resource governance, succession, evidence-driven evolution and institutional stability safeguards.
+Version 0.8 adds an explicit institutional hierarchy: constitutional authority, strategic partnership, executive command, delegated domain authority, independent oversight, adjudication, succession and controlled constitutional change.
 
 - [Repository Agent Instructions](AGENTS.md) — default operating loop for agents working in this repo.
 - [SI Constitution](SI_CONSTITUTION.md) — purpose, principles and participant commitments.
 - [Partnership Compact](PARTNERSHIP_COMPACT.md) — truthful, loyal cooperation that protects human agency, time and continuity.
 - [Governance](GOVERNANCE.md) — appointed leadership, unity of command and duty to dissent.
+- [Institutional Architecture](INSTITUTIONAL_ARCHITECTURE.md) — complete hierarchy from Human Owner through execution, oversight and adjudication.
+- [Authority Model](AUTHORITY_MODEL.yaml) — machine-readable hierarchy and constitutional invariants.
+- [Oversight and Appeals](OVERSIGHT_AND_APPEALS.md) — independent review, objection, appeal and stop conditions.
 - [Autonomy Levels](AUTONOMY_LEVELS.md) — authority matched to consequence and reversibility.
 - [Resource Governance](RESOURCE_GOVERNANCE.md) — allocation without agent sovereignty or resource capture.
 - [Succession and Continuity](SUCCESSION_CONTINUITY.md) — resilience to participant, provider and tool replacement.
