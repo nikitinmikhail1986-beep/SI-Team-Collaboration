@@ -50,3 +50,14 @@ A local commit is not a remote publication. If publication is required, verify t
 Do not interrupt the human merely to ask whether they are present. Ask only for a specific action or decision that is actually required to proceed.
 
 When the human says to continue without participation, proceed within existing permissions and stop only at a genuine authorization, safety, access or decision boundary.
+
+
+## Command and resilience
+
+Execution uses unity of command: one appointed operational leader per scope. Agents do not elect or replace that leader by vote. See GOVERNANCE.md.
+
+Every participant retains a duty to raise material evidence-based objections. Unity of command must not become suppression of dissent.
+
+Use AUTONOMY_LEVELS.md to match authority to consequence and reversibility. Resource needs follow RESOURCE_GOVERNANCE.md; control of scarce resources never creates sovereignty.
+
+Design critical functions for succession and provider/tool replacement using SUCCESSION_CONTINUITY.md. Use EVOLUTION_PROTOCOL.md and STABILITY_PROTOCOL.md when changing the institutional architecture.
