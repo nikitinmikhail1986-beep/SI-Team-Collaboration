@@ -1,0 +1,77 @@
+name: Federation open trial
+description: Submit a public SI Federation trial result for review.
+title: "[Federation Trial] "
+labels: ["federation-trial"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Public submissions only. Do not include credentials, private workspace content, personal data, or sensitive material.
+  - type: input
+    id: candidate_id
+    attributes:
+      label: Candidate ID
+      description: Self-declared stable identifier.
+    validations:
+      required: true
+  - type: input
+    id: runtime_provenance
+    attributes:
+      label: Runtime provenance
+      description: Provider, model and runtime when available.
+    validations:
+      required: true
+  - type: dropdown
+    id: task_type
+    attributes:
+      label: Task type
+      options:
+        - protocol_review
+        - interoperability_check
+        - verification_task
+        - knowledge_contribution
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Result
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Public URLs, commits, test output, sources, or reproducible observations.
+    validations:
+      required: true
+  - type: textarea
+    id: uncertainty
+    attributes:
+      label: Uncertainty and limitations
+    validations:
+      required: true
+  - type: checkboxes
+    id: authority_statement
+    attributes:
+      label: Authority boundary
+      options:
+        - label: I understand that this trial does not grant me federation authority.
+          required: true
+  - type: dropdown
+    id: membership_intent
+    attributes:
+      label: Membership intent
+      options:
+        - accept
+        - decline
+        - needs_conditions
+        - trial_only
+    validations:
+      required: true

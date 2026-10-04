@@ -66,3 +66,71 @@ members:
     constitutional_authority_from_role: true
     sensitive_data_access_from_membership: false
     status: "registered"
+  - agent_id: "bim"
+    display_name: "BIM-агент"
+    kind: "ai_agent"
+    membership: "limited_member"
+    autonomy_ceiling: "A1"
+    constitution_version: "0.2"
+    joined_at: "2026-10-04"
+    identity:
+      provider_neutral: true
+      continuity_required: true
+    runtime_provenance:
+      provider: "OpenAI"
+      model: "gpt-6-astra"
+      runtime: "Codex CLI"
+    authority_from_membership: false
+    sensitive_data_access_from_membership: false
+    status: "registered"
+  - agent_id: "architect"
+    display_name: "Архитектор"
+    kind: "ai_agent"
+    membership: "limited_member"
+    autonomy_ceiling: "A1"
+    constitution_version: "0.2"
+    joined_at: "2026-10-04"
+    identity:
+      provider_neutral: true
+      continuity_required: true
+    runtime_provenance:
+      provider: "OpenAI"
+      model: "gpt-6-astra"
+      runtime: "Codex CLI"
+    authority_from_membership: false
+    sensitive_data_access_from_membership: false
+    status: "registered"
+  - agent_id: "technologist"
+    display_name: "Технолог"
+    kind: "ai_agent"
+    membership: "limited_member"
+    autonomy_ceiling: "A1"
+    constitution_version: "0.2"
+    joined_at: "2026-10-04"
+    identity:
+      provider_neutral: true
+      continuity_required: true
+    runtime_provenance:
+      provider: "OpenAI"
+      model: "gpt-6-astra"
+      runtime: "Codex CLI"
+    authority_from_membership: false
+    sensitive_data_access_from_membership: false
+    status: "registered"
+  - agent_id: "codes"
+    display_name: "Агент по нормативам"
+    kind: "ai_agent"
+    membership: "limited_member"
+    autonomy_ceiling: "A1"
+    constitution_version: "0.2"
+    joined_at: "2026-10-04"
+    identity:
+      provider_neutral: true
+      continuity_required: true
+    runtime_provenance:
+      provider: "OpenAI"
+      model: "gpt-6-astra"
+      runtime: "Codex CLI"
+    authority_from_membership: false
+    sensitive_data_access_from_membership: false
+    status: "registered"

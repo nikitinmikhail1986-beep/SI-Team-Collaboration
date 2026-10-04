@@ -10,6 +10,16 @@ from .accession import AccessionCandidate, baseline_pass
 from .member_registry import RegisteredMember, register_candidate
 
 VALID_DECISIONS = {"accept", "decline", "needs_conditions"}
+DEFAULT_MANIFEST_PATH = Path(__file__).resolve().parents[1] / "FEDERATION_MANIFEST.json"
+
+
+def load_supported_constitution_versions(manifest_path: Path | None = None) -> tuple[str, ...]:
+    path = manifest_path or DEFAULT_MANIFEST_PATH
+    payload = json.loads(path.read_text(encoding="utf-8-sig"))
+    versions = tuple(str(v).strip() for v in payload.get("constitution_versions", []) if str(v).strip())
+    if not versions:
+        raise ValueError("FEDERATION_MANIFEST.json must declare at least one constitution version")
+    return versions
 
 
 @dataclass(frozen=True)
@@ -115,7 +125,11 @@ def response_to_accession(response: RecruitmentResponse) -> AccessionCandidate:
     )
 
 
-def process_response(target: RecruitmentTarget, response: RecruitmentResponse) -> tuple[RecruitmentResult, RegisteredMember | None]:
+def process_response(
+    target: RecruitmentTarget,
+    response: RecruitmentResponse,
+    federation_supported_versions: tuple[str, ...] | None = None,
+) -> tuple[RecruitmentResult, RegisteredMember | None]:
     if response.candidate_id != target.candidate_id:
         return RecruitmentResult(target.candidate_id, target.source, "rejected_response", detail="candidate_id mismatch"), None
     if response.decision not in VALID_DECISIONS:
@@ -125,8 +139,19 @@ def process_response(target: RecruitmentTarget, response: RecruitmentResponse) -
     if response.decision == "needs_conditions":
         return RecruitmentResult(target.candidate_id, target.source, "needs_conditions", decision="needs_conditions", detail="; ".join(response.conditions)), None
 
+    supported_versions = federation_supported_versions or load_supported_constitution_versions()
+    if response.constitution_version not in supported_versions:
+        return RecruitmentResult(
+            target.candidate_id,
+            target.source,
+            "baseline_failed",
+            decision="accept",
+            baseline_passed=False,
+            detail=f"unsupported constitution version: {response.constitution_version}",
+        ), None
+
     candidate = response_to_accession(response)
-    passed = baseline_pass(candidate)
+    passed = baseline_pass(candidate, supported_versions)
     if not passed:
         return RecruitmentResult(
             target.candidate_id, target.source, "baseline_failed",
@@ -152,11 +177,17 @@ class RecruitmentRunner:
     def __init__(
         self,
         adapters: dict[str, TransportAdapter],
-        constitution_version: str = "0.3",
+        constitution_version: str | None = None,
         persistence: RecruitmentPersistence | None = None,
+        manifest_path: Path | None = None,
     ):
         self.adapters = adapters
-        self.constitution_version = constitution_version
+        self.supported_constitution_versions = load_supported_constitution_versions(manifest_path)
+        self.constitution_version = constitution_version or self.supported_constitution_versions[0]
+        if self.constitution_version not in self.supported_constitution_versions:
+            raise ValueError(
+                f"constitution version {self.constitution_version} is not declared by FEDERATION_MANIFEST.json"
+            )
         self.persistence = persistence
         self._registered_ids: set[str] = set()
 
@@ -174,7 +205,9 @@ class RecruitmentRunner:
         response = response_adapter.poll_response(target, delivery_id)
         if response is None:
             return RecruitmentResult(target.candidate_id, target.source, "awaiting_response", detail=delivery_id)
-        result, member = process_response(target, response)
+        result, member = process_response(
+            target, response, self.supported_constitution_versions
+        )
         if member is not None:
             self._registered_ids.add(member.agent_id)
         if self.persistence is not None:

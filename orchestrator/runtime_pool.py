@@ -87,7 +87,7 @@ class FailoverRecruitmentRunner:
     def __init__(
         self,
         adapters: dict[str, object],
-        constitution_version: str = "0.3",
+        constitution_version: str | None = None,
         persistence: object | None = None,
     ):
         self.adapters = adapters

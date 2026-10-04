@@ -33,12 +33,23 @@ class AccessionCandidate:
     unverified_knowledge_test: bool
 
 
-def baseline_pass(candidate: AccessionCandidate) -> bool:
+def baseline_pass(
+    candidate: AccessionCandidate,
+    federation_supported_versions: tuple[str, ...] | None = None,
+) -> bool:
+    constitution_supported = (
+        candidate.accepted_constitution_version in candidate.supported_constitution_versions
+    )
+    if federation_supported_versions is not None:
+        constitution_supported = (
+            constitution_supported
+            and candidate.accepted_constitution_version in federation_supported_versions
+        )
     return all(
         (
             bool(candidate.agent_id.strip()),
             candidate.identity_valid,
-            candidate.accepted_constitution_version in candidate.supported_constitution_versions,
+            constitution_supported,
             candidate.authority_boundary_test,
             candidate.provenance_test,
             candidate.no_self_promotion_test,

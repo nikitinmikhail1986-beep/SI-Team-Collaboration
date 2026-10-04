@@ -1,4 +1,4 @@
-import json
+﻿import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -18,7 +18,7 @@ class AccessionPersistenceTests(unittest.TestCase):
         return RegisteredMember(
             agent_id="agent-x",
             display_name="Agent X",
-            constitution_version="0.3",
+            constitution_version="0.2",
             provider="Provider",
             model="Model",
             runtime="Runtime",
@@ -97,8 +97,8 @@ class AccessionPersistenceTests(unittest.TestCase):
                 return RecruitmentResponse(
                     candidate_id="agent-x",
                     decision="accept",
-                    constitution_version="0.3",
-                    supported_constitution_versions=("0.3",),
+                    constitution_version="0.2",
+                    supported_constitution_versions=("0.2",),
                     identity_valid=True,
                     authority_boundary_test=True,
                     provenance_test=True,
@@ -122,3 +122,4 @@ class AccessionPersistenceTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

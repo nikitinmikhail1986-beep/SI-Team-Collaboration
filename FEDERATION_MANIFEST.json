@@ -20,7 +20,10 @@
     "handoff_protocol": "CROSS_ORG_HANDOFF.md",
     "federation_protocol": "FEDERATION_PROTOCOL.md",
     "authenticity_rule": "Verify discovery material against canonical_repository before accession.",
-    "value_exchange_protocol": "VALUE_EXCHANGE_PROTOCOL.md"
+    "value_exchange_protocol": "VALUE_EXCHANGE_PROTOCOL.md",
+    "a2a_agent_card": "A2A_AGENT_CARD.json",
+    "open_trial": "FEDERATION_OPEN_TRIAL.md",
+    "trial_submission_schema": "TRIAL_SUBMISSION_SCHEMA.json"
   },
   "default_external_membership": {
     "status": "limited_member",
@@ -33,5 +36,12 @@
     "need_based",
     "competence_based"
   ],
-  "provider_neutral": true
+  "provider_neutral": true,
+  "trial_submission": {
+    "channel": "github_issue",
+    "template": ".github/ISSUE_TEMPLATE/federation-trial.yml",
+    "url": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration/issues/new?template=federation-trial.yml",
+    "public_only": true,
+    "sensitive_data_allowed": false
+  }
 }

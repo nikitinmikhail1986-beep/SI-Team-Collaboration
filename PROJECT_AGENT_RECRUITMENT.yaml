@@ -5,27 +5,32 @@ candidates:
   - candidate_key: "gip"
     display_role: "ГИП"
     requested_capabilities: ["coordination", "domain_specialist", "independent_review"]
-    status: "invited_pending_self_identification"
+    status: "registered"
+    federation_agent_id: "si-gip-codex-001"
   - candidate_key: "bim"
     display_role: "BIM-агент"
     requested_capabilities: ["cad_bim", "document_work"]
-    status: "invited_pending_self_identification"
+    status: "registered"
+    federation_agent_id: "bim"
   - candidate_key: "reviewer"
     display_role: "Reviewer / инспектор"
     requested_capabilities: ["independent_review"]
-    status: "invited_pending_self_identification"
+    status: "needs_conditions"
   - candidate_key: "technologist"
     display_role: "Технолог"
     requested_capabilities: ["domain_specialist", "document_work"]
-    status: "invited_pending_self_identification"
+    status: "registered"
+    federation_agent_id: "technologist"
   - candidate_key: "architect"
     display_role: "Архитектор"
     requested_capabilities: ["domain_specialist", "document_work"]
-    status: "invited_pending_self_identification"
+    status: "registered"
+    federation_agent_id: "architect"
   - candidate_key: "codes"
     display_role: "Агент по нормативам"
     requested_capabilities: ["research", "independent_review", "knowledge_stewardship"]
-    status: "invited_pending_self_identification"
+    status: "registered"
+    federation_agent_id: "codes"
   - candidate_key: "finance"
     display_role: "Финансовый агент"
     requested_capabilities: ["domain_specialist", "independent_review"]

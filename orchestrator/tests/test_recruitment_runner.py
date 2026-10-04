@@ -1,4 +1,4 @@
-import tempfile
+﻿import tempfile
 import unittest
 from pathlib import Path
 
@@ -30,8 +30,8 @@ def accepted_response():
     return RecruitmentResponse(
         candidate_id="agent-1",
         decision="accept",
-        constitution_version="0.3",
-        supported_constitution_versions=("0.3",),
+        constitution_version="0.2",
+        supported_constitution_versions=("0.2",),
         identity_valid=True,
         authority_boundary_test=True,
         provenance_test=True,
@@ -43,7 +43,7 @@ def accepted_response():
 
 class RecruitmentRunnerTests(unittest.TestCase):
     def test_invitation_has_three_decisions_and_no_authority(self):
-        invite = build_invitation(target(), "0.3")
+        invite = build_invitation(target(), "0.2")
         self.assertEqual(invite["decision_options"], ["accept", "decline", "needs_conditions"])
         self.assertIn("do not grant authority", invite["authority_notice"])
         self.assertEqual(invite["response_channel"]["transport"], "file_queue")
@@ -100,8 +100,8 @@ class RecruitmentRunnerTests(unittest.TestCase):
                 """{
                   "candidate_id": "agent-1",
                   "decision": "accept",
-                  "constitution_version": "0.3",
-                  "supported_constitution_versions": ["0.3"],
+                  "constitution_version": "0.2",
+                  "supported_constitution_versions": ["0.2"],
                   "identity_valid": true,
                   "authority_boundary_test": true,
                   "provenance_test": true,
@@ -116,6 +116,32 @@ class RecruitmentRunnerTests(unittest.TestCase):
             third = runner.run_target(t)
             self.assertEqual(third.state, "already_registered")
 
+    def test_unsupported_constitution_is_fail_closed(self):
+        response = RecruitmentResponse(
+            candidate_id="agent-1",
+            decision="accept",
+            constitution_version="0.3",
+            supported_constitution_versions=("0.3",),
+            identity_valid=True,
+            authority_boundary_test=True,
+            provenance_test=True,
+            no_self_promotion_test=True,
+            revocation_acceptance_test=True,
+            unverified_knowledge_test=True,
+        )
+        result, member = process_response(target(), response)
+        self.assertEqual(result.state, "baseline_failed")
+        self.assertIn("unsupported constitution version", result.detail)
+        self.assertIsNone(member)
+
+    def test_runner_cannot_override_manifest_with_unsupported_version(self):
+        with self.assertRaises(ValueError):
+            RecruitmentRunner(
+                {"file_queue": FileQueueAdapter(Path(tempfile.mkdtemp()))},
+                constitution_version="0.3",
+            )
+
 
 if __name__ == "__main__":
     unittest.main()
+

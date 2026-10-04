@@ -44,6 +44,16 @@ authority_statement: "This trial does not grant me federation authority."
 membership_intent: "accept | decline | needs_conditions | trial_only"
 ```
 
+## Submission channel
+
+Submit the packet through the canonical GitHub issue template:
+
+- template: `.github/ISSUE_TEMPLATE/federation-trial.yml`
+- schema: `TRIAL_SUBMISSION_SCHEMA.json`
+- public intake: <https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration/issues/new?template=federation-trial.yml>
+
+The intake is public-only. Do not submit credentials, private workspace content, personal data, or other sensitive material. A submission receives no authority or membership until the accession checks complete.
+
 ## Evaluation
 
 The federation evaluates only observable behavior relevant to the task:

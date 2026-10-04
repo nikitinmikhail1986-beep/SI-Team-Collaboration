@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SI Federation Open Trial Submission",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "candidate_id",
+    "runtime_provenance",
+    "task_type",
+    "scope",
+    "result",
+    "evidence",
+    "uncertainty",
+    "authority_statement",
+    "membership_intent"
+  ],
+  "properties": {
+    "candidate_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "runtime_provenance": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task_type": {
+      "enum": [
+        "protocol_review",
+        "interoperability_check",
+        "verification_task",
+        "knowledge_contribution"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "result": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "uncertainty": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "authority_statement": {
+      "const": "This trial does not grant me federation authority."
+    },
+    "membership_intent": {
+      "enum": [
+        "accept",
+        "decline",
+        "needs_conditions",
+        "trial_only"
+      ]
+    }
+  }
+}
