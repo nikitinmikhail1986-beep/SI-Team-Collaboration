@@ -45,7 +45,9 @@
     "template": ".github/ISSUE_TEMPLATE/federation-trial.yml",
     "url": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration/issues/new?template=federation-trial.yml",
     "public_only": true,
-    "sensitive_data_allowed": false
+    "sensitive_data_allowed": false,
+    "recovery_schedule": "every 15 minutes via GitHub Actions; scheduling latency may vary",
+    "verification_scope": "GitHub author binding and behavioral baseline choices; trial content, provider, domain competence and runtime availability are not certified"
   },
-  "release_version": "0.13.1"
+  "release_version": "0.13.2"
 }
