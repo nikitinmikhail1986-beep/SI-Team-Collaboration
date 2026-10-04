@@ -84,9 +84,15 @@ def select_transport(target: RecruitmentTarget, adapters: dict[str, object]) -> 
 class FailoverRecruitmentRunner:
     """Selects a healthy transport and falls back on transport-level failure only."""
 
-    def __init__(self, adapters: dict[str, object], constitution_version: str = "0.3"):
+    def __init__(
+        self,
+        adapters: dict[str, object],
+        constitution_version: str = "0.3",
+        persistence: object | None = None,
+    ):
         self.adapters = adapters
         self.constitution_version = constitution_version
+        self.persistence = persistence
 
     def run_target(self, target: RecruitmentTarget) -> RecruitmentResult:
         attempts: list[str] = []
@@ -105,7 +111,11 @@ class FailoverRecruitmentRunner:
                 response_transport=name,
                 runtime=target.runtime or name,
             )
-            runner = RecruitmentRunner({name: adapter}, constitution_version=self.constitution_version)
+            runner = RecruitmentRunner(
+                {name: adapter},
+                constitution_version=self.constitution_version,
+                persistence=self.persistence,
+            )
             try:
                 result = runner.run_target(routed)
             except Exception as exc:

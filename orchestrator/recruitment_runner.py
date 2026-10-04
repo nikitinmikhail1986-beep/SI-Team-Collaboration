@@ -64,6 +64,19 @@ class TransportAdapter(Protocol):
         ...
 
 
+class RecruitmentPersistence(Protocol):
+    def record(
+        self,
+        *,
+        target: RecruitmentTarget,
+        result: RecruitmentResult,
+        member: RegisteredMember | None,
+        response: RecruitmentResponse | None,
+        transport: str = "",
+    ) -> None:
+        ...
+
+
 def build_invitation(target: RecruitmentTarget, constitution_version: str) -> dict:
     return {
         "schema_version": "0.1",
@@ -136,9 +149,15 @@ def process_response(target: RecruitmentTarget, response: RecruitmentResponse) -
 
 
 class RecruitmentRunner:
-    def __init__(self, adapters: dict[str, TransportAdapter], constitution_version: str = "0.3"):
+    def __init__(
+        self,
+        adapters: dict[str, TransportAdapter],
+        constitution_version: str = "0.3",
+        persistence: RecruitmentPersistence | None = None,
+    ):
         self.adapters = adapters
         self.constitution_version = constitution_version
+        self.persistence = persistence
         self._registered_ids: set[str] = set()
 
     def run_target(self, target: RecruitmentTarget) -> RecruitmentResult:
@@ -158,6 +177,14 @@ class RecruitmentRunner:
         result, member = process_response(target, response)
         if member is not None:
             self._registered_ids.add(member.agent_id)
+        if self.persistence is not None:
+            self.persistence.record(
+                target=target,
+                result=result,
+                member=member,
+                response=response,
+                transport=target.transport,
+            )
         return result
 
     def run(self, targets: list[RecruitmentTarget]) -> list[RecruitmentResult]:
