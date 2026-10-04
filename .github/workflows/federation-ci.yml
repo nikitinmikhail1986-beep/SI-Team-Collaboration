@@ -1,0 +1,22 @@
+name: Federation CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate machine-readable federation artifacts
+        run: |
+          python -m json.tool FEDERATION_MANIFEST.json > /dev/null
+          python -m json.tool TRIAL_SUBMISSION_SCHEMA.json > /dev/null
+      - name: Run federation test suite
+        run: python -m unittest discover -s orchestrator/tests
