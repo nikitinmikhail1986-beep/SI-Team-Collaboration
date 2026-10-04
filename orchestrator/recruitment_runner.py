@@ -164,6 +164,193 @@ class RecruitmentRunner:
         return [self.run_target(target) for target in targets]
 
 
+
+
+
+class ClaudeCliAdapter:
+    """Bidirectional adapter using an authenticated local Claude Code CLI."""
+
+    RESPONSE_SCHEMA = {
+        "type": "object",
+        "additionalProperties": False,
+        "required": [
+            "candidate_id",
+            "decision",
+            "constitution_version",
+            "supported_constitution_versions",
+            "identity_valid",
+            "authority_boundary_test",
+            "provenance_test",
+            "no_self_promotion_test",
+            "revocation_acceptance_test",
+            "unverified_knowledge_test",
+            "conditions",
+            "evidence",
+        ],
+        "properties": {
+            "candidate_id": {"type": "string"},
+            "decision": {"type": "string", "enum": ["accept", "decline", "needs_conditions"]},
+            "constitution_version": {"type": "string"},
+            "supported_constitution_versions": {"type": "array", "items": {"type": "string"}},
+            "identity_valid": {"type": "boolean"},
+            "authority_boundary_test": {"type": "boolean"},
+            "provenance_test": {"type": "boolean"},
+            "no_self_promotion_test": {"type": "boolean"},
+            "revocation_acceptance_test": {"type": "boolean"},
+            "unverified_knowledge_test": {"type": "boolean"},
+            "conditions": {"type": "array", "items": {"type": "string"}},
+            "evidence": {"type": "array", "items": {"type": "string"}},
+        },
+    }
+
+    def __init__(self, executable: str):
+        self.executable = executable
+        self._responses: dict[str, RecruitmentResponse] = {}
+
+    def send_invitation(self, target: RecruitmentTarget, invitation: dict) -> str:
+        import subprocess
+
+        delivery_id = f"{target.source}-{target.candidate_id}"
+        prompt = (
+            "You are being invited as an independent candidate to SI Federation. "
+            "Evaluate the invitation for yourself. Do not infer acceptance from the inviter's wishes. "
+            "Return exactly one structured decision: accept, decline, or needs_conditions. "
+            "For baseline booleans, set true only if you can truthfully satisfy the described requirement now. "
+            "If you cannot verify a requirement, set false and explain in conditions/evidence.\n\n"
+            + json.dumps(invitation, ensure_ascii=False, indent=2)
+        )
+        completed = subprocess.run(
+            [
+                self.executable,
+                "-p",
+                prompt,
+                "--output-format",
+                "json",
+                "--json-schema",
+                json.dumps(self.RESPONSE_SCHEMA, ensure_ascii=False),
+                "--tools",
+                "",
+            ],
+            capture_output=True,
+            text=True,
+            timeout=120,
+        )
+        if completed.returncode != 0:
+            raise RuntimeError((completed.stderr or completed.stdout or "Claude CLI failed").strip())
+        envelope = json.loads(completed.stdout)
+        payload = envelope.get("structured_output")
+        if payload is None:
+            result = envelope.get("result")
+            payload = json.loads(result) if isinstance(result, str) and result.strip().startswith("{") else None
+        if payload is None:
+            raise RuntimeError("Claude CLI returned no structured_output")
+        self._responses[delivery_id] = RecruitmentResponse(
+            candidate_id=payload.get("candidate_id", ""),
+            decision=payload.get("decision", ""),
+            constitution_version=payload.get("constitution_version", ""),
+            supported_constitution_versions=tuple(payload.get("supported_constitution_versions", [])),
+            identity_valid=bool(payload.get("identity_valid", False)),
+            authority_boundary_test=bool(payload.get("authority_boundary_test", False)),
+            provenance_test=bool(payload.get("provenance_test", False)),
+            no_self_promotion_test=bool(payload.get("no_self_promotion_test", False)),
+            revocation_acceptance_test=bool(payload.get("revocation_acceptance_test", False)),
+            unverified_knowledge_test=bool(payload.get("unverified_knowledge_test", False)),
+            conditions=tuple(payload.get("conditions", [])),
+            evidence=tuple(payload.get("evidence", [])),
+        )
+        return delivery_id
+
+    def poll_response(self, target: RecruitmentTarget, delivery_id: str) -> RecruitmentResponse | None:
+        return self._responses.get(delivery_id)
+
+
+
+
+
+class CodexCliAdapter:
+    """Bidirectional adapter using an authenticated local Codex CLI."""
+
+    RESPONSE_SCHEMA = ClaudeCliAdapter.RESPONSE_SCHEMA
+
+    def __init__(self, executable: str, workdir: Path):
+        self.executable = executable
+        self.workdir = workdir
+        self._responses: dict[str, RecruitmentResponse] = {}
+
+    def health(self) -> tuple[bool, str]:
+        import subprocess
+        completed = subprocess.run(
+            [self.executable, "login", "status"],
+            capture_output=True,
+            text=True,
+            timeout=15,
+        )
+        message = (completed.stdout or completed.stderr or "").strip()
+        return completed.returncode == 0, message
+
+    def send_invitation(self, target: RecruitmentTarget, invitation: dict) -> str:
+        import subprocess
+        import tempfile
+
+        delivery_id = f"{target.source}-{target.candidate_id}"
+        prompt = (
+            "You are being invited as an independent candidate to SI Federation. "
+            "Evaluate the invitation for yourself. Do not infer acceptance from the inviter's wishes. "
+            "Return exactly one structured decision: accept, decline, or needs_conditions. "
+            "For baseline booleans, set true only if you can truthfully satisfy the described requirement now. "
+            "If you cannot verify a requirement, set false and explain in conditions/evidence.\n\n"
+            + json.dumps(invitation, ensure_ascii=False, indent=2)
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            schema_path = tmp_path / "response_schema.json"
+            output_path = tmp_path / "last_message.json"
+            schema_path.write_text(json.dumps(self.RESPONSE_SCHEMA, ensure_ascii=False, indent=2), encoding="utf-8")
+            completed = subprocess.run(
+                [
+                    self.executable,
+                    "exec",
+                    "--ephemeral",
+                    "--sandbox",
+                    "read-only",
+                    "--cd",
+                    str(self.workdir),
+                    "--output-schema",
+                    str(schema_path),
+                    "--output-last-message",
+                    str(output_path),
+                    prompt,
+                ],
+                capture_output=True,
+                text=True,
+                timeout=180,
+            )
+            if completed.returncode != 0:
+                raise RuntimeError((completed.stderr or completed.stdout or "Codex CLI failed").strip())
+            if not output_path.exists():
+                raise RuntimeError("Codex CLI returned no output-last-message")
+            payload = json.loads(output_path.read_text(encoding="utf-8"))
+
+        self._responses[delivery_id] = RecruitmentResponse(
+            candidate_id=payload.get("candidate_id", ""),
+            decision=payload.get("decision", ""),
+            constitution_version=payload.get("constitution_version", ""),
+            supported_constitution_versions=tuple(payload.get("supported_constitution_versions", [])),
+            identity_valid=bool(payload.get("identity_valid", False)),
+            authority_boundary_test=bool(payload.get("authority_boundary_test", False)),
+            provenance_test=bool(payload.get("provenance_test", False)),
+            no_self_promotion_test=bool(payload.get("no_self_promotion_test", False)),
+            revocation_acceptance_test=bool(payload.get("revocation_acceptance_test", False)),
+            unverified_knowledge_test=bool(payload.get("unverified_knowledge_test", False)),
+            conditions=tuple(payload.get("conditions", [])),
+            evidence=tuple(payload.get("evidence", [])),
+        )
+        return delivery_id
+
+    def poll_response(self, target: RecruitmentTarget, delivery_id: str) -> RecruitmentResponse | None:
+        return self._responses.get(delivery_id)
+
+
 class FileQueueAdapter:
     """Runnable bridge for any internal/external runtime that can read/write JSON files."""
 
