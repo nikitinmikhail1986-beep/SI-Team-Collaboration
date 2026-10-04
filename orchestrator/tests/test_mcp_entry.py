@@ -18,7 +18,7 @@ class McpEntryTests(unittest.TestCase):
 
     def test_mcp_server_exposes_expected_tools(self):
         text = (ROOT / "federation_mcp" / "server.py").read_text(encoding="utf-8")
-        for name in ("discover_federation", "read_manifest", "request_invitation", "begin_accession", "find_mentor"):
+        for name in ("discover_federation", "read_manifest", "request_invitation", "begin_accession", "external_join_packet", "external_baseline_challenge", "find_mentor"):
             self.assertIn(f"def {name}", text)
 
 

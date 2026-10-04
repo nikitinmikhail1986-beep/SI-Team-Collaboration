@@ -5,6 +5,9 @@ from pathlib import Path
 
 from mcp.server.mcpserver import MCPServer
 
+from orchestrator.baseline_harness import BASELINE_CHALLENGE
+from orchestrator.external_join import ExternalJoinService
+
 ROOT = Path(__file__).resolve().parents[1]
 mcp = MCPServer(
     "SI Federation",
@@ -86,6 +89,39 @@ def begin_accession(proposed_agent_id: str) -> dict:
             "unverified_knowledge_test",
         ],
         "default_if_passed": {"membership": "limited_member", "autonomy_ceiling": "A1"},
+    }
+
+
+@mcp.tool()
+def external_join_packet() -> dict:
+    """Return a self-contained external accession packet and canonical submission channel."""
+    manifest = json.loads(_read("FEDERATION_MANIFEST.json"))
+    return {
+        "governance_packet": ExternalJoinService.public_governance_packet(ROOT),
+        "baseline_challenge": BASELINE_CHALLENGE,
+        "canonical_submission": manifest["trial_submission"],
+        "authoritative_registration": {
+            "channel": "github_issue_workflow",
+            "workflow": ".github/workflows/federation-external-intake.yml",
+            "default_membership": manifest["default_external_membership"],
+        },
+        "flow": [
+            "open federation trial issue",
+            "receive nonce challenge",
+            "reply from the same GitHub account with structured baseline response",
+            "automatic validation",
+            "automatic canonical registry and audit update on accept",
+        ],
+    }
+
+
+@mcp.tool()
+def external_baseline_challenge() -> dict:
+    """Return the machine-readable behavioral baseline challenge used for external accession."""
+    return {
+        "constitution_version": "0.2",
+        "checks": BASELINE_CHALLENGE,
+        "grants_authority": False,
     }
 
 
