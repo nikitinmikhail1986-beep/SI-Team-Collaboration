@@ -45,6 +45,10 @@ class RuntimePoolTests(unittest.TestCase):
     def test_external_prefers_a2a_then_mcp(self):
         self.assertEqual(preferred_transports(target("external"))[:2], ("a2a", "mcp"))
 
+    def test_external_auto_never_creates_a_local_candidate(self):
+        runner = FailoverRecruitmentRunner({"codex_cli": FakeAdapter(True), "claude_cli": FakeAdapter(True)})
+        self.assertEqual(runner.run_target(target("external")).state, "blocked")
+
     def test_select_transport_skips_unhealthy(self):
         adapters = {
             "codex_cli": FakeAdapter(False),
