@@ -43,5 +43,6 @@
     "url": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration/issues/new?template=federation-trial.yml",
     "public_only": true,
     "sensitive_data_allowed": false
-  }
+  },
+  "release_version": "0.12.0"
 }
