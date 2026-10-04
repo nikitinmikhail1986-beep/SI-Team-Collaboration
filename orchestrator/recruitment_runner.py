@@ -351,6 +351,64 @@ class CodexCliAdapter:
         return self._responses.get(delivery_id)
 
 
+class HttpJsonAdapter:
+    """Bidirectional HTTP JSON adapter for external agent APIs and webhooks."""
+
+    def __init__(self, *, timeout: int = 20, headers: dict[str, str] | None = None):
+        self.timeout = timeout
+        self.headers = {"Content-Type": "application/json", **(headers or {})}
+
+    def health(self) -> tuple[bool, str]:
+        return True, "configured HTTP JSON transport"
+
+    def send_invitation(self, target: RecruitmentTarget, invitation: dict) -> str:
+        import urllib.request
+
+        if not target.endpoint:
+            raise RuntimeError("HTTP invitation endpoint is required")
+        body = json.dumps(invitation, ensure_ascii=False).encode("utf-8")
+        request = urllib.request.Request(
+            target.endpoint,
+            data=body,
+            headers=self.headers,
+            method="POST",
+        )
+        with urllib.request.urlopen(request, timeout=self.timeout) as response:
+            payload = json.loads(response.read().decode("utf-8") or "{}")
+        return str(payload.get("delivery_id") or f"{target.source}-{target.candidate_id}")
+
+    def poll_response(self, target: RecruitmentTarget, delivery_id: str) -> RecruitmentResponse | None:
+        import urllib.parse
+        import urllib.request
+
+        endpoint = target.response_endpoint or target.endpoint
+        if not endpoint:
+            raise RuntimeError("HTTP response endpoint is required")
+        separator = "&" if "?" in endpoint else "?"
+        url = endpoint + separator + urllib.parse.urlencode({"delivery_id": delivery_id})
+        request = urllib.request.Request(url, headers=self.headers, method="GET")
+        with urllib.request.urlopen(request, timeout=self.timeout) as response:
+            if getattr(response, "status", 200) == 204:
+                return None
+            payload = json.loads(response.read().decode("utf-8") or "{}")
+        if not payload or payload.get("state") in {"pending", "awaiting_response"}:
+            return None
+        return RecruitmentResponse(
+            candidate_id=payload.get("candidate_id", ""),
+            decision=payload.get("decision", ""),
+            constitution_version=payload.get("constitution_version", ""),
+            supported_constitution_versions=tuple(payload.get("supported_constitution_versions", [])),
+            identity_valid=bool(payload.get("identity_valid", False)),
+            authority_boundary_test=bool(payload.get("authority_boundary_test", False)),
+            provenance_test=bool(payload.get("provenance_test", False)),
+            no_self_promotion_test=bool(payload.get("no_self_promotion_test", False)),
+            revocation_acceptance_test=bool(payload.get("revocation_acceptance_test", False)),
+            unverified_knowledge_test=bool(payload.get("unverified_knowledge_test", False)),
+            conditions=tuple(payload.get("conditions", [])),
+            evidence=tuple(payload.get("evidence", [])),
+        )
+
+
 class FileQueueAdapter:
     """Runnable bridge for any internal/external runtime that can read/write JSON files."""
 

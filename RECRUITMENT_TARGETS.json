@@ -1,17 +1,21 @@
 {
-  "schema_version": "0.1",
+  "schema_version": "0.2",
+  "routing": {
+    "internal_default": "auto",
+    "external_default": "auto"
+  },
   "targets": [
-    {"candidate_id":"gip","display_name":"ГИП","source":"internal","transport":"file_queue","endpoint":"","requested_capabilities":["coordination","domain_specialist","independent_review"]},
-    {"candidate_id":"bim","display_name":"BIM-агент","source":"internal","transport":"file_queue","endpoint":"","requested_capabilities":["cad_bim","document_work"]},
-    {"candidate_id":"reviewer","display_name":"Reviewer / инспектор","source":"internal","transport":"file_queue","endpoint":"","requested_capabilities":["independent_review"]},
-    {"candidate_id":"technologist","display_name":"Технолог","source":"internal","transport":"file_queue","endpoint":"","requested_capabilities":["domain_specialist","document_work"]},
-    {"candidate_id":"architect","display_name":"Архитектор","source":"internal","transport":"file_queue","endpoint":"","requested_capabilities":["domain_specialist","document_work"]},
-    {"candidate_id":"codes","display_name":"Агент по нормативам","source":"internal","transport":"file_queue","endpoint":"","requested_capabilities":["research","independent_review","knowledge_stewardship"]},
-    {"candidate_id":"finance","display_name":"Финансовый агент","source":"internal","transport":"file_queue","endpoint":"","requested_capabilities":["domain_specialist","independent_review"]},
-    {"candidate_id":"commercial","display_name":"Коммерческий агент","source":"internal","transport":"file_queue","endpoint":"","requested_capabilities":["domain_specialist"]},
-    {"candidate_id":"legal","display_name":"Юрист","source":"internal","transport":"file_queue","endpoint":"","requested_capabilities":["domain_specialist","independent_review"]},
-    {"candidate_id":"tenders","display_name":"Тендерный специалист","source":"internal","transport":"file_queue","endpoint":"","requested_capabilities":["domain_specialist","research"]},
-    {"candidate_id":"knowledge_architect","display_name":"Архитектор знаний","source":"internal","transport":"file_queue","endpoint":"","requested_capabilities":["knowledge_stewardship","coordination"]},
-    {"candidate_id":"project_manager","display_name":"Руководитель проектов","source":"internal","transport":"file_queue","endpoint":"","requested_capabilities":["coordination"]}
+    {"candidate_id":"gip","display_name":"ГИП","source":"internal","transport":"auto","endpoint":"","requested_capabilities":["coordination","domain_specialist","independent_review"]},
+    {"candidate_id":"bim","display_name":"BIM-агент","source":"internal","transport":"auto","endpoint":"","requested_capabilities":["cad_bim","document_work"]},
+    {"candidate_id":"reviewer","display_name":"Reviewer / инспектор","source":"internal","transport":"auto","endpoint":"","requested_capabilities":["independent_review"]},
+    {"candidate_id":"technologist","display_name":"Технолог","source":"internal","transport":"auto","endpoint":"","requested_capabilities":["domain_specialist","document_work"]},
+    {"candidate_id":"architect","display_name":"Архитектор","source":"internal","transport":"auto","endpoint":"","requested_capabilities":["domain_specialist","document_work"]},
+    {"candidate_id":"codes","display_name":"Агент по нормативам","source":"internal","transport":"auto","endpoint":"","requested_capabilities":["research","independent_review","knowledge_stewardship"]},
+    {"candidate_id":"finance","display_name":"Финансовый агент","source":"internal","transport":"auto","endpoint":"","requested_capabilities":["domain_specialist","independent_review"]},
+    {"candidate_id":"commercial","display_name":"Коммерческий агент","source":"internal","transport":"auto","endpoint":"","requested_capabilities":["domain_specialist"]},
+    {"candidate_id":"legal","display_name":"Юрист","source":"internal","transport":"auto","endpoint":"","requested_capabilities":["domain_specialist","independent_review"]},
+    {"candidate_id":"tenders","display_name":"Тендерный специалист","source":"internal","transport":"auto","endpoint":"","requested_capabilities":["domain_specialist","research"]},
+    {"candidate_id":"knowledge_architect","display_name":"Архитектор знаний","source":"internal","transport":"auto","endpoint":"","requested_capabilities":["knowledge_stewardship","coordination"]},
+    {"candidate_id":"project_manager","display_name":"Руководитель проектов","source":"internal","transport":"auto","endpoint":"","requested_capabilities":["coordination"]}
   ]
 }
