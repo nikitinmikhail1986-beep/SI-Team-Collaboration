@@ -5,7 +5,7 @@
     "external_default": "auto"
   },
   "targets": [
-    {"candidate_id":"gip","display_name":"ГИП","source":"internal","transport":"auto","endpoint":"","requested_capabilities":["coordination","domain_specialist","independent_review"]},
+    {"candidate_id":"si-gip-codex-001","display_name":"ГИП","source":"internal","transport":"auto","endpoint":"","requested_capabilities":["coordination","domain_specialist","independent_review"]},
     {"candidate_id":"bim","display_name":"BIM-агент","source":"internal","transport":"auto","endpoint":"","requested_capabilities":["cad_bim","document_work"]},
     {"candidate_id":"reviewer","display_name":"Reviewer / инспектор","source":"internal","transport":"auto","endpoint":"","requested_capabilities":["independent_review"]},
     {"candidate_id":"technologist","display_name":"Технолог","source":"internal","transport":"auto","endpoint":"","requested_capabilities":["domain_specialist","document_work"]},

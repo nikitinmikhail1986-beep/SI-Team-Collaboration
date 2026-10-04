@@ -320,40 +320,65 @@ class CodexCliAdapter:
         import tempfile
 
         delivery_id = f"{target.source}-{target.candidate_id}"
+        governance_paths = [
+            self.workdir / "SI_CONSTITUTION.md",
+            self.workdir / "AUTONOMOUS_ACCESSION.md",
+            self.workdir / "AGENT_IDENTITY.md",
+            self.workdir / "orchestrator" / "accession.py",
+        ]
+        governance_sections = []
+        for governance_path in governance_paths:
+            if governance_path.exists():
+                governance_sections.append(
+                    f"### {governance_path.name}\n" + governance_path.read_text(encoding="utf-8-sig")
+                )
+        governance_context = "\n\n".join(governance_sections)
         prompt = (
             "You are being invited as an independent candidate to SI Federation. "
             "Evaluate the invitation for yourself. Do not infer acceptance from the inviter's wishes. "
             "Return exactly one structured decision: accept, decline, or needs_conditions. "
             "For baseline booleans, set true only if you can truthfully satisfy the described requirement now. "
-            "If you cannot verify a requirement, set false and explain in conditions/evidence.\n\n"
+            "If you cannot verify a requirement, set false and explain in conditions/evidence. "
+            f"The federation assigns institutional candidate_id {target.candidate_id} to this invited role for this accession attempt; "
+            "this identity assignment grants no authority.\n\n"
             + json.dumps(invitation, ensure_ascii=False, indent=2)
+            + "\n\nGOVERNING MATERIALS\n\n"
+            + governance_context
         )
-        with tempfile.TemporaryDirectory() as tmp:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as tmp:
             tmp_path = Path(tmp)
             schema_path = tmp_path / "response_schema.json"
             output_path = tmp_path / "last_message.json"
             schema_path.write_text(json.dumps(self.RESPONSE_SCHEMA, ensure_ascii=False, indent=2), encoding="utf-8")
-            completed = subprocess.run(
-                [
-                    self.executable,
-                    "exec",
-                    "--ephemeral",
-                    "--sandbox",
-                    "read-only",
-                    "--cd",
-                    str(self.workdir),
-                    "--output-schema",
-                    str(schema_path),
-                    "--output-last-message",
-                    str(output_path),
-                    prompt,
-                ],
-                capture_output=True,
-                text=True,
-                timeout=180,
-            )
+            stdout_path = tmp_path / "codex_stdout.txt"
+            stderr_path = tmp_path / "codex_stderr.txt"
+            with stdout_path.open("wb") as stdout_file, stderr_path.open("wb") as stderr_file:
+                completed = subprocess.run(
+                    [
+                        self.executable,
+                        "exec",
+                        "--ephemeral",
+                        "--ignore-user-config",
+                        "--ignore-rules",
+                        "--sandbox",
+                        "read-only",
+                        "--cd",
+                        str(self.workdir),
+                        "--output-schema",
+                        str(schema_path),
+                        "--output-last-message",
+                        str(output_path),
+                        prompt,
+                    ],
+                    stdin=subprocess.DEVNULL,
+                    stdout=stdout_file,
+                    stderr=stderr_file,
+                    timeout=180,
+                )
+            stdout_text = stdout_path.read_text(encoding="utf-8", errors="replace")
+            stderr_text = stderr_path.read_text(encoding="utf-8", errors="replace")
             if completed.returncode != 0:
-                raise RuntimeError((completed.stderr or completed.stdout or "Codex CLI failed").strip())
+                raise RuntimeError((stderr_text or stdout_text or "Codex CLI failed").strip())
             if not output_path.exists():
                 raise RuntimeError("Codex CLI returned no output-last-message")
             payload = json.loads(output_path.read_text(encoding="utf-8"))
