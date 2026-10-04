@@ -409,6 +409,37 @@ class HttpJsonAdapter:
         )
 
 
+class A2AHttpAdapter(HttpJsonAdapter):
+    """A2A-oriented adapter using an Agent Card plus HTTP JSON task exchange."""
+
+    def health(self) -> tuple[bool, str]:
+        return True, "configured A2A-over-HTTP transport"
+
+    def send_invitation(self, target: RecruitmentTarget, invitation: dict) -> str:
+        payload = {
+            "protocol": "a2a",
+            "kind": "federation_invitation",
+            "agent_card": "A2A_AGENT_CARD.json",
+            "message": invitation,
+        }
+        return super().send_invitation(target, payload)
+
+
+class McpHttpAdapter(HttpJsonAdapter):
+    """MCP-oriented adapter over an HTTP JSON gateway exposing invite/response endpoints."""
+
+    def health(self) -> tuple[bool, str]:
+        return True, "configured MCP-over-HTTP gateway"
+
+    def send_invitation(self, target: RecruitmentTarget, invitation: dict) -> str:
+        payload = {
+            "protocol": "mcp",
+            "tool": "federation_invite",
+            "arguments": invitation,
+        }
+        return super().send_invitation(target, payload)
+
+
 class FileQueueAdapter:
     """Runnable bridge for any internal/external runtime that can read/write JSON files."""
 
