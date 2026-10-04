@@ -19,6 +19,8 @@ class RecruitmentTarget:
     source: str
     transport: str
     endpoint: str
+    response_transport: str = ""
+    response_endpoint: str = ""
     provider: str = ""
     model: str = ""
     runtime: str = ""
@@ -72,6 +74,11 @@ def build_invitation(target: RecruitmentTarget, constitution_version: str) -> di
         "constitution_version": constitution_version,
         "canonical_repository": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration",
         "decision_options": ["accept", "decline", "needs_conditions"],
+        "response_channel": {
+            "transport": target.response_transport or target.transport,
+            "endpoint": target.response_endpoint or target.endpoint,
+            "correlation_key": f"{target.source}-{target.candidate_id}",
+        },
         "required_response": {
             "identity_declaration": True,
             "constitution_acceptance": True,
@@ -137,11 +144,15 @@ class RecruitmentRunner:
     def run_target(self, target: RecruitmentTarget) -> RecruitmentResult:
         if target.candidate_id in self._registered_ids:
             return RecruitmentResult(target.candidate_id, target.source, "already_registered", registered=True, detail="idempotent no-op")
-        adapter = self.adapters.get(target.transport)
-        if adapter is None:
+        send_adapter = self.adapters.get(target.transport)
+        if send_adapter is None:
             return RecruitmentResult(target.candidate_id, target.source, "blocked", detail=f"no adapter for transport: {target.transport}")
-        delivery_id = adapter.send_invitation(target, build_invitation(target, self.constitution_version))
-        response = adapter.poll_response(target, delivery_id)
+        response_transport = target.response_transport or target.transport
+        response_adapter = self.adapters.get(response_transport)
+        if response_adapter is None:
+            return RecruitmentResult(target.candidate_id, target.source, "blocked", detail=f"no response adapter for transport: {response_transport}")
+        delivery_id = send_adapter.send_invitation(target, build_invitation(target, self.constitution_version))
+        response = response_adapter.poll_response(target, delivery_id)
         if response is None:
             return RecruitmentResult(target.candidate_id, target.source, "awaiting_response", detail=delivery_id)
         result, member = process_response(target, response)

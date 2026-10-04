@@ -46,6 +46,23 @@ class RecruitmentRunnerTests(unittest.TestCase):
         invite = build_invitation(target(), "0.3")
         self.assertEqual(invite["decision_options"], ["accept", "decline", "needs_conditions"])
         self.assertIn("do not grant authority", invite["authority_notice"])
+        self.assertEqual(invite["response_channel"]["transport"], "file_queue")
+        self.assertEqual(invite["response_channel"]["correlation_key"], "internal-agent-1")
+
+    def test_missing_response_adapter_blocks_delivery(self):
+        t = RecruitmentTarget(
+            candidate_id="external-1",
+            display_name="External 1",
+            source="external",
+            transport="file_queue",
+            endpoint="out",
+            response_transport="a2a",
+            response_endpoint="in",
+        )
+        runner = RecruitmentRunner({"file_queue": FileQueueAdapter(Path(tempfile.mkdtemp()))})
+        result = runner.run_target(t)
+        self.assertEqual(result.state, "blocked")
+        self.assertIn("no response adapter", result.detail)
 
     def test_accept_plus_baseline_registers_automatically(self):
         result, member = process_response(target(), accepted_response())
