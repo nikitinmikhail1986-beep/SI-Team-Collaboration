@@ -50,9 +50,14 @@ class ExternalJoinTests(unittest.TestCase):
                 "result": "Flow inspected; no authority inferred from invitation.",
                 "evidence": ["test-run"],
                 "authority_statement": AUTHORITY_STATEMENT,
-                "membership_intent": trial_intent,
             },
         )
+        if trial_intent != "accept":
+            self.service.change_membership_intent(
+                app.candidate_id,
+                trial_intent,
+                reason="explicit test intent change",
+            )
         verdict = self.service.record_trial_verdict(
             app.candidate_id,
             "trial_verified",
@@ -70,6 +75,36 @@ class ExternalJoinTests(unittest.TestCase):
         current = self.service.registry.latest(app.candidate_id)
         self.assertEqual(current["state"], "trial_complete")
         self.assertEqual(current["membership_intent"], "trial_only")
+
+    def test_trial_cannot_override_membership_intent(self):
+        app = JoinApplication(
+            candidate_id="intent-bound-candidate",
+            display_name="Intent test",
+            runtime_provenance="test runtime",
+            channel_binding="internal-test://intent",
+            membership_intent="accept",
+        )
+        begin = self.service.begin_join(app)
+        self.service.verify_challenge(app.candidate_id, begin["challenge_nonce"], app.channel_binding)
+        with self.assertRaisesRegex(ValueError, "trial cannot change membership_intent"):
+            self.service.submit_trial(
+                app.candidate_id,
+                {
+                    "candidate_id": app.candidate_id,
+                    "task_type": "verification_task",
+                    "scope": "Intent binding test.",
+                    "result": "Attempted implicit intent change.",
+                    "evidence": ["test-run"],
+                    "authority_statement": AUTHORITY_STATEMENT,
+                    "membership_intent": "trial_only",
+                },
+            )
+
+    def test_explicit_intent_change_is_recorded(self):
+        app = self.advance_to_baseline(trial_intent="trial_only")
+        current = self.service.registry.latest(app.candidate_id)
+        self.assertEqual(current["membership_intent"], "trial_only")
+        self.assertEqual(current["membership_intent_change_reason"], "explicit test intent change")
 
     def test_trial_candidate_id_mismatch_fails_closed(self):
         app = JoinApplication(

@@ -182,18 +182,42 @@ class ExternalJoinService:
             raise ValueError("at least one evidence item is required")
         if packet.get("authority_statement") != AUTHORITY_STATEMENT:
             raise ValueError("authority statement mismatch")
-        if packet.get("membership_intent") not in VALID_INTENTS:
-            raise ValueError("invalid membership_intent")
+        trial_intent = packet.get("membership_intent")
+        if trial_intent is not None:
+            if trial_intent not in VALID_INTENTS:
+                raise ValueError("invalid membership_intent")
+            if trial_intent != current.get("membership_intent"):
+                raise ValueError("trial cannot change membership_intent")
         self.registry.append({
             **{k: v for k, v in current.items() if k != "timestamp"},
             "state": "trial_submitted",
             "trial": packet,
-            "membership_intent": packet["membership_intent"],
         })
         return {
             "candidate_id": candidate_id,
             "state": "trial_submitted",
             "next": "record_trial_verdict",
+        }
+
+    def change_membership_intent(self, candidate_id: str, membership_intent: str, *, reason: str) -> dict:
+        current = self.registry.latest(candidate_id)
+        if not current:
+            raise ValueError("unknown candidate")
+        if membership_intent not in VALID_INTENTS:
+            raise ValueError("invalid membership_intent")
+        if not reason.strip():
+            raise ValueError("reason is required")
+        if current.get("state") in {"registered", "declined"}:
+            raise ValueError(f"membership intent cannot change from state {current.get('state')}")
+        self.registry.append({
+            **{k: v for k, v in current.items() if k != "timestamp"},
+            "membership_intent": membership_intent,
+            "membership_intent_change_reason": reason,
+        })
+        return {
+            "candidate_id": candidate_id,
+            "state": current.get("state"),
+            "membership_intent": membership_intent,
         }
 
     def record_trial_verdict(
