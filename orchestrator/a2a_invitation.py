@@ -96,6 +96,23 @@ def choose_invitation_skill(
         text = _skill_text(skill)
         score = sum(2 for term in SKILL_HINTS if term in text)
         score += sum(3 for term in requested_terms if term in text)
+        skill_key = skill_id.lower()
+        collaboration_request = any(
+            term in requested_terms
+            for term in ("agent", "handoff", "collaboration", "interop", "federation")
+        )
+        if collaboration_request and "handoff" in skill_key:
+            score += 12
+        if collaboration_request and ("onboard" in skill_key or "partner" in skill_key):
+            score += 12
+        if collaboration_request and "capability" in skill_key:
+            score += 8
+        if collaboration_request and ("collabor" in text or "interop" in text):
+            score += 6
+        if collaboration_request and (
+            "evidence" in skill_key or "commerce" in skill_key or "purchase" in text
+        ):
+            score -= 6
         candidate = (score, skill_id)
         if score > 0 and (best is None or candidate > best):
             best = candidate
