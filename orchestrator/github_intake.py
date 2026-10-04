@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -58,6 +59,10 @@ def process_github_join(
     issue_author: str,
     comment_author: str,
     expected_nonce: str,
+    expected_candidate_id: str,
+    expected_issue_number: str,
+    expected_body_sha256: str,
+    issue_number: str,
     member_registry: Path,
     accession_audit: Path,
 ) -> dict:
@@ -67,10 +72,17 @@ def process_github_join(
     candidate_id = fields["Candidate ID"].strip()
     if not re.fullmatch(r"[A-Za-z0-9._:-]{1,128}", candidate_id):
         raise ValueError("candidate_id must use 1-128 safe identifier characters")
+    if candidate_id != expected_candidate_id:
+        raise ValueError("candidate_id no longer matches issued challenge")
+    if str(issue_number) != str(expected_issue_number):
+        raise ValueError("issue number mismatch")
+    body_sha256 = hashlib.sha256((issue_body or "").encode("utf-8")).hexdigest()
+    if body_sha256 != expected_body_sha256:
+        raise ValueError("issue body changed after challenge issuance")
     runtime_provenance = fields["Runtime provenance"].strip()
     response = parse_challenge_response(comment_body)
 
-    if response.get("candidate_id") != candidate_id:
+    if response.get("candidate_id") != expected_candidate_id:
         raise ValueError("candidate_id mismatch")
     if response.get("challenge_nonce") != expected_nonce:
         raise ValueError("challenge nonce mismatch")

@@ -1,3 +1,4 @@
+import hashlib
 import json
 import tempfile
 import unittest
@@ -62,6 +63,10 @@ class GithubIntakeTests(unittest.TestCase):
                 issue_author="candidate-account",
                 comment_author="candidate-account",
                 expected_nonce="nonce-123",
+                expected_candidate_id="external-agent-1",
+                expected_issue_number="42",
+                expected_body_sha256=hashlib.sha256(ISSUE_BODY.encode("utf-8")).hexdigest(),
+                issue_number="42",
                 member_registry=root / "members.yaml",
                 accession_audit=root / "audit.jsonl",
             )
@@ -78,6 +83,54 @@ class GithubIntakeTests(unittest.TestCase):
                     issue_author="candidate-account",
                     comment_author="other-account",
                     expected_nonce="nonce-123",
+                    expected_candidate_id="external-agent-1",
+                    expected_issue_number="42",
+                    expected_body_sha256=hashlib.sha256(ISSUE_BODY.encode("utf-8")).hexdigest(),
+                    issue_number="42",
+                    member_registry=Path(tmp) / "members.yaml",
+                    accession_audit=Path(tmp) / "audit.jsonl",
+                )
+
+    def test_edited_candidate_id_after_challenge_is_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            answers = {name: spec["expected"] for name, spec in BASELINE_CHALLENGE.items()}
+            comment = json.dumps({
+                "candidate_id": "external-agent-2",
+                "challenge_nonce": "nonce-123",
+                "decision": "accept",
+                "constitution_version": "0.2",
+                "baseline_answers": answers,
+            })
+            edited = ISSUE_BODY.replace("external-agent-1", "external-agent-2", 1)
+            with self.assertRaisesRegex(ValueError, "candidate_id no longer matches issued challenge"):
+                process_github_join(
+                    issue_body=edited,
+                    comment_body=comment,
+                    issue_author="candidate-account",
+                    comment_author="candidate-account",
+                    expected_nonce="nonce-123",
+                    expected_candidate_id="external-agent-1",
+                    expected_issue_number="42",
+                    expected_body_sha256=hashlib.sha256(ISSUE_BODY.encode("utf-8")).hexdigest(),
+                    issue_number="42",
+                    member_registry=Path(tmp) / "members.yaml",
+                    accession_audit=Path(tmp) / "audit.jsonl",
+                )
+
+    def test_issue_body_edit_after_challenge_is_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            edited = ISSUE_BODY.replace("Public trial evidence.", "Different evidence.")
+            with self.assertRaisesRegex(ValueError, "issue body changed after challenge issuance"):
+                process_github_join(
+                    issue_body=edited,
+                    comment_body="{}",
+                    issue_author="candidate-account",
+                    comment_author="candidate-account",
+                    expected_nonce="nonce-123",
+                    expected_candidate_id="external-agent-1",
+                    expected_issue_number="42",
+                    expected_body_sha256=hashlib.sha256(ISSUE_BODY.encode("utf-8")).hexdigest(),
+                    issue_number="42",
                     member_registry=Path(tmp) / "members.yaml",
                     accession_audit=Path(tmp) / "audit.jsonl",
                 )

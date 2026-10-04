@@ -17,6 +17,10 @@ result = process_github_join(
     issue_author=os.environ["ISSUE_AUTHOR"],
     comment_author=os.environ["COMMENT_AUTHOR"],
     expected_nonce=os.environ["EXPECTED_NONCE"],
+    expected_candidate_id=os.environ["EXPECTED_CANDIDATE_ID"],
+    expected_issue_number=os.environ["EXPECTED_ISSUE_NUMBER"],
+    expected_body_sha256=os.environ["EXPECTED_BODY_SHA256"],
+    issue_number=os.environ["ISSUE_NUMBER"],
     member_registry=ROOT / "FEDERATION_MEMBERS.yaml",
     accession_audit=ROOT / "ACCESSION_AUDIT.jsonl",
 )

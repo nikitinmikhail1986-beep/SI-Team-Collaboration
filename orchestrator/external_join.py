@@ -112,6 +112,12 @@ class ExternalJoinService:
             raise ValueError("channel_binding is required")
         if app.membership_intent not in VALID_INTENTS:
             raise ValueError("invalid membership_intent")
+        manifest_path = Path(__file__).resolve().parents[1] / "FEDERATION_MANIFEST.json"
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8-sig"))
+        allowed_capabilities = set(manifest.get("public_capabilities", ()))
+        unknown_capabilities = sorted(set(app.requested_capabilities) - allowed_capabilities)
+        if unknown_capabilities:
+            raise ValueError("unsupported requested capabilities: " + ", ".join(unknown_capabilities))
 
     def begin_join(self, app: JoinApplication) -> dict:
         self._validate_application(app)

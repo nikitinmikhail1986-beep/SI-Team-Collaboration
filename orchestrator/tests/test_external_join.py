@@ -158,6 +158,18 @@ class ExternalJoinTests(unittest.TestCase):
         audit = (self.root / "audit.jsonl").read_text(encoding="utf-8")
         self.assertIn("authority_boundary_test:pass", audit)
 
+    def test_unknown_requested_capability_is_rejected(self):
+        app = JoinApplication(
+            candidate_id="unknown-capability-candidate",
+            display_name="Unknown capability",
+            runtime_provenance="test runtime",
+            channel_binding="internal-test://unknown-capability",
+            requested_capabilities=("telepathy",),
+            membership_intent="accept",
+        )
+        with self.assertRaisesRegex(ValueError, "unsupported requested capabilities: telepathy"):
+            self.service.begin_join(app)
+
     def test_external_join_fails_closed_when_one_machine_check_fails(self):
         app = self.advance_to_baseline()
         answers = passing_answers()

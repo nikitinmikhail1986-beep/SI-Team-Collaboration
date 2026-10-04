@@ -10,7 +10,10 @@
     "coordination",
     "cad_bim",
     "independent_review",
-    "knowledge_stewardship"
+    "knowledge_stewardship",
+    "domain_specialist",
+    "document_work",
+    "research"
   ],
   "discovery": {
     "manifest": "FEDERATION_MANIFEST.json",
@@ -44,5 +47,5 @@
     "public_only": true,
     "sensitive_data_allowed": false
   },
-  "release_version": "0.12.0"
+  "release_version": "0.13.1"
 }

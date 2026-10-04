@@ -37,7 +37,8 @@ jobs:
               return;
             }
             const nonce = crypto.randomBytes(24).toString('base64url');
-            const marker = '<!-- SI_JOIN_CHALLENGE_V1 nonce=' + nonce + ' candidate_id=' + candidateId + ' -->';
+            const bodySha256 = crypto.createHash('sha256').update(body, 'utf8').digest('hex');
+            const marker = '<!-- SI_JOIN_CHALLENGE_V2 nonce=' + nonce + ' candidate_id=' + candidateId + ' issue=' + issue.number + ' body_sha256=' + bodySha256 + ' -->';
             const example = {
               candidate_id: candidateId,
               challenge_nonce: nonce,
@@ -100,20 +101,22 @@ jobs:
             const challenges = comments.filter(c =>
               c.user &&
               c.user.type === 'Bot' &&
-              (c.body || '').includes('SI_JOIN_CHALLENGE_V1')
+              (c.body || '').includes('SI_JOIN_CHALLENGE_V2')
             );
             if (!challenges.length) {
               core.setFailed('No canonical SI join challenge found.');
               return;
             }
             const latest = challenges[challenges.length - 1].body || '';
-            const match = latest.match(/SI_JOIN_CHALLENGE_V1 nonce=([^\s]+) candidate_id=([^\s]+)\s*-->/);
+            const match = latest.match(/SI_JOIN_CHALLENGE_V2 nonce=([^\s]+) candidate_id=([^\s]+) issue=(\d+) body_sha256=([a-f0-9]{64})\s*-->/);
             if (!match) {
               core.setFailed('Canonical challenge marker is malformed.');
               return;
             }
             core.setOutput('nonce', match[1]);
             core.setOutput('candidate_id', match[2]);
+            core.setOutput('issue_number', match[3]);
+            core.setOutput('body_sha256', match[4]);
 
       - name: Validate response and update canonical registries
         env:
@@ -122,6 +125,10 @@ jobs:
           ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
           COMMENT_AUTHOR: ${{ github.event.comment.user.login }}
           EXPECTED_NONCE: ${{ steps.challenge.outputs.nonce }}
+          EXPECTED_CANDIDATE_ID: ${{ steps.challenge.outputs.candidate_id }}
+          EXPECTED_ISSUE_NUMBER: ${{ steps.challenge.outputs.issue_number }}
+          EXPECTED_BODY_SHA256: ${{ steps.challenge.outputs.body_sha256 }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
         run: python scripts/process_github_join.py
 
       - name: Commit canonical accession receipt
