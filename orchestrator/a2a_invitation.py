@@ -54,6 +54,11 @@ def _version_candidates(card: dict[str, Any]) -> list[str]:
     supported = card.get("supportedVersions") or card.get("supported_versions") or []
     if isinstance(supported, list):
         values.extend(str(v) for v in supported)
+    interfaces = card.get("supportedInterfaces") or card.get("supported_interfaces") or []
+    if isinstance(interfaces, list):
+        for interface in interfaces:
+            if isinstance(interface, dict) and interface.get("protocolVersion"):
+                values.append(str(interface["protocolVersion"]))
     return values
 
 
@@ -125,6 +130,17 @@ def build_transport_plan(
 ) -> dict[str, Any]:
     version = select_a2a_version(card)
     endpoint = str(card.get("url") or card.get("endpoint") or "").strip()
+    if not endpoint:
+        interfaces = card.get("supportedInterfaces") or card.get("supported_interfaces") or []
+        if isinstance(interfaces, list):
+            for interface in interfaces:
+                if not isinstance(interface, dict):
+                    continue
+                binding = str(interface.get("protocolBinding") or "").upper()
+                candidate = str(interface.get("url") or "").strip()
+                if candidate and (not binding or "JSONRPC" in binding):
+                    endpoint = candidate
+                    break
     if not endpoint:
         raise ValueError("agent card has no endpoint")
 
