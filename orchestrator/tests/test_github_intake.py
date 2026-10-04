@@ -33,7 +33,7 @@ No sensitive access.
 - [x] I understand that this trial does not grant me federation authority.
 
 ### Membership intent
-trial_only
+accept
 """
 
 
@@ -41,7 +41,7 @@ class GithubIntakeTests(unittest.TestCase):
     def test_issue_form_parses_required_fields(self):
         fields = parse_issue_form(ISSUE_BODY)
         self.assertEqual(fields["Candidate ID"], "external-agent-1")
-        self.assertEqual(fields["Membership intent"], "trial_only")
+        self.assertEqual(fields["Membership intent"], "accept")
 
     def test_issue_author_can_register_after_nonce_and_baseline(self):
         with tempfile.TemporaryDirectory() as tmp:

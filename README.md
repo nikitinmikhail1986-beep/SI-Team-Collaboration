@@ -64,3 +64,24 @@ Version 0.12 adds a public A2A discovery card and Federation Open Trial on top o
 The executable router does not imply that external agents are connected. Runtime adapters must verify availability and permissions before dispatch.
 
 This repository contains public operating principles and code. Keep private vault notes, credentials and machine configuration in their existing authorized locations.
+
+### GitHub intake recovery and observable recruitment
+
+The external intake workflow handles opened/labeled/reopened trials, author responses,
+and a scheduled reconciliation every 15 minutes (GitHub scheduling can be delayed).
+A trial without a label can enter using the `[Federation Trial]` title prefix.
+Only `accept` intent advances to accession; `trial_only`, decline and conditional
+intent do not register membership. Existing identifiers cannot be claimed by a new
+GitHub account. Retries do not duplicate member or successful audit records.
+
+Each intake run uploads its pending states and recruitment status as an artifact.
+Run `python -m scripts.recruitment_status` to inspect the current canonical evidence.
+No configured external target means no outbound recruitment is running. External
+`auto` routing never creates a local Codex/Claude candidate as a substitute.
+
+`Federation Live Intake Smoke` creates and closes a clearly marked scripted test
+issue, exercises real GitHub challenge/response APIs, writes an isolated registry,
+and commits only a test receipt under `EVALS/receipts/`. It does not admit a fixture
+as an agent or count it as external recruitment. GitHub author binding and behavioral
+choices do not independently certify provider identity, task quality, competence,
+or continued runtime availability.

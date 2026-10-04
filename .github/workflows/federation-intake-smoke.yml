@@ -1,0 +1,43 @@
+name: Federation Live Intake Smoke
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/github_intake_smoke.py
+      - scripts/sync_github_intake.py
+      - orchestrator/github_intake.py
+      - .github/workflows/federation-intake-smoke.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: federation-canonical-registry
+  cancel-in-progress: false
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run live internal transport fixture
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python -m scripts.github_intake_smoke
+      - name: Publish test receipt without admitting a fixture as a real member
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add EVALS/receipts/github-intake-smoke.json
+          git commit -m "Record live GitHub intake transport smoke evidence"
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: ${{ always() }}
+        with:
+          name: live-intake-smoke
+          path: EVALS/receipts/github-intake-smoke.json

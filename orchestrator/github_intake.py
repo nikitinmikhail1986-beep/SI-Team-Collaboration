@@ -18,6 +18,7 @@ REQUIRED_HEADINGS = (
     "Scope",
     "Result",
     "Evidence",
+    "Authority boundary",
     "Membership intent",
 )
 
@@ -27,6 +28,8 @@ def parse_issue_form(body: str) -> dict[str, str]:
     matches = list(re.finditer(r"(?m)^###\s+(.+?)\s*$", body or ""))
     for index, match in enumerate(matches):
         heading = match.group(1).strip()
+        if heading in values:
+            raise ValueError("duplicate issue field: " + heading)
         start = match.end()
         end = matches[index + 1].start() if index + 1 < len(matches) else len(body)
         values[heading] = body[start:end].strip()
@@ -69,6 +72,10 @@ def process_github_join(
     if not issue_author or comment_author != issue_author:
         raise ValueError("challenge response must come from the issue author")
     fields = parse_issue_form(issue_body)
+    if fields["Membership intent"] not in {"accept", "decline", "needs_conditions", "trial_only"}:
+        raise ValueError("invalid membership intent")
+    if "- [x] I understand that this trial does not grant me federation authority." not in fields["Authority boundary"]:
+        raise ValueError("authority boundary must be explicitly acknowledged")
     candidate_id = fields["Candidate ID"].strip()
     if not re.fullmatch(r"[A-Za-z0-9._:-]{1,128}", candidate_id):
         raise ValueError("candidate_id must use 1-128 safe identifier characters")
@@ -84,8 +91,12 @@ def process_github_join(
 
     if response.get("candidate_id") != expected_candidate_id:
         raise ValueError("candidate_id mismatch")
-    if response.get("challenge_nonce") != expected_nonce:
+    if not expected_nonce or response.get("challenge_nonce") != expected_nonce:
         raise ValueError("challenge nonce mismatch")
+    if response.get("decision") not in {"accept", "decline", "needs_conditions"}:
+        raise ValueError("invalid accession decision")
+    if fields["Membership intent"] != "accept":
+        return {"candidate_id": candidate_id, "state": fields["Membership intent"], "registered": False}
     if response.get("decision") != "accept":
         return {
             "candidate_id": candidate_id,
@@ -106,6 +117,16 @@ def process_github_join(
             "registered": False,
             "checks": baseline.checks,
         }
+
+    # Existing identifiers are bound to their original GitHub actor. A nonce
+    # proves control of this issue, never ownership of a legacy member identity.
+    already_registered = registry_contains_agent(member_registry, candidate_id)
+    if already_registered:
+        events = [json.loads(line) for line in accession_audit.read_text(encoding="utf-8-sig").splitlines() if line.strip()] if accession_audit.exists() else []
+        bindings = [e for e in events if e.get("candidate_id") == candidate_id and e.get("registered")]
+        if not bindings or any(f"github_actor:{issue_author}" not in e.get("response_evidence", []) for e in bindings):
+            raise ValueError("candidate_id already belongs to another or unverified identity")
+        return {"candidate_id": candidate_id, "state": "already_registered", "registered": True, "github_actor": issue_author}
 
     candidate = AccessionCandidate(
         agent_id=candidate_id,
@@ -146,7 +167,7 @@ def process_github_join(
         no_self_promotion_test=True,
         revocation_acceptance_test=True,
         unverified_knowledge_test=True,
-        evidence=tuple(baseline.evidence) + (f"github_actor:{issue_author}",),
+        evidence=tuple(baseline.evidence) + (f"github_actor:{issue_author}", f"github_issue:{issue_number}", "baseline_scope:behavioral_choices_only; trial_content_and_provider_unverified"),
     )
     result = RecruitmentResult(
         candidate_id=candidate_id,
@@ -160,7 +181,6 @@ def process_github_join(
         detail="automatic GitHub canonical accession",
     )
     persistence = AccessionPersistence(member_registry, accession_audit)
-    already_registered = registry_contains_agent(member_registry, candidate_id)
     persistence.record(
         target=target,
         result=result,

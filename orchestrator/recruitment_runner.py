@@ -572,6 +572,8 @@ def load_targets(path: Path) -> list[RecruitmentTarget]:
             source=item.get("source", "external"),
             transport=item["transport"],
             endpoint=item.get("endpoint", ""),
+            response_transport=item.get("response_transport", ""),
+            response_endpoint=item.get("response_endpoint", ""),
             provider=item.get("provider", ""),
             model=item.get("model", ""),
             runtime=item.get("runtime", ""),

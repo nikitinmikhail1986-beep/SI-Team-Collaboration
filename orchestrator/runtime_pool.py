@@ -37,8 +37,6 @@ DEFAULT_INTERNAL_ROUTE = (
 DEFAULT_EXTERNAL_ROUTE = (
     "a2a",
     "mcp",
-    "codex_cli",
-    "claude_cli",
     "file_queue",
 )
 
