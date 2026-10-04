@@ -212,11 +212,12 @@ class ExternalJoinService:
         if not verifier_id.strip():
             raise ValueError("verifier_id is required")
         trial_intent = current.get("membership_intent")
-        next_state = (
-            "baseline_challenge"
-            if verdict == "trial_verified" and trial_intent in {"accept", "trial_only"}
-            else verdict
-        )
+        if verdict == "trial_verified" and trial_intent == "accept":
+            next_state = "baseline_challenge"
+        elif verdict == "trial_verified" and trial_intent == "trial_only":
+            next_state = "trial_complete"
+        else:
+            next_state = verdict
         self.registry.append({
             **{k: v for k, v in current.items() if k != "timestamp"},
             "state": next_state,

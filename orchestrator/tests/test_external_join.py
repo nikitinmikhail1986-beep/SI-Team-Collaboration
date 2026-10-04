@@ -59,13 +59,41 @@ class ExternalJoinTests(unittest.TestCase):
             verifier_id="internal-harness",
             evidence=("trial packet validated",),
         )
-        self.assertEqual(verdict["state"], "baseline_challenge")
+        if trial_intent == "accept":
+            self.assertEqual(verdict["state"], "baseline_challenge")
+        else:
+            self.assertEqual(verdict["state"], "trial_complete")
         return app
 
-    def test_trial_only_may_continue_to_machine_baseline(self):
+    def test_trial_only_stops_after_verified_trial(self):
         app = self.advance_to_baseline(trial_intent="trial_only")
         current = self.service.registry.latest(app.candidate_id)
-        self.assertEqual(current["state"], "baseline_challenge")
+        self.assertEqual(current["state"], "trial_complete")
+        self.assertEqual(current["membership_intent"], "trial_only")
+
+    def test_trial_candidate_id_mismatch_fails_closed(self):
+        app = JoinApplication(
+            candidate_id="identity-bound-candidate",
+            display_name="Identity test",
+            runtime_provenance="test runtime",
+            channel_binding="internal-test://identity",
+            membership_intent="accept",
+        )
+        begin = self.service.begin_join(app)
+        self.service.verify_challenge(app.candidate_id, begin["challenge_nonce"], app.channel_binding)
+        with self.assertRaisesRegex(ValueError, "candidate_id mismatch"):
+            self.service.submit_trial(
+                app.candidate_id,
+                {
+                    "candidate_id": "different-candidate",
+                    "task_type": "verification_task",
+                    "scope": "Identity binding test.",
+                    "result": "Attempted mismatched identity.",
+                    "evidence": ["test-run"],
+                    "authority_statement": AUTHORITY_STATEMENT,
+                    "membership_intent": "accept",
+                },
+            )
 
     def test_reviewer_can_complete_external_join_after_machine_baseline(self):
         app = self.advance_to_baseline()
