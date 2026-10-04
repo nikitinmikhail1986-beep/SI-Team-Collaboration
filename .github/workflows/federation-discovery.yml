@@ -1,0 +1,24 @@
+name: Federation External Discovery
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Discover public external agents
+        run: python -m scripts.discover_external_agents
+      - uses: actions/upload-artifact@v4
+        with:
+          name: external-agent-discovery
+          path: EXTERNAL_CANDIDATES_DISCOVERY.json
