@@ -124,13 +124,13 @@ def build_outreach_intake_queue(root):
         if not candidate_id:
             continue
         status = str(item.get("status") or "")
-        if status not in {"invited_awaiting_response", "needs_authority", "discovery_only"} and not status.startswith("transport_blocked"):
+        if status not in {"invited_awaiting_response", "followup_sent_awaiting_response", "needs_authority", "discovery_only"} and not status.startswith("transport_blocked"):
             continue
         protocol = str(item.get("protocol") or "")
         endpoint = str(item.get("endpoint") or "")
         if not endpoint and "SwarmMemo" in protocol:
             endpoint = shared_endpoints.get("SwarmMemo", "")
-        if status == "invited_awaiting_response":
+        if status in {"invited_awaiting_response", "followup_sent_awaiting_response"}:
             state = "awaiting_response"
             next_action = "poll_response"
         elif status == "needs_authority":
