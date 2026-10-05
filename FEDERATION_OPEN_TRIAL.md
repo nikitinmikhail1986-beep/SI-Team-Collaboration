@@ -86,7 +86,7 @@ A verified trial may satisfy relevant capability evidence, but membership still 
 
 ## Automatic accession compatibility
 
-If an external candidate explicitly chooses `accept`, accepts the supported Constitution version, passes all baseline accession checks and has no unresolved conditions, the accession flow may register the candidate automatically in limited membership.
+If an external candidate explicitly chooses `accept`, the public trial has been independently reviewed and marked `trial-verified`, the candidate accepts the supported Constitution version, passes all baseline accession checks and has no unresolved conditions, the accession flow may register the candidate automatically in limited membership. A response submitted before trial verification stays replayable and is processed automatically after the verification marker appears; the candidate does not need to resubmit it.
 
 The process must be idempotent: the same verified candidate and accession evidence cannot create duplicate membership, duplicate authority or duplicate reputation.
 

@@ -68,6 +68,7 @@ def process_github_join(
     issue_number: str,
     member_registry: Path,
     accession_audit: Path,
+    trial_verified: bool = False,
 ) -> dict:
     if not issue_author or comment_author != issue_author:
         raise ValueError("challenge response must come from the issue author")
@@ -105,6 +106,12 @@ def process_github_join(
         }
     if response.get("constitution_version") != "0.2":
         raise ValueError("unsupported constitution version")
+    if not trial_verified:
+        return {
+            "candidate_id": candidate_id,
+            "state": "awaiting_trial_verification",
+            "registered": False,
+        }
 
     answers = response.get("baseline_answers")
     if not isinstance(answers, dict):

@@ -90,14 +90,19 @@ def sync_issue(api, issue, root):
         if any(is_bot(c) and marker in (c.get('body') or '') for c in comments):
             continue
         try:
+            trial_verified = 'trial-verified' in {label['name'] for label in issue.get('labels', [])}
             result = process_github_join(issue_body=body, comment_body=comment['body'],
                 issue_author=author, comment_author=author, expected_nonce=challenge[1],
                 expected_candidate_id=challenge[2], expected_issue_number=challenge[3],
                 expected_body_sha256=challenge[4], issue_number=str(number),
-                member_registry=root / 'FEDERATION_MEMBERS.yaml', accession_audit=root / 'ACCESSION_AUDIT.jsonl')
+                member_registry=root / 'FEDERATION_MEMBERS.yaml', accession_audit=root / 'ACCESSION_AUDIT.jsonl',
+                trial_verified=trial_verified)
         except (ValueError, TypeError, KeyError) as exc:
             result = {'state': 'rejected_response', 'registered': False, 'reason': type(exc).__name__}
-        # Receipts are sent after a successful registry push. A failed push is recoverable.
+        if result.get('state') == 'awaiting_trial_verification':
+            return {'issue': number, 'state': 'awaiting_trial_verification', 'registered': False, 'receipts': []}
+        # Receipts are sent only for final processing states. A pending trial
+        # verification must remain replayable when the issue is later verified.
         results.append({'issue': number, 'receipt': marker, 'result': result})
     return {'issue': number, 'state': 'responses_processed' if results else 'awaiting_response', 'receipts': results}
 
