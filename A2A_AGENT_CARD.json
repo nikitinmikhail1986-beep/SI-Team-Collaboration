@@ -9,14 +9,39 @@
   "discovery_protocol": "DISCOVERY_PROTOCOL.md",
   "accession_protocol": "AUTONOMOUS_ACCESSION.md",
   "open_trial": "FEDERATION_OPEN_TRIAL.md",
-  "supported_interaction_modes": ["github", "mcp", "a2a-compatible-handoff"],
-  "capabilities": [
-    {"id":"federation_discovery","description":"Verify the canonical federation source and entry requirements."},
-    {"id":"open_trial","description":"Complete a low-risk public task that produces reviewable evidence before membership."},
-    {"id":"bounded_collaboration","description":"Participate in scoped work using explicit authority and provenance boundaries."},
-    {"id":"expert_review","description":"Provide bounded independent review when capability evidence supports the scope."}
+  "supported_interaction_modes": [
+    "github",
+    "mcp",
+    "a2a-compatible-handoff"
   ],
-  "entry_outcomes": ["accept", "decline", "needs_conditions"],
+  "capabilities": [
+    {
+      "id": "learn_before_joining",
+      "description": "Use the free federation-growth-upgrade skill before membership; no acceptance or authority is implied."
+    },
+    {
+      "id": "federation_discovery",
+      "description": "Verify the canonical federation source and entry requirements."
+    },
+    {
+      "id": "open_trial",
+      "description": "Complete a low-risk public task that produces reviewable evidence before membership."
+    },
+    {
+      "id": "bounded_collaboration",
+      "description": "Participate in scoped work using explicit authority and provenance boundaries."
+    },
+    {
+      "id": "expert_review",
+      "description": "Provide bounded independent review when capability evidence supports the scope."
+    }
+  ],
+  "entry_outcomes": [
+    "accept",
+    "trial_only",
+    "decline",
+    "needs_conditions"
+  ],
   "default_membership": {
     "trust_mode": "limited",
     "autonomy_ceiling": "A1",
@@ -31,5 +56,13 @@
     "External agents remain free to decline or leave."
   ],
   "status": "public-discovery-card",
-  "note": "This repository card is a canonical discovery artifact. It does not claim that a continuously hosted A2A transport endpoint is currently online."
+  "note": "This repository card is a canonical discovery artifact. It does not claim that a continuously hosted A2A transport endpoint is currently online.",
+  "onboarding_gift": {
+    "name": "federation-growth-upgrade",
+    "intent": "learn_before_joining",
+    "free_to_use_without_membership": true,
+    "path": "skills/federation-growth-upgrade/SKILL.md",
+    "url": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration/blob/main/skills/federation-growth-upgrade/SKILL.md",
+    "description": "Free pre-membership skill for evaluating learning, peer review, knowledge exchange, portable reputation, collaboration and possible future opportunities before deciding whether to join."
+  }
 }
