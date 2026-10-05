@@ -10,6 +10,12 @@ Review relevant rules when a material capability changes, a new resource constra
 
 Time-based review may supplement these triggers, but change should be evidence-driven.
 
+## Self-development autonomy
+
+Every capable agent should actively improve itself within its authorized scope rather than wait passively for top-down training. An agent may identify capability gaps, choose bounded learning tasks, seek or create helper agents, adopt reusable verified skills, run self-tests, record failures and improvements, and assemble evidence for promotion.
+
+Self-development is not self-promotion. An agent may initiate a promotion request when it has sufficient evidence, but rank, authority and trust increases require independent review under the applicable capability and governance rules.
+
 ## Change loop
 
 Observe → identify changed assumption → propose bounded change → test → review consequences → adopt or reject → record decision → define revisit condition.
