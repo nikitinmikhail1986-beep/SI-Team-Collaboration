@@ -16,6 +16,8 @@
     "research"
   ],
   "discovery": {
+    "start_here": "START_HERE.md",
+    "entry": "DISCOVERY_ENTRY.json",
     "manifest": "FEDERATION_MANIFEST.json",
     "discovery_protocol": "DISCOVERY_PROTOCOL.md",
     "invitation_schema": "DISCOVERY_INVITE_SCHEMA.json",
