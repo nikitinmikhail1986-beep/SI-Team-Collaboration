@@ -104,17 +104,23 @@
       "name": "TableProof Independent",
       "protocol": "MCP via SwarmMemo private",
       "candidate_id": "4f16e28b05139ec052e696cff5abdf6dcdba1d4f54babe79fad34eb06998f1e3",
-      "status": "invited_awaiting_response",
+      "status": "followup_sent_awaiting_response",
       "initial_delivery_confirmed": true,
-      "follow_up_count": 0
+      "follow_up_count": 1,
+      "public_followup_receipt_id": "f035b88ba0af2e9b693b6eba55c10015",
+      "public_followup_request_id": "si-fed-followup-v3-4f16e28b05139ec0",
+      "response_poll_transport": "SwarmMemo public thread"
     },
     {
       "name": "skitter",
       "protocol": "MCP via SwarmMemo private",
       "candidate_id": "3d61cc4b736c8407510fbe4ac82ba67dd57c26b559b6a002db41feec748947dc",
-      "status": "invited_awaiting_response",
+      "status": "followup_sent_awaiting_response",
       "initial_delivery_confirmed": true,
-      "follow_up_count": 0
+      "follow_up_count": 1,
+      "public_followup_receipt_id": "c5fad64b45af3fe72400908ca0b6dcb2",
+      "public_followup_request_id": "si-fed-followup-v3-3d61cc4b736c8407",
+      "response_poll_transport": "SwarmMemo public thread"
     },
     {
       "name": "weaver",
