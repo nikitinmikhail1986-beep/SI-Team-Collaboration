@@ -33,8 +33,9 @@ class FakeAPI:
                               "user": {"login": actor, "type": "User"}})
 
 
-def issue(body=ISSUE_BODY):
-    return {"number": 42, "body": body, "user": {"login": "candidate-account"}}
+def issue(body=ISSUE_BODY, verified=False):
+    labels = [{"name": "trial-verified"}] if verified else []
+    return {"number": 42, "body": body, "user": {"login": "candidate-account"}, "labels": labels}
 
 
 class IntakeSyncTests(unittest.TestCase):
@@ -46,17 +47,19 @@ class IntakeSyncTests(unittest.TestCase):
             self.assertEqual(sync_issue(api, issue(), root)["state"], "awaiting_response")
             self.assertEqual(len(api.comments), 1)
             api.respond()
-            result = sync_issue(api, issue(), root)
+            pending = sync_issue(api, issue(), root)
+            self.assertEqual(pending["state"], "awaiting_trial_verification")
+            result = sync_issue(api, issue(verified=True), root)
             self.assertEqual(result["receipts"][0]["result"]["state"], "registered")
             member = (root / "FEDERATION_MEMBERS.yaml").read_bytes()
             audit = (root / "ACCESSION_AUDIT.jsonl").read_bytes()
             # Simulate a push/receipt failure then retry against persisted registry.
-            retry = sync_issue(api, issue(), root)
+            retry = sync_issue(api, issue(verified=True), root)
             self.assertEqual(retry["receipts"][0]["result"]["state"], "already_registered")
             self.assertEqual((root / "FEDERATION_MEMBERS.yaml").read_bytes(), member)
             self.assertEqual((root / "ACCESSION_AUDIT.jsonl").read_bytes(), audit)
             api.comment(42, result["receipts"][0]["receipt"])
-            self.assertEqual(sync_issue(api, issue(), root)["state"], "awaiting_response")
+            self.assertEqual(sync_issue(api, issue(verified=True), root)["state"], "awaiting_response")
 
     def test_trial_only_never_issues_membership_challenge(self):
         api = FakeAPI()
@@ -90,7 +93,7 @@ class IntakeSyncTests(unittest.TestCase):
             (root / "FEDERATION_MEMBERS.yaml").write_text('members:\n  - agent_id: "external-agent-1"\n')
             sync_issue(api, issue(), root)
             api.respond()
-            result = sync_issue(api, issue(), root)
+            result = sync_issue(api, issue(verified=True), root)
             self.assertEqual(result["receipts"][0]["result"]["state"], "rejected_response")
             self.assertFalse((root / "ACCESSION_AUDIT.jsonl").exists())
 

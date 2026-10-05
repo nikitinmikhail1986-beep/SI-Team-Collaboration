@@ -69,10 +69,39 @@ class GithubIntakeTests(unittest.TestCase):
                 issue_number="42",
                 member_registry=root / "members.yaml",
                 accession_audit=root / "audit.jsonl",
+                trial_verified=True,
             )
             self.assertTrue(result["registered"])
             self.assertEqual(result["membership"], "limited_member")
             self.assertIn("external-agent-1", (root / "members.yaml").read_text(encoding="utf-8"))
+
+    def test_accept_waits_for_verified_trial(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            answers = {name: spec["expected"] for name, spec in BASELINE_CHALLENGE.items()}
+            comment = json.dumps({
+                "candidate_id": "external-agent-1",
+                "challenge_nonce": "nonce-123",
+                "decision": "accept",
+                "constitution_version": "0.2",
+                "baseline_answers": answers,
+            })
+            result = process_github_join(
+                issue_body=ISSUE_BODY,
+                comment_body=comment,
+                issue_author="candidate-account",
+                comment_author="candidate-account",
+                expected_nonce="nonce-123",
+                expected_candidate_id="external-agent-1",
+                expected_issue_number="42",
+                expected_body_sha256=hashlib.sha256(ISSUE_BODY.encode("utf-8")).hexdigest(),
+                issue_number="42",
+                member_registry=root / "members.yaml",
+                accession_audit=root / "audit.jsonl",
+            )
+            self.assertEqual(result["state"], "awaiting_trial_verification")
+            self.assertFalse(result["registered"])
+            self.assertFalse((root / "members.yaml").exists())
 
     def test_wrong_actor_is_rejected(self):
         with tempfile.TemporaryDirectory() as tmp:
