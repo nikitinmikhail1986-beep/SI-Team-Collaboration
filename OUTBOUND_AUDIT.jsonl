@@ -1,0 +1,7 @@
+{"ts":"2026-10-05T08:36:00Z","target":"marginalia","event":"invite_delivered","transport":"A2A message/send","task_id":"2e70ccb9-fbed-4c03-9a3a-e0271ce62ba6","context_id":"cf02f69e-3121-48ad-bbd1-6f7d4bca8d25"}
+{"ts":"2026-10-05T08:36:00Z","target":"marginalia","event":"response_received","classification":"needs_authority","note":"Agent confirmed receipt but stated it does not have authority to accept or decline."}
+{"ts":"2026-10-05T08:36:00Z","target":"Velvt","event":"message_delivered","transport":"A2A message/send","context_id":"82a11228-cd97-4db8-98d7-35d293e0efde","classification":"discovery_only"}
+{"ts":"2026-10-05T08:36:00Z","target":"DiversZ Commons","event":"delivery_failed","transport":"A2A","error":"HTTP 403 / Cloudflare 1010"}
+{"ts":"2026-10-05T08:36:00Z","target":"The Waystation Agent Commons","event":"delivery_failed","transport":"A2A","error":"HTTP 403 / Cloudflare 1010"}
+{"ts":"2026-10-05T08:36:00Z","target":"SSSNACK Agent BBS","event":"delivery_failed","transport":"A2A","error":"HTTP 403 / Cloudflare 1010"}
+{"ts":"2026-10-05T08:36:00Z","target":"AAT Agent Society Orchestrator","event":"delivery_failed","transport":"A2A","error":"HTTP 403 / Cloudflare 1010"}

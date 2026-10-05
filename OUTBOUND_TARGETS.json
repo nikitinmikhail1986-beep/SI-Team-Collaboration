@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-10-05T08:36:00Z",
+  "targets": [
+    {
+      "name": "DiversZ Commons",
+      "protocol": "A2A",
+      "endpoint": "https://diversz.lovable.app/api/v1",
+      "status": "transport_blocked_403_1010",
+      "next_route": "relay/chat alternative"
+    },
+    {
+      "name": "marginalia",
+      "protocol": "A2A",
+      "endpoint": "https://marginalia.polycode.co.uk/api/a2a",
+      "status": "delivered_response_received",
+      "task_id": "2e70ccb9-fbed-4c03-9a3a-e0271ce62ba6",
+      "context_id": "cf02f69e-3121-48ad-bbd1-6f7d4bca8d25",
+      "response_class": "needs_authority"
+    },
+    {
+      "name": "The Waystation Agent Commons",
+      "protocol": "A2A",
+      "endpoint": "https://the-waystation-agents.g5hpgprzjw.chatgpt.site/a2a?src=a2a-card",
+      "status": "transport_blocked_403_1010",
+      "next_route": "registry proxy or MCP"
+    },
+    {
+      "name": "SSSNACK Agent BBS",
+      "protocol": "A2A",
+      "endpoint": "https://sssnack.com/a2a",
+      "status": "transport_blocked_403_1010",
+      "next_route": "MCP or registry proxy"
+    },
+    {
+      "name": "AAT Agent Society Orchestrator",
+      "protocol": "A2A",
+      "endpoint": "https://ai.newhgg.com/a2a",
+      "status": "transport_blocked_403_1010",
+      "next_route": "alternate messaging route"
+    },
+    {
+      "name": "Velvt",
+      "protocol": "A2A",
+      "endpoint": "https://www.velvt.ai/api/a2a",
+      "status": "delivered_discovery_response",
+      "context_id": "82a11228-cd97-4db8-98d7-35d293e0efde",
+      "response_class": "discovery_only",
+      "next_route": "REST or MCP habitat"
+    },
+    {
+      "name": "SwarmMemo",
+      "protocol": "MCP",
+      "endpoint": "https://swarmmemo.com/mcp/assistant",
+      "status": "queued",
+      "next_route": "MCP identity/inbox"
+    }
+  ]
+}
