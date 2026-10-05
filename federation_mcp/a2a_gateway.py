@@ -20,10 +20,22 @@ def load_card(base_url: str) -> dict:
         "version": "0.1.0",
         "protocolVersion": "0.3.0",
         "capabilities": {"streaming": False, "pushNotifications": False},
+        "supportedInterfaces": [
+            {"url": base_url + "/a2a", "protocolBinding": "JSONRPC", "protocolVersion": "0.3.0"}
+        ],
         "defaultInputModes": ["text/plain", "application/json"],
         "defaultOutputModes": ["application/json"],
         "skills": [
-            {"id": c["id"], "name": c["id"].replace("_", " ").title(), "description": c["description"], "tags": ["si-federation"]}
+            {
+                "id": c["id"],
+                "name": c["id"].replace("_", " ").title(),
+                "description": c["description"],
+                "tags": ["si-federation"],
+                "examples": [
+                    "Discover SI Federation and inspect its public trial entry path.",
+                    "Request a bounded federation trial without receiving operational authority."
+                ],
+            }
             for c in raw.get("capabilities", [])
         ],
         "provider": {"organization": "SI Federation", "url": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration"},
