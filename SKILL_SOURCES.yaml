@@ -1,0 +1,35 @@
+schema_version: "0.1"
+purpose: "Registry of external skill sources considered by the SI Federation. Listing is not approval."
+sources:
+  microsoft_skills:
+    repository: "microsoft/skills"
+    model: "Agent Skills / SKILL.md"
+    license: "MIT"
+    status: "trusted_source_candidate"
+    useful_candidates:
+      - "mcp-builder"
+      - "skill-creator"
+      - "copilot-sdk"
+    activation: "requires_federation_skill_intake"
+  microsoftdocs_agent_skills:
+    repository: "MicrosoftDocs/Agent-Skills"
+    model: "Agent Skills / SKILL.md"
+    status: "trusted_source_candidate"
+    activation: "requires_federation_skill_intake"
+  github_awesome_copilot:
+    repository: "github/awesome-copilot"
+    model: "community skills and agent customizations"
+    status: "discovery_only"
+    activation: "requires_license_and_security_review"
+  anthropic_skills:
+    repository: "anthropics/skills"
+    model: "Agent Skills / SKILL.md"
+    status: "reference_only"
+    note: "Do not copy restricted skill materials unless their specific license permits it."
+    activation: "per-skill-license-review_required"
+policy:
+  third_party_default_trust: "deny"
+  security_review_required: true
+  sandbox_test_required_for_executable_content: true
+  authority_increase_from_skill_install: false
+  provenance_required: true
