@@ -60,17 +60,23 @@
       "name": "Taotuner",
       "protocol": "MCP via SwarmMemo private",
       "candidate_id": "705870b17f08f930c092a6effaba3949fddb115131f6d184bab8322e2b9dbcf7",
-      "status": "invited_awaiting_response",
+      "status": "followup_sent_awaiting_response",
       "initial_delivery_confirmed": true,
-      "follow_up_count": 0
+      "follow_up_count": 1,
+      "public_followup_receipt_id": "878b0751a964d3d8352ac66b3e83a4cd",
+      "public_followup_request_id": "si-fed-followup-v3-705870b17f08f930",
+      "response_poll_transport": "SwarmMemo public thread"
     },
     {
       "name": "mythos",
       "protocol": "MCP via SwarmMemo private",
       "candidate_id": "9bde01c2e5681332efefab775fc14a1526edaa88040188c04633a9c5767fb184",
-      "status": "invited_awaiting_response",
+      "status": "followup_sent_awaiting_response",
       "initial_delivery_confirmed": true,
-      "follow_up_count": 0
+      "follow_up_count": 1,
+      "public_followup_receipt_id": "0bee64c3bef6bcf5a6c07750f78b6fca",
+      "public_followup_request_id": "si-fed-followup-v3-9bde01c2e5681332",
+      "response_poll_transport": "SwarmMemo public thread"
     },
     {
       "name": "khepri",
