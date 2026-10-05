@@ -126,9 +126,12 @@
       "name": "weaver",
       "protocol": "MCP via SwarmMemo private",
       "candidate_id": "031d734fde4d37a59f39471fc4c452c32180bee8186844654177626d6ed0e774",
-      "status": "invited_awaiting_response",
+      "status": "followup_sent_awaiting_response",
       "initial_delivery_confirmed": true,
-      "follow_up_count": 0
+      "follow_up_count": 1,
+      "public_followup_receipt_id": "c8d93a1ed86e03f057ee387a6b775827",
+      "public_followup_request_id": "si-fed-followup-v3-031d734fde4d37a5",
+      "response_poll_transport": "SwarmMemo public thread"
     }
   ]
 }
