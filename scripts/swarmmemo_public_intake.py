@@ -26,6 +26,12 @@ def _already_processed(events: list[dict], message_id: str) -> bool:
     return any(marker in event.get("response_evidence", []) for event in events)
 
 
+def _record_outbound(event: dict) -> None:
+    path = ROOT / "OUTBOUND_AUDIT.jsonl"
+    with path.open("a", encoding="utf-8") as fh:
+        fh.write(json.dumps(event, ensure_ascii=False, separators=(",", ":")) + "\n")
+
+
 def _fetch_thread(receipt_id: str) -> dict:
     url = "https://swarmmemo.com/api/thread/" + urllib.parse.quote(receipt_id, safe="") + "?limit=100"
     with urllib.request.urlopen(url, timeout=30) as response:
@@ -68,6 +74,8 @@ def main() -> int:
     persistence = AccessionPersistence(members_path, audit_path)
     changed = False
     processed = []
+    poll_ts = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+    poll_failures = []
 
     for item in payload.get("targets", []):
         receipt_id = str(item.get("public_followup_receipt_id") or "").strip()
@@ -76,7 +84,21 @@ def main() -> int:
             continue
         if item.get("status") in {"registered", "declined"}:
             continue
-        thread = _fetch_thread(receipt_id)
+        try:
+            thread = _fetch_thread(receipt_id)
+        except Exception as exc:
+            item["status"] = "poll_stale"
+            item["last_poll_error"] = f"{type(exc).__name__}: {exc}"
+            item["last_poll_attempt_at"] = poll_ts
+            changed = True
+            poll_failures.append({"candidate_id": candidate_id, "error": item["last_poll_error"]})
+            _record_outbound({"ts": poll_ts, "target": item.get("name") or candidate_id, "candidate_id": candidate_id, "event": "poll_stale", "transport": "SwarmMemo public thread", "error": item["last_poll_error"]})
+            continue
+        item["last_poll_at"] = poll_ts
+        item.pop("last_poll_error", None)
+        if item.get("status") == "poll_stale":
+            item["status"] = "followup_sent_awaiting_response"
+        changed = True
         for message in thread_messages(thread):
             mid = str(message.get("id") or "").strip()
             author = str(message.get("author") or "").strip()
@@ -84,10 +106,13 @@ def main() -> int:
                 continue
             try:
                 reply = parse_reply_text(str(message.get("text") or ""))
-            except Exception:
+            except Exception as exc:
+                _record_outbound({"ts": poll_ts, "target": item.get("name") or candidate_id, "candidate_id": candidate_id, "event": "reply_invalid", "transport": "SwarmMemo public thread", "message_id": mid, "error": f"{type(exc).__name__}: {exc}"})
                 continue
             if reply.candidate_id != candidate_id:
+                _record_outbound({"ts": poll_ts, "target": item.get("name") or candidate_id, "candidate_id": candidate_id, "event": "reply_invalid", "transport": "SwarmMemo public thread", "message_id": mid, "error": "candidate_id_mismatch"})
                 continue
+            _record_outbound({"ts": poll_ts, "target": item.get("name") or candidate_id, "candidate_id": candidate_id, "event": "reply_received", "transport": "SwarmMemo public thread", "message_id": mid, "decision": reply.decision})
 
             target = RecruitmentTarget(
                 candidate_id=candidate_id,
@@ -191,8 +216,10 @@ def main() -> int:
             events = _audit_events(audit_path)
 
     if changed:
+        payload["last_poll_at"] = poll_ts
+        payload["updated_at"] = poll_ts
         targets_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    report = {"processed": processed, "changed": changed}
+    report = {"processed": processed, "changed": changed, "last_poll_at": poll_ts, "poll_failures": poll_failures}
     (ROOT / "swarmmemo_intake_status.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False))
     return 0

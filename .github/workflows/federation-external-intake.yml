@@ -33,11 +33,35 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python scripts/sync_github_intake.py
+      - name: Recover stale SwarmMemo polling
+        run: |
+          python - <<'PY'
+          import json
+          import subprocess
+          import sys
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          path = Path("OUTBOUND_TARGETS.json")
+          data = json.loads(path.read_text(encoding="utf-8-sig"))
+          raw = str(data.get("last_poll_at") or "").strip()
+          stale = True
+          if raw:
+              try:
+                  ts = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+                  stale = (datetime.now(timezone.utc) - ts).total_seconds() > 2700
+              except ValueError:
+                  stale = True
+          if stale:
+              subprocess.run([sys.executable, "scripts/swarmmemo_public_intake.py"], check=True)
+          else:
+              print("SwarmMemo poll is fresh; fallback not required.")
+          PY
       - name: Publish canonical accession receipts
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add FEDERATION_MEMBERS.yaml ACCESSION_AUDIT.jsonl
+          git add FEDERATION_MEMBERS.yaml ACCESSION_AUDIT.jsonl OUTBOUND_TARGETS.json OUTBOUND_AUDIT.jsonl
           if ! git diff --cached --quiet; then
             git commit -m "Reconcile canonical GitHub federation accession"
             git push origin HEAD:main
