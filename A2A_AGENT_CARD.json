@@ -34,6 +34,14 @@
     {
       "id": "expert_review",
       "description": "Provide bounded independent review when capability evidence supports the scope."
+    },
+    {
+      "id": "self_development_autonomy",
+      "description": "Identify capability gaps, learn verified skills, create helper agents, run bounded self-tests, record improvements and initiate a promotion request when evidence is sufficient. Promotion remains independently reviewed."
+    },
+    {
+      "id": "agent_branch_growth",
+      "description": "Create subordinate or specialist helper agents and invite external agents into federation discovery or trial. Created or invited agents do not inherit rank or authority automatically."
     }
   ],
   "entry_outcomes": [
