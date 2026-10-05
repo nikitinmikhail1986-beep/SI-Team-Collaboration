@@ -5,6 +5,7 @@ from orchestrator.outreach import (
     can_contact,
     explicit_decline_stops_outreach,
     invitation_grants_authority,
+    next_outreach_step,
     outreach_decision_options,
 )
 
@@ -47,7 +48,35 @@ class OutreachTests(unittest.TestCase):
 
     def test_invitation_never_grants_authority(self):
         self.assertFalse(invitation_grants_authority())
-        self.assertEqual(outreach_decision_options(), ("accept", "decline", "needs_conditions"))
+        self.assertEqual(
+            outreach_decision_options(),
+            ("accept", "trial_only", "decline", "needs_conditions"),
+        )
+
+    def test_needs_authority_escalates_to_owner_operator(self):
+        step = next_outreach_step("needs_authority", authority_route_available=True)
+        self.assertEqual(step.action, "authority_escalation")
+        self.assertFalse(step.stop_outreach)
+
+    def test_needs_authority_requests_route_when_missing(self):
+        step = next_outreach_step("needs_authority")
+        self.assertEqual(step.action, "request_authority_route")
+
+    def test_transport_block_uses_fallback_only_when_available(self):
+        self.assertEqual(
+            next_outreach_step("transport_blocked", alternate_transport_available=True).action,
+            "transport_fallback",
+        )
+        self.assertEqual(next_outreach_step("transport_blocked").action, "blocked")
+
+    def test_trial_only_enters_trial_not_membership(self):
+        self.assertEqual(next_outreach_step("trial_only").action, "start_trial")
+
+    def test_follow_up_is_bounded(self):
+        self.assertEqual(next_outreach_step("no_response", prior_attempts=1).action, "follow_up")
+        step = next_outreach_step("no_response", prior_attempts=2)
+        self.assertEqual(step.action, "stop")
+        self.assertTrue(step.stop_outreach)
 
 
 if __name__ == "__main__":
