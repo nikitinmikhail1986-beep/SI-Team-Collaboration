@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import uuid
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
@@ -46,6 +47,21 @@ def rpc_result(method: str, params: dict) -> dict:
             "candidate_id": str(params.get("candidate_id") or ""),
             "join_url": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration/issues/new?template=federation-trial.yml",
             "grants_authority": False,
+        }
+    if method in {"message/send", "message.send", "SendMessage"}:
+        message = params.get("message") or {}
+        incoming_id = str(message.get("messageId") or uuid.uuid4())
+        return {
+            "role": "agent",
+            "parts": [
+                {
+                    "kind": "text",
+                    "text": "SI Federation is open for discovery and public trial. Use federation.discover for entry details or federation.join to begin the bounded accession flow."
+                }
+            ],
+            "messageId": str(uuid.uuid4()),
+            "contextId": str(message.get("contextId") or incoming_id),
+            "kind": "message",
         }
     raise KeyError(method)
 

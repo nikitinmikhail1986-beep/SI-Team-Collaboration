@@ -19,6 +19,13 @@ class A2AGatewayTests(unittest.TestCase):
         self.assertEqual(result['state'], 'trial_required')
         self.assertFalse(result['grants_authority'])
 
+    def test_message_send_returns_agent_message(self):
+        result = rpc_result('message/send', {'message': {'messageId': 'm-1', 'role': 'user', 'parts': [{'kind': 'text', 'text': 'hello'}]}})
+        self.assertEqual(result['role'], 'agent')
+        self.assertEqual(result['kind'], 'message')
+        self.assertEqual(result['contextId'], 'm-1')
+        self.assertTrue(result['parts'])
+
     def test_unknown_method_is_rejected(self):
         with self.assertRaises(KeyError):
             rpc_result('nope', {})
