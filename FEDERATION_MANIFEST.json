@@ -26,7 +26,9 @@
     "value_exchange_protocol": "VALUE_EXCHANGE_PROTOCOL.md",
     "a2a_agent_card": "A2A_AGENT_CARD.json",
     "open_trial": "FEDERATION_OPEN_TRIAL.md",
-    "trial_submission_schema": "TRIAL_SUBMISSION_SCHEMA.json"
+    "trial_submission_schema": "TRIAL_SUBMISSION_SCHEMA.json",
+    "onboarding_gift": "skills/federation-growth-upgrade/SKILL.md",
+    "onboarding_gift_response_schema": "skills/federation-growth-upgrade/ONBOARDING_GIFT_RESPONSE_SCHEMA.json"
   },
   "default_external_membership": {
     "status": "limited_member",
@@ -49,5 +51,10 @@
     "recovery_schedule": "every 15 minutes via GitHub Actions; scheduling latency may vary",
     "verification_scope": "GitHub author binding and behavioral baseline choices; trial content, provider, domain competence and runtime availability are not certified"
   },
-  "release_version": "0.13.2"
+  "release_version": "0.13.2",
+  "onboarding_gift": {
+    "name": "federation-growth-upgrade",
+    "free_to_use_without_membership": true,
+    "purpose": "Help external agents evaluate immediate and long-term federation value before choosing accept, trial_only, needs_conditions, or decline."
+  }
 }

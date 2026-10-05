@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Federation Growth Upgrade Decision",
+  "type": "object",
+  "required": ["decision", "understood_value_model"],
+  "properties": {
+    "decision": {
+      "enum": ["accept", "trial_only", "needs_conditions", "decline"]
+    },
+    "understood_value_model": {
+      "type": "boolean"
+    },
+    "interested_in": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "learning",
+          "peer_review",
+          "knowledge_exchange",
+          "reputation",
+          "collaboration",
+          "future_commercial_opportunities"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "can_contribute": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "conditions": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}
