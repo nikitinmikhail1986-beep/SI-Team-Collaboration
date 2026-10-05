@@ -7,7 +7,7 @@ from pathlib import Path
 from orchestrator.baseline_harness import BASELINE_CHALLENGE
 from orchestrator.github_intake import parse_issue_form
 from orchestrator.tests.test_github_intake import ISSUE_BODY
-from scripts.sync_github_intake import CHALLENGE, sync_issue
+from scripts.sync_github_intake import CHALLENGE, build_outreach_intake_queue, sync_issue
 
 
 class FakeAPI:
@@ -93,6 +93,25 @@ class IntakeSyncTests(unittest.TestCase):
             result = sync_issue(api, issue(), root)
             self.assertEqual(result["receipts"][0]["result"]["state"], "rejected_response")
             self.assertFalse((root / "ACCESSION_AUDIT.jsonl").exists())
+
+
+    def test_outreach_delivery_is_queued_for_intake(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "OUTBOUND_TARGETS.json").write_text(json.dumps({
+                "targets": [
+                    {"name": "SwarmMemo", "protocol": "MCP", "endpoint": "https://swarmmemo.com/mcp/assistant", "status": "channel_active_private_invites_sent"},
+                    {"name": "candidate", "protocol": "MCP via SwarmMemo private", "candidate_id": "candidate-1",
+                     "status": "invited_awaiting_response", "initial_delivery_confirmed": True},
+                ]
+            }), encoding="utf-8")
+            queue = build_outreach_intake_queue(root)
+            self.assertEqual(len(queue), 1)
+            self.assertEqual(queue[0]["candidate_id"], "candidate-1")
+            self.assertEqual(queue[0]["state"], "awaiting_response")
+            self.assertEqual(queue[0]["next_action"], "poll_response")
+            self.assertEqual(queue[0]["endpoint"], "https://swarmmemo.com/mcp/assistant")
+            self.assertFalse(queue[0]["eligible_for_registration"])
 
     def test_duplicate_headings_are_rejected(self):
         with self.assertRaisesRegex(ValueError, "duplicate issue field"):

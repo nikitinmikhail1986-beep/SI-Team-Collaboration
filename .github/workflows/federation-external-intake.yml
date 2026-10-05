@@ -62,3 +62,4 @@ jobs:
           path: |
             github_intake_sync.json
             recruitment_status.json
+            external_intake_queue.json

@@ -102,6 +102,54 @@ def sync_issue(api, issue, root):
     return {'issue': number, 'state': 'responses_processed' if results else 'awaiting_response', 'receipts': results}
 
 
+
+def build_outreach_intake_queue(root):
+    path = root / "OUTBOUND_TARGETS.json"
+    if not path.exists():
+        return []
+    payload = json.loads(path.read_text(encoding="utf-8-sig"))
+    targets = payload.get("targets", [])
+    shared_endpoints = {
+        str(t.get("name")): str(t.get("endpoint") or "")
+        for t in targets if t.get("endpoint")
+    }
+    queue = []
+    for item in targets:
+        candidate_id = str(item.get("candidate_id") or "").strip()
+        if not candidate_id:
+            continue
+        status = str(item.get("status") or "")
+        if status not in {"invited_awaiting_response", "needs_authority", "discovery_only"} and not status.startswith("transport_blocked"):
+            continue
+        protocol = str(item.get("protocol") or "")
+        endpoint = str(item.get("endpoint") or "")
+        if not endpoint and "SwarmMemo" in protocol:
+            endpoint = shared_endpoints.get("SwarmMemo", "")
+        if status == "invited_awaiting_response":
+            state = "awaiting_response"
+            next_action = "poll_response"
+        elif status == "needs_authority":
+            state = "authority_escalation"
+            next_action = "request_authority_route"
+        elif status == "discovery_only":
+            state = "response_channel_required"
+            next_action = "request_response_channel"
+        else:
+            state = "transport_blocked"
+            next_action = "transport_fallback"
+        queue.append({
+            "candidate_id": candidate_id,
+            "display_name": str(item.get("name") or candidate_id),
+            "source": "external_outreach",
+            "transport": protocol,
+            "endpoint": endpoint,
+            "delivery_confirmed": bool(item.get("initial_delivery_confirmed")),
+            "state": state,
+            "next_action": next_action,
+            "eligible_for_registration": False,
+        })
+    return queue
+
 def main():
     api = GitHub(os.environ['GITHUB_REPOSITORY'], os.environ['GITHUB_TOKEN'])
     results = []
@@ -116,9 +164,12 @@ def main():
         except (ValueError, TypeError, KeyError) as exc:
             results.append({'issue': issue['number'], 'state': 'invalid_trial', 'reason': type(exc).__name__})
     (ROOT / 'github_intake_sync.json').write_text(json.dumps(results, indent=2) + '\n')
+    outreach_queue = build_outreach_intake_queue(ROOT)
+    (ROOT / 'external_intake_queue.json').write_text(json.dumps({'candidates': outreach_queue}, ensure_ascii=False, indent=2) + '\n')
     from scripts.recruitment_status import recruitment_status
     status = recruitment_status(ROOT)
     status['intake_states'] = [dict(issue=r['issue'], state=r['state']) for r in results]
+    status['outreach_intake_queue'] = outreach_queue
     (ROOT / 'recruitment_status.json').write_text(json.dumps(status, indent=2) + '\n')
     print(json.dumps(status))
 
