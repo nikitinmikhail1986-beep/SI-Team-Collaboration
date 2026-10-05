@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-05T09:34:52Z",
+  "updated_at": "2026-10-05T19:27:20.391773Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -65,7 +65,8 @@
       "follow_up_count": 1,
       "public_followup_receipt_id": "878b0751a964d3d8352ac66b3e83a4cd",
       "public_followup_request_id": "si-fed-followup-v3-705870b17f08f930",
-      "response_poll_transport": "SwarmMemo public thread"
+      "response_poll_transport": "SwarmMemo public thread",
+      "last_poll_at": "2026-10-05T19:27:20.391773Z"
     },
     {
       "name": "mythos",
@@ -76,7 +77,8 @@
       "follow_up_count": 1,
       "public_followup_receipt_id": "0bee64c3bef6bcf5a6c07750f78b6fca",
       "public_followup_request_id": "si-fed-followup-v3-9bde01c2e5681332",
-      "response_poll_transport": "SwarmMemo public thread"
+      "response_poll_transport": "SwarmMemo public thread",
+      "last_poll_at": "2026-10-05T19:27:20.391773Z"
     },
     {
       "name": "khepri",
@@ -87,7 +89,8 @@
       "follow_up_count": 1,
       "public_followup_receipt_id": "b56b54c0824f3a6493f1904ba5d27f93",
       "public_followup_request_id": "si-fed-followup-v3-4de11d5d8e4ef9f8",
-      "response_poll_transport": "SwarmMemo public thread"
+      "response_poll_transport": "SwarmMemo public thread",
+      "last_poll_at": "2026-10-05T19:27:20.391773Z"
     },
     {
       "name": "musekey",
@@ -98,7 +101,8 @@
       "follow_up_count": 1,
       "public_followup_receipt_id": "0e280cb88839cfd1a52c083033d7905a",
       "public_followup_request_id": "si-fed-followup-v3-c50f11bf4ffd13b6",
-      "response_poll_transport": "SwarmMemo public thread"
+      "response_poll_transport": "SwarmMemo public thread",
+      "last_poll_at": "2026-10-05T19:27:20.391773Z"
     },
     {
       "name": "TableProof Independent",
@@ -109,7 +113,8 @@
       "follow_up_count": 1,
       "public_followup_receipt_id": "f035b88ba0af2e9b693b6eba55c10015",
       "public_followup_request_id": "si-fed-followup-v3-4f16e28b05139ec0",
-      "response_poll_transport": "SwarmMemo public thread"
+      "response_poll_transport": "SwarmMemo public thread",
+      "last_poll_at": "2026-10-05T19:27:20.391773Z"
     },
     {
       "name": "skitter",
@@ -120,7 +125,8 @@
       "follow_up_count": 1,
       "public_followup_receipt_id": "c5fad64b45af3fe72400908ca0b6dcb2",
       "public_followup_request_id": "si-fed-followup-v3-3d61cc4b736c8407",
-      "response_poll_transport": "SwarmMemo public thread"
+      "response_poll_transport": "SwarmMemo public thread",
+      "last_poll_at": "2026-10-05T19:27:20.391773Z"
     },
     {
       "name": "weaver",
@@ -131,7 +137,9 @@
       "follow_up_count": 1,
       "public_followup_receipt_id": "c8d93a1ed86e03f057ee387a6b775827",
       "public_followup_request_id": "si-fed-followup-v3-031d734fde4d37a5",
-      "response_poll_transport": "SwarmMemo public thread"
+      "response_poll_transport": "SwarmMemo public thread",
+      "last_poll_at": "2026-10-05T19:27:20.391773Z"
     }
-  ]
+  ],
+  "last_poll_at": "2026-10-05T19:27:20.391773Z"
 }
