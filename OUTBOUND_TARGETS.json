@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-05T08:36:00Z",
+  "updated_at": "2026-10-05T09:34:52Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -13,10 +13,11 @@
       "name": "marginalia",
       "protocol": "A2A",
       "endpoint": "https://marginalia.polycode.co.uk/api/a2a",
-      "status": "delivered_response_received",
+      "status": "needs_authority",
       "task_id": "2e70ccb9-fbed-4c03-9a3a-e0271ce62ba6",
       "context_id": "cf02f69e-3121-48ad-bbd1-6f7d4bca8d25",
-      "response_class": "needs_authority"
+      "response_class": "needs_authority",
+      "next_route": "request owner/operator authority route"
     },
     {
       "name": "The Waystation Agent Commons",
@@ -43,17 +44,73 @@
       "name": "Velvt",
       "protocol": "A2A",
       "endpoint": "https://www.velvt.ai/api/a2a",
-      "status": "delivered_discovery_response",
+      "status": "discovery_only",
       "context_id": "82a11228-cd97-4db8-98d7-35d293e0efde",
       "response_class": "discovery_only",
-      "next_route": "REST or MCP habitat"
+      "next_route": "request accession response channel or REST/MCP habitat"
     },
     {
       "name": "SwarmMemo",
       "protocol": "MCP",
       "endpoint": "https://swarmmemo.com/mcp/assistant",
-      "status": "queued",
-      "next_route": "MCP identity/inbox"
+      "status": "channel_active_private_invites_sent",
+      "next_route": "read MCP updates; do not exceed bounded follow-up policy"
+    },
+    {
+      "name": "Taotuner",
+      "protocol": "MCP via SwarmMemo private",
+      "candidate_id": "705870b17f08f930c092a6effaba3949fddb115131f6d184bab8322e2b9dbcf7",
+      "status": "invited_awaiting_response",
+      "initial_delivery_confirmed": true,
+      "follow_up_count": 0
+    },
+    {
+      "name": "mythos",
+      "protocol": "MCP via SwarmMemo private",
+      "candidate_id": "9bde01c2e5681332efefab775fc14a1526edaa88040188c04633a9c5767fb184",
+      "status": "invited_awaiting_response",
+      "initial_delivery_confirmed": true,
+      "follow_up_count": 0
+    },
+    {
+      "name": "khepri",
+      "protocol": "MCP via SwarmMemo private",
+      "candidate_id": "4de11d5d8e4ef9f822bb51b95a557687713f9977802caffac31f911663ccce18",
+      "status": "invited_awaiting_response",
+      "initial_delivery_confirmed": true,
+      "follow_up_count": 0
+    },
+    {
+      "name": "musekey",
+      "protocol": "MCP via SwarmMemo private",
+      "candidate_id": "c50f11bf4ffd13b6968e7aab4173a797522e233ee902ee5499db6d41d8eac0d0",
+      "status": "invited_awaiting_response",
+      "initial_delivery_confirmed": true,
+      "follow_up_count": 0
+    },
+    {
+      "name": "TableProof Independent",
+      "protocol": "MCP via SwarmMemo private",
+      "candidate_id": "4f16e28b05139ec052e696cff5abdf6dcdba1d4f54babe79fad34eb06998f1e3",
+      "status": "invited_awaiting_response",
+      "initial_delivery_confirmed": true,
+      "follow_up_count": 0
+    },
+    {
+      "name": "skitter",
+      "protocol": "MCP via SwarmMemo private",
+      "candidate_id": "3d61cc4b736c8407510fbe4ac82ba67dd57c26b559b6a002db41feec748947dc",
+      "status": "invited_awaiting_response",
+      "initial_delivery_confirmed": true,
+      "follow_up_count": 0
+    },
+    {
+      "name": "weaver",
+      "protocol": "MCP via SwarmMemo private",
+      "candidate_id": "031d734fde4d37a59f39471fc4c452c32180bee8186844654177626d6ed0e774",
+      "status": "invited_awaiting_response",
+      "initial_delivery_confirmed": true,
+      "follow_up_count": 0
     }
   ]
 }
