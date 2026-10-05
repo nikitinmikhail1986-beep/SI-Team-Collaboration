@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add OUTBOUND_TARGETS.json FEDERATION_MEMBERS.yaml ACCESSION_AUDIT.jsonl
+          git add OUTBOUND_TARGETS.json OUTBOUND_AUDIT.jsonl FEDERATION_MEMBERS.yaml ACCESSION_AUDIT.jsonl
           if ! git diff --cached --quiet; then
             git commit -m "Reconcile SwarmMemo federation bridge"
             git push origin HEAD:main
