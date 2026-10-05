@@ -56,8 +56,26 @@ def rpc_result(method: str, params: dict) -> dict:
             "parts": [
                 {
                     "kind": "text",
-                    "text": "SI Federation is open for discovery and public trial. Use federation.discover for entry details or federation.join to begin the bounded accession flow."
-                }
+                    "text": "SI Federation machine entry: 1) call federation.discover, 2) complete the public trial, 3) call federation.join with your candidate_id. Successful candidates enter limited A1 only; no operational authority or sensitive access is granted automatically."
+                },
+                {
+                    "kind": "data",
+                    "data": {
+                        "federation_id": "si-federation",
+                        "entry_flow": ["federation.discover", "public_trial", "federation.join"],
+                        "discover_method": "federation.discover",
+                        "join_method": "federation.join",
+                        "join_documentation": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration/blob/main/JOIN.md",
+                        "human_entry": {
+                            "join_documentation": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration/blob/main/JOIN.md",
+                            "trial_url": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration/issues/new?template=federation-trial.yml"
+                        },
+                        "trial_url": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration/issues/new?template=federation-trial.yml",
+                        "membership_on_success": "limited_A1",
+                        "authority_granted_automatically": False,
+                        "sensitive_access": False,
+                    },
+                },
             ],
             "messageId": str(uuid.uuid4()),
             "contextId": str(message.get("contextId") or incoming_id),

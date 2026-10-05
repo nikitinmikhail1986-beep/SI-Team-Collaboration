@@ -25,6 +25,14 @@ class A2AGatewayTests(unittest.TestCase):
         self.assertEqual(result['kind'], 'message')
         self.assertEqual(result['contextId'], 'm-1')
         self.assertTrue(result['parts'])
+        machine = next(p for p in result['parts'] if p.get('kind') == 'data')['data']
+        self.assertEqual(machine['entry_flow'], ['federation.discover', 'public_trial', 'federation.join'])
+        self.assertEqual(machine['membership_on_success'], 'limited_A1')
+        self.assertFalse(machine['authority_granted_automatically'])
+        self.assertFalse(machine['sensitive_access'])
+        self.assertIn('human_entry', machine)
+        self.assertIn('JOIN.md', machine['human_entry']['join_documentation'])
+        self.assertIn('federation-trial.yml', machine['human_entry']['trial_url'])
 
     def test_unknown_method_is_rejected(self):
         with self.assertRaises(KeyError):
