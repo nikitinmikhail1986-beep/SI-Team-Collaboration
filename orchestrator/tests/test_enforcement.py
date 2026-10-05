@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 
 from orchestrator.audit import append_event, verify_chain
-from orchestrator.authority import authorize, requires_independent_review
+from orchestrator.authority import authorize, authorize_owner_funded_resource, requires_independent_review
 
 
 class EnforcementTests(unittest.TestCase):
@@ -21,6 +21,28 @@ class EnforcementTests(unittest.TestCase):
 
     def test_human_can_grant_authority(self):
         self.assertTrue(authorize("human_owner", "grant_authority", "A3").allowed)
+
+    def test_owner_funded_resource_is_denied_without_approval(self):
+        self.assertFalse(authorize_owner_funded_resource("operational_leader", 1).allowed)
+
+    def test_owner_funded_resource_is_denied_with_zero_budget(self):
+        self.assertFalse(
+            authorize_owner_funded_resource("operational_leader", 1, human_approved=True).allowed
+        )
+
+    def test_owner_funded_resource_cannot_exceed_budget(self):
+        self.assertFalse(
+            authorize_owner_funded_resource(
+                "operational_leader", 11, owner_authorized_budget=10, human_approved=True
+            ).allowed
+        )
+
+    def test_owner_funded_resource_allows_explicit_bounded_budget(self):
+        self.assertTrue(
+            authorize_owner_funded_resource(
+                "operational_leader", 5, owner_authorized_budget=10, human_approved=True
+            ).allowed
+        )
 
     def test_a3_requires_independent_review(self):
         self.assertTrue(requires_independent_review("A3"))

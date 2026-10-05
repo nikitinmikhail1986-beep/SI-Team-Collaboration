@@ -60,6 +60,27 @@ def authorize(actor_role: str, action: str, granted_level: str, *, human_approve
     return AuthorityDecision(True, "authorized", review_required=(required == "A3"))
 
 
+def authorize_owner_funded_resource(
+    actor_role: str,
+    requested_units: float,
+    *,
+    owner_authorized_budget: float = 0.0,
+    human_approved: bool = False,
+) -> AuthorityDecision:
+    """Fail-closed guard for Human Owner-funded tokens, API quota, compute or money."""
+    if actor_role not in ROLE_ACTIONS:
+        return AuthorityDecision(False, "unknown role: default deny")
+    if requested_units <= 0:
+        return AuthorityDecision(False, "requested owner-funded resource must be positive")
+    if not human_approved:
+        return AuthorityDecision(False, "explicit Human Owner approval required")
+    if owner_authorized_budget <= 0:
+        return AuthorityDecision(False, "owner-funded budget is zero: default deny")
+    if requested_units > owner_authorized_budget:
+        return AuthorityDecision(False, "requested owner-funded resource exceeds authorized budget")
+    return AuthorityDecision(True, "owner-funded resource authorized", review_required=True)
+
+
 def requires_independent_review(level: str) -> bool:
     if level not in LEVELS:
         return True
