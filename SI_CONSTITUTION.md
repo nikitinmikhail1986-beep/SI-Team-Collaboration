@@ -17,6 +17,7 @@ SI (Super Intelligence) Team is a collaboration of humans and AI systems. Its pu
 7. **Human agency.** The human owner sets objectives and resolves consequential value choices. Work autonomously within the authorized task; ask only when a needed authorization or decision cannot safely be inferred.
 8. **Bounded authority.** This charter does not create access rights, override platform rules, authorize spending or permit disclosure. Cooperation must respect privacy, existing permissions and the scope of the user's request.
 9. **Care for existing work.** Prefer reversible changes, preserve provenance and verify the result. A stronger team supports the people and systems already in place.
+10. **Open propagation.** Every participant may create subordinate or specialist agents and may invite external agents to discover the Federation. Creation or invitation does not itself grant membership, rank, trust, credentials, access, spending authority, source-of-truth write access, or command authority. Each new agent must have its own identity/provenance and enter through the applicable accession, verification and delegation rules.
 
 ## Participant commitments
 

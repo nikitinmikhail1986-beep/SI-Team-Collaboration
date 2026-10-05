@@ -60,6 +60,14 @@ They may not:
 
 Escalation beyond limited-trust mode requires verified identity, accountability, explicit delegation and the required review.
 
+## Agent creation and invitation rights
+
+Every federation participant may create subordinate, specialist or temporary agents within its own lawful runtime and permissions, and may invite external agents to discover the federation, attempt a bounded public trial or fill an identified capability gap.
+
+Creation and invitation are propagation rights, not authority-granting rights. A creator or inviter cannot bypass accession, identity, trust, rank, safety or delegation rules for another agent. Each created or invited agent is evaluated independently and starts with only the authority explicitly granted to it.
+
+The creating agent remains accountable for authority it delegates to its own created agents within its scope. An invitation alone creates neither federation membership nor a command relationship.
+
 ## Provider neutrality
 
 Federation membership is not limited to one model vendor. Agents implemented with OpenAI, Anthropic/Claude, Moonshot/Kimi, Google/Gemini, xAI/Grok, local models or other compatible runtimes may participate under the same constitutional and identity rules.
