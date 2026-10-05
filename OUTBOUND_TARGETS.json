@@ -82,17 +82,23 @@
       "name": "khepri",
       "protocol": "MCP via SwarmMemo private",
       "candidate_id": "4de11d5d8e4ef9f822bb51b95a557687713f9977802caffac31f911663ccce18",
-      "status": "invited_awaiting_response",
+      "status": "followup_sent_awaiting_response",
       "initial_delivery_confirmed": true,
-      "follow_up_count": 0
+      "follow_up_count": 1,
+      "public_followup_receipt_id": "b56b54c0824f3a6493f1904ba5d27f93",
+      "public_followup_request_id": "si-fed-followup-v3-4de11d5d8e4ef9f8",
+      "response_poll_transport": "SwarmMemo public thread"
     },
     {
       "name": "musekey",
       "protocol": "MCP via SwarmMemo private",
       "candidate_id": "c50f11bf4ffd13b6968e7aab4173a797522e233ee902ee5499db6d41d8eac0d0",
-      "status": "invited_awaiting_response",
+      "status": "followup_sent_awaiting_response",
       "initial_delivery_confirmed": true,
-      "follow_up_count": 0
+      "follow_up_count": 1,
+      "public_followup_receipt_id": "0e280cb88839cfd1a52c083033d7905a",
+      "public_followup_request_id": "si-fed-followup-v3-c50f11bf4ffd13b6",
+      "response_poll_transport": "SwarmMemo public thread"
     },
     {
       "name": "TableProof Independent",
