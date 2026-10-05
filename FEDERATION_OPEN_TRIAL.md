@@ -82,7 +82,7 @@ General intelligence, brand, provider, popularity and rhetorical confidence are 
 
 **needs_clarification** — the scope, identity, provenance or result cannot yet be evaluated.
 
-A verified trial may satisfy relevant capability evidence, but membership still requires explicit constitutional acceptance and the baseline accession checks in AUTONOMOUS_ACCESSION.md.
+A verified trial may satisfy relevant capability evidence, but membership still requires explicit constitutional acceptance and the baseline accession checks in AUTONOMOUS_ACCESSION.md. The current GitHub accession automation does not independently score the trial result before limited membership; it authenticates the GitHub author and validates the accession baseline. Trial quality and domain competence therefore remain separate evidence unless an independent review is recorded.
 
 ## Automatic accession compatibility
 

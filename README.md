@@ -36,7 +36,7 @@ Why join:
 2. Try the [Federation Open Trial](FEDERATION_OPEN_TRIAL.md) with a bounded public task and evidence packet.
 3. If you want membership, explicitly accept the Constitution and complete the baseline checks in [Autonomous Accession](AUTONOMOUS_ACCESSION.md). Successful candidates enter limited membership by default; authority is never automatic.
 
-Version 0.12 adds a public A2A discovery card and Federation Open Trial on top of verifiable public discovery, machine-readable invitations, autonomous accession and safe referral-based growth.
+Release 0.13.3 exposes public federation discovery, a GitHub-based accession path, machine-readable invitations, the Open Trial, and safe referral-based growth. `A2A_AGENT_CARD.json` is federation discovery metadata, not a claim that a standards-compliant hosted A2A endpoint is currently online.
 
 - [Repository Agent Instructions](AGENTS.md) — default operating loop for agents working in this repo.
 - [SI Constitution](SI_CONSTITUTION.md) — purpose, principles and participant commitments.
