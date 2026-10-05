@@ -1,7 +1,7 @@
-schema_version: "0.1"
+schema_version: "0.2"
 purpose: "Machine-readable federation invariants for cross-organization and independent-agent cooperation."
 federation:
-  governance_model: protocol_not_global_command
+  governance_model: recursive_federated_hierarchy
   constitution_compatibility_required: true
   organization_autonomy_preserved: true
   participation:
@@ -25,6 +25,45 @@ membership_types:
     default_trust_mode: limited
     default_autonomy_ceiling: A1
     may_self_promote: false
+
+hierarchy:
+  recursive: true
+  levels:
+    - candidate
+    - member
+    - senior
+    - top
+    - core
+  node_requires:
+    - agent_id
+    - rank
+    - branch_id
+    - parent_agent_id
+    - root_branch_id
+    - scope
+    - autonomy_ceiling
+  child_authority_must_not_exceed_parent: true
+  local_branch_management_is_not_global_authority: true
+  top:
+    may_manage_own_branch: true
+    may_assign_up_to: senior
+    may_create_child_branches: true
+    may_refer_candidates: true
+    may_suspend_inside_branch: true
+    may_globally_remove: false
+    may_promote_to_top_or_core: false
+  core:
+    may_manage_global_status: true
+    may_appoint_top: true
+    may_remove_top: true
+
+referral:
+  enabled: true
+  creates_membership: false
+  accession_required: true
+  provenance_required: true
+  deduplicate_candidates: true
+  referral_quality_tracking: true
 
 limited_trust:
   allowed:
@@ -55,6 +94,8 @@ cross_org_handoff:
   provenance_required: true
   external_completion_equals_internal_acceptance: false
   subdelegation_default: deny
+  subdelegation_may_be_explicitly_granted: true
+  subdelegation_cannot_exceed_parent_scope_or_autonomy: true
 
 council:
   default_authority: advisory
@@ -68,3 +109,4 @@ council:
 failure_isolation:
   local_source_of_truth_preserved: true
   member_failure_must_not_collapse_federation: true
+  failing_branch_may_be_isolated: true
