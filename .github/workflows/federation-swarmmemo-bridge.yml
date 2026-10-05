@@ -1,0 +1,49 @@
+name: Federation SwarmMemo Bridge
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17,47 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: federation-canonical-registry
+  cancel-in-progress: false
+
+jobs:
+  bridge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Send bounded public follow-ups
+        env:
+          SWARMMEMO_FOLLOWUP_LIMIT: "2"
+        run: python scripts/swarmmemo_followup.py
+      - name: Poll SwarmMemo response threads
+        run: python scripts/swarmmemo_public_intake.py
+      - name: Run SwarmMemo bridge tests
+        run: python -m unittest orchestrator.tests.test_swarmmemo_bridge
+      - name: Publish bridge state and accession results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add OUTBOUND_TARGETS.json FEDERATION_MEMBERS.yaml ACCESSION_AUDIT.jsonl
+          if ! git diff --cached --quiet; then
+            git commit -m "Reconcile SwarmMemo federation bridge"
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        if: ${{ always() }}
+        with:
+          name: swarmmemo-bridge-status
+          path: |
+            swarmmemo_followup_status.json
+            swarmmemo_intake_status.json
