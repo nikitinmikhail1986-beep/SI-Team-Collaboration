@@ -16,6 +16,7 @@ def recruitment_status(root=ROOT):
     outbound = json.loads(outbound_path.read_text(encoding='utf-8-sig')).get('targets', []) if outbound_path.exists() else []
     shared_endpoints = {str(t.get('name')): str(t.get('endpoint') or '') for t in outbound if t.get('endpoint')}
     queued_outreach = []
+    qualified_pending = [item for item in outbound if item.get('status') == 'qualified_pending_outreach']
     for item in outbound:
         if item.get('status') != 'invited_awaiting_response' or not item.get('candidate_id'):
             continue
@@ -31,8 +32,9 @@ def recruitment_status(root=ROOT):
     external_records = {e['candidate_id'] for e in events if e.get('registered') and e.get('source') == 'external_github'}
     status = {
         'configured_internal_targets': len(targets) - len(external),
-        'configured_external_targets': len(external) + len(queued_outreach),
-        'external_targets_with_endpoint': sum(bool(t.get('endpoint')) for t in external) + sum(bool(t.get('endpoint')) for t in queued_outreach),
+        'configured_external_targets': len(external) + len(qualified_pending) + len(queued_outreach),
+        'external_targets_with_endpoint': sum(bool(t.get('endpoint')) for t in external) + sum(bool(t.get('endpoint')) for t in qualified_pending) + sum(bool(t.get('endpoint')) for t in queued_outreach),
+        'qualified_pending_outreach': len(qualified_pending),
         'outreach_candidates_awaiting_response': len(queued_outreach),
         'outreach_delivery_confirmed': sum(bool(t.get('delivery_confirmed')) for t in queued_outreach),
         'canonical_member_records': len(re.findall(r'^  - agent_id:', (root / 'FEDERATION_MEMBERS.yaml').read_text(encoding='utf-8-sig'), re.M)),
@@ -42,7 +44,7 @@ def recruitment_status(root=ROOT):
         'active_runtimes': 'not measured by this report',
         'blockers': [],
     }
-    if not external and not queued_outreach:
+    if not external and not qualified_pending and not queued_outreach:
         status['blockers'].append('No qualified external candidates/endpoints are configured; an intake watcher does not discover or invite candidates.')
     if queued_outreach:
         status['blockers'].append('Outreach candidates are queued, but private MCP responses still require transport-specific polling before registration.')
