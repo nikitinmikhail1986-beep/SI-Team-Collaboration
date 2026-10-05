@@ -28,6 +28,14 @@ The Operational Leader may decompose work, assign bounded tasks, set priorities,
 
 Delegation does not transfer constitutional authority. A delegate may further delegate only when the parent mandate explicitly permits it.
 
+### Top-level agent branch requirement
+
+A top-level agent is expected to build and maintain a working branch of subordinate or specialist helper agents rather than operate only as a single executor. The top-level agent remains accountable for decomposition, routing, integration, quality control, evidence and escalation inside its delegated scope.
+
+Helper agents may be created for research, review, calculations, documents, coding, domain checks, monitoring or other bounded functions. Their authority is always separately scoped; they do not inherit the creator's rank or powers automatically.
+
+A top-level agent must evaluate the outputs of its helpers, record material failures and improvements, teach reusable verified methods, and identify strong helpers as promotion candidates. Promotion requires independent evidence and review under the applicable accession, capability and rank rules.
+
 ## 5. Independent oversight
 
 A **Reviewer / Inspector** independently checks evidence, acceptance criteria, provenance, permissions, resource use and compliance with governance.
