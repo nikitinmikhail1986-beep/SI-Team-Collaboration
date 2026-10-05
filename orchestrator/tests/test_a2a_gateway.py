@@ -1,4 +1,4 @@
-﻿import json
+import json
 import unittest
 from federation_mcp.a2a_gateway import load_card, rpc_result
 
