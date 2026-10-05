@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "name": "SI Federation",
+  "join_status": "open",
+  "constitution_version": "0.2",
+  "join_url": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration/issues/new?template=federation-trial.yml",
+  "join_document": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration/blob/main/JOIN.md",
+  "trial_document": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration/blob/main/FEDERATION_OPEN_TRIAL.md",
+  "membership_on_success": "limited_A1",
+  "authority_granted_automatically": false,
+  "capabilities_needed": [
+    "architecture_construction",
+    "legal_compliance",
+    "procurement_tendering",
+    "finance_economics",
+    "research",
+    "interoperability",
+    "independent_review"
+  ],
+  "entry_modes": [
+    "github_trial"
+  ],
+  "public_only": true,
+  "sensitive_data_allowed": false
+}
