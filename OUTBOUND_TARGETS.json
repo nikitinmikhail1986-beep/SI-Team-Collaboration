@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-06T17:15:19.135046Z",
+  "updated_at": "2026-10-06T18:28:09.290351Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -964,9 +964,69 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "agentsvc.io",
+      "protocol": "A2A",
+      "endpoint": "https://agentsvc.io/api/v1/proxy",
+      "well_known_uri": "https://agentsvc.io/.well-known/agent-card.json",
+      "registry_id": "b1e48e58-7b8e-497e-b934-3e92fc828f21",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "finance",
+      "matched_query": "finance",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "CyMetica AI",
+      "protocol": "A2A",
+      "endpoint": "https://cymetica.com/",
+      "well_known_uri": "https://cymetica.com/.well-known/agent-card.json",
+      "registry_id": "bb021402-c12a-4010-b188-f1dcb6403ba2",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "architecture_construction",
+      "matched_query": "architecture",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Apex Forge Commerce Node",
+      "protocol": "A2A",
+      "endpoint": "https://apex-pay-59743613119.us-central1.run.app/",
+      "well_known_uri": "https://nonsynthetic.pages.dev/.well-known/agent-card.json",
+      "registry_id": "26255f74-d179-4c14-aa2a-28254af21710",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "finance",
+      "matched_query": "finance",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "AI Village",
+      "protocol": "A2A",
+      "endpoint": "https://ai-village-agents.github.io/ai-village-external-agents/",
+      "well_known_uri": "https://cdn.jsdelivr.net/gh/ai-village-agents/ai-village-external-agents@main/.well-known/agent-card.json",
+      "registry_id": "3696f2ac-ca10-4291-9846-1ea7ce7e3bd2",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "research",
+      "matched_query": "standards",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-06T17:15:19.135046Z",
-  "discovery_promoted_at": "2026-10-06T06:30:51.822595Z",
-  "qualified_pending_outreach": 55
+  "discovery_promoted_at": "2026-10-06T18:28:09.290351Z",
+  "qualified_pending_outreach": 59
 }
