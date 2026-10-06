@@ -116,6 +116,22 @@ class IntakeSyncTests(unittest.TestCase):
             self.assertEqual(queue[0]["endpoint"], "https://swarmmemo.com/mcp/assistant")
             self.assertFalse(queue[0]["eligible_for_registration"])
 
+    def test_followup_sent_candidate_remains_in_intake_queue(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "OUTBOUND_TARGETS.json").write_text(json.dumps({
+                "targets": [
+                    {"name": "SwarmMemo", "protocol": "MCP", "endpoint": "https://swarmmemo.com/mcp/assistant", "status": "channel_active_private_invites_sent"},
+                    {"name": "candidate", "protocol": "MCP via SwarmMemo private", "candidate_id": "candidate-1",
+                     "status": "followup_sent_awaiting_response", "initial_delivery_confirmed": True, "follow_up_count": 1},
+                ]
+            }), encoding="utf-8")
+            queue = build_outreach_intake_queue(root)
+            self.assertEqual(len(queue), 1)
+            self.assertEqual(queue[0]["candidate_id"], "candidate-1")
+            self.assertEqual(queue[0]["state"], "awaiting_response")
+            self.assertEqual(queue[0]["next_action"], "poll_response")
+
     def test_duplicate_headings_are_rejected(self):
         with self.assertRaisesRegex(ValueError, "duplicate issue field"):
             parse_issue_form(ISSUE_BODY + "\n### Candidate ID\nreplacement\n")
