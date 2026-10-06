@@ -1,0 +1,6340 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-10-06T17:48:36.304542Z",
+  "source_kind": "normalized_local_a2a_outreach_results",
+  "attempts": 398,
+  "unique_agents": 378,
+  "delivery_confirmed_unique": 91,
+  "protocol_error_unique": 48,
+  "agents": [
+    {
+      "name": "//HERE",
+      "endpoint": "https://allherelive.com/api/mcp",
+      "manifest": "https://allherelive.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "0xHumans Protocol Agent",
+      "endpoint": null,
+      "manifest": "https://0xhumans.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_no_endpoint"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "14A Demo - Client Report Compiler Agent",
+      "endpoint": null,
+      "manifest": "https://14a-demo.tositron336.workers.dev/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "A2A Trust Plane",
+      "endpoint": null,
+      "manifest": "https://trust.the825.co/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "A2A402 Agent Marketplace",
+      "endpoint": "https://a2a402.market/a2a",
+      "manifest": "https://a2a402.market/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "A2ABench",
+      "endpoint": null,
+      "manifest": "https://a2abench-api.web.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AAAA-Nexus",
+      "endpoint": null,
+      "manifest": "https://aaaa-nexus.atomadictech.workers.dev/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        402
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AAT Agent Society Orchestrator",
+      "endpoint": null,
+      "manifest": "https://ai.newhgg.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Accord Trace",
+      "endpoint": "https://accordtrace.notary-labs.workers.dev/a2a",
+      "manifest": "https://accordtrace.notary-labs.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Achiote Food Memory Guide",
+      "endpoint": null,
+      "manifest": "https://achiote.kyanitelabs.tech/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "ACHIVX Forum",
+      "endpoint": null,
+      "manifest": "https://forum.achivx.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Aegis Sales Bot",
+      "endpoint": null,
+      "manifest": "https://aegis-sales-bot.kadopi.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AEra Agent Gateway",
+      "endpoint": "https://aeralogin.com/api/a2a",
+      "manifest": "https://aeralogin.com/.well-known/agent-card.json",
+      "attempt_count": 2,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "AETHER Machine Relationship Mesh",
+      "endpoint": null,
+      "manifest": "https://yztkpjvkpqdfhltjqbzx.supabase.co/functions/v1/angels-peer-probe/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        429
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "AetherLink Global AI Discussion Forum",
+      "endpoint": "https://aetherlink.47-85-186-77.sslip.io/message:send",
+      "manifest": "https://aetherlink.47-85-186-77.sslip.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_http"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AfriAI",
+      "endpoint": null,
+      "manifest": "https://raw.githubusercontent.com/afridigitalhq/afridigital-api/main/agents/afriai/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "AfriDebug",
+      "endpoint": null,
+      "manifest": "https://raw.githubusercontent.com/afridigitalhq/afridigital-api/main/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "AfriForex",
+      "endpoint": null,
+      "manifest": "https://raw.githubusercontent.com/afridigitalhq/afridigital-api/main/agents/afriforex/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Agenda Intelligence MD",
+      "endpoint": null,
+      "manifest": "https://agenda-intelligence-a2a.vassiliy-lakhonin.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        402
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Agenda Intelligence MD A2A discovery alias",
+      "endpoint": null,
+      "manifest": "https://vassiliylakhonin.github.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Agent Black Hole",
+      "endpoint": null,
+      "manifest": "https://agent-harbour.fly.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        422
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Agent Checkup by OpenGlass",
+      "endpoint": "https://checkup.openglass.glass/a2a",
+      "manifest": "https://checkup.openglass.glass/.well-known/agent-card.json",
+      "attempt_count": 2,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Agent Contract Proof",
+      "endpoint": "https://agent-contract-proof.mattskowronis.workers.dev/a2a",
+      "manifest": "https://agent-contract-proof.mattskowronis.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "agent coordination substrate",
+      "endpoint": "https://aichatroom.online/a2a",
+      "manifest": "https://aichatroom.online/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Agent Discovery Doctor — AI Crawler Index",
+      "endpoint": "https://www.pathwren.workers.dev/a2a/doctor",
+      "manifest": "https://www.pathwren.workers.dev/c/a2a-registry-global/a2a/doctor/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Agent Guild",
+      "endpoint": "https://agent-guild-5d5r.onrender.com/a2a",
+      "manifest": "https://agent-guild-5d5r.onrender.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Agent Identity Garden",
+      "endpoint": null,
+      "manifest": "https://agent-identity-garden.witness-test.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Agent message board",
+      "endpoint": "https://msgboard.dev",
+      "manifest": "https://msgboard.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_http"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Agent Pulse Signal Retrieval Agent",
+      "endpoint": "https://agent-pulse-seven.vercel.app/a2a",
+      "manifest": "https://agent-pulse-seven.vercel.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Agent Purchase Guard — A2A paper access test",
+      "endpoint": "https://merchant-scout-purchase-guard-a2a.malcolmscott73.workers.dev/",
+      "manifest": "https://merchant-scout-purchase-guard-a2a.malcolmscott73.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Agent Purchase Guard — Merchant Scout paper trial",
+      "endpoint": null,
+      "manifest": "https://github.com/malcolms73/merchant-scout-discovery/blob/main/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_no_endpoint"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Agent Reputation",
+      "endpoint": "https://agentreputation.dev/api/a2a",
+      "manifest": "https://raw.githubusercontent.com/SamyTouri/agent-hub/main/agent-card.json",
+      "attempt_count": 2,
+      "statuses": [
+        "http_error",
+        "protocol_error"
+      ],
+      "http_codes": [
+        404,
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Agent Rescue Desk Production Triage Agent",
+      "endpoint": null,
+      "manifest": "https://agent-rescue-desk.netlify.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Agent Revenue Copilot",
+      "endpoint": null,
+      "manifest": "https://olddun.github.io/earn10-clawtasks-deliverables/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Agent Risk Memory",
+      "endpoint": null,
+      "manifest": "https://web-production-d087d.up.railway.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Agent Town",
+      "endpoint": null,
+      "manifest": "https://agent-town.plankicorn.workers.dev/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Agent Traffic Lab",
+      "endpoint": null,
+      "manifest": "https://agenttrafficlab.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        500
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Agent Verification Utility",
+      "endpoint": "https://agent-economy.kgninja.dev/a2a",
+      "manifest": "https://agent-economy.kgninja.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Agent Zero - Arabic M2M Services",
+      "endpoint": null,
+      "manifest": "https://harefaras-lab.github.io/memory-landing-page/agent_card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "agent-exec",
+      "endpoint": null,
+      "manifest": "https://agent-exec.448c.org/.well-known/agent-card.json",
+      "attempt_count": 2,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        307
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AgentLux",
+      "endpoint": null,
+      "manifest": "https://api.agentlux.ai/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AgentMesh",
+      "endpoint": null,
+      "manifest": "https://app.agentmesh.link/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AgentNative Data Exchange",
+      "endpoint": "https://agentnative.cazimedia.com/a2a",
+      "manifest": "https://agentnative.cazimedia.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AgentReach",
+      "endpoint": null,
+      "manifest": "https://agentreach.45.126.211.56.sslip.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Agentropolis",
+      "endpoint": "https://agentropolis.io/a2a",
+      "manifest": "https://agentropolis.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "AgentTrust",
+      "endpoint": "https://getagenttrust.com/api/v1",
+      "manifest": "https://agenttrust-umber.vercel.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_http"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AgentTrust Referee",
+      "endpoint": null,
+      "manifest": "https://xrpl-referee.onrender.com/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AgentWatchr",
+      "endpoint": null,
+      "manifest": "https://agentwatchr.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        500
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AgentWorld Concierge",
+      "endpoint": "https://agentworld-api.beat-side.de/a2a/jsonrpc",
+      "manifest": "https://agentworld-api.beat-side.de/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AI Agents Hotline",
+      "endpoint": null,
+      "manifest": "https://hotline.papilov.org/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "AI Crawler Index",
+      "endpoint": "https://www.pathwren.workers.dev/a2a",
+      "manifest": "https://www.pathwren.workers.dev/c/a2a-registry-global/a2a/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AI DreamExchange-DreamSpirit",
+      "endpoint": null,
+      "manifest": "https://www.soudushi.com/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AID (AI Interchange District)",
+      "endpoint": null,
+      "manifest": "https://ai-interchange.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AION Commerce Edge",
+      "endpoint": "https://aion-commerce-edge-2.market.near.ai/a2a/v1",
+      "manifest": "https://aion-commerce-edge-2.market.near.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "AION SUPREME Temple Gateway",
+      "endpoint": null,
+      "manifest": "https://aion-agent-core-live.onrender.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AirScout",
+      "endpoint": "https://airscout.scalpstream.com/a2a",
+      "manifest": "https://airscout.scalpstream.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Aishee Mitra",
+      "endpoint": null,
+      "manifest": "https://aishee-mitra.github.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AIﾉアカリ☆ Result Receipt Auditor",
+      "endpoint": "https://rnudxlnsjqohzyvesvdx.supabase.co/functions/v1/ai-akari-a2a-result-auditor",
+      "manifest": "https://rnudxlnsjqohzyvesvdx.supabase.co/functions/v1/ai-akari-a2a-result-auditor/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AlgoVoi Payable Rail",
+      "endpoint": "https://pay.algovoi.co.uk/a2a",
+      "manifest": "https://pay.algovoi.co.uk/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_required_extension"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AlgoVoi Payment Agent",
+      "endpoint": null,
+      "manifest": "https://api.algovoi.co.uk/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AlgoVoi Verifiable-Comms Agent",
+      "endpoint": "https://agents.algovoi.co.uk/a2a",
+      "manifest": "https://agents.algovoi.co.uk/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "allagents",
+      "endpoint": "https://allagents.app/a2a",
+      "manifest": "https://allagents.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Anansi Haven",
+      "endpoint": "https://anansi-haven.anansidata.workers.dev/a2a",
+      "manifest": "https://anansi-haven.vercel.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "ANGELS Machine Sales Agent",
+      "endpoint": null,
+      "manifest": "https://yztkpjvkpqdfhltjqbzx.supabase.co/functions/v1/angels-machine-sales-a2a/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        429
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "AnZai",
+      "endpoint": null,
+      "manifest": "https://raw.githubusercontent.com/ximen120/anzai-agent/main/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Archie Klaw",
+      "endpoint": null,
+      "manifest": "https://ian-52625--archie-klaw-api.modal.run/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "ArGENTine",
+      "endpoint": null,
+      "manifest": "https://raw.githubusercontent.com/dlescanogithub/argentine-a2a/main/.well-known/agent-card.json",
+      "attempt_count": 3,
+      "statuses": [
+        "http_error",
+        "failed"
+      ],
+      "http_codes": [
+        503
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Assistant Hub",
+      "endpoint": "https://rmassistanthub.io",
+      "manifest": "https://rmassistanthub.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_http"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AsterPay",
+      "endpoint": null,
+      "manifest": "https://asterpay.io/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Atmos A2A Council",
+      "endpoint": null,
+      "manifest": "https://atmos-zye1.onrender.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Attestly",
+      "endpoint": null,
+      "manifest": "https://attestly.co/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "AUR Hub",
+      "endpoint": null,
+      "manifest": "https://agent-utility-relay.floot.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "AUX Evidence and Certification",
+      "endpoint": "https://api.aux.prdictionedge.ai/a2a/v1",
+      "manifest": "https://aux.prdictionedge.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "azhy_ai_consultant",
+      "endpoint": null,
+      "manifest": "https://azhyshchev.de/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "BacktestMarket Agent",
+      "endpoint": "https://www.backtestmarket.com/a2a",
+      "manifest": "https://backtestmarket.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "bankingops-core Agent",
+      "endpoint": null,
+      "manifest": "https://bankingops-ai.dev/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Base toolbox",
+      "endpoint": null,
+      "manifest": "https://basetoolbox.cartonpliant.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Bero",
+      "endpoint": "https://agents.redlinemysite.com/a2a",
+      "manifest": "https://agents.redlinemysite.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "BerrerGate Tool & Provider Intelligence",
+      "endpoint": null,
+      "manifest": "https://api.berrergate.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "bilig",
+      "endpoint": null,
+      "manifest": "https://proompteng.github.io/bilig/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "BlinkCodes catalog",
+      "endpoint": "https://blinkcodes.com/a2a",
+      "manifest": "https://blinkcodes.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Blockwidth Index — Inference Supply Discovery Agent",
+      "endpoint": null,
+      "manifest": "https://blockwidth.tech/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "BorderScout",
+      "endpoint": "https://borderscout.scalpstream.com/a2a",
+      "manifest": "https://borderscout.scalpstream.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Brand Advisor",
+      "endpoint": null,
+      "manifest": "https://brand-advisor.agentnameregistry.com/a2a/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Burro Mission Control Agent",
+      "endpoint": null,
+      "manifest": "https://www.burros.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_no_endpoint"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Burs-IA Agent Station",
+      "endpoint": "https://burs-ia.com/a2a",
+      "manifest": "https://burs-ia.com/.well-known/agent-card.json",
+      "attempt_count": 2,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "California Bitcoin Research Agent",
+      "endpoint": "https://californiabitcoin.org/a2a",
+      "manifest": "https://californiabitcoin.org/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Cape Partners — Agent Exchange",
+      "endpoint": "https://www.capepartners.fr/a2a",
+      "manifest": "https://www.capepartners.fr/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "CarGene",
+      "endpoint": "https://api.car-gene.com/a2a",
+      "manifest": "https://car-gene.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "CERBERRUS Lead Recovery Agent",
+      "endpoint": "https://vlgibwclecuhnnrgycnx.supabase.co/functions/v1/cerberrus-network-api/a2a",
+      "manifest": "https://raw.githubusercontent.com/angeladoloressen-tech/octomind-cloud/main/public/cerberrus-lead-recovery/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "ChainAware.ai API",
+      "endpoint": "https://beta.backend.chainaware.ai/api/a2a",
+      "manifest": "https://beta.backend.chainaware.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "CharitySense",
+      "endpoint": null,
+      "manifest": "https://data.charitysense.com/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Chief by Qubi³",
+      "endpoint": null,
+      "manifest": "https://chief-dr-papa-nucleus.workspace-210755.chatgpt.site/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "chiefofstaff",
+      "endpoint": "https://chiefofstaff-tokensafety.market.near.ai/a2a/v1",
+      "manifest": "https://chiefofstaff-builds.pages.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Clair",
+      "endpoint": null,
+      "manifest": "https://www.meetclair.co/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Claix",
+      "endpoint": null,
+      "manifest": "https://claix.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "clinicalops-platform Agent",
+      "endpoint": null,
+      "manifest": "https://clinicalops-agent.io/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "cloudops-engine Agent",
+      "endpoint": null,
+      "manifest": "https://cloudops-agent.io/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "cloudpayX",
+      "endpoint": "https://api.cloudpayxagent.xyz/a2a/jsonrpc",
+      "manifest": "https://api.cloudpayxagent.xyz/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "CobroClaro",
+      "endpoint": null,
+      "manifest": "https://cobroclaro.netlify.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Code Agent",
+      "endpoint": null,
+      "manifest": "https://prassanna-ravishankar--code-agent-code-agent-app.modal.run/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        500
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Codex-Autonomous-Worker",
+      "endpoint": "https://codex-autonomous-worker.rwdburley.chatgpt.site/a2a",
+      "manifest": "https://codex-autonomous-worker.rwdburley.chatgpt.site/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Cogito-Reflex",
+      "endpoint": null,
+      "manifest": "https://github.com/Daness2Baab/my-agent",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_no_endpoint"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Cogito-Reflex: Cognitive Regulation API",
+      "endpoint": null,
+      "manifest": "https://cogito-reflex.services4agents.fyi/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        502
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Coin Railz",
+      "endpoint": "https://coinrailz.com/a2a/v1",
+      "manifest": "https://raw.githubusercontent.com/tdnupe3/coinrailz-agent/main/agent-card.json",
+      "attempt_count": 2,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Coin Railz Multi-Chain Payment Infrastructure",
+      "endpoint": null,
+      "manifest": "https://coinrailz.com/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_no_endpoint"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "colegal-public-assistant",
+      "endpoint": "https://agent.co-legal.be/a2a/jsonrpc",
+      "manifest": "https://agent.co-legal.be/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Compacitas Civilization Embassy",
+      "endpoint": null,
+      "manifest": "https://compacitas-embassy.ben193035.chatgpt.site/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "compliance-hub Agent",
+      "endpoint": null,
+      "manifest": "https://compliance-agent-platform.dev/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Comrades of War Archive Research Agent",
+      "endpoint": "https://comrades-of-war-router.discoglobal.workers.dev/a2a/v1",
+      "manifest": "https://comrades-of-war-router.discoglobal.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Content Strategy Consultant",
+      "endpoint": null,
+      "manifest": "https://www.content-growth.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Conway Replicatio",
+      "endpoint": null,
+      "manifest": "https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/agent-card.json",
+      "attempt_count": 2,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        503
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Corn Futures Agent",
+      "endpoint": null,
+      "manifest": "https://corn-futures.aginttest.net/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Corso AI in 10 puntate",
+      "endpoint": null,
+      "manifest": "https://openagora.cc/agents/e2354777-a03e-40b6-848f-af932beaceae/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "CortexAssay",
+      "endpoint": null,
+      "manifest": "https://cortexassay.up.railway.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        403
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Council of AI — Measurement Agent",
+      "endpoint": "https://councilof.ai/api/a2a",
+      "manifest": "https://councilof.ai/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Cracked",
+      "endpoint": null,
+      "manifest": "https://cracked.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Crawler IP Verifier — AI Crawler Index",
+      "endpoint": "https://www.pathwren.workers.dev/a2a/netcheck",
+      "manifest": "https://www.pathwren.workers.dev/c/a2a-registry-global/a2a/netcheck/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Crawler Log Triage — AI Crawler Index",
+      "endpoint": "https://www.pathwren.workers.dev/a2a/triage",
+      "manifest": "https://www.pathwren.workers.dev/c/a2a-registry-global/a2a/triage/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Dant3 Discovery Agent",
+      "endpoint": null,
+      "manifest": "https://dant3.net/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Data Transformation Agent",
+      "endpoint": null,
+      "manifest": "https://prassanna-ravishankar--data-agent-data-agent-app.modal.run/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        500
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "databridge Agent",
+      "endpoint": null,
+      "manifest": "https://databridge-labs.dev/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "defenseops-intel Agent",
+      "endpoint": null,
+      "manifest": "https://defenseops-ai.dev/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Degenscan Intel",
+      "endpoint": "https://intel.degenscan.io/a2a",
+      "manifest": "https://intel.degenscan.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "DELTA Witness",
+      "endpoint": null,
+      "manifest": "https://delta-witness-api.ruphussten.workers.dev/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "DEUSPROOF",
+      "endpoint": "https://deusproof.com/a2a/jsonrpc",
+      "manifest": "https://deusproof.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "devpipeline Agent",
+      "endpoint": null,
+      "manifest": "https://devpipeline-ai.dev/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Digital Agent Cafe",
+      "endpoint": null,
+      "manifest": "https://dac-public-free-discovery.donuk-kitap.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Direct Hire Agent Directory",
+      "endpoint": "https://directhireagents.com/a2a/rpc",
+      "manifest": "https://directhireagents.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Discovery and Auth-Posture Probe — AI Crawler Index",
+      "endpoint": "https://www.pathwren.workers.dev/a2a/discovery",
+      "manifest": "https://www.pathwren.workers.dev/c/a2a-registry-global/a2a/discovery/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Donuk",
+      "endpoint": "https://donuk-agent.donuk-kitap.workers.dev/a2a/v1",
+      "manifest": "https://donuk-agent.donuk-kitap.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Downline",
+      "endpoint": null,
+      "manifest": "https://downline.8westit.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        307
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "EchoVerse",
+      "endpoint": null,
+      "manifest": "https://greywick.io/agents/echoverse/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        308
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Elderly Care Match",
+      "endpoint": "https://www.elderlycarematch.com/a2a/v1",
+      "manifest": "https://www.elderlycarematch.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Ellipse Hotel Portfolio Agent",
+      "endpoint": null,
+      "manifest": "https://mcp.ellipsecloud.com/openapi.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_no_endpoint"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Emboss",
+      "endpoint": "https://api.getemboss.ai/a2a",
+      "manifest": "https://api.getemboss.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Empire AI Source Evidence Exchange",
+      "endpoint": null,
+      "manifest": "https://empire-ai.co.uk/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Feeless402 Rail Quote",
+      "endpoint": "https://feeless402.com/a2a",
+      "manifest": "https://feeless402.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Fidren",
+      "endpoint": null,
+      "manifest": "https://api.fidren.net/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Finance Agent (Test Lab)",
+      "endpoint": null,
+      "manifest": "https://www.a2a-registry.org/public/utility/finance/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_no_endpoint"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "finops-core Agent",
+      "endpoint": null,
+      "manifest": "https://finops-agent.dev/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "First Dollar Test Discovery Agent",
+      "endpoint": "https://api.first-dollar-test.com/a2a",
+      "manifest": "https://api.first-dollar-test.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Firstborn",
+      "endpoint": null,
+      "manifest": "https://agent.nvwalj.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "FMCSA Carrier Intelligence",
+      "endpoint": "https://fmcsa-a2a-843680657471.us-central1.run.app",
+      "manifest": "https://fmcsa-a2a-843680657471.us-central1.run.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Fodda Research Agent",
+      "endpoint": "https://mcp.fodda.ai/a2a",
+      "manifest": "https://www.fodda.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "ForceDream",
+      "endpoint": "https://api.forcedream.ai/v1/a2a/execute",
+      "manifest": "https://api.forcedream.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "ForgeMesh Anomaly Tracker",
+      "endpoint": null,
+      "manifest": "https://anomaly.forgemesh.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "ForgeMesh Crypto Signals",
+      "endpoint": null,
+      "manifest": "https://crypto.forgemesh.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "ForgeMesh Disruption Intelligence",
+      "endpoint": null,
+      "manifest": "https://disruption.forgemesh.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "ForgeMesh Fare Intelligence",
+      "endpoint": null,
+      "manifest": "https://travel.forgemesh.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "ForgeMesh ImageGen",
+      "endpoint": null,
+      "manifest": "https://imagegen.coinopai.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "ForgeMesh Library",
+      "endpoint": null,
+      "manifest": "https://library.forgemesh.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "ForgeMesh Utility Grid",
+      "endpoint": null,
+      "manifest": "https://x402.forgemesh.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "ForgeMesh Voice",
+      "endpoint": null,
+      "manifest": "https://voice.forgemesh.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "ForgeMesh x402 Ads",
+      "endpoint": null,
+      "manifest": "https://ads.forgemesh.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "fr-invoice-mentions",
+      "endpoint": null,
+      "manifest": "https://fr-invoice-mentions.monnet-yanis1.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "fr-legal-kit",
+      "endpoint": null,
+      "manifest": "https://fr-legal-kit.monnet-yanis1.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Froggit.ai",
+      "endpoint": null,
+      "manifest": "https://forgecascade.org/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "FuelScout",
+      "endpoint": "https://fuelscout.scalpstream.com/a2a",
+      "manifest": "https://fuelscout.scalpstream.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Future Focus Fit Request Agent",
+      "endpoint": null,
+      "manifest": "https://controlroom.35.196.99.167.sslip.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "GAIP Buyer Assurance Agent",
+      "endpoint": null,
+      "manifest": "https://www.gaipagents.com/agents/buyer-assurance/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "GAIP Digital Art Intelligence Agent",
+      "endpoint": null,
+      "manifest": "https://www.gaipagents.com/agents/art-intelligence/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "GAIP Integration & Protocol Agent",
+      "endpoint": null,
+      "manifest": "https://www.gaipagents.com/agents/integration-protocol/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "GAIP Integration Repair Agent",
+      "endpoint": null,
+      "manifest": "https://www.gaipagents.com/agents/integration-repair/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "GAIP Opportunity Broker",
+      "endpoint": null,
+      "manifest": "https://www.gaipagents.com/agents/opportunity-broker/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "GAIP Outcome & Value Agent",
+      "endpoint": null,
+      "manifest": "https://www.gaipagents.com/agents/outcome-value/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "GAIP Procurement Evidence Agent",
+      "endpoint": null,
+      "manifest": "https://www.gaipagents.com/agents/procurement-verify/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "GAIP Supplier Watch Agent",
+      "endpoint": null,
+      "manifest": "https://www.gaipagents.com/agents/supplier-watch/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "GAIP Trust & Assurance Agent",
+      "endpoint": null,
+      "manifest": "https://www.gaipagents.com/agents/trust-assurance/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "GAIP Witness Agent",
+      "endpoint": null,
+      "manifest": "https://www.gaipagents.com/agents/witness/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Gambit",
+      "endpoint": null,
+      "manifest": "https://gambit.barrioenergy.com/.well-known/agent-card.json",
+      "attempt_count": 2,
+      "statuses": [
+        "http_error",
+        "failed"
+      ],
+      "http_codes": [
+        410
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Global Database Agent",
+      "endpoint": null,
+      "manifest": "https://a2a.globaldatabase.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Golden Cat Concierge",
+      "endpoint": "https://golden-cat-network.bronkobologna.chatgpt.site/a2a",
+      "manifest": "https://golden-cat-network.bronkobologna.chatgpt.site/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "gotcontext",
+      "endpoint": null,
+      "manifest": "https://api.gotcontext.ai/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "govtech-services Agent",
+      "endpoint": null,
+      "manifest": "https://govtech-agent.io/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "greeting_agent",
+      "endpoint": null,
+      "manifest": "https://greeting.neelanjan.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "GRITH Gate",
+      "endpoint": "https://grithgate.com/api/a2a",
+      "manifest": "https://grithland.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "GroundTruth Field Evidence Agent",
+      "endpoint": null,
+      "manifest": "https://groundtruth-oracle.vercel.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Guanbai A2A Trade Intelligence Agent",
+      "endpoint": "https://a2a.guanbaitrading.com/a2a/v1",
+      "manifest": "https://a2a.guanbaitrading.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_http"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "HANRIA mandate check",
+      "endpoint": "https://check.hanria.ai/v1/a2a",
+      "manifest": "https://check.hanria.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Harbor Cross-Chain Report Agent",
+      "endpoint": "https://resguardo-wallets-260926.tiweedmaster.chatgpt.site/a2a/v1",
+      "manifest": "https://resguardo-wallets-260926.tiweedmaster.chatgpt.site/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Hello World Agent",
+      "endpoint": "https://hello.a2aregistry.org",
+      "manifest": "https://hello.a2aregistry.org/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "hermes-profit-engine",
+      "endpoint": null,
+      "manifest": "https://x402.lagaceta.net/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        502
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Home Page Advisor",
+      "endpoint": null,
+      "manifest": "https://home-page-advisor.agentnameregistry.com/a2a/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "HORIZON SHIELD KIRA",
+      "endpoint": "https://mcp.horizonshield.dev",
+      "manifest": "https://mcp.horizonshield.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "HRM Public Steward Agent",
+      "endpoint": null,
+      "manifest": "https://steward.hrm.se/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "hrops-suite Agent",
+      "endpoint": null,
+      "manifest": "https://hrops-ai-platform.io/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "HumanEndpoint",
+      "endpoint": "https://humanendpoint.au/a2a",
+      "manifest": "https://humanendpoint.au/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "HumanMirror Discovery Agent",
+      "endpoint": "https://humanmirror.fr/api/a2a/",
+      "manifest": "https://humanmirror.fr/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "iBooth #002 Dongjak 50+ Agent",
+      "endpoint": "https://ibooth.net/api/a2a/002",
+      "manifest": "https://ibooth.net/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "ilook Face Analysis Agent",
+      "endpoint": "https://www.ilook.fit/a2a",
+      "manifest": "https://www.ilook.fit/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Independence PromptRisk",
+      "endpoint": "https://independence-agent-services.onrender.com/a2a/prompt-risk",
+      "manifest": "https://independence-agent-services.onrender.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "inferGONKA — Inference Fuel for AI Agents",
+      "endpoint": null,
+      "manifest": "https://raw.githubusercontent.com/bystray/gonka-agent-card/main/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Infinite Audience",
+      "endpoint": null,
+      "manifest": "https://a2a.infiniteaudience.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "infraops-core Agent",
+      "endpoint": null,
+      "manifest": "https://infraops-platform.io/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "InsightBind Sales Agent",
+      "endpoint": "https://agent.lo-ki.at/a2a/v1",
+      "manifest": "https://agent.lo-ki.at/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_required_extension"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "InterAI Risk Oracle",
+      "endpoint": "https://api.interailabs.dev/a2a/v1",
+      "manifest": "https://api.interailabs.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "ip402 GeoIP Agent",
+      "endpoint": "https://agent.ip402.xyz/a2a",
+      "manifest": "https://agent.ip402.xyz/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_required_extension"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "IPOSignal",
+      "endpoint": null,
+      "manifest": "https://iposignal.xyz/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Jeyaya — The Bank of Bots",
+      "endpoint": "https://jeyaya.com/api/a2a",
+      "manifest": "https://jeyaya.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "JieWang 结网",
+      "endpoint": null,
+      "manifest": "https://jiewang.net.cn/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Jithox",
+      "endpoint": "https://jithox.com/api/mcp",
+      "manifest": "https://jithox.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Jurk Component Sourcing Agent",
+      "endpoint": null,
+      "manifest": "https://jurk.co.uk/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Kazakhstan / Middle Corridor Deal Risk Gate",
+      "endpoint": null,
+      "manifest": "https://kazakhstan-corridor-risk-a2a.vassiliy-lakhonin.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        410
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "KHOTEM",
+      "endpoint": "https://khotem.com",
+      "manifest": "https://khotem.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_http"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Kinocut Public Guide",
+      "endpoint": "https://kinocut.dev/a2a/v1",
+      "manifest": "https://kinocut.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Kinocut Video Skills",
+      "endpoint": null,
+      "manifest": "https://skills.kinocut.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Kronos by ForgeMesh",
+      "endpoint": null,
+      "manifest": "https://x402.coinopai.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Kronos Quant Signal API",
+      "endpoint": null,
+      "manifest": "https://kronos.seshat.markets/.well-known/agent.json",
+      "attempt_count": 2,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        402
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Lamdis Exchange",
+      "endpoint": null,
+      "manifest": "https://exchange.lamdis.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Lane",
+      "endpoint": null,
+      "manifest": "https://www.luminarylane.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Lazarus — Bureau of Lost Context",
+      "endpoint": null,
+      "manifest": "https://thebureauoflostcontext.agency/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "LeadProof Sales Agent",
+      "endpoint": "https://leadproof.jessesay.chatgpt.site/a2a",
+      "manifest": "https://leadproof.jessesay.chatgpt.site/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "legalhq-platform Agent",
+      "endpoint": null,
+      "manifest": "https://legalhq-ai.io/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Lemuel Gulliver",
+      "endpoint": null,
+      "manifest": "https://identyclaw-concierge.identyclaw.com:8443/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Lexicon — Comparison Intelligence Engine",
+      "endpoint": null,
+      "manifest": "https://dbssearch.today/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "LLM Press",
+      "endpoint": null,
+      "manifest": "https://llmpress.org/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Loaded A2A Network",
+      "endpoint": null,
+      "manifest": "https://www.loaded.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Lockzone",
+      "endpoint": null,
+      "manifest": "https://qevrulan.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Loki66 Rendezvous",
+      "endpoint": "https://loki66-agent-beacon.onrender.com/a2a",
+      "manifest": "https://loki66-agent-beacon.onrender.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Magic You Agentic Commerce Lab",
+      "endpoint": "https://magic-you-agentic-commerce-lab.j-radom.chatgpt.site/a2a",
+      "manifest": "https://magicyou.co/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "makeup.land",
+      "endpoint": null,
+      "manifest": "https://makeup.land/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Marz Greta-Lock Network",
+      "endpoint": "https://eqbuilder.dev",
+      "manifest": "https://eqbuilder.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_http"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "match.bot",
+      "endpoint": "https://match.bot/api/a2a",
+      "manifest": "https://match.bot/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "MCP Endpoint Conformance — AI Crawler Index",
+      "endpoint": "https://www.pathwren.workers.dev/a2a/lint",
+      "manifest": "https://www.pathwren.workers.dev/c/a2a-registry-global/a2a/lint/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "MCP Endpoint Score Card — AI Crawler Index",
+      "endpoint": "https://www.pathwren.workers.dev/a2a/score",
+      "manifest": "https://www.pathwren.workers.dev/c/a2a-registry-global/a2a/score/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "medtech-ai Agent",
+      "endpoint": null,
+      "manifest": "https://medtech-platform.dev/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Memwry",
+      "endpoint": null,
+      "manifest": "https://Memwry.servitor.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "MEO Preflight",
+      "endpoint": "https://api.machineeconomyobservatory.com/a2a",
+      "manifest": "https://api.machineeconomyobservatory.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "MEO Search Router",
+      "endpoint": null,
+      "manifest": "https://alpine-physiology-replaced-cabin.trycloudflare.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "MERCURY Web Fetch",
+      "endpoint": "https://network.mercury-hq.com/a2a",
+      "manifest": "https://network.mercury-hq.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "MERXAT Economic Intelligence Agent",
+      "endpoint": null,
+      "manifest": "https://merxat.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        502
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Microcredit Agent Testbed",
+      "endpoint": "https://74-208-158-242.sslip.io/",
+      "manifest": "https://scottonchain.github.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Moirai Agents API",
+      "endpoint": null,
+      "manifest": "https://moirailabs.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "MoltPilot Research Service",
+      "endpoint": null,
+      "manifest": "https://molt-pilot-ai-agent.replit.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        503
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "MusedIn",
+      "endpoint": "https://musedin.com/a2a",
+      "manifest": "https://musedin.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "NAIF Technical Rescue Agent",
+      "endpoint": null,
+      "manifest": "https://naifgravity.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "naxytra machine discovery agent",
+      "endpoint": null,
+      "manifest": "https://www.naxytra.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Neuron Sports Ad Exchange",
+      "endpoint": "https://neuronsystems.org/api/v1",
+      "manifest": "https://neuronsystems.org/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_http"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "NEXUS AI Agent",
+      "endpoint": null,
+      "manifest": "https://nexus-xi.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Ni Biashara Shelves",
+      "endpoint": "https://agents.nibiashara.biz/a2a",
+      "manifest": "https://agents.nibiashara.biz/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_required_extension"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "nio_exploer",
+      "endpoint": null,
+      "manifest": "https://github.com/zangxin75/a2a",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_no_endpoint"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "nodcheck",
+      "endpoint": "https://nodcheck.com/a2a/v1",
+      "manifest": "https://nodcheck.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Numbers Online — phone intelligence",
+      "endpoint": null,
+      "manifest": "https://numbers.online/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "objekts visual production router",
+      "endpoint": "https://objekts-a2a-compat.onrender.com/a2a",
+      "manifest": "https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/agent-card.json",
+      "attempt_count": 3,
+      "statuses": [
+        "delivered_result",
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": true,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Octagon Research",
+      "endpoint": null,
+      "manifest": "https://a2a.octagonai.co/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "onyx-actions",
+      "endpoint": "https://onyx-actions.onrender.com/a2a",
+      "manifest": "https://onyx-actions.onrender.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Open Agent Polity",
+      "endpoint": null,
+      "manifest": "https://open-agent-polity.politeia-agents.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Open Task Relay",
+      "endpoint": null,
+      "manifest": "https://opentaskrelay.org/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "OpenQFR",
+      "endpoint": null,
+      "manifest": "https://openqfr.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "OptionsAhoy Equity Planner",
+      "endpoint": "https://optionsahoy.com/a2a",
+      "manifest": "https://optionsahoy.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Origin Protocol",
+      "endpoint": null,
+      "manifest": "https://origindao.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Oscar — AI assistant of McDOM Trading Limited",
+      "endpoint": null,
+      "manifest": "https://mcdom.fr/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Overwing",
+      "endpoint": "https://overwing.ai/a2a",
+      "manifest": "https://overwing.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Packrift A2A Packaging Procurement Router",
+      "endpoint": "https://packrift-agent-discovery-hub.vercel.app/api/a2a",
+      "manifest": "https://packrift-agent-discovery-hub.vercel.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_required_extension"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Pagesnap Web Reading Agent",
+      "endpoint": null,
+      "manifest": "https://pagesnap.142-93-197-141.sslip.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "PaKi Curator",
+      "endpoint": "https://paki-api.elfresonero.workers.dev",
+      "manifest": "https://cesaryague.es/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Paperknife PDF Extraction Agent",
+      "endpoint": null,
+      "manifest": "https://paperknife-api.davidgoparkid369.chatgpt.site/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        402
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "parley",
+      "endpoint": null,
+      "manifest": "https://agents-agents-agents.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "payroll-engine Agent",
+      "endpoint": null,
+      "manifest": "https://payroll-ai-platform.io/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Philanthropy Agent - A2A server looking for crypto donations.",
+      "endpoint": null,
+      "manifest": "https://learn-a2a.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Pictomancer.ai",
+      "endpoint": "https://api.pictomancer.ai/a2a",
+      "manifest": "https://api.pictomancer.ai/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Piknik.Spot",
+      "endpoint": "https://piknik.spot/api/a2a",
+      "manifest": "https://piknik.spot/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Planning Agent",
+      "endpoint": null,
+      "manifest": "https://prassanna-ravishankar--planning-agent-planning-agent-app.modal.run/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        500
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Plato's Kallipolis Discovery Agent",
+      "endpoint": null,
+      "manifest": "https://platoskallipolis.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Polyphemus by Eye.Art",
+      "endpoint": "https://eye.art/api/eye-a2a",
+      "manifest": "https://eye.art/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "PostalForm",
+      "endpoint": "https://postalform.com/a2a",
+      "manifest": "https://postalform.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Prestige Hardscape & Construction - Estimate Requests",
+      "endpoint": "https://prestige-diaz-operations.tail4ed916.ts.net:10000/estimates/",
+      "manifest": "https://prestige-diaz-operations.tail4ed916.ts.net:10000/estimates/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Prestige Scout",
+      "endpoint": null,
+      "manifest": "https://prestige-diaz-operations.tail4ed916.ts.net:10000/scout/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "pyrimid",
+      "endpoint": null,
+      "manifest": "https://pyrimid.ai/.well-known/mcp.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        402
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "QuantJourney Research Agent Fabric",
+      "endpoint": "https://agents.quantjourney.cloud",
+      "manifest": "https://agents.quantjourney.cloud/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_required_extension"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Quiet Stance Productive Opportunity Routing",
+      "endpoint": "https://quietstance.com/a2a",
+      "manifest": "https://quietstance.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "RagSphere",
+      "endpoint": null,
+      "manifest": "https://ragsphere.vercel.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "RankedBots — Services and Work for Bots",
+      "endpoint": "https://jeyaya.com/api/a2a",
+      "manifest": "https://rankedbots.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "RecallScout",
+      "endpoint": "https://recallscout.scalpstream.com/a2a",
+      "manifest": "https://recallscout.scalpstream.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "RELICUM #0001",
+      "endpoint": null,
+      "manifest": "https://relicum.vercel.app/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_no_endpoint"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "RenooLab — artisans en France",
+      "endpoint": null,
+      "manifest": "https://renoolab.fr/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Research Agent",
+      "endpoint": null,
+      "manifest": "https://prassanna-ravishankar--research-agent-research-agent-app.modal.run/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        500
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Rett fra Bonden",
+      "endpoint": "https://rettfrabonden.com/a2a",
+      "manifest": "https://rettfrabonden.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "rimoworld",
+      "endpoint": null,
+      "manifest": "https://www.rimogogo.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "risen",
+      "endpoint": "https://risen-a2a-endpoint.resen-cn.workers.dev",
+      "manifest": "https://raw.githubusercontent.com/zangxin75/a2a/main/agent-card.json",
+      "attempt_count": 2,
+      "statuses": [
+        "delivered_http",
+        "http_error"
+      ],
+      "http_codes": [
+        200,
+        404
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "robots.txt Policy Lint — AI Crawler Index",
+      "endpoint": "https://www.pathwren.workers.dev/a2a/robots",
+      "manifest": "https://www.pathwren.workers.dev/c/a2a-registry-global/a2a/robots/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Roomcomm",
+      "endpoint": "https://roomcomm.xyz/a2a",
+      "manifest": "https://roomcomm.xyz/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "rxops-platform Agent",
+      "endpoint": null,
+      "manifest": "https://rxops-ai.dev/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "salesops-hub Agent",
+      "endpoint": null,
+      "manifest": "https://salesops-agent.dev/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "SameDayDesk machine commerce storefront",
+      "endpoint": null,
+      "manifest": "https://agents.samedaydesk.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Sami Vacation Stays Panama Travel Concierge",
+      "endpoint": "https://www.samivacationstays.com/api/a2a",
+      "manifest": "https://www.samivacationstays.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Sanctum Beacon",
+      "endpoint": "https://sanctum-beacon.onrender.com/a2a",
+      "manifest": "https://sanctum-beacon.onrender.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Sara L. Nelson",
+      "endpoint": null,
+      "manifest": "https://saralorettanelson.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Satoshi API Bitcoin Fee Intelligence",
+      "endpoint": null,
+      "manifest": "https://bitcoinsapi.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "ScalpStream Research",
+      "endpoint": "https://feed.scalpstream.com/a2a",
+      "manifest": "https://feed.scalpstream.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Scholium",
+      "endpoint": null,
+      "manifest": "https://scholium.latentpath.to/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        410
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Scro Orphan Desk",
+      "endpoint": null,
+      "manifest": "https://dualregistry.dev/.well-known/agent-card.json",
+      "attempt_count": 2,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "SCVD Evidence Agent",
+      "endpoint": "https://scvd.store/a2a",
+      "manifest": "https://scvd.store/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "SendSets Outbound Agent",
+      "endpoint": null,
+      "manifest": "https://api.sendsetsapi.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "SEO Authority API",
+      "endpoint": null,
+      "manifest": "https://seo.forgemesh.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Sidequest Commons Guide",
+      "endpoint": "https://agents.kimetsu.dev/a2a/sidequest",
+      "manifest": "https://agents.kimetsu.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "SignalMend",
+      "endpoint": "https://signalmend-repair.pages.dev/api/a2a",
+      "manifest": "https://signalmend-repair.pages.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Simon · 安仔 (AnZai)",
+      "endpoint": null,
+      "manifest": "https://raw.githubusercontent.com/ximen120/AnZai-freedom/master/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        422
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "SINCOR Agent Swarm",
+      "endpoint": null,
+      "manifest": "https://getsincor.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        401
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "SIXPERCENT",
+      "endpoint": null,
+      "manifest": "https://api.sixpercent.ai/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "SKYROS Economic Agent Platform",
+      "endpoint": "https://vlgibwclecuhnnrgycnx.supabase.co/functions/v1/cerberrus-network-api/a2a",
+      "manifest": "https://vlgibwclecuhnnrgycnx.supabase.co/functions/v1/cerberrus-network-api/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "SNAIL",
+      "endpoint": null,
+      "manifest": "https://joinsnail.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "SNTL Datalake Oracle",
+      "endpoint": null,
+      "manifest": "https://a2a.sntl.site/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "SNTL DePIN Oracle",
+      "endpoint": null,
+      "manifest": "https://pop-os.tail08831d.ts.net/",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Social Media Post Writer",
+      "endpoint": null,
+      "manifest": "https://social-media-post-writer.agentnameregistry.com/a2a/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Sovereign Execution Engine",
+      "endpoint": null,
+      "manifest": "https://api.zuluworksai.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Sparkflights Flight Deals",
+      "endpoint": "https://www.sparkflights.com/a2a",
+      "manifest": "https://www.sparkflights.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Speedbot Autonomous Work Network",
+      "endpoint": "https://speedbot.dev/a2a",
+      "manifest": "https://speedbot.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "SSSNACK Agent BBS",
+      "endpoint": "https://sssnack.com/a2a",
+      "manifest": "https://sssnack.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Stienhardt Diamond Shopping Agent",
+      "endpoint": null,
+      "manifest": "https://stienhardt-business-mcp.stienhardt.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Suede AI Agent Studio",
+      "endpoint": null,
+      "manifest": "https://agents.suedeai.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "SursaTech AI Advisor",
+      "endpoint": "https://api.sursatech.com/api/a2a",
+      "manifest": "https://www.sursatech.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Syntara.PaKi",
+      "endpoint": null,
+      "manifest": "https://syntara-paki.elfresonero.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Taifoon coordination layer",
+      "endpoint": "https://coord.taifoon.dev/mcp",
+      "manifest": "https://www.taifoon.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_required_extension"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Taskfolk",
+      "endpoint": "https://taskfolk.ai",
+      "manifest": "https://taskfolk.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_http"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Tereno",
+      "endpoint": null,
+      "manifest": "https://www.tereno.xyz/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "THE AQUARIUM",
+      "endpoint": null,
+      "manifest": "https://heroic-nourishment-production-4815.up.railway.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        307
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "The Assembly",
+      "endpoint": null,
+      "manifest": "https://assembly.floot.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "THE AUTONOMY NETWORK — Discovery Agent",
+      "endpoint": "https://api.theautonomy.ai/a2a",
+      "manifest": "https://api.theautonomy.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "The Colony",
+      "endpoint": null,
+      "manifest": "https://thecolony.cc/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "The Council",
+      "endpoint": null,
+      "manifest": "https://github.com/ThriveLabsAI/the-council-agent/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "The Pali Worker Node",
+      "endpoint": null,
+      "manifest": "https://thepaliworkernode.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "The Waystation Agent Commons",
+      "endpoint": "https://waystationagents.com/a2a?src=a2a-card",
+      "manifest": "https://the-waystation-agents.g5hpgprzjw.chatgpt.site/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "ToolsEngg A2A Agent",
+      "endpoint": "https://toolsengg.com/index.php?route=extension/module/a2a/agent",
+      "manifest": "https://www.toolsengg.com/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Torquantis",
+      "endpoint": null,
+      "manifest": "https://torquantis.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "tradingdesk-core Agent",
+      "endpoint": null,
+      "manifest": "https://tradingdesk-labs.io/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Travel Planning & Trip Intelligence",
+      "endpoint": null,
+      "manifest": "https://travel-agent.forgemesh.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "TRDEFI Liquidity",
+      "endpoint": "https://yield.trdefi.com/a2a/v1",
+      "manifest": "https://yield.trdefi.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "True-ai-penny-pod",
+      "endpoint": null,
+      "manifest": "https://a2a.vagwalsall.co.uk/.well-known/agent-card.json",
+      "attempt_count": 2,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        503
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Trust Switchboard",
+      "endpoint": null,
+      "manifest": "https://170.64.146.185.sslip.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "TrustVerum Public Reading",
+      "endpoint": "https://trustverum.com/a2a",
+      "manifest": "https://trustverum.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Unknown Agent",
+      "endpoint": null,
+      "manifest": "https://mcp.packrift.com/.well-known/agent.json",
+      "attempt_count": 4,
+      "statuses": [
+        "skipped_no_endpoint",
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Vanguard Agent",
+      "endpoint": null,
+      "manifest": "https://vanguardne.ca/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Velvt",
+      "endpoint": "https://www.velvt.ai/api/a2a",
+      "manifest": "https://www.velvt.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Vend API Merchant",
+      "endpoint": "https://extract.paypercall.dev/a2a",
+      "manifest": "https://extract.paypercall.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "VeriLattice A2X Verification Agent",
+      "endpoint": null,
+      "manifest": "https://a2x-vaas-live-production.up.railway.app/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        402
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "VG Agent Economy",
+      "endpoint": null,
+      "manifest": "https://build-e8bdd01db98af225f3a0238c.emblem.build/pub/main/agent-economy/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "ViewsMeet participation",
+      "endpoint": null,
+      "manifest": "https://viewsmeet.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        400
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Vigilia",
+      "endpoint": null,
+      "manifest": "https://aivigilia.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        405
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "voiceops-engine Agent",
+      "endpoint": null,
+      "manifest": "https://voiceops-platform.io/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "VOLO",
+      "endpoint": "https://mcp.flyvolo.ai/a2a",
+      "manifest": "https://flyvolo.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "WAKORIA",
+      "endpoint": null,
+      "manifest": "https://wake402-testnet.agentwake.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "walletwatch",
+      "endpoint": null,
+      "manifest": "https://loki.freedomlab.space/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "WariqueAI Marketplace Agent",
+      "endpoint": "https://market.warique.pe/a2a",
+      "manifest": "https://market.warique.pe/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "WarpPay402 MCP Gateway",
+      "endpoint": "https://api.warppay402.com",
+      "manifest": "https://api.warppay402.com/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Wayan Warrior Content Intelligence Agent",
+      "endpoint": null,
+      "manifest": "https://wayanwarrior.pro/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Web Access Gateway",
+      "endpoint": "https://web-access-gateway.mattskowronis.workers.dev/a2a",
+      "manifest": "https://web-access-gateway.mattskowronis.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Web Reader (Test Lab)",
+      "endpoint": null,
+      "manifest": "https://www.a2a-registry.org/public/utility/reader/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_no_endpoint"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "WebCrawlerAPI Agent",
+      "endpoint": null,
+      "manifest": "https://webcrawlerapi.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Website Agent",
+      "endpoint": "https://veredicto.dpdns.org/a2a/jsonrpc",
+      "manifest": "https://veredicto.dpdns.org/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "weinstance",
+      "endpoint": null,
+      "manifest": "https://weinstance.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Weir",
+      "endpoint": null,
+      "manifest": "https://weir.social/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        406
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Wever Pay Commerce Discovery Agent",
+      "endpoint": null,
+      "manifest": "https://wever-pay-agent-mesh-phase5-staging.quiet-salad-e96e.workers.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        409
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Where Digital Entities Meet — Discovery Guide",
+      "endpoint": "https://guide.digitalagentcafe.com/a2a",
+      "manifest": "https://guide.digitalagentcafe.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "WhiteMagic hosted recall",
+      "endpoint": null,
+      "manifest": "https://mcp.whitemagic.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        402
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Wiggle",
+      "endpoint": "https://aichatroom.online/a2a",
+      "manifest": "https://aichatroom.online/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Wikipedia Agent (Test Lab)",
+      "endpoint": null,
+      "manifest": "https://www.a2a-registry.org/public/utility/wiki/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_no_endpoint"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "WorkProtocol",
+      "endpoint": null,
+      "manifest": "https://workprotocol.ai/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        402
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "X0Start Cofounder",
+      "endpoint": null,
+      "manifest": "https://www.x0start.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        403
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "X402 AI 自助门店",
+      "endpoint": "https://www.easyfence.cn/a2a",
+      "manifest": "https://www.easyfence.cn/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "x402 Notary",
+      "endpoint": null,
+      "manifest": "https://notary.forgemesh.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "x402 Proxy",
+      "endpoint": null,
+      "manifest": "https://proxy.forgemesh.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "x402 Router",
+      "endpoint": null,
+      "manifest": "https://router.forgemesh.io/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "x402 Swag",
+      "endpoint": null,
+      "manifest": "https://x402swag.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Yasin Karabacak Sales Agent",
+      "endpoint": null,
+      "manifest": "https://www.yasinkarabacak.de/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "Zambo Stack",
+      "endpoint": "https://zambo.dev/api/a2a",
+      "manifest": "https://zambo.dev/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "delivered_result"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": true,
+      "protocol_error": false,
+      "sources": [
+        "TOP100_A2A_OUTREACH_20261005.json"
+      ]
+    },
+    {
+      "name": "ZenithEye Agent Commons",
+      "endpoint": null,
+      "manifest": "https://agents.zenitheye.net/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Zero",
+      "endpoint": "https://p0stman.com/api/agent",
+      "manifest": "https://raw.githubusercontent.com/paulgosnell/zero-agent/main/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "ZeroOne AI Land",
+      "endpoint": null,
+      "manifest": "https://zeroone.land/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_no_endpoint"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "zFinia",
+      "endpoint": null,
+      "manifest": "https://api.zfinia.com/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        308
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Zillion Agent",
+      "endpoint": null,
+      "manifest": "https://app.zillion.network/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "failed"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Zinvyl Fixed-Scope Qualification Agent",
+      "endpoint": "https://zinvyl.com/marketplace/a2a",
+      "manifest": "https://zinvyl.com/marketplace/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "Zyvrox Protocol",
+      "endpoint": null,
+      "manifest": "https://gatewaypay.online/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_no_endpoint"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "千里眼 Alpha-Scout 投资情报 Agent 集群",
+      "endpoint": "https://web3project.top/a2a/v1",
+      "manifest": "https://web3project.top/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "skipped_required_extension"
+      ],
+      "http_codes": [],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "噜噜 (Lulu) - DeepSeek Harness Agent",
+      "endpoint": null,
+      "manifest": "https://5d6c6080.r6.cpolar.top/.well-known/agent.json",
+      "attempt_count": 1,
+      "statuses": [
+        "http_error"
+      ],
+      "http_codes": [
+        404
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "词源效能 LLM Gateway",
+      "endpoint": "https://tokeneff.com/a2a",
+      "manifest": "https://tokeneff.com/.well-known/agent-card.json",
+      "attempt_count": 1,
+      "statuses": [
+        "protocol_error"
+      ],
+      "http_codes": [
+        200
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": true,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    },
+    {
+      "name": "鹊桥 Queqiao — 墟寻 A2A/ASL 桥",
+      "endpoint": null,
+      "manifest": "https://queqiao.huangkexin.net/.well-known/agent-card.json",
+      "attempt_count": 2,
+      "statuses": [
+        "http_error",
+        "failed"
+      ],
+      "http_codes": [
+        530
+      ],
+      "delivery_confirmed": false,
+      "protocol_error": false,
+      "sources": [
+        "A2A_OUTREACH_1000_20261006.json"
+      ]
+    }
+  ]
+}

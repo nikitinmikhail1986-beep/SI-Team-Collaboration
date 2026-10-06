@@ -29,6 +29,18 @@ def main() -> int:
         str(t.get("endpoint") or t.get("registry_id") or t.get("candidate_id") or t.get("name") or "").strip()
         for t in targets
     }
+    processed_names: set[str] = set()
+    processed_endpoints: set[str] = set()
+    ledger_path = ROOT / "A2A_OUTREACH_LEDGER.json"
+    if ledger_path.exists():
+        ledger = json.loads(ledger_path.read_text(encoding="utf-8-sig"))
+        for agent in ledger.get("agents", []):
+            name = str(agent.get("name") or "").strip().lower()
+            endpoint = str(agent.get("endpoint") or "").strip().lower().rstrip("/")
+            if name:
+                processed_names.add(name)
+            if endpoint:
+                processed_endpoints.add(endpoint)
 
     added = []
     for candidate in discovery.get("candidates", []):
@@ -40,7 +52,14 @@ def main() -> int:
         if uptime is not None and float(uptime) < MIN_UPTIME:
             continue
         key = _key(candidate)
-        if not key or key in existing_keys:
+        candidate_name = str(candidate.get("agent_name") or "").strip().lower()
+        candidate_endpoint = str(candidate.get("endpoint") or "").strip().lower().rstrip("/")
+        if (
+            not key
+            or key in existing_keys
+            or candidate_name in processed_names
+            or (candidate_endpoint and candidate_endpoint in processed_endpoints)
+        ):
             continue
 
         row = {

@@ -17,8 +17,9 @@ def recruitment_status(root=ROOT):
     shared_endpoints = {str(t.get('name')): str(t.get('endpoint') or '') for t in outbound if t.get('endpoint')}
     queued_outreach = []
     qualified_pending = [item for item in outbound if item.get('status') == 'qualified_pending_outreach']
+    awaiting_response_statuses = {'invited_awaiting_response', 'followup_sent_awaiting_response'}
     for item in outbound:
-        if item.get('status') != 'invited_awaiting_response' or not item.get('candidate_id'):
+        if item.get('status') not in awaiting_response_statuses or not item.get('candidate_id'):
             continue
         endpoint = str(item.get('endpoint') or '')
         if not endpoint and 'SwarmMemo' in str(item.get('protocol') or ''):
@@ -30,6 +31,8 @@ def recruitment_status(root=ROOT):
             'delivery_confirmed': bool(item.get('initial_delivery_confirmed')),
         })
     external_records = {e['candidate_id'] for e in events if e.get('registered') and e.get('source') == 'external_github'}
+    a2a_ledger_path = root / 'A2A_OUTREACH_LEDGER.json'
+    a2a_ledger = json.loads(a2a_ledger_path.read_text(encoding='utf-8-sig')) if a2a_ledger_path.exists() else {}
     status = {
         'configured_internal_targets': len(targets) - len(external),
         'configured_external_targets': len(external) + len(qualified_pending) + len(queued_outreach),
@@ -37,6 +40,10 @@ def recruitment_status(root=ROOT):
         'qualified_pending_outreach': len(qualified_pending),
         'outreach_candidates_awaiting_response': len(queued_outreach),
         'outreach_delivery_confirmed': sum(bool(t.get('delivery_confirmed')) for t in queued_outreach),
+        'a2a_outreach_attempts': int(a2a_ledger.get('attempts', 0)),
+        'a2a_unique_agents_contacted': int(a2a_ledger.get('unique_agents', 0)),
+        'a2a_delivery_confirmed_unique': int(a2a_ledger.get('delivery_confirmed_unique', 0)),
+        'a2a_protocol_error_unique': int(a2a_ledger.get('protocol_error_unique', 0)),
         'canonical_member_records': len(re.findall(r'^  - agent_id:', (root / 'FEDERATION_MEMBERS.yaml').read_text(encoding='utf-8-sig'), re.M)),
         'latest_accession_states': dict(Counter(e['state'] for e in latest.values())),
         'registered_via_github_transport': len(external_records),

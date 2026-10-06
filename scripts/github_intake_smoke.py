@@ -39,7 +39,12 @@ def main():
                         'baseline_answers': {k: v['expected'] for k, v in BASELINE_CHALLENGE.items()}}
             api.comment(issue['number'], json.dumps(response))
             second = sync_issue(api, issue, root)
-            result = second['receipts'][0]['result']
+            assert second['state'] == 'awaiting_trial_verification', second
+            assert second.get('receipts') == [], second
+            api.request(f"/issues/{issue['number']}/labels", {'labels': ['trial-verified']})
+            issue['labels'] = list(issue.get('labels') or []) + [{'name': 'trial-verified'}]
+            third = sync_issue(api, issue, root)
+            result = third['receipts'][0]['result']
             assert result['state'] == 'registered', result
             audit_before = (root / 'ACCESSION_AUDIT.jsonl').read_bytes()
             retry = sync_issue(api, issue, root)
