@@ -94,11 +94,10 @@ def main() -> int:
             poll_failures.append({"candidate_id": candidate_id, "error": item["last_poll_error"]})
             _record_outbound({"ts": poll_ts, "target": item.get("name") or candidate_id, "candidate_id": candidate_id, "event": "poll_stale", "transport": "SwarmMemo public thread", "error": item["last_poll_error"]})
             continue
-        item["last_poll_at"] = poll_ts
         item.pop("last_poll_error", None)
         if item.get("status") == "poll_stale":
             item["status"] = "followup_sent_awaiting_response"
-        changed = True
+            changed = True
         for message in thread_messages(thread):
             mid = str(message.get("id") or "").strip()
             author = str(message.get("author") or "").strip()
