@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-06T03:21:24.098960Z",
+  "updated_at": "2026-10-06T06:30:51.822595Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -934,9 +934,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Golden Cat Concierge",
+      "protocol": "A2A",
+      "endpoint": "https://golden-cat-network.bronkobologna.chatgpt.site/a2a",
+      "well_known_uri": "https://golden-cat-network.bronkobologna.chatgpt.site/.well-known/agent-card.json",
+      "registry_id": "46a86268-b2cd-4aca-a466-23d89f341521",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "interoperability",
+      "matched_query": "a2a",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Jeyaya — The Bank of Bots",
+      "protocol": "A2A",
+      "endpoint": "https://jeyaya.com/api/a2a",
+      "well_known_uri": "https://jeyaya.com/.well-known/agent-card.json",
+      "registry_id": "19404b51-7a27-4f74-a8e7-ac2294b2ac9d",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "interoperability",
+      "matched_query": "mcp",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-06T03:21:24.098960Z",
-  "discovery_promoted_at": "2026-10-06T00:08:31.719067Z",
-  "qualified_pending_outreach": 53
+  "discovery_promoted_at": "2026-10-06T06:30:51.822595Z",
+  "qualified_pending_outreach": 55
 }

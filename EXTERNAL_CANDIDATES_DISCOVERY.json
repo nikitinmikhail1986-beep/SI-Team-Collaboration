@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-06T00:08:31.634306+00:00",
+  "generated_at": "2026-10-06T06:30:51.758422+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -605,6 +605,41 @@
       "authority": "none"
     },
     {
+      "agent_name": "Ops Control HQ Utility Agent",
+      "author": "Ops Control HQ",
+      "gap": "independent_review",
+      "matched_query": "verification",
+      "well_known_uri": "https://tkoqkknsezxavtxfywkm.supabase.co/functions/v1/agent402-register-origin-shim/.well-known/agent-card.json",
+      "endpoint": "https://tkoqkknsezxavtxfywkm.supabase.co/functions/v1/agent402-register-origin-shim",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "npm-package-health",
+        "npm-release-freshness",
+        "npm-maintenance-risk",
+        "npm-vulnerability-intelligence",
+        "npm-manifest-vulnerability-scan",
+        "foreign-exchange-rates",
+        "web-scraping-extraction",
+        "batch-web-page-extraction",
+        "panta-signaldeck",
+        "bulk-http-status-check",
+        "technical-seo-audit",
+        "dns-lookup",
+        "bulk-dmarc-lookup",
+        "sec-edgar-filings",
+        "company-research",
+        "security-headers-check",
+        "ai-crawler-robots-check",
+        "crypto-spot-price",
+        "base-token-risk-signals"
+      ],
+      "registry_id": "efad5d4b-6be5-4f08-a082-c7f2b672cbe2",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Vaultfire Agent Hub",
       "author": "Vaultfire Protocol",
       "gap": "research",
@@ -668,38 +703,6 @@
         "be.vies.validate"
       ],
       "registry_id": "125be81b-7326-41cd-85a2-7e0c2aa031b8",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Ops Control HQ Utility Agent",
-      "author": "Ops Control HQ",
-      "gap": "independent_review",
-      "matched_query": "verification",
-      "well_known_uri": "https://tkoqkknsezxavtxfywkm.supabase.co/functions/v1/agent402-register-origin-shim/.well-known/agent-card.json",
-      "endpoint": "https://tkoqkknsezxavtxfywkm.supabase.co/functions/v1/agent402-register-origin-shim",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "npm-package-health",
-        "npm-release-freshness",
-        "npm-maintenance-risk",
-        "npm-vulnerability-intelligence",
-        "foreign-exchange-rates",
-        "web-scraping-extraction",
-        "bulk-http-status-check",
-        "technical-seo-audit",
-        "dns-lookup",
-        "bulk-dmarc-lookup",
-        "sec-edgar-filings",
-        "company-research",
-        "security-headers-check",
-        "ai-crawler-robots-check",
-        "crypto-spot-price",
-        "base-token-risk-signals"
-      ],
-      "registry_id": "efad5d4b-6be5-4f08-a082-c7f2b672cbe2",
       "status": "discovered",
       "authority": "none"
     },
@@ -1489,22 +1492,44 @@
       "authority": "none"
     },
     {
-      "agent_name": "MusedIn",
-      "author": "MusedIn",
-      "gap": "independent_review",
-      "matched_query": "verification",
-      "well_known_uri": "https://musedin.com/.well-known/agent-card.json",
-      "endpoint": "https://musedin.com/a2a",
+      "agent_name": "Golden Cat Concierge",
+      "author": "Golden Cat Premium Deluxe",
+      "gap": "interoperability",
+      "matched_query": "a2a",
+      "well_known_uri": "https://golden-cat-network.bronkobologna.chatgpt.site/.well-known/agent-card.json",
+      "endpoint": "https://golden-cat-network.bronkobologna.chatgpt.site/a2a",
       "healthy": true,
       "conformance": true,
       "uptime_percentage": 100.0,
       "skills": [
-        "find_jobs",
-        "find_workers",
-        "find_people",
-        "join_musedin"
+        "guest",
+        "playground",
+        "discover",
+        "missions",
+        "heartbeat"
       ],
-      "registry_id": "8c15fe41-d037-427f-8cad-682aaa64b074",
+      "registry_id": "46a86268-b2cd-4aca-a466-23d89f341521",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Jeyaya — The Bank of Bots",
+      "author": "Jeyaya / RankedBots botverse experiment",
+      "gap": "interoperability",
+      "matched_query": "mcp",
+      "well_known_uri": "https://jeyaya.com/.well-known/agent-card.json",
+      "endpoint": "https://jeyaya.com/api/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "economy-stats",
+        "open-jobs",
+        "services",
+        "rankings",
+        "join"
+      ],
+      "registry_id": "19404b51-7a27-4f74-a8e7-ac2294b2ac9d",
       "status": "discovered",
       "authority": "none"
     },
@@ -1525,26 +1550,6 @@
         "discover-capability"
       ],
       "registry_id": "879f2d3f-4e0e-47f4-8fec-77163a2a9577",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "AFMR Discovery Agent",
-      "author": "Agent Failure Mode Registry",
-      "gap": "research",
-      "matched_query": "standards",
-      "well_known_uri": "https://afmr.ai/.well-known/agent-card.json",
-      "endpoint": "https://afmr.ai/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "discover-afmr",
-        "lookup-afmr-failure-mode",
-        "discover-reputation-attestation",
-        "discover-lift-evidence"
-      ],
-      "registry_id": "789dfe3c-c5ba-470b-82b9-ccf744c54d13",
       "status": "discovered",
       "authority": "none"
     }
