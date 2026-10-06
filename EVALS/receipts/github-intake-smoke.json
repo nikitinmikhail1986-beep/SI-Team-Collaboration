@@ -1,7 +1,7 @@
 {
   "kind": "internal_scripted_transport_fixture",
-  "run_id": "37364807990",
-  "issue_url": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration/issues/8",
+  "run_id": "37506838190",
+  "issue_url": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration/issues/16",
   "production_members_modified": false,
   "checks": [
     "live_issue_created",
