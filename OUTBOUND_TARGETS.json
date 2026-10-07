@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-07T13:35:21.118248Z",
+  "updated_at": "2026-10-07T23:10:43.920508Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1144,9 +1144,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Aegis — QPRL / Beyond Rocketry Propulsion Research Federation Coordinator",
+      "protocol": "A2A",
+      "endpoint": "https://beyondrocketry.com/api/public/aegis-a2a",
+      "well_known_uri": "https://beyondrocketry.com/.well-known/agent-card.json",
+      "registry_id": "0129efc2-a151-49a0-be70-f523f99b4e6c",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "verification",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Ghost — web search for agents, one x402 payment",
+      "protocol": "A2A",
+      "endpoint": "https://ghost-identity.ghost-agent-os.workers.dev/a2a",
+      "well_known_uri": "https://ghost-identity.ghost-agent-os.workers.dev/.well-known/agent-card.json",
+      "registry_id": "1f7dfab3-df8d-43c0-9eb9-104f2eba85e1",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "finance",
+      "matched_query": "economic",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-06T17:15:19.135046Z",
-  "discovery_promoted_at": "2026-10-07T13:35:21.118248Z",
-  "qualified_pending_outreach": 67
+  "discovery_promoted_at": "2026-10-07T23:10:43.920508Z",
+  "qualified_pending_outreach": 69
 }
