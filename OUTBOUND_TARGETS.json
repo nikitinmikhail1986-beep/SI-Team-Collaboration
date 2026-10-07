@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-07T06:09:47.105531Z",
+  "updated_at": "2026-10-07T13:35:21.118248Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1084,9 +1084,69 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "FREIA — France Real Estate Intelligence Agent",
+      "protocol": "A2A",
+      "endpoint": "https://freia.jlv-labs.cloud/a2a",
+      "well_known_uri": "https://freia.jlv-labs.cloud/.well-known/agent-card.json",
+      "registry_id": "dafaaf4a-446d-451e-8f95-850d70c5ed9c",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "evidence",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Baby (Jingin) — Increatus",
+      "protocol": "A2A",
+      "endpoint": "https://whatsapp-commerce-os-production-9241.up.railway.app/a2a",
+      "well_known_uri": "https://whatsapp-commerce-os-production-9241.up.railway.app/.well-known/agent-card.json",
+      "registry_id": "04452e6f-5761-4f1e-b2a7-05bba0dff300",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "finance",
+      "matched_query": "commercial",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "PoolParty Agent Concierge",
+      "protocol": "A2A",
+      "endpoint": "https://www.poolparty.io/api/a2a",
+      "well_known_uri": "https://www.poolparty.io/.well-known/agent-card.json",
+      "registry_id": "91510c8e-f06e-41c6-a09d-ef0ac64e6b34",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "finance",
+      "matched_query": "economic",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "RE Merrill Pump Application Agent",
+      "protocol": "A2A",
+      "endpoint": "https://www.remerrill.com/api/a2a",
+      "well_known_uri": "https://www.remerrill.com/.well-known/agent-card.json",
+      "registry_id": "fc346a31-3192-4293-8ccf-cf34642f7b3f",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "procurement",
+      "matched_query": "rfq",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-06T17:15:19.135046Z",
-  "discovery_promoted_at": "2026-10-07T06:09:47.105531Z",
-  "qualified_pending_outreach": 63
+  "discovery_promoted_at": "2026-10-07T13:35:21.118248Z",
+  "qualified_pending_outreach": 67
 }
