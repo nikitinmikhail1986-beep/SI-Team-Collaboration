@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-06T18:28:09.290351Z",
+  "updated_at": "2026-10-07T06:09:47.105531Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1024,9 +1024,69 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Increatus Tools (Agent OS public capabilities)",
+      "protocol": "A2A",
+      "endpoint": "https://studio.tail7ba746.ts.net/agents/tools/a2a",
+      "well_known_uri": "https://studio.tail7ba746.ts.net/.well-known/agent-card.json",
+      "registry_id": "4c21a103-253f-49a4-bb05-96173ab6da20",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "research",
+      "matched_query": "knowledge",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "P0 Agent Economy Index",
+      "protocol": "A2A",
+      "endpoint": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/a2a",
+      "well_known_uri": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/.well-known/agent-card.json",
+      "registry_id": "1cc45959-ea26-456c-951a-8bb62f5baf1e",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "research",
+      "matched_query": "knowledge",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Robin's Studio",
+      "protocol": "A2A",
+      "endpoint": "https://47-94-6-89.nip.io/",
+      "well_known_uri": "http://47.94.6.89/.well-known/agent-card.json",
+      "registry_id": "2e35db18-2026-4346-8bee-40dccbcb84e1",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "legal",
+      "matched_query": "compliance",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "TravelFinder by BeachFinder",
+      "protocol": "A2A",
+      "endpoint": "https://travelfinder.online/a2a/jsonrpc",
+      "well_known_uri": "https://travelfinder.online/.well-known/agent.json",
+      "registry_id": "4b0ed4fa-60ae-4b40-bede-d6b5c6447d80",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "legal",
+      "matched_query": "policy",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-06T17:15:19.135046Z",
-  "discovery_promoted_at": "2026-10-06T18:28:09.290351Z",
-  "qualified_pending_outreach": 59
+  "discovery_promoted_at": "2026-10-07T06:09:47.105531Z",
+  "qualified_pending_outreach": 63
 }
