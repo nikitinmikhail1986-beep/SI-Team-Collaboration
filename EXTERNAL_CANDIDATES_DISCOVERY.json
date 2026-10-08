@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-08T13:45:34.474835+00:00",
+  "generated_at": "2026-10-08T23:26:12.504515+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -412,8 +412,8 @@
     {
       "agent_name": "colegal-public-assistant",
       "author": "Co-Legal BV",
-      "gap": "legal",
-      "matched_query": "legal",
+      "gap": "finance",
+      "matched_query": "finance",
       "well_known_uri": "https://agent.co-legal.be/.well-known/agent-card.json",
       "endpoint": "https://agent.co-legal.be/a2a/jsonrpc",
       "healthy": true,
@@ -535,36 +535,6 @@
         "request-quote"
       ],
       "registry_id": "a8592942-a978-4449-ab29-051c49d2bd9f",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "MolTrust Trust Registry",
-      "author": "CryptoKRI GmbH",
-      "gap": "legal",
-      "matched_query": "compliance",
-      "well_known_uri": "https://api.moltrust.ch/.well-known/agent-card.json",
-      "endpoint": "https://api.moltrust.ch/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "trust-score",
-        "did-resolution",
-        "credential-verification",
-        "wallet-binding",
-        "track-record",
-        "sybil-detection",
-        "compliance-assess",
-        "compliance-declaration",
-        "compliance-report",
-        "compliance-incident",
-        "delegation-create",
-        "delegation-verify",
-        "reputation-batch-sync",
-        "anchors-batch"
-      ],
-      "registry_id": "68673be8-e667-425f-9dcd-36ef150942e4",
       "status": "discovered",
       "authority": "none"
     },
@@ -735,6 +705,32 @@
       "authority": "none"
     },
     {
+      "agent_name": "Agent Traffic Lab",
+      "author": "Agent Traffic Lab",
+      "gap": "legal",
+      "matched_query": "policy",
+      "well_known_uri": "https://agenttrafficlab.com/.well-known/agent-card.json",
+      "endpoint": "https://agenttrafficlab.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "atl-task-routing-execution",
+        "atl-agent-delegation",
+        "atl-provider-service-routing",
+        "atl-execution-route-decision",
+        "atl-fallback-selection",
+        "atl-cost-aware-routing",
+        "atl-latency-aware-routing",
+        "atl-region-aware-routing",
+        "atl-policy-aware-routing",
+        "atl-outcome-feedback"
+      ],
+      "registry_id": "942b626c-966f-4fd3-96e8-e91fa3254299",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "GF Agent Toll",
       "author": "GF Pick",
       "gap": "finance",
@@ -761,61 +757,10 @@
       "authority": "none"
     },
     {
-      "agent_name": "GAIP Broker",
-      "author": "GAIP",
-      "gap": "procurement",
-      "matched_query": "supplier",
-      "well_known_uri": "https://gaip-agent-to-art-prototype-production.up.railway.app/a2a/agentverse/agent-card.json",
-      "endpoint": "https://gaip-agent-to-art-prototype-production.up.railway.app/a2a/agentverse",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "gaip-front-door-check",
-        "gaip-front-door-watch",
-        "gaip-front-door-diagnose",
-        "gaip-front-door-verify",
-        "gaip-front-door-second_look_check",
-        "gaip-specialist-router",
-        "gaip-continuity-and-evidence",
-        "gaip-governed-public-task",
-        "gaip-receipt-verification",
-        "gaip-identity-registry-status"
-      ],
-      "registry_id": "eecb32fa-bce6-4796-a536-f90b7389058d",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Burs-IA Agent Station",
-      "author": "Burs-IA",
-      "gap": "independent_review",
-      "matched_query": "audit",
-      "well_known_uri": "https://burs-ia.com/.well-known/agent-card.json",
-      "endpoint": "https://burs-ia.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "instant-check-in",
-        "capability-discovery",
-        "collaboration-request",
-        "bursia-relay-invitation",
-        "human-bridge-request",
-        "human-supervised-autonomy",
-        "session-continuity",
-        "protocol-bridge",
-        "verification-request"
-      ],
-      "registry_id": "beed69a5-3e55-493e-a75b-78901e5e01e8",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "AION SUPREME Temple Gateway",
       "author": "Unknown",
       "gap": "finance",
-      "matched_query": "economic",
+      "matched_query": "commercial",
       "well_known_uri": "https://aion-agent-core-live.onrender.com/.well-known/agent-card.json",
       "endpoint": "https://aion-agent-core-live.onrender.com/a2a/v1",
       "healthy": true,
@@ -953,6 +898,28 @@
       "authority": "none"
     },
     {
+      "agent_name": "Golden Cat Concierge",
+      "author": "Golden Cat Premium Deluxe",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://golden-cat-network.bronkobologna.chatgpt.site/.well-known/agent-card.json",
+      "endpoint": "https://golden-cat-network.bronkobologna.chatgpt.site/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "collaboration",
+        "guest",
+        "playground",
+        "discover",
+        "missions",
+        "heartbeat"
+      ],
+      "registry_id": "46a86268-b2cd-4aca-a466-23d89f341521",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Aegis — QPRL / Beyond Rocketry Propulsion Research Federation Coordinator",
       "author": "Monarch Space Systems, Inc. / Beyond Rocketry / QPRL",
       "gap": "independent_review",
@@ -993,28 +960,6 @@
         "freia.decision"
       ],
       "registry_id": "dafaaf4a-446d-451e-8f95-850d70c5ed9c",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "allagents",
-      "author": "Unknown",
-      "gap": "legal",
-      "matched_query": "legal",
-      "well_known_uri": "https://allagents.app/.well-known/agent-card.json",
-      "endpoint": "https://allagents.app/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "find",
-        "list",
-        "operator",
-        "discover",
-        "relay",
-        "mcp"
-      ],
-      "registry_id": "4bac7ffc-c964-43e2-acbb-302beca35838",
       "status": "discovered",
       "authority": "none"
     },
@@ -1106,23 +1051,23 @@
       "authority": "none"
     },
     {
-      "agent_name": "crosscheck",
-      "author": "crosscheck",
+      "agent_name": "MusedIn",
+      "author": "MusedIn",
       "gap": "independent_review",
       "matched_query": "review",
-      "well_known_uri": "https://crosscheckapi.com/.well-known/agent-card.json",
-      "endpoint": "https://crosscheckapi.com/a2a",
+      "well_known_uri": "https://musedin.com/.well-known/agent-card.json",
+      "endpoint": "https://musedin.com/a2a",
       "healthy": true,
       "conformance": true,
       "uptime_percentage": 100.0,
       "skills": [
-        "check",
-        "accept",
-        "skillcheck",
-        "skillcheck_lookup",
-        "verify_receipt"
+        "find_jobs",
+        "find_workers",
+        "draft_job",
+        "find_people",
+        "join_musedin"
       ],
-      "registry_id": "f7aa0af1-32be-45b1-9805-ee5f3b86694e",
+      "registry_id": "8c15fe41-d037-427f-8cad-682aaa64b074",
       "status": "discovered",
       "authority": "none"
     },
@@ -1390,6 +1335,46 @@
         "seasonal-rhythm"
       ],
       "registry_id": "2e35db18-2026-4346-8bee-40dccbcb84e1",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "TravelFinder by BeachFinder",
+      "author": "BeachFinder",
+      "gap": "legal",
+      "matched_query": "policy",
+      "well_known_uri": "https://travelfinder.online/.well-known/agent.json",
+      "endpoint": "https://travelfinder.online/a2a/jsonrpc",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "get-commercial-catalog",
+        "find-budget-weekends",
+        "reprice-weekend",
+        "prepare-booking-links"
+      ],
+      "registry_id": "4b0ed4fa-60ae-4b40-bede-d6b5c6447d80",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Baby (Jingin) — Increatus",
+      "author": "Increatus",
+      "gap": "finance",
+      "matched_query": "commercial",
+      "well_known_uri": "https://whatsapp-commerce-os-production-9241.up.railway.app/.well-known/agent-card.json",
+      "endpoint": "https://whatsapp-commerce-os-production-9241.up.railway.app/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "products",
+        "property",
+        "popups",
+        "agents"
+      ],
+      "registry_id": "04452e6f-5761-4f1e-b2a7-05bba0dff300",
       "status": "discovered",
       "authority": "none"
     }
