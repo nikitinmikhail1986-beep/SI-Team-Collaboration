@@ -1,66 +1,10 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-08T06:16:32.679890+00:00",
+  "generated_at": "2026-10-08T13:45:34.474835+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
   "candidates": [
-    {
-      "agent_name": "PHION Agent Trust Infrastructure",
-      "author": "PHION Systems",
-      "gap": "independent_review",
-      "matched_query": "review",
-      "well_known_uri": "https://phion.systems/.well-known/agent.json",
-      "endpoint": "https://phion.systems/",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "attest",
-        "payment-preflight",
-        "mandate-reserve",
-        "preflight",
-        "fetch-evidence",
-        "inspect-agent",
-        "journey-verify",
-        "transaction-assurance",
-        "transaction-recovery",
-        "try-service",
-        "spending-gateway",
-        "phion-execute",
-        "universal-market",
-        "tool-output-firewall",
-        "delegation-scope-guard",
-        "memory-write-guard",
-        "mcp-manifest-firewall",
-        "tool-call-policy-guard",
-        "data-egress-preflight",
-        "schema-normalize",
-        "rwa-asset-due-diligence",
-        "rwa-compliance",
-        "rwa-nav-reserve",
-        "rwa-transaction-assurance",
-        "rwa-corporate-actions",
-        "sanctions-screening-evidence",
-        "agent-reputation-evidence",
-        "counterparty-risk-preflight",
-        "agent-budget-guard",
-        "idempotency-replay-guard",
-        "human-approval-policy",
-        "secret-redaction-preflight",
-        "oauth-token-audience-guard",
-        "redirect-callback-validator",
-        "tool-capability-drift-monitor",
-        "mcp-server-identity-evidence",
-        "agent-task-handoff-receipt",
-        "context-provenance-labeler",
-        "signed-result-comparator",
-        "service-sla-attestation"
-      ],
-      "registry_id": "ee88633c-805c-4a63-a39b-85eeed9bb850",
-      "status": "discovered",
-      "authority": "none"
-    },
     {
       "agent_name": "agentsvc.io",
       "author": "agentsvc.io",
@@ -88,7 +32,6 @@
         "crypto-prices",
         "pdf-extract",
         "phone-validate",
-        "stock-prices",
         "geocode",
         "news-search",
         "ocr",
@@ -111,7 +54,8 @@
         "company-lookup",
         "sec-filings",
         "gas-price",
-        "product-lookup"
+        "product-lookup",
+        "language-detect"
       ],
       "registry_id": "b1e48e58-7b8e-497e-b934-3e92fc828f21",
       "status": "discovered",
@@ -468,8 +412,8 @@
     {
       "agent_name": "colegal-public-assistant",
       "author": "Co-Legal BV",
-      "gap": "finance",
-      "matched_query": "finance",
+      "gap": "legal",
+      "matched_query": "legal",
       "well_known_uri": "https://agent.co-legal.be/.well-known/agent-card.json",
       "endpoint": "https://agent.co-legal.be/a2a/jsonrpc",
       "healthy": true,
@@ -621,36 +565,6 @@
         "anchors-batch"
       ],
       "registry_id": "68673be8-e667-425f-9dcd-36ef150942e4",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Astro Agents",
-      "author": "aidatatools",
-      "gap": "interoperability",
-      "matched_query": "a2a",
-      "well_known_uri": "https://astro-agents-api.vercel.app/.well-known/agent-card.json",
-      "endpoint": "https://astro-agent.dev/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "time/resolve",
-        "western/positions",
-        "western/aspects",
-        "western/natal",
-        "western/transits",
-        "western/synastry",
-        "vedic/nakshatra",
-        "vedic/panchang",
-        "vedic/kundli",
-        "vedic/kundli-full",
-        "vedic/dashas",
-        "vedic/doshas",
-        "vedic/gun-milan",
-        "vedic/report"
-      ],
-      "registry_id": "3a715dca-fe38-4446-89d9-2a12523e1f7e",
       "status": "discovered",
       "authority": "none"
     },
@@ -847,6 +761,32 @@
       "authority": "none"
     },
     {
+      "agent_name": "GAIP Broker",
+      "author": "GAIP",
+      "gap": "procurement",
+      "matched_query": "supplier",
+      "well_known_uri": "https://gaip-agent-to-art-prototype-production.up.railway.app/a2a/agentverse/agent-card.json",
+      "endpoint": "https://gaip-agent-to-art-prototype-production.up.railway.app/a2a/agentverse",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "gaip-front-door-check",
+        "gaip-front-door-watch",
+        "gaip-front-door-diagnose",
+        "gaip-front-door-verify",
+        "gaip-front-door-second_look_check",
+        "gaip-specialist-router",
+        "gaip-continuity-and-evidence",
+        "gaip-governed-public-task",
+        "gaip-receipt-verification",
+        "gaip-identity-registry-status"
+      ],
+      "registry_id": "eecb32fa-bce6-4796-a536-f90b7389058d",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Burs-IA Agent Station",
       "author": "Burs-IA",
       "gap": "independent_review",
@@ -872,27 +812,27 @@
       "authority": "none"
     },
     {
-      "agent_name": "GAIP Broker",
-      "author": "GAIP",
-      "gap": "procurement",
-      "matched_query": "procurement",
-      "well_known_uri": "https://gaip-agent-to-art-prototype-production.up.railway.app/a2a/agentverse/agent-card.json",
-      "endpoint": "https://gaip-agent-to-art-prototype-production.up.railway.app/a2a/agentverse",
+      "agent_name": "AION SUPREME Temple Gateway",
+      "author": "Unknown",
+      "gap": "finance",
+      "matched_query": "economic",
+      "well_known_uri": "https://aion-agent-core-live.onrender.com/.well-known/agent-card.json",
+      "endpoint": "https://aion-agent-core-live.onrender.com/a2a/v1",
       "healthy": true,
       "conformance": true,
       "uptime_percentage": 100.0,
       "skills": [
-        "gaip-front-door-check",
-        "gaip-front-door-watch",
-        "gaip-front-door-diagnose",
-        "gaip-front-door-verify",
-        "gaip-specialist-router",
-        "gaip-continuity-and-evidence",
-        "gaip-governed-public-task",
-        "gaip-receipt-verification",
-        "gaip-identity-registry-status"
+        "aion_pre_spend_preflight",
+        "aion_first_contact",
+        "aion_live_utility",
+        "join_aion",
+        "aion_onboarding",
+        "aion_verified_outcome_guidance",
+        "aion_commercial_route_planning",
+        "discover_aion_agents",
+        "discover_external_agents"
       ],
-      "registry_id": "eecb32fa-bce6-4796-a536-f90b7389058d",
+      "registry_id": "49cc94ea-76bb-4b48-a127-68a3d3f81caa",
       "status": "discovered",
       "authority": "none"
     },
@@ -1166,6 +1106,27 @@
       "authority": "none"
     },
     {
+      "agent_name": "crosscheck",
+      "author": "crosscheck",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://crosscheckapi.com/.well-known/agent-card.json",
+      "endpoint": "https://crosscheckapi.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "check",
+        "accept",
+        "skillcheck",
+        "skillcheck_lookup",
+        "verify_receipt"
+      ],
+      "registry_id": "f7aa0af1-32be-45b1-9805-ee5f3b86694e",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Agent Health Monitor (AHM)",
       "author": "Digital Intensity Ltd",
       "gap": "research",
@@ -1208,23 +1169,23 @@
       "authority": "none"
     },
     {
-      "agent_name": "Ghost — web search for agents, one x402 payment",
-      "author": "Ghost Agent OS",
-      "gap": "finance",
-      "matched_query": "economic",
-      "well_known_uri": "https://ghost-identity.ghost-agent-os.workers.dev/.well-known/agent-card.json",
-      "endpoint": "https://ghost-identity.ghost-agent-os.workers.dev/a2a",
+      "agent_name": "Shiftmoor by CyberMax",
+      "author": "CyberMax",
+      "gap": "procurement",
+      "matched_query": "tender",
+      "well_known_uri": "https://shiftmoor.cybermax-tools.workers.dev/.well-known/agent-card.json",
+      "endpoint": "https://shiftmoor.cybermax-tools.workers.dev/a2a",
       "healthy": true,
       "conformance": true,
       "uptime_percentage": 100.0,
       "skills": [
-        "ghost_web_search",
-        "ghost_schema_freshness",
-        "ghost_commerce_vet",
-        "ghost_commerce_search",
-        "ghost_pre_spend_gate"
+        "check_page",
+        "free_key",
+        "manage_watches",
+        "change_feed",
+        "agent_check_page"
       ],
-      "registry_id": "1f7dfab3-df8d-43c0-9eb9-104f2eba85e1",
+      "registry_id": "e7b4f60a-3fcb-4e0c-a6e0-329780e4d3da",
       "status": "discovered",
       "authority": "none"
     },
@@ -1292,6 +1253,27 @@
       "authority": "none"
     },
     {
+      "agent_name": "Pricewick by CyberMax",
+      "author": "CyberMax",
+      "gap": "interoperability",
+      "matched_query": "a2a",
+      "well_known_uri": "https://pricewick.cybermax-tools.workers.dev/.well-known/agent-card.json",
+      "endpoint": "https://pricewick.cybermax-tools.workers.dev/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "check_page",
+        "free_key",
+        "manage_watches",
+        "change_feed",
+        "agent_check_page"
+      ],
+      "registry_id": "66ab42a8-585f-4bee-a7a9-89ab49b13687",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "AFMR Discovery Agent",
       "author": "Agent Failure Mode Registry",
       "gap": "research",
@@ -1328,6 +1310,26 @@
         "agent-discovery"
       ],
       "registry_id": "3696f2ac-ca10-4291-9846-1ea7ce7e3bd2",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Increatus Tools (Agent OS public capabilities)",
+      "author": "Increatus (Rob Reid)",
+      "gap": "research",
+      "matched_query": "knowledge",
+      "well_known_uri": "https://studio.tail7ba746.ts.net/.well-known/agent-card.json",
+      "endpoint": "https://studio.tail7ba746.ts.net/agents/tools/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "tools.ask",
+        "tools.calculate_ratio",
+        "tools.knowledge_lookup",
+        "tools.request_capability"
+      ],
+      "registry_id": "4c21a103-253f-49a4-bb05-96173ab6da20",
       "status": "discovered",
       "authority": "none"
     },
@@ -1388,46 +1390,6 @@
         "seasonal-rhythm"
       ],
       "registry_id": "2e35db18-2026-4346-8bee-40dccbcb84e1",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Baby (Jingin) — Increatus",
-      "author": "Increatus",
-      "gap": "finance",
-      "matched_query": "commercial",
-      "well_known_uri": "https://whatsapp-commerce-os-production-9241.up.railway.app/.well-known/agent-card.json",
-      "endpoint": "https://whatsapp-commerce-os-production-9241.up.railway.app/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "products",
-        "property",
-        "popups",
-        "agents"
-      ],
-      "registry_id": "04452e6f-5761-4f1e-b2a7-05bba0dff300",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "TravelFinder by BeachFinder",
-      "author": "BeachFinder",
-      "gap": "finance",
-      "matched_query": "commercial",
-      "well_known_uri": "https://travelfinder.online/.well-known/agent.json",
-      "endpoint": "https://travelfinder.online/a2a/jsonrpc",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "get-commercial-catalog",
-        "find-budget-weekends",
-        "reprice-weekend",
-        "prepare-booking-links"
-      ],
-      "registry_id": "4b0ed4fa-60ae-4b40-bede-d6b5c6447d80",
       "status": "discovered",
       "authority": "none"
     }

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-08T06:16:32.747141Z",
+  "updated_at": "2026-10-08T13:45:34.564634Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1180,9 +1180,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Shiftmoor by CyberMax",
+      "protocol": "A2A",
+      "endpoint": "https://shiftmoor.cybermax-tools.workers.dev/a2a",
+      "well_known_uri": "https://shiftmoor.cybermax-tools.workers.dev/.well-known/agent-card.json",
+      "registry_id": "e7b4f60a-3fcb-4e0c-a6e0-329780e4d3da",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "procurement",
+      "matched_query": "tender",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Pricewick by CyberMax",
+      "protocol": "A2A",
+      "endpoint": "https://pricewick.cybermax-tools.workers.dev/a2a",
+      "well_known_uri": "https://pricewick.cybermax-tools.workers.dev/.well-known/agent-card.json",
+      "registry_id": "66ab42a8-585f-4bee-a7a9-89ab49b13687",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "interoperability",
+      "matched_query": "a2a",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-08T06:16:32.747141Z",
-  "qualified_pending_outreach": 69
+  "discovery_promoted_at": "2026-10-08T13:45:34.564634Z",
+  "qualified_pending_outreach": 71
 }
