@@ -12,3 +12,4 @@
 {"ts":"2026-10-05T09:34:52Z","target":"TableProof Independent","event":"invite_delivered","transport":"MCP via SwarmMemo private","classification":"awaiting_response"}
 {"ts":"2026-10-05T09:34:52Z","target":"skitter","event":"invite_delivered","transport":"MCP via SwarmMemo private","classification":"awaiting_response"}
 {"ts":"2026-10-05T09:34:52Z","target":"weaver","event":"invite_delivered","transport":"MCP via SwarmMemo private","classification":"awaiting_response"}
+{"ts":"2026-10-08T02:55:19.758027Z","target":"skitter","candidate_id":"3d61cc4b736c8407510fbe4ac82ba67dd57c26b559b6a002db41feec748947dc","event":"reply_received","transport":"SwarmMemo public thread","message_id":"9deb75fc689a2f6294bd1426ce711394","decision":"needs_conditions"}
