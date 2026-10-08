@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-07T23:10:43.852634+00:00",
+  "generated_at": "2026-10-08T06:16:32.679890+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -362,7 +362,7 @@
       "agent_name": "Anokha Web Tools",
       "author": "Anokha Web Tools",
       "gap": "research",
-      "matched_query": "research",
+      "matched_query": "knowledge",
       "well_known_uri": "https://tools.anokha.space/.well-known/agent-card.json",
       "endpoint": "https://tools.anokha.space/a2a",
       "healthy": true,
@@ -684,35 +684,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "Global Database Agent",
-      "author": "Global Database",
-      "gap": "procurement",
-      "matched_query": "procurement",
-      "well_known_uri": "https://a2a.globaldatabase.com/.well-known/agent-card.json",
-      "endpoint": "https://a2a.globaldatabase.com/",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "resolve_company",
-        "verify_company",
-        "financial_snapshot",
-        "company_intelligence",
-        "find_decision_makers",
-        "get_person_contact",
-        "get_person_details",
-        "find_companies",
-        "person_corporate_footprint",
-        "find_and_contact_leads",
-        "vendor_onboarding_check",
-        "compare_companies",
-        "whoami"
-      ],
-      "registry_id": "3ce7e8f2-71ee-4f23-9d0f-2b9eca180ec7",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "AUX Evidence and Certification",
       "author": "AUX by PrdictionEdge",
       "gap": "legal",
@@ -741,10 +712,38 @@
       "authority": "none"
     },
     {
+      "agent_name": "Council of AI — Measurement Agent",
+      "author": "CSOAI",
+      "gap": "legal",
+      "matched_query": "legal",
+      "well_known_uri": "https://councilof.ai/.well-known/agent-card.json",
+      "endpoint": "https://councilof.ai/api/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "gspc-board",
+        "east-west-crosswalk",
+        "card-status-link",
+        "benchmark-quality-register",
+        "article50-detect",
+        "eu-ai-act-screen",
+        "x402-discovery",
+        "estate-index",
+        "measurement-capsules",
+        "server-evidence",
+        "evidence-bundle",
+        "gspc-route"
+      ],
+      "registry_id": "48e5bba6-8848-4adc-8f92-b5fa2c0744e0",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "BerrerGate Tool & Provider Intelligence",
       "author": "Berrer",
-      "gap": "finance",
-      "matched_query": "commercial",
+      "gap": "procurement",
+      "matched_query": "procurement",
       "well_known_uri": "https://api.berrergate.com/.well-known/agent-card.json",
       "endpoint": "https://api.berrergate.com/a2a/v1",
       "healthy": true,
@@ -851,7 +850,7 @@
       "agent_name": "Burs-IA Agent Station",
       "author": "Burs-IA",
       "gap": "independent_review",
-      "matched_query": "evidence",
+      "matched_query": "audit",
       "well_known_uri": "https://burs-ia.com/.well-known/agent-card.json",
       "endpoint": "https://burs-ia.com/a2a",
       "healthy": true,
@@ -1393,26 +1392,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "TravelFinder by BeachFinder",
-      "author": "BeachFinder",
-      "gap": "legal",
-      "matched_query": "policy",
-      "well_known_uri": "https://travelfinder.online/.well-known/agent.json",
-      "endpoint": "https://travelfinder.online/a2a/jsonrpc",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "get-commercial-catalog",
-        "find-budget-weekends",
-        "reprice-weekend",
-        "prepare-booking-links"
-      ],
-      "registry_id": "4b0ed4fa-60ae-4b40-bede-d6b5c6447d80",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Baby (Jingin) — Increatus",
       "author": "Increatus",
       "gap": "finance",
@@ -1429,6 +1408,26 @@
         "agents"
       ],
       "registry_id": "04452e6f-5761-4f1e-b2a7-05bba0dff300",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "TravelFinder by BeachFinder",
+      "author": "BeachFinder",
+      "gap": "finance",
+      "matched_query": "commercial",
+      "well_known_uri": "https://travelfinder.online/.well-known/agent.json",
+      "endpoint": "https://travelfinder.online/a2a/jsonrpc",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "get-commercial-catalog",
+        "find-budget-weekends",
+        "reprice-weekend",
+        "prepare-booking-links"
+      ],
+      "registry_id": "4b0ed4fa-60ae-4b40-bede-d6b5c6447d80",
       "status": "discovered",
       "authority": "none"
     }
