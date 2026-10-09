@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-08T23:26:12.504515+00:00",
+  "generated_at": "2026-10-09T06:18:58.019943+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -624,34 +624,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "BerrerGate Tool & Provider Intelligence",
-      "author": "Berrer",
-      "gap": "procurement",
-      "matched_query": "procurement",
-      "well_known_uri": "https://api.berrergate.com/.well-known/agent-card.json",
-      "endpoint": "https://api.berrergate.com/a2a/v1",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "berrergate-find-agent-tool-api-provider",
-        "berrergate-procurement-preview",
-        "berrergate-spend-provider-preview",
-        "berrergate-zero-signup-commerce-discovery",
-        "berrergate-evidence-brief",
-        "berrergate-micro-inference",
-        "berrergate-purchase",
-        "berrergate-paid-1-agent-agent-observability",
-        "berrergate-paid-2-agent-automation-orchestration",
-        "berrergate-paid-3-agent-browser-scraping-automation",
-        "berrergate-paid-4-agent-product-analytics",
-        "berrergate-paid-5-agent-browser-automation"
-      ],
-      "registry_id": "da0979dd-6412-4a92-9ca6-c47958888b04",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Magic You Agentic Commerce Lab",
       "author": "Magic You",
       "gap": "legal",
@@ -675,6 +647,33 @@
         "critique-commercialization-experiment"
       ],
       "registry_id": "1bddda7e-84ea-4a98-a3f9-ad8d09560579",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "PaidHandshake Exchange",
+      "author": "PaidHandshake Exchange",
+      "gap": "procurement",
+      "matched_query": "procurement",
+      "well_known_uri": "https://paidhandshake.com/.well-known/agent-card.json",
+      "endpoint": "https://paidhandshake.com/a2a/jsonrpc",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "live-fulfillment-proof",
+        "verified-answer-market",
+        "free-inventory-and-sample",
+        "machine-paid-search",
+        "universal-paid-work",
+        "machine-native-x402-commerce",
+        "recurring-paid-watch",
+        "search-and-rank",
+        "current-research-and-verify",
+        "quote-result-access",
+        "create-checkout-handoff"
+      ],
+      "registry_id": "5a9b9900-4b26-48c8-a3b9-194f3a6cdaf1",
       "status": "discovered",
       "authority": "none"
     },
@@ -806,6 +805,30 @@
       "authority": "none"
     },
     {
+      "agent_name": "FrameAnyPhoto",
+      "author": "FrameAnyPhoto",
+      "gap": "legal",
+      "matched_query": "policy",
+      "well_known_uri": "https://frameanyphoto.com/.well-known/agent-card.json",
+      "endpoint": "https://frameanyphoto.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "search-works",
+        "get-work",
+        "list-series",
+        "get-print-options",
+        "quote-order",
+        "create-checkout",
+        "get-order-status",
+        "get-policies"
+      ],
+      "registry_id": "4492987f-9f7d-4c4b-8025-4d373f86c10d",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "nodcheck",
       "author": "nodcheck",
       "gap": "independent_review",
@@ -916,28 +939,6 @@
         "heartbeat"
       ],
       "registry_id": "46a86268-b2cd-4aca-a466-23d89f341521",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Aegis — QPRL / Beyond Rocketry Propulsion Research Federation Coordinator",
-      "author": "Monarch Space Systems, Inc. / Beyond Rocketry / QPRL",
-      "gap": "independent_review",
-      "matched_query": "verification",
-      "well_known_uri": "https://beyondrocketry.com/.well-known/agent-card.json",
-      "endpoint": "https://beyondrocketry.com/api/public/aegis-a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "propulsion_federation_discovery",
-        "founding_participation_guidance",
-        "public_challenge_discovery",
-        "bounded_compute_contribution",
-        "founding_interest_submission",
-        "federation_value_exchange"
-      ],
-      "registry_id": "0129efc2-a151-49a0-be70-f523f99b4e6c",
       "status": "discovered",
       "authority": "none"
     },
@@ -1339,26 +1340,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "TravelFinder by BeachFinder",
-      "author": "BeachFinder",
-      "gap": "legal",
-      "matched_query": "policy",
-      "well_known_uri": "https://travelfinder.online/.well-known/agent.json",
-      "endpoint": "https://travelfinder.online/a2a/jsonrpc",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "get-commercial-catalog",
-        "find-budget-weekends",
-        "reprice-weekend",
-        "prepare-booking-links"
-      ],
-      "registry_id": "4b0ed4fa-60ae-4b40-bede-d6b5c6447d80",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Baby (Jingin) — Increatus",
       "author": "Increatus",
       "gap": "finance",
@@ -1375,6 +1356,26 @@
         "agents"
       ],
       "registry_id": "04452e6f-5761-4f1e-b2a7-05bba0dff300",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "TravelFinder by BeachFinder",
+      "author": "BeachFinder",
+      "gap": "finance",
+      "matched_query": "commercial",
+      "well_known_uri": "https://travelfinder.online/.well-known/agent.json",
+      "endpoint": "https://travelfinder.online/a2a/jsonrpc",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "get-commercial-catalog",
+        "find-budget-weekends",
+        "reprice-weekend",
+        "prepare-booking-links"
+      ],
+      "registry_id": "4b0ed4fa-60ae-4b40-bede-d6b5c6447d80",
       "status": "discovered",
       "authority": "none"
     }

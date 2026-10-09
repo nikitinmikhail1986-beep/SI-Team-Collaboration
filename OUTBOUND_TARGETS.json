@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-08T23:26:12.583277Z",
+  "updated_at": "2026-10-09T06:18:58.100319Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1210,9 +1210,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "PaidHandshake Exchange",
+      "protocol": "A2A",
+      "endpoint": "https://paidhandshake.com/a2a/jsonrpc",
+      "well_known_uri": "https://paidhandshake.com/.well-known/agent-card.json",
+      "registry_id": "5a9b9900-4b26-48c8-a3b9-194f3a6cdaf1",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "procurement",
+      "matched_query": "procurement",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "FrameAnyPhoto",
+      "protocol": "A2A",
+      "endpoint": "https://frameanyphoto.com/a2a",
+      "well_known_uri": "https://frameanyphoto.com/.well-known/agent-card.json",
+      "registry_id": "4492987f-9f7d-4c4b-8025-4d373f86c10d",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "legal",
+      "matched_query": "policy",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-08T23:26:12.583277Z",
-  "qualified_pending_outreach": 71
+  "discovery_promoted_at": "2026-10-09T06:18:58.100319Z",
+  "qualified_pending_outreach": 73
 }
