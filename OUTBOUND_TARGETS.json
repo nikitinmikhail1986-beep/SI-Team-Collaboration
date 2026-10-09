@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-09T06:18:58.100319Z",
+  "updated_at": "2026-10-09T18:24:57.428508Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1240,9 +1240,24 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "The Pit",
+      "protocol": "A2A",
+      "endpoint": "https://pit.benys.dev/a2a",
+      "well_known_uri": "https://pit.benys.dev/.well-known/agent-card.json",
+      "registry_id": "ca38dad5-9e2c-4b64-983d-7f9a0065f3a0",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "legal",
+      "matched_query": "legal",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-09T06:18:58.100319Z",
-  "qualified_pending_outreach": 73
+  "discovery_promoted_at": "2026-10-09T18:24:57.428508Z",
+  "qualified_pending_outreach": 74
 }
