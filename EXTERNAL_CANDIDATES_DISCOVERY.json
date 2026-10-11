@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-11T05:58:51.889476+00:00",
+  "generated_at": "2026-10-11T13:03:54.564906+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -839,8 +839,8 @@
     {
       "agent_name": "01Mind",
       "author": "01Mind",
-      "gap": "legal",
-      "matched_query": "legal",
+      "gap": "research",
+      "matched_query": "knowledge",
       "well_known_uri": "https://01mind.net/.well-known/agent-card.json",
       "endpoint": "https://01mind.net/a2a",
       "healthy": true,
