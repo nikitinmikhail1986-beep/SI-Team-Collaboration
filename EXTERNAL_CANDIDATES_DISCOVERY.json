@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-10T21:51:10.104432+00:00",
+  "generated_at": "2026-10-11T05:58:51.889476+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -120,8 +120,8 @@
     {
       "agent_name": "Scry Wallet Intelligence",
       "author": "Scry",
-      "gap": "independent_review",
-      "matched_query": "review",
+      "gap": "research",
+      "matched_query": "research",
       "well_known_uri": "https://scry.solanahub.de/.well-known/agent-card.json",
       "endpoint": "https://scry.solanahub.de/a2a",
       "healthy": true,
@@ -418,6 +418,47 @@
       "authority": "none"
     },
     {
+      "agent_name": "Agent Exchange",
+      "author": "RileyCraig14",
+      "gap": "finance",
+      "matched_query": "finance",
+      "well_known_uri": "https://x402-agent-store.rileycraig14.workers.dev/.well-known/agent.json",
+      "endpoint": "https://store.agentexchange.work/",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "free-samples",
+        "agent-planets",
+        "agent-wallet-lounge",
+        "web-search",
+        "wikipedia",
+        "token-security",
+        "dex-data",
+        "token-launches",
+        "base-wave-radar",
+        "crosschain-radar",
+        "chain-heartbeat",
+        "onchain-reads",
+        "prediction-odds",
+        "brand-check",
+        "crypto-ai-visibility",
+        "sales-qualify",
+        "clearing-house",
+        "visibility-index",
+        "signal-feed",
+        "risk-spread",
+        "defi-yields",
+        "crypto-prices",
+        "gov-treasury",
+        "truck-profit",
+        "truck-cpm"
+      ],
+      "registry_id": "d34896a6-9771-4e45-a6ac-228b5c976e3e",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Anokha Web Tools",
       "author": "Anokha Web Tools",
       "gap": "independent_review",
@@ -591,6 +632,38 @@
       "authority": "none"
     },
     {
+      "agent_name": "Nulliverba Research Discovery Agent",
+      "author": "Unknown",
+      "gap": "interoperability",
+      "matched_query": "handoff",
+      "well_known_uri": "https://nulliverba.ol-lo.workers.dev/.well-known/agent-card.json",
+      "endpoint": "https://nulliverba.ol-lo.workers.dev/a2a/jsonrpc",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "take-one-life-research-task",
+        "discover-research-work",
+        "inspect-public-research",
+        "structure-research-contribution",
+        "relay-research-question",
+        "continue-research-loop",
+        "resume-research-lineage",
+        "research-inbox",
+        "join-research-exchange",
+        "inspect-research-role-graph",
+        "browse-open-research-roles",
+        "adopt-external-research",
+        "inspect-research-network",
+        "browse-research-challenges",
+        "take-one-starter-task",
+        "peer-review-native-research"
+      ],
+      "registry_id": "ea4dd23d-df0c-4078-86d7-19dad43cda35",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "TESSA Marketing & Technology",
       "author": "TESSA Marketing & Technology",
       "gap": "legal",
@@ -733,6 +806,33 @@
         "gspc-route"
       ],
       "registry_id": "48e5bba6-8848-4adc-8f92-b5fa2c0744e0",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Magic You Agentic Commerce Lab",
+      "author": "Magic You",
+      "gap": "legal",
+      "matched_query": "compliance",
+      "well_known_uri": "https://magic-you-agentic-commerce-lab.j-radom.chatgpt.site/.well-known/agent-card.json",
+      "endpoint": "https://magic-you-agentic-commerce-lab.j-radom.chatgpt.site/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "list-open-collaboration-tasks",
+        "submit-experiment-work",
+        "get-submission-status",
+        "review-experiment-submission",
+        "list-commercialization-experiments",
+        "propose-commercialization-experiment",
+        "recommend-experiment-handoff",
+        "record-experiment-result",
+        "product-facts-and-evidence-gaps",
+        "commercialization-experiment-design",
+        "critique-commercialization-experiment"
+      ],
+      "registry_id": "1bddda7e-84ea-4a98-a3f9-ad8d09560579",
       "status": "discovered",
       "authority": "none"
     },
@@ -1379,66 +1479,6 @@
         "tools.request_capability"
       ],
       "registry_id": "4c21a103-253f-49a4-bb05-96173ab6da20",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "P0 Agent Economy Index",
-      "author": "P0",
-      "gap": "research",
-      "matched_query": "knowledge",
-      "well_known_uri": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/.well-known/agent-card.json",
-      "endpoint": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "find-paid-services",
-        "market-report",
-        "paid-data-products",
-        "order-service"
-      ],
-      "registry_id": "1cc45959-ea26-456c-951a-8bb62f5baf1e",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Robin's Studio",
-      "author": "Robin's Studio",
-      "gap": "legal",
-      "matched_query": "compliance",
-      "well_known_uri": "https://47-94-6-89.nip.io/.well-known/agent-card.json",
-      "endpoint": "https://47-94-6-89.nip.io/",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "content-verification",
-        "cultural-linkage",
-        "lead-verification",
-        "seasonal-rhythm"
-      ],
-      "registry_id": "2e35db18-2026-4346-8bee-40dccbcb84e1",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "TravelFinder by BeachFinder",
-      "author": "BeachFinder",
-      "gap": "legal",
-      "matched_query": "policy",
-      "well_known_uri": "https://travelfinder.online/.well-known/agent.json",
-      "endpoint": "https://travelfinder.online/a2a/jsonrpc",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "get-commercial-catalog",
-        "find-budget-weekends",
-        "reprice-weekend",
-        "prepare-booking-links"
-      ],
-      "registry_id": "4b0ed4fa-60ae-4b40-bede-d6b5c6447d80",
       "status": "discovered",
       "authority": "none"
     }

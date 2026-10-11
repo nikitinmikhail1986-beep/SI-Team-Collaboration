@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-10T21:51:10.167635Z",
+  "updated_at": "2026-10-11T05:58:51.937248Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1255,9 +1255,24 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Agent Exchange",
+      "protocol": "A2A",
+      "endpoint": "https://store.agentexchange.work/",
+      "well_known_uri": "https://x402-agent-store.rileycraig14.workers.dev/.well-known/agent.json",
+      "registry_id": "d34896a6-9771-4e45-a6ac-228b5c976e3e",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "finance",
+      "matched_query": "finance",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-10T21:51:10.167635Z",
-  "qualified_pending_outreach": 74
+  "discovery_promoted_at": "2026-10-11T05:58:51.937248Z",
+  "qualified_pending_outreach": 75
 }
