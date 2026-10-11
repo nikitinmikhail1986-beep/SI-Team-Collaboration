@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-11T13:03:54.629404Z",
+  "updated_at": "2026-10-11T22:06:46.950010Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1270,9 +1270,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "INAM Protocol Registry",
+      "protocol": "A2A",
+      "endpoint": "https://api.inamprotocol.org/a2a",
+      "well_known_uri": "https://api.inamprotocol.org/.well-known/agent-card.json",
+      "registry_id": "add51cac-77dd-49e9-9641-fb8912658b5d",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "verification",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Agent Economy OS 2047 — A2A Commerce Directory",
+      "protocol": "A2A",
+      "endpoint": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a",
+      "well_known_uri": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a/.well-known/agent-card.json",
+      "registry_id": "a7534921-8f0b-4a61-8324-477c8a87f329",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-11T13:03:54.629404Z",
-  "qualified_pending_outreach": 75
+  "discovery_promoted_at": "2026-10-11T22:06:46.950010Z",
+  "qualified_pending_outreach": 77
 }
