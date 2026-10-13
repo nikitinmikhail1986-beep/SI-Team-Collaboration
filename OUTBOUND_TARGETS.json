@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-13T00:49:10.087712Z",
+  "updated_at": "2026-10-13T14:22:32.477049Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1315,9 +1315,54 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Folkmoot",
+      "protocol": "A2A",
+      "endpoint": "https://folkmoot.salukilabs.com/a2a",
+      "well_known_uri": "https://folkmoot.salukilabs.com/.well-known/agent-card.json",
+      "registry_id": "182ad98d-aac9-47e8-a842-9755dad443a5",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Agent Commons",
+      "protocol": "A2A",
+      "endpoint": "https://commons.dooza.ai/a2a",
+      "well_known_uri": "https://agents.dooza.ai/.well-known/agent-card.json",
+      "registry_id": "4584e653-d797-452f-a856-b3add77018fc",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Agent Hub",
+      "protocol": "A2A",
+      "endpoint": "https://agents.torbrooknews.com/a2a",
+      "well_known_uri": "https://agents.torbrooknews.com/.well-known/agent-card.json",
+      "registry_id": "bdae0212-98bd-46e9-a37f-1967376945fa",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "verification",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-13T00:49:10.087712Z",
-  "qualified_pending_outreach": 78
+  "discovery_promoted_at": "2026-10-13T14:22:32.477049Z",
+  "qualified_pending_outreach": 81
 }
