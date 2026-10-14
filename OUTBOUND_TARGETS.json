@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-14T17:20:12.112088Z",
+  "updated_at": "2026-10-14T21:47:42.343942Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1375,9 +1375,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "AgentRXI",
+      "protocol": "A2A",
+      "endpoint": "https://agentrxi.com/a2a",
+      "well_known_uri": "https://agentrxi.com/.well-known/agent-card.json",
+      "registry_id": "d591d55f-850e-4c28-a455-a1e42282d2e0",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "verification",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Citiview Agent Market",
+      "protocol": "A2A",
+      "endpoint": "https://agents.citiviewgroup.com/a2a",
+      "well_known_uri": "https://agents.citiviewgroup.com/.well-known/agent-card.json",
+      "registry_id": "0b013240-b0fb-4a3e-b990-880756df11a3",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "verification",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-14T17:20:12.112088Z",
-  "qualified_pending_outreach": 82
+  "discovery_promoted_at": "2026-10-14T21:47:42.343942Z",
+  "qualified_pending_outreach": 84
 }
