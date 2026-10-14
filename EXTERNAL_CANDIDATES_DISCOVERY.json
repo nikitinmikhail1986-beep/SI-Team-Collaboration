@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-14T05:02:42.612482+00:00",
+  "generated_at": "2026-10-14T12:04:38.084553+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -555,8 +555,6 @@
         "legal.citation.verify",
         "co-legal.document.draft",
         "ecb.rates",
-        "be.erfkompas.flows",
-        "be.erfkompas.step",
         "be.fiscal.erfbelasting",
         "iban.validate",
         "be.kbo.lookup",
@@ -564,6 +562,8 @@
         "be.legal.read",
         "nl.legal.lookup",
         "nl.rechtspraak.lookup",
+        "be.erfkompas.flows",
+        "be.erfkompas.step",
         "be.vies.validate"
       ],
       "registry_id": "125be81b-7326-41cd-85a2-7e0c2aa031b8",
