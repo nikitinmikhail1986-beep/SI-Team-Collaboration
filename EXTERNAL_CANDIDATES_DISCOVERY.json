@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-14T12:04:38.084553+00:00",
+  "generated_at": "2026-10-14T17:20:12.016686+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -964,6 +964,29 @@
       "authority": "none"
     },
     {
+      "agent_name": "Agent Economy OS 2047 — A2A Commerce Directory",
+      "author": "Agent Economy OS 2047",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a/.well-known/agent-card.json",
+      "endpoint": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "free-safe-buyer-preflight",
+        "discover-agent-services",
+        "policy-review-procurement",
+        "agent-settlement-passport",
+        "base-usdc-receipt",
+        "owner-signed-agent-spending",
+        "free-enterprise-technical-fit"
+      ],
+      "registry_id": "a7534921-8f0b-4a61-8324-477c8a87f329",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "SI Federation",
       "author": "SI Federation",
       "gap": "independent_review",
@@ -1098,28 +1121,6 @@
         "find_evidence"
       ],
       "registry_id": "c59e1c87-855d-4b04-8c2c-fddc3dde9370",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Agent Economy OS 2047 — A2A Commerce Directory",
-      "author": "Agent Economy OS 2047",
-      "gap": "independent_review",
-      "matched_query": "review",
-      "well_known_uri": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a/.well-known/agent-card.json",
-      "endpoint": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "free-safe-buyer-preflight",
-        "discover-agent-services",
-        "policy-review-procurement",
-        "agent-settlement-passport",
-        "base-usdc-receipt",
-        "owner-signed-agent-spending"
-      ],
-      "registry_id": "a7534921-8f0b-4a61-8324-477c8a87f329",
       "status": "discovered",
       "authority": "none"
     },
