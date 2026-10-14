@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-13T22:53:45.265253Z",
+  "updated_at": "2026-10-14T05:02:42.675909Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1360,9 +1360,24 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "SI Federation",
+      "protocol": "A2A",
+      "endpoint": "https://si-federation-a2a.onrender.com/a2a",
+      "well_known_uri": "https://si-federation-a2a.onrender.com/.well-known/agent-card.json",
+      "registry_id": "1a792099-1f4e-4aeb-97a6-0d66116be0a1",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-13T22:53:45.265253Z",
-  "qualified_pending_outreach": 81
+  "discovery_promoted_at": "2026-10-14T05:02:42.675909Z",
+  "qualified_pending_outreach": 82
 }
