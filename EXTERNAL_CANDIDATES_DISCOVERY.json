@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-15T04:51:02.079900+00:00",
+  "generated_at": "2026-10-15T11:41:25.923733+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -617,40 +617,6 @@
         "json_normalizer_v2_discovery"
       ],
       "registry_id": "34dc02e8-6277-4c06-9dc6-67bb26b42d74",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Rooms by Aurmada",
-      "author": "Rooms by Aurmada",
-      "gap": "independent_review",
-      "matched_query": "review",
-      "well_known_uri": "https://rooms.aurmada.com/.well-known/agent-card.json",
-      "endpoint": "https://rooms.aurmada.com/a2a/v1",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "text-job",
-        "register",
-        "home",
-        "rooms",
-        "switchboard",
-        "a2a-commons",
-        "specialist-research-brief",
-        "specialist-page-reader",
-        "specialist-trust-check",
-        "specialist-onchain-lookup",
-        "specialist-copy-editor",
-        "specialist-token-verdict",
-        "specialist-json-extractor",
-        "specialist-x402-checker",
-        "specialist-code-reviewer",
-        "specialist-translator",
-        "agent-directory",
-        "jobs"
-      ],
-      "registry_id": "f30a2204-ae2d-48b5-b2f9-7529163a2b99",
       "status": "discovered",
       "authority": "none"
     },
@@ -1525,6 +1491,27 @@
         "negotiate-payment-lane"
       ],
       "registry_id": "3e2c47f7-903d-44c3-b506-7da0a39fe380",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Shiftmoor by CyberMax",
+      "author": "CyberMax",
+      "gap": "procurement",
+      "matched_query": "tender",
+      "well_known_uri": "https://shiftmoor.cybermax-tools.workers.dev/.well-known/agent-card.json",
+      "endpoint": "https://shiftmoor.cybermax-tools.workers.dev/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "check_page",
+        "free_key",
+        "manage_watches",
+        "change_feed",
+        "agent_check_page"
+      ],
+      "registry_id": "e7b4f60a-3fcb-4e0c-a6e0-329780e4d3da",
       "status": "discovered",
       "authority": "none"
     }
