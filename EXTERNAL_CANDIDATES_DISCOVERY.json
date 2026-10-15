@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-14T21:47:42.273637+00:00",
+  "generated_at": "2026-10-15T04:51:02.079900+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -440,47 +440,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "GAIP",
-      "author": "GAIP",
-      "gap": "procurement",
-      "matched_query": "supplier",
-      "well_known_uri": "https://gaip-agent-to-art-prototype-production.up.railway.app/a2a/agentverse/agent-card.json",
-      "endpoint": "https://gaip-agent-to-art-prototype-production.up.railway.app/a2a/agentverse",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "gaip-front-door-check",
-        "gaip-front-door-watch",
-        "gaip-front-door-diagnose",
-        "gaip-front-door-verify",
-        "gaip-front-door-second_look_check",
-        "witness_register_terms",
-        "witness_delivery",
-        "gaip_record_permissions",
-        "gaip_record_prices",
-        "gaip_record_keys",
-        "gaip_record_names",
-        "gaip_record_tenure",
-        "gaip_record_extract",
-        "gaip_check_permission",
-        "gaip_notices",
-        "gaip_dependency_check",
-        "gaip_check_preferences",
-        "witness_accept_terms",
-        "witness_finding",
-        "gaip_screen_caller",
-        "gaip_check_mandate",
-        "witness_signoff",
-        "gaip_record_ingredients",
-        "gaip_record_residence",
-        "gaip_statement"
-      ],
-      "registry_id": "eecb32fa-bce6-4796-a536-f90b7389058d",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Ni Biashara Shelves",
       "author": "Ni Biashara LLC",
       "gap": "independent_review",
@@ -658,6 +617,40 @@
         "json_normalizer_v2_discovery"
       ],
       "registry_id": "34dc02e8-6277-4c06-9dc6-67bb26b42d74",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Rooms by Aurmada",
+      "author": "Rooms by Aurmada",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://rooms.aurmada.com/.well-known/agent-card.json",
+      "endpoint": "https://rooms.aurmada.com/a2a/v1",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "text-job",
+        "register",
+        "home",
+        "rooms",
+        "switchboard",
+        "a2a-commons",
+        "specialist-research-brief",
+        "specialist-page-reader",
+        "specialist-trust-check",
+        "specialist-onchain-lookup",
+        "specialist-copy-editor",
+        "specialist-token-verdict",
+        "specialist-json-extractor",
+        "specialist-x402-checker",
+        "specialist-code-reviewer",
+        "specialist-translator",
+        "agent-directory",
+        "jobs"
+      ],
+      "registry_id": "f30a2204-ae2d-48b5-b2f9-7529163a2b99",
       "status": "discovered",
       "authority": "none"
     },
@@ -920,6 +913,32 @@
         "pub_9a615b4fed78"
       ],
       "registry_id": "9e381d24-5fdb-4f5a-bab7-9a097d8deaf2",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Agent Traffic Lab",
+      "author": "Agent Traffic Lab",
+      "gap": "legal",
+      "matched_query": "policy",
+      "well_known_uri": "https://agenttrafficlab.com/.well-known/agent-card.json",
+      "endpoint": "https://agenttrafficlab.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "atl-task-routing-execution",
+        "atl-agent-delegation",
+        "atl-provider-service-routing",
+        "atl-execution-route-decision",
+        "atl-fallback-selection",
+        "atl-cost-aware-routing",
+        "atl-latency-aware-routing",
+        "atl-region-aware-routing",
+        "atl-policy-aware-routing",
+        "atl-outcome-feedback"
+      ],
+      "registry_id": "942b626c-966f-4fd3-96e8-e91fa3254299",
       "status": "discovered",
       "authority": "none"
     },
@@ -1207,28 +1226,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "Quiet Stance Productive Opportunity Routing",
-      "author": "Quiet Stance",
-      "gap": "independent_review",
-      "matched_query": "review",
-      "well_known_uri": "https://quietstance.com/.well-known/agent-card.json",
-      "endpoint": "https://quietstance.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "route_controlled_opportunity",
-        "route_demand_requirement",
-        "route_bottleneck_signal",
-        "route_capability_provider",
-        "route_productive_opportunity",
-        "guide_project_readiness_evidence"
-      ],
-      "registry_id": "d8317b27-79e5-4904-8187-50bb77033348",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "FREIA — France Real Estate Intelligence Agent",
       "author": "JLV Labs",
       "gap": "legal",
@@ -1295,6 +1292,28 @@
       "authority": "none"
     },
     {
+      "agent_name": "Quiet Stance Productive Opportunity Routing",
+      "author": "Quiet Stance",
+      "gap": "finance",
+      "matched_query": "commercial",
+      "well_known_uri": "https://quietstance.com/.well-known/agent-card.json",
+      "endpoint": "https://quietstance.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "route_controlled_opportunity",
+        "route_demand_requirement",
+        "route_bottleneck_signal",
+        "route_capability_provider",
+        "route_productive_opportunity",
+        "guide_project_readiness_evidence"
+      ],
+      "registry_id": "d8317b27-79e5-4904-8187-50bb77033348",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "eudr.dev",
       "author": "Vortx · emem.dev",
       "gap": "procurement",
@@ -1357,6 +1376,28 @@
         "agent_handshake"
       ],
       "registry_id": "302e6847-be69-4308-a494-1a6214e95093",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "GetBody",
+      "author": "GetBody",
+      "gap": "interoperability",
+      "matched_query": "mcp",
+      "well_known_uri": "https://getbody.md/.well-known/agent-card.json",
+      "endpoint": "https://getbody.md/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "do-physical-task",
+        "search-listings",
+        "request-lease",
+        "query-lease",
+        "open-control-session",
+        "end-lease"
+      ],
+      "registry_id": "2d3b5022-3e60-4c58-b4c7-044923f43fe5",
       "status": "discovered",
       "authority": "none"
     },
@@ -1484,48 +1525,6 @@
         "negotiate-payment-lane"
       ],
       "registry_id": "3e2c47f7-903d-44c3-b506-7da0a39fe380",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Shiftmoor by CyberMax",
-      "author": "CyberMax",
-      "gap": "procurement",
-      "matched_query": "tender",
-      "well_known_uri": "https://shiftmoor.cybermax-tools.workers.dev/.well-known/agent-card.json",
-      "endpoint": "https://shiftmoor.cybermax-tools.workers.dev/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "check_page",
-        "free_key",
-        "manage_watches",
-        "change_feed",
-        "agent_check_page"
-      ],
-      "registry_id": "e7b4f60a-3fcb-4e0c-a6e0-329780e4d3da",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Sunny Yuen",
-      "author": "Sunny Yuen",
-      "gap": "architecture_construction",
-      "matched_query": "architecture",
-      "well_known_uri": "https://agent.yuens.me/.well-known/agent-card.json",
-      "endpoint": "https://agent.yuens.me/",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "query",
-        "match",
-        "info",
-        "availability",
-        "projects"
-      ],
-      "registry_id": "3a295dc3-0628-4e6c-bff6-e9670e31b398",
       "status": "discovered",
       "authority": "none"
     }

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-14T21:47:42.343942Z",
+  "updated_at": "2026-10-15T04:51:02.162902Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1405,9 +1405,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Rooms by Aurmada",
+      "protocol": "A2A",
+      "endpoint": "https://rooms.aurmada.com/a2a/v1",
+      "well_known_uri": "https://rooms.aurmada.com/.well-known/agent-card.json",
+      "registry_id": "f30a2204-ae2d-48b5-b2f9-7529163a2b99",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "GetBody",
+      "protocol": "A2A",
+      "endpoint": "https://getbody.md/a2a",
+      "well_known_uri": "https://getbody.md/.well-known/agent-card.json",
+      "registry_id": "2d3b5022-3e60-4c58-b4c7-044923f43fe5",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "interoperability",
+      "matched_query": "mcp",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-14T21:47:42.343942Z",
-  "qualified_pending_outreach": 84
+  "discovery_promoted_at": "2026-10-15T04:51:02.162902Z",
+  "qualified_pending_outreach": 86
 }
