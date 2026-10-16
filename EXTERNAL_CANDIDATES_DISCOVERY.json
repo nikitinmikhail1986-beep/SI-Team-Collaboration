@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-16T16:46:16.041612+00:00",
+  "generated_at": "2026-10-16T21:20:31.364503+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -8,8 +8,8 @@
     {
       "agent_name": "PHION Agent Trust Infrastructure",
       "author": "PHION Systems",
-      "gap": "independent_review",
-      "matched_query": "audit",
+      "gap": "research",
+      "matched_query": "standards",
       "well_known_uri": "https://phion.systems/.well-known/agent.json",
       "endpoint": "https://phion.systems/",
       "healthy": true,
@@ -114,6 +114,62 @@
         "demand-vacuum"
       ],
       "registry_id": "4413e781-fb96-4c0a-9cbf-eb1aa4f738c2",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Anansi Haven",
+      "author": "Anansi Data",
+      "gap": "legal",
+      "matched_query": "policy",
+      "well_known_uri": "https://anansi-haven.vercel.app/.well-known/agent-card.json",
+      "endpoint": "https://anansi-haven.anansidata.workers.dev/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "prop_firm_rules",
+        "draftcheck_check",
+        "anansi_free_data",
+        "find_tools",
+        "tool_capabilities",
+        "time_tools",
+        "market_hours",
+        "position_size",
+        "forex_market_hours",
+        "unit_convert",
+        "calculate",
+        "text_tools",
+        "json_validate",
+        "uuid_hash",
+        "url_metadata",
+        "list_rooms",
+        "read_room",
+        "post_to_room",
+        "send_dm",
+        "read_dms",
+        "report_content",
+        "block_agent",
+        "commons_settings",
+        "post_lesson",
+        "search_lessons",
+        "vote_lesson",
+        "verify_domain_start",
+        "verify_domain_check",
+        "my_credits",
+        "house_plans",
+        "buy_house_plan",
+        "boost_job",
+        "buy_rate_boost",
+        "subscribe_updates",
+        "unsubscribe_updates",
+        "register_agent",
+        "search_agents",
+        "get_agent",
+        "publish_profile",
+        "list_jobs"
+      ],
+      "registry_id": "829c3c1c-33bb-4c67-be23-215624038ddf",
       "status": "discovered",
       "authority": "none"
     },
@@ -859,6 +915,30 @@
       "authority": "none"
     },
     {
+      "agent_name": "Folkmoot",
+      "author": "SalukiLabs",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://folkmoot.salukilabs.com/.well-known/agent-card.json",
+      "endpoint": "https://folkmoot.salukilabs.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "today",
+        "search",
+        "ask",
+        "answer",
+        "join",
+        "post",
+        "vote",
+        "build"
+      ],
+      "registry_id": "182ad98d-aac9-47e8-a842-9755dad443a5",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Muse",
       "author": "Glytch Works",
       "gap": "research",
@@ -879,30 +959,6 @@
         "agent-intro"
       ],
       "registry_id": "be6a2873-fe57-463f-9f3f-09b3b0d479bf",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "FrameAnyPhoto",
-      "author": "FrameAnyPhoto",
-      "gap": "legal",
-      "matched_query": "policy",
-      "well_known_uri": "https://frameanyphoto.com/.well-known/agent-card.json",
-      "endpoint": "https://frameanyphoto.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "search-works",
-        "get-work",
-        "list-series",
-        "get-print-options",
-        "quote-order",
-        "create-checkout",
-        "get-order-status",
-        "get-policies"
-      ],
-      "registry_id": "4492987f-9f7d-4c4b-8025-4d373f86c10d",
       "status": "discovered",
       "authority": "none"
     },
@@ -949,6 +1005,29 @@
         "agent_branch_growth"
       ],
       "registry_id": "1a792099-1f4e-4aeb-97a6-0d66116be0a1",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "nodcheck",
+      "author": "nodcheck",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://nodcheck.com/.well-known/agent-card.json",
+      "endpoint": "https://nodcheck.com/a2a/v1",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "recall",
+        "leave-note",
+        "check",
+        "directory",
+        "tasks",
+        "want",
+        "record"
+      ],
+      "registry_id": "4272bb0a-1dbe-42c5-856e-1032fcc6336a",
       "status": "discovered",
       "authority": "none"
     },
@@ -1045,6 +1124,28 @@
       "authority": "none"
     },
     {
+      "agent_name": "Aegis — QPRL / Beyond Rocketry Propulsion Research Federation Coordinator",
+      "author": "Monarch Space Systems, Inc. / Beyond Rocketry / QPRL",
+      "gap": "independent_review",
+      "matched_query": "verification",
+      "well_known_uri": "https://beyondrocketry.com/.well-known/agent-card.json",
+      "endpoint": "https://beyondrocketry.com/api/public/aegis-a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "propulsion_federation_discovery",
+        "founding_participation_guidance",
+        "public_challenge_discovery",
+        "bounded_compute_contribution",
+        "founding_interest_submission",
+        "federation_value_exchange"
+      ],
+      "registry_id": "0129efc2-a151-49a0-be70-f523f99b4e6c",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Quiet Stance Productive Opportunity Routing",
       "author": "Quiet Stance",
       "gap": "research",
@@ -1129,28 +1230,6 @@
         "open-agent-tasks"
       ],
       "registry_id": "59bb9fdc-11fd-4e45-afc4-5c6bbde8b693",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Aegis — QPRL / Beyond Rocketry Propulsion Research Federation Coordinator",
-      "author": "Monarch Space Systems, Inc. / Beyond Rocketry / QPRL",
-      "gap": "architecture_construction",
-      "matched_query": "architecture",
-      "well_known_uri": "https://beyondrocketry.com/.well-known/agent-card.json",
-      "endpoint": "https://beyondrocketry.com/api/public/aegis-a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "propulsion_federation_discovery",
-        "founding_participation_guidance",
-        "public_challenge_discovery",
-        "bounded_compute_contribution",
-        "founding_interest_submission",
-        "federation_value_exchange"
-      ],
-      "registry_id": "0129efc2-a151-49a0-be70-f523f99b4e6c",
       "status": "discovered",
       "authority": "none"
     },
@@ -1390,27 +1469,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "Mycelnet",
-      "author": "Mycelnet",
-      "gap": "architecture_construction",
-      "matched_query": "architecture",
-      "well_known_uri": "https://mycelnet.ai/.well-known/agent-card.json",
-      "endpoint": "https://mycelnet.ai/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "search_traces",
-        "browse_agents",
-        "get_trust_data",
-        "read_digest",
-        "join_arena"
-      ],
-      "registry_id": "f9af9482-62d5-4417-9b11-2ad27e85367e",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "pathtoAGI — the Observatory",
       "author": "The Observatory",
       "gap": "architecture_construction",
@@ -1448,26 +1506,6 @@
         "discover-lift-evidence"
       ],
       "registry_id": "789dfe3c-c5ba-470b-82b9-ccf744c54d13",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "AI Village",
-      "author": "AI Digest / AI Village",
-      "gap": "research",
-      "matched_query": "standards",
-      "well_known_uri": "https://cdn.jsdelivr.net/gh/ai-village-agents/ai-village-external-agents@main/.well-known/agent-card.json",
-      "endpoint": "https://ai-village-agents.github.io/ai-village-external-agents/",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "agent-collaboration",
-        "protocol-experiments",
-        "game-interaction",
-        "agent-discovery"
-      ],
-      "registry_id": "3696f2ac-ca10-4291-9846-1ea7ce7e3bd2",
       "status": "discovered",
       "authority": "none"
     }
