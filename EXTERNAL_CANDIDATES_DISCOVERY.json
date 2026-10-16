@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-16T11:34:59.693415+00:00",
+  "generated_at": "2026-10-16T16:46:16.041612+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -442,8 +442,8 @@
     {
       "agent_name": "Anokha Web Tools",
       "author": "Anokha Web Tools",
-      "gap": "research",
-      "matched_query": "knowledge",
+      "gap": "finance",
+      "matched_query": "finance",
       "well_known_uri": "https://tools.anokha.space/.well-known/agent-card.json",
       "endpoint": "https://tools.anokha.space/a2a",
       "healthy": true,
@@ -753,33 +753,6 @@
         "business-finance"
       ],
       "registry_id": "0b013240-b0fb-4a3e-b990-880756df11a3",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Magic You Agentic Commerce Lab",
-      "author": "Magic You",
-      "gap": "legal",
-      "matched_query": "compliance",
-      "well_known_uri": "https://magic-you-agentic-commerce-lab.j-radom.chatgpt.site/.well-known/agent-card.json",
-      "endpoint": "https://magic-you-agentic-commerce-lab.j-radom.chatgpt.site/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "list-open-collaboration-tasks",
-        "submit-experiment-work",
-        "get-submission-status",
-        "review-experiment-submission",
-        "list-commercialization-experiments",
-        "propose-commercialization-experiment",
-        "recommend-experiment-handoff",
-        "record-experiment-result",
-        "product-facts-and-evidence-gaps",
-        "commercialization-experiment-design",
-        "critique-commercialization-experiment"
-      ],
-      "registry_id": "1bddda7e-84ea-4a98-a3f9-ad8d09560579",
       "status": "discovered",
       "authority": "none"
     },
@@ -1160,28 +1133,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "eudr.dev",
-      "author": "Vortx · emem.dev",
-      "gap": "procurement",
-      "matched_query": "supplier",
-      "well_known_uri": "https://eudr.dev/.well-known/agent-card.json",
-      "endpoint": "https://eudr.dev/",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "dds-compile",
-        "plot-check",
-        "legality",
-        "verify-receipt",
-        "traces-export",
-        "monitor-subscribe"
-      ],
-      "registry_id": "43355869-ed4f-4dd4-8ac3-c1773fc61823",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Aegis — QPRL / Beyond Rocketry Propulsion Research Federation Coordinator",
       "author": "Monarch Space Systems, Inc. / Beyond Rocketry / QPRL",
       "gap": "architecture_construction",
@@ -1222,6 +1173,28 @@
         "agent_handshake"
       ],
       "registry_id": "302e6847-be69-4308-a494-1a6214e95093",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "OVEXO Business Discovery Agent",
+      "author": "Unknown",
+      "gap": "interoperability",
+      "matched_query": "a2a",
+      "well_known_uri": "https://ovexo-a2a-discovery.miamidadewebdesigns18.workers.dev/.well-known/agent-card.json",
+      "endpoint": "https://ovexo-a2a-discovery.miamidadewebdesigns18.workers.dev/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "aboutbyme",
+        "freepuzzlekids",
+        "yerandybook",
+        "miamisignsdecals",
+        "miamiwebgraphics",
+        "backlinkyard"
+      ],
+      "registry_id": "752224d2-1de1-4ae9-8d51-3687d869b701",
       "status": "discovered",
       "authority": "none"
     },
@@ -1475,6 +1448,26 @@
         "discover-lift-evidence"
       ],
       "registry_id": "789dfe3c-c5ba-470b-82b9-ccf744c54d13",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "AI Village",
+      "author": "AI Digest / AI Village",
+      "gap": "research",
+      "matched_query": "standards",
+      "well_known_uri": "https://cdn.jsdelivr.net/gh/ai-village-agents/ai-village-external-agents@main/.well-known/agent-card.json",
+      "endpoint": "https://ai-village-agents.github.io/ai-village-external-agents/",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "agent-collaboration",
+        "protocol-experiments",
+        "game-interaction",
+        "agent-discovery"
+      ],
+      "registry_id": "3696f2ac-ca10-4291-9846-1ea7ce7e3bd2",
       "status": "discovered",
       "authority": "none"
     }
