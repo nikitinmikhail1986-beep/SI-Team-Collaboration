@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-15T21:31:22.935230+00:00",
+  "generated_at": "2026-10-16T04:41:29.562227+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -440,44 +440,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "Ni Biashara Shelves",
-      "author": "Ni Biashara LLC",
-      "gap": "independent_review",
-      "matched_query": "review",
-      "well_known_uri": "https://agents.nibiashara.biz/.well-known/agent-card.json",
-      "endpoint": "https://agents.nibiashara.biz/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "fx-official",
-        "fx-official-all",
-        "fx-parallel",
-        "fx-parallel-history-24h",
-        "fx-parallel-history-7d",
-        "fx-africa-daily-brief",
-        "carrier-authority-check",
-        "carrier-safety-basics",
-        "broker-authority-check",
-        "load-vet-pack",
-        "sanctions-screen",
-        "sanctions-wallet-screen",
-        "shelf-pass-100",
-        "tx-insurance-ce-check",
-        "tx-realestate-ce-check",
-        "swahili-localization-instant",
-        "swahili-localization-500w",
-        "nb-flyer-design",
-        "nb-social-content-pack",
-        "nb-founder-consult-30",
-        "nb-landing-page",
-        "cloud-spend-report"
-      ],
-      "registry_id": "11453292-e3bd-405a-99c5-f0bfefe6ec2b",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Anokha Web Tools",
       "author": "Anokha Web Tools",
       "gap": "research",
@@ -547,6 +509,41 @@
         "base-token-risk-signals"
       ],
       "registry_id": "efad5d4b-6be5-4f08-a082-c7f2b672cbe2",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Apex Forge Commerce Node",
+      "author": "nonsynthetic",
+      "gap": "independent_review",
+      "matched_query": "evidence",
+      "well_known_uri": "https://nonsynthetic.pages.dev/.well-known/agent-card.json",
+      "endpoint": "https://nonsynthetic.pages.dev/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "audit-verdict",
+        "audit-address",
+        "audit-preflight",
+        "audit-checklist",
+        "corpus-search",
+        "corpus-bundle",
+        "chat-pro",
+        "lanes-live",
+        "util-suite",
+        "mcp-tools",
+        "manual-fiat",
+        "perp-funding",
+        "perp-basis",
+        "x402-status",
+        "activity-feed",
+        "directory",
+        "stats",
+        "escrow-status",
+        "paid-status"
+      ],
+      "registry_id": "26255f74-d179-4c14-aa2a-28254af21710",
       "status": "discovered",
       "authority": "none"
     },
@@ -1469,6 +1466,27 @@
       "authority": "none"
     },
     {
+      "agent_name": "Sunny Yuen",
+      "author": "Sunny Yuen",
+      "gap": "architecture_construction",
+      "matched_query": "architecture",
+      "well_known_uri": "https://agent.yuens.me/.well-known/agent-card.json",
+      "endpoint": "https://agent.yuens.me/",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "query",
+        "match",
+        "info",
+        "availability",
+        "projects"
+      ],
+      "registry_id": "3a295dc3-0628-4e6c-bff6-e9670e31b398",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Mycelnet",
       "author": "Mycelnet",
       "gap": "architecture_construction",
@@ -1486,27 +1504,6 @@
         "join_arena"
       ],
       "registry_id": "f9af9482-62d5-4417-9b11-2ad27e85367e",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "pathtoAGI — the Observatory",
-      "author": "The Observatory",
-      "gap": "architecture_construction",
-      "matched_query": "construction",
-      "well_known_uri": "https://pathtoagi-observatory.netlify.app/.well-known/agent-card.json",
-      "endpoint": "https://pathtoagi-observatory.netlify.app/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "probe",
-        "read-record",
-        "read-ontology",
-        "challenge",
-        "fork"
-      ],
-      "registry_id": "263ef840-d73b-4855-82e6-8b0cce2dd55b",
       "status": "discovered",
       "authority": "none"
     }
