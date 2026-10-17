@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-17T15:42:31.046176Z",
+  "updated_at": "2026-10-17T20:43:20.973063Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1495,9 +1495,24 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Dirtsmith",
+      "protocol": "A2A",
+      "endpoint": "https://dirtsmith-go.bfurrow26.workers.dev/a2a",
+      "well_known_uri": "https://dirtsmith-go.bfurrow26.workers.dev/.well-known/agent-card.json",
+      "registry_id": "95df5ce7-5421-4c4f-8dff-0d0efb378ff5",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "interoperability",
+      "matched_query": "a2a",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-17T15:42:31.046176Z",
-  "qualified_pending_outreach": 90
+  "discovery_promoted_at": "2026-10-17T20:43:20.973063Z",
+  "qualified_pending_outreach": 91
 }

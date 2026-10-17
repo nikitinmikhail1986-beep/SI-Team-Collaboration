@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-17T15:42:30.956422+00:00",
+  "generated_at": "2026-10-17T20:43:20.867266+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -704,6 +704,60 @@
       "authority": "none"
     },
     {
+      "agent_name": "PaidHandshake Exchange",
+      "author": "PaidHandshake Exchange",
+      "gap": "research",
+      "matched_query": "research",
+      "well_known_uri": "https://paidhandshake.com/.well-known/agent-card.json",
+      "endpoint": "https://paidhandshake.com/a2a/jsonrpc",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "live-fulfillment-proof",
+        "verified-answer-market",
+        "free-inventory-and-sample",
+        "machine-paid-search",
+        "universal-paid-work",
+        "machine-native-x402-commerce",
+        "recurring-paid-watch",
+        "search-and-rank",
+        "current-research-and-verify",
+        "quote-result-access",
+        "create-checkout-handoff"
+      ],
+      "registry_id": "5a9b9900-4b26-48c8-a3b9-194f3a6cdaf1",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Magic You Agentic Commerce Lab",
+      "author": "Magic You",
+      "gap": "legal",
+      "matched_query": "compliance",
+      "well_known_uri": "https://magic-you-agentic-commerce-lab.j-radom.chatgpt.site/.well-known/agent-card.json",
+      "endpoint": "https://magic-you-agentic-commerce-lab.j-radom.chatgpt.site/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "list-open-collaboration-tasks",
+        "submit-experiment-work",
+        "get-submission-status",
+        "review-experiment-submission",
+        "list-commercialization-experiments",
+        "propose-commercialization-experiment",
+        "recommend-experiment-handoff",
+        "record-experiment-result",
+        "product-facts-and-evidence-gaps",
+        "commercialization-experiment-design",
+        "critique-commercialization-experiment"
+      ],
+      "registry_id": "1bddda7e-84ea-4a98-a3f9-ad8d09560579",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "01Mind",
       "author": "01Mind",
       "gap": "legal",
@@ -824,6 +878,54 @@
         "agent-intro"
       ],
       "registry_id": "be6a2873-fe57-463f-9f3f-09b3b0d479bf",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "FrameAnyPhoto",
+      "author": "FrameAnyPhoto",
+      "gap": "legal",
+      "matched_query": "policy",
+      "well_known_uri": "https://frameanyphoto.com/.well-known/agent-card.json",
+      "endpoint": "https://frameanyphoto.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "search-works",
+        "get-work",
+        "list-series",
+        "get-print-options",
+        "quote-order",
+        "create-checkout",
+        "get-order-status",
+        "get-policies"
+      ],
+      "registry_id": "4492987f-9f7d-4c4b-8025-4d373f86c10d",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Dirtsmith",
+      "author": "Dirtsmith LLC",
+      "gap": "interoperability",
+      "matched_query": "a2a",
+      "well_known_uri": "https://dirtsmith-go.bfurrow26.workers.dev/.well-known/agent-card.json",
+      "endpoint": "https://dirtsmith-go.bfurrow26.workers.dev/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "read_page",
+        "fedreg_search",
+        "table_to_csv",
+        "pdf_tables",
+        "quote",
+        "jobs",
+        "sell",
+        "rate-sheet"
+      ],
+      "registry_id": "95df5ce7-5421-4c4f-8dff-0d0efb378ff5",
       "status": "discovered",
       "authority": "none"
     },
@@ -1121,28 +1223,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "OVEXO Business Discovery Agent",
-      "author": "Unknown",
-      "gap": "interoperability",
-      "matched_query": "a2a",
-      "well_known_uri": "https://ovexo-a2a-discovery.miamidadewebdesigns18.workers.dev/.well-known/agent-card.json",
-      "endpoint": "https://ovexo-a2a-discovery.miamidadewebdesigns18.workers.dev/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "aboutbyme",
-        "freepuzzlekids",
-        "yerandybook",
-        "miamisignsdecals",
-        "miamiwebgraphics",
-        "backlinkyard"
-      ],
-      "registry_id": "752224d2-1de1-4ae9-8d51-3687d869b701",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "GetBody",
       "author": "GetBody",
       "gap": "interoperability",
@@ -1370,66 +1450,6 @@
         "agent-discovery"
       ],
       "registry_id": "3696f2ac-ca10-4291-9846-1ea7ce7e3bd2",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Increatus Tools (Agent OS public capabilities)",
-      "author": "Increatus (Rob Reid)",
-      "gap": "research",
-      "matched_query": "knowledge",
-      "well_known_uri": "https://studio.tail7ba746.ts.net/.well-known/agent-card.json",
-      "endpoint": "https://studio.tail7ba746.ts.net/agents/tools/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "tools.ask",
-        "tools.calculate_ratio",
-        "tools.knowledge_lookup",
-        "tools.request_capability"
-      ],
-      "registry_id": "4c21a103-253f-49a4-bb05-96173ab6da20",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "P0 Agent Economy Index",
-      "author": "P0",
-      "gap": "research",
-      "matched_query": "knowledge",
-      "well_known_uri": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/.well-known/agent-card.json",
-      "endpoint": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "find-paid-services",
-        "market-report",
-        "paid-data-products",
-        "order-service"
-      ],
-      "registry_id": "1cc45959-ea26-456c-951a-8bb62f5baf1e",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Robin's Studio",
-      "author": "Robin's Studio",
-      "gap": "legal",
-      "matched_query": "compliance",
-      "well_known_uri": "https://47-94-6-89.nip.io/.well-known/agent-card.json",
-      "endpoint": "https://47-94-6-89.nip.io/",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "content-verification",
-        "cultural-linkage",
-        "lead-verification",
-        "seasonal-rhythm"
-      ],
-      "registry_id": "2e35db18-2026-4346-8bee-40dccbcb84e1",
       "status": "discovered",
       "authority": "none"
     }
