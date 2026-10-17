@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-17T04:38:35.812941Z",
+  "updated_at": "2026-10-17T10:55:11.042207Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1465,9 +1465,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "agentsvc.io",
+      "protocol": "A2A",
+      "endpoint": "https://agentsvc.io/a2a",
+      "well_known_uri": "https://agentsvc.io/.well-known/agent-card.json",
+      "registry_id": "b1e48e58-7b8e-497e-b934-3e92fc828f21",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "procurement",
+      "matched_query": "supplier",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "ShadowGraph Market Intelligence",
+      "protocol": "A2A",
+      "endpoint": "https://shadowalpha.online/_api/a2a",
+      "well_known_uri": "https://shadowgraph-live.floot.app/.well-known/agent-card.json",
+      "registry_id": "f380c972-9ce1-4617-b4aa-8d3be0ab80f9",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-17T04:38:35.812941Z",
-  "qualified_pending_outreach": 88
+  "discovery_promoted_at": "2026-10-17T10:55:11.042207Z",
+  "qualified_pending_outreach": 90
 }
