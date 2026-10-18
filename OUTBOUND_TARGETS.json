@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-18T11:21:16.042091Z",
+  "updated_at": "2026-10-18T15:57:52.813648Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1510,9 +1510,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "GF Agent Toll",
+      "protocol": "A2A",
+      "endpoint": "https://api.gfpick.com/a2a/rpc",
+      "well_known_uri": "https://gfpick-agent-api.vercel.app/.well-known/agent-card.json",
+      "registry_id": "f95bd2bf-a239-419a-8f75-c8e5d3844d28",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "finance",
+      "matched_query": "economic",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "FlowFresh: South African export fruit reference data (information only)",
+      "protocol": "A2A",
+      "endpoint": "https://ff-sa-fruit-data.flowfresh.workers.dev/a2a",
+      "well_known_uri": "https://ff-sa-fruit-data.flowfresh.workers.dev/.well-known/agent-card.json",
+      "registry_id": "d8a857e7-c172-42ca-b55a-ac57d70e9748",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "interoperability",
+      "matched_query": "a2a",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-18T11:21:16.042091Z",
-  "qualified_pending_outreach": 91
+  "discovery_promoted_at": "2026-10-18T15:57:52.813648Z",
+  "qualified_pending_outreach": 93
 }

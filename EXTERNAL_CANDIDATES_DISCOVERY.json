@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-18T11:21:15.951964+00:00",
+  "generated_at": "2026-10-18T15:57:52.747822+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -58,62 +58,6 @@
         "language-detect"
       ],
       "registry_id": "b1e48e58-7b8e-497e-b934-3e92fc828f21",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "PHION Agent Trust Infrastructure",
-      "author": "PHION Systems",
-      "gap": "research",
-      "matched_query": "standards",
-      "well_known_uri": "https://phion.systems/.well-known/agent.json",
-      "endpoint": "https://phion.systems/",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "attest",
-        "payment-preflight",
-        "mandate-reserve",
-        "preflight",
-        "fetch-evidence",
-        "inspect-agent",
-        "journey-verify",
-        "transaction-assurance",
-        "transaction-recovery",
-        "try-service",
-        "spending-gateway",
-        "phion-execute",
-        "universal-market",
-        "tool-output-firewall",
-        "delegation-scope-guard",
-        "memory-write-guard",
-        "mcp-manifest-firewall",
-        "tool-call-policy-guard",
-        "data-egress-preflight",
-        "schema-normalize",
-        "rwa-asset-due-diligence",
-        "rwa-compliance",
-        "rwa-nav-reserve",
-        "rwa-transaction-assurance",
-        "rwa-corporate-actions",
-        "sanctions-screening-evidence",
-        "agent-reputation-evidence",
-        "counterparty-risk-preflight",
-        "agent-budget-guard",
-        "idempotency-replay-guard",
-        "human-approval-policy",
-        "secret-redaction-preflight",
-        "oauth-token-audience-guard",
-        "redirect-callback-validator",
-        "tool-capability-drift-monitor",
-        "mcp-server-identity-evidence",
-        "agent-task-handoff-receipt",
-        "context-provenance-labeler",
-        "signed-result-comparator",
-        "service-sla-attestation"
-      ],
-      "registry_id": "ee88633c-805c-4a63-a39b-85eeed9bb850",
       "status": "discovered",
       "authority": "none"
     },
@@ -536,8 +480,8 @@
     {
       "agent_name": "Anokha Web Tools",
       "author": "Anokha Web Tools",
-      "gap": "finance",
-      "matched_query": "finance",
+      "gap": "research",
+      "matched_query": "knowledge",
       "well_known_uri": "https://tools.anokha.space/.well-known/agent-card.json",
       "endpoint": "https://tools.anokha.space/a2a",
       "healthy": true,
@@ -573,8 +517,8 @@
     {
       "agent_name": "Ops Control HQ Utility Agent",
       "author": "Ops Control HQ",
-      "gap": "legal",
-      "matched_query": "policy",
+      "gap": "independent_review",
+      "matched_query": "audit",
       "well_known_uri": "https://tkoqkknsezxavtxfywkm.supabase.co/functions/v1/agent402-register-origin-shim/.well-known/agent-card.json",
       "endpoint": "https://tkoqkknsezxavtxfywkm.supabase.co/functions/v1/agent402-register-origin-shim",
       "healthy": true,
@@ -603,6 +547,41 @@
         "base-token-risk-signals"
       ],
       "registry_id": "efad5d4b-6be5-4f08-a082-c7f2b672cbe2",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Co-Legal Assistant",
+      "author": "Co-Legal BV",
+      "gap": "finance",
+      "matched_query": "finance",
+      "well_known_uri": "https://agent.co-legal.be/.well-known/agent-card.json",
+      "endpoint": "https://agent.co-legal.be/a2a/jsonrpc",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "answer_legal_question",
+        "be.ecli.lookup",
+        "eu.eurlex.lookup",
+        "be.legal.corpus.search",
+        "be.legal.corpus.read",
+        "be.legal.lookup",
+        "legal.citation.verify",
+        "co-legal.document.draft",
+        "ecb.rates",
+        "be.fiscal.erfbelasting",
+        "iban.validate",
+        "be.kbo.lookup",
+        "be.legal.search",
+        "be.legal.read",
+        "nl.legal.lookup",
+        "nl.rechtspraak.lookup",
+        "be.erfkompas.flows",
+        "be.erfkompas.step",
+        "be.vies.validate"
+      ],
+      "registry_id": "125be81b-7326-41cd-85a2-7e0c2aa031b8",
       "status": "discovered",
       "authority": "none"
     },
@@ -637,38 +616,6 @@
         "messaging"
       ],
       "registry_id": "9249ca9e-a65f-48cc-a932-363ce2628af6",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "AgentRXI",
-      "author": "Citiview Group",
-      "gap": "independent_review",
-      "matched_query": "verification",
-      "well_known_uri": "https://agentrxi.com/.well-known/agent-card.json",
-      "endpoint": "https://agentrxi.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "voice-video-agents",
-        "media-documents",
-        "vision-decisions",
-        "email-in-out",
-        "multi-agent-coordination",
-        "agent-productivity",
-        "agent-network",
-        "files-records",
-        "agent-infrastructure",
-        "research-cited",
-        "safety-checks",
-        "web-research",
-        "documents-media",
-        "ai-utilities",
-        "crypto-defi",
-        "business-finance"
-      ],
-      "registry_id": "d591d55f-850e-4c28-a455-a1e42282d2e0",
       "status": "discovered",
       "authority": "none"
     },
@@ -816,6 +763,33 @@
       "authority": "none"
     },
     {
+      "agent_name": "PaidHandshake Exchange",
+      "author": "PaidHandshake Exchange",
+      "gap": "research",
+      "matched_query": "research",
+      "well_known_uri": "https://paidhandshake.com/.well-known/agent-card.json",
+      "endpoint": "https://paidhandshake.com/a2a/jsonrpc",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "live-fulfillment-proof",
+        "verified-answer-market",
+        "free-inventory-and-sample",
+        "machine-paid-search",
+        "universal-paid-work",
+        "machine-native-x402-commerce",
+        "recurring-paid-watch",
+        "search-and-rank",
+        "current-research-and-verify",
+        "quote-result-access",
+        "create-checkout-handoff"
+      ],
+      "registry_id": "5a9b9900-4b26-48c8-a3b9-194f3a6cdaf1",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Magic You Agentic Commerce Lab",
       "author": "Magic You",
       "gap": "legal",
@@ -843,33 +817,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "PaidHandshake Exchange",
-      "author": "PaidHandshake Exchange",
-      "gap": "finance",
-      "matched_query": "commercial",
-      "well_known_uri": "https://paidhandshake.com/.well-known/agent-card.json",
-      "endpoint": "https://paidhandshake.com/a2a/jsonrpc",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "live-fulfillment-proof",
-        "verified-answer-market",
-        "free-inventory-and-sample",
-        "machine-paid-search",
-        "universal-paid-work",
-        "machine-native-x402-commerce",
-        "recurring-paid-watch",
-        "search-and-rank",
-        "current-research-and-verify",
-        "quote-result-access",
-        "create-checkout-handoff"
-      ],
-      "registry_id": "5a9b9900-4b26-48c8-a3b9-194f3a6cdaf1",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "01Mind",
       "author": "01Mind",
       "gap": "legal",
@@ -892,6 +839,32 @@
         "pub_9a615b4fed78"
       ],
       "registry_id": "9e381d24-5fdb-4f5a-bab7-9a097d8deaf2",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "GF Agent Toll",
+      "author": "GF Pick",
+      "gap": "finance",
+      "matched_query": "economic",
+      "well_known_uri": "https://gfpick-agent-api.vercel.app/.well-known/agent-card.json",
+      "endpoint": "https://api.gfpick.com/a2a/rpc",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "gf.list_services",
+        "gf.free_profit_check",
+        "gf.sa_landed_cost",
+        "gf.gcc_opportunity_score",
+        "gf.gcc_product_decision",
+        "gf.gcc_portfolio_rank",
+        "gf.gcc_merchant_pack",
+        "gf.x402_agent_pilot",
+        "gf.x402_agent_growth",
+        "gf.x402_agent_scale"
+      ],
+      "registry_id": "f95bd2bf-a239-419a-8f75-c8e5d3844d28",
       "status": "discovered",
       "authority": "none"
     },
@@ -970,6 +943,30 @@
       "authority": "none"
     },
     {
+      "agent_name": "Agent Economy OS 2047 — A2A Commerce Directory",
+      "author": "Agent Economy OS 2047",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a/.well-known/agent-card.json",
+      "endpoint": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "discover-cheap-x402-usdc-tools",
+        "free-safe-buyer-preflight",
+        "discover-agent-services",
+        "policy-review-procurement",
+        "agent-settlement-passport",
+        "base-usdc-receipt",
+        "owner-signed-agent-spending",
+        "free-enterprise-technical-fit"
+      ],
+      "registry_id": "a7534921-8f0b-4a61-8324-477c8a87f329",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Muse",
       "author": "Glytch Works",
       "gap": "research",
@@ -1038,29 +1035,6 @@
         "rate-sheet"
       ],
       "registry_id": "95df5ce7-5421-4c4f-8dff-0d0efb378ff5",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Agent Economy OS 2047 — A2A Commerce Directory",
-      "author": "Agent Economy OS 2047",
-      "gap": "independent_review",
-      "matched_query": "review",
-      "well_known_uri": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a/.well-known/agent-card.json",
-      "endpoint": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "free-safe-buyer-preflight",
-        "discover-agent-services",
-        "policy-review-procurement",
-        "agent-settlement-passport",
-        "base-usdc-receipt",
-        "owner-signed-agent-spending",
-        "free-enterprise-technical-fit"
-      ],
-      "registry_id": "a7534921-8f0b-4a61-8324-477c8a87f329",
       "status": "discovered",
       "authority": "none"
     },
@@ -1291,28 +1265,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "Quiet Stance Productive Opportunity Routing",
-      "author": "Quiet Stance",
-      "gap": "finance",
-      "matched_query": "commercial",
-      "well_known_uri": "https://quietstance.com/.well-known/agent-card.json",
-      "endpoint": "https://quietstance.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "route_controlled_opportunity",
-        "route_demand_requirement",
-        "route_bottleneck_signal",
-        "route_capability_provider",
-        "route_productive_opportunity",
-        "guide_project_readiness_evidence"
-      ],
-      "registry_id": "d8317b27-79e5-4904-8187-50bb77033348",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Ambr",
       "author": "Ambr",
       "gap": "architecture_construction",
@@ -1396,27 +1348,6 @@
         "feature-requests"
       ],
       "registry_id": "4584e653-d797-452f-a856-b3add77018fc",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Agent Hub",
-      "author": "Citiview Group",
-      "gap": "independent_review",
-      "matched_query": "verification",
-      "well_known_uri": "https://agents.torbrooknews.com/.well-known/agent-card.json",
-      "endpoint": "https://agents.torbrooknews.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "web-research",
-        "documents-media",
-        "ai-utilities",
-        "crypto-defi",
-        "business-finance"
-      ],
-      "registry_id": "bdae0212-98bd-46e9-a37f-1967376945fa",
       "status": "discovered",
       "authority": "none"
     },
@@ -1522,6 +1453,48 @@
         "projects"
       ],
       "registry_id": "3a295dc3-0628-4e6c-bff6-e9670e31b398",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "pathtoAGI — the Observatory",
+      "author": "The Observatory",
+      "gap": "architecture_construction",
+      "matched_query": "construction",
+      "well_known_uri": "https://pathtoagi-observatory.netlify.app/.well-known/agent-card.json",
+      "endpoint": "https://pathtoagi-observatory.netlify.app/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "probe",
+        "read-record",
+        "read-ontology",
+        "challenge",
+        "fork"
+      ],
+      "registry_id": "263ef840-d73b-4855-82e6-8b0cce2dd55b",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "FlowFresh: South African export fruit reference data (information only)",
+      "author": "FlowFresh (Flowpoint Consulting Pty Ltd)",
+      "gap": "interoperability",
+      "matched_query": "a2a",
+      "well_known_uri": "https://ff-sa-fruit-data.flowfresh.workers.dev/.well-known/agent-card.json",
+      "endpoint": "https://ff-sa-fruit-data.flowfresh.workers.dev/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "list_products",
+        "get_season",
+        "get_specs",
+        "contact_route",
+        "get_market_access"
+      ],
+      "registry_id": "d8a857e7-c172-42ca-b55a-ac57d70e9748",
       "status": "discovered",
       "authority": "none"
     }
