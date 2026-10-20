@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-20T17:18:04.216482+00:00",
+  "generated_at": "2026-10-20T21:43:04.479550+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -971,28 +971,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "FREIA — France Real Estate Intelligence Agent",
-      "author": "JLV Labs",
-      "gap": "legal",
-      "matched_query": "legal",
-      "well_known_uri": "https://freia.jlv-labs.cloud/.well-known/agent-card.json",
-      "endpoint": "https://freia.jlv-labs.cloud/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "freia.document",
-        "freia.market",
-        "freia.cadastre",
-        "freia.urbanism",
-        "freia.regulation",
-        "freia.decision"
-      ],
-      "registry_id": "dafaaf4a-446d-451e-8f95-850d70c5ed9c",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "allagents",
       "author": "Unknown",
       "gap": "legal",
@@ -1404,6 +1382,26 @@
         "prepare-booking-links"
       ],
       "registry_id": "4b0ed4fa-60ae-4b40-bede-d6b5c6447d80",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "SKYROS Economic Agent Platform",
+      "author": "Unknown",
+      "gap": "finance",
+      "matched_query": "economic",
+      "well_known_uri": "https://vlgibwclecuhnnrgycnx.supabase.co/functions/v1/cerberrus-network-api/.well-known/agent-card.json",
+      "endpoint": "https://vlgibwclecuhnnrgycnx.supabase.co/functions/v1/cerberrus-network-api/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "capability-catalog",
+        "lead-recovery-quote",
+        "lead-recovery-assessment",
+        "lead-recovery-48h"
+      ],
+      "registry_id": "4460205b-6246-48b7-a103-fc30e3e4f57f",
       "status": "discovered",
       "authority": "none"
     }
