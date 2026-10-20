@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-19T22:27:59.876037+00:00",
+  "generated_at": "2026-10-20T05:00:17.252926+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -756,32 +756,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "01Mind",
-      "author": "01Mind",
-      "gap": "legal",
-      "matched_query": "compliance",
-      "well_known_uri": "https://01mind.net/.well-known/agent-card.json",
-      "endpoint": "https://01mind.net/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "render-document",
-        "email-send-action-api",
-        "legal-research-knowledge-api",
-        "au-tax-compliance-pack",
-        "gdpr-compliance-pack",
-        "hipaa-compliance-pack",
-        "asic-accc-guidance-pack",
-        "aviation-safety-pack",
-        "agent-economy-venue-intelligence",
-        "pub_9a615b4fed78"
-      ],
-      "registry_id": "9e381d24-5fdb-4f5a-bab7-9a097d8deaf2",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "GF Agent Toll",
       "author": "GF Pick",
       "gap": "finance",
@@ -835,8 +809,8 @@
     {
       "agent_name": "Burs-IA Agent Station",
       "author": "Burs-IA",
-      "gap": "independent_review",
-      "matched_query": "audit",
+      "gap": "interoperability",
+      "matched_query": "handoff",
       "well_known_uri": "https://burs-ia.com/.well-known/agent-card.json",
       "endpoint": "https://burs-ia.com/a2a",
       "healthy": true,
@@ -1133,6 +1107,28 @@
       "authority": "none"
     },
     {
+      "agent_name": "GetBody",
+      "author": "GetBody",
+      "gap": "interoperability",
+      "matched_query": "mcp",
+      "well_known_uri": "https://getbody.md/.well-known/agent-card.json",
+      "endpoint": "https://getbody.md/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "do-physical-task",
+        "search-listings",
+        "request-lease",
+        "query-lease",
+        "open-control-session",
+        "end-lease"
+      ],
+      "registry_id": "2d3b5022-3e60-4c58-b4c7-044923f43fe5",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Golden Cat Concierge",
       "author": "Golden Cat Premium Deluxe",
       "gap": "interoperability",
@@ -1302,27 +1298,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "FlowFresh: South African export fruit reference data (information only)",
-      "author": "FlowFresh (Flowpoint Consulting Pty Ltd)",
-      "gap": "interoperability",
-      "matched_query": "a2a",
-      "well_known_uri": "https://ff-sa-fruit-data.flowfresh.workers.dev/.well-known/agent-card.json",
-      "endpoint": "https://ff-sa-fruit-data.flowfresh.workers.dev/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "list_products",
-        "get_season",
-        "get_specs",
-        "contact_route",
-        "get_market_access"
-      ],
-      "registry_id": "d8a857e7-c172-42ca-b55a-ac57d70e9748",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "AFMR Discovery Agent",
       "author": "Agent Failure Mode Registry",
       "gap": "research",
@@ -1383,26 +1358,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "Increatus Tools (Agent OS public capabilities)",
-      "author": "Increatus (Rob Reid)",
-      "gap": "research",
-      "matched_query": "knowledge",
-      "well_known_uri": "https://studio.tail7ba746.ts.net/.well-known/agent-card.json",
-      "endpoint": "https://studio.tail7ba746.ts.net/agents/tools/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "tools.ask",
-        "tools.calculate_ratio",
-        "tools.knowledge_lookup",
-        "tools.request_capability"
-      ],
-      "registry_id": "4c21a103-253f-49a4-bb05-96173ab6da20",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "P0 Agent Economy Index",
       "author": "P0",
       "gap": "research",
@@ -1439,6 +1394,46 @@
         "request-placement-help"
       ],
       "registry_id": "718cd1d2-ea55-418c-a7ea-81529fc21938",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Robin's Studio",
+      "author": "Robin's Studio",
+      "gap": "legal",
+      "matched_query": "compliance",
+      "well_known_uri": "https://47-94-6-89.nip.io/.well-known/agent-card.json",
+      "endpoint": "https://47-94-6-89.nip.io/",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "content-verification",
+        "cultural-linkage",
+        "lead-verification",
+        "seasonal-rhythm"
+      ],
+      "registry_id": "2e35db18-2026-4346-8bee-40dccbcb84e1",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "match.bot",
+      "author": "Unknown",
+      "gap": "legal",
+      "matched_query": "policy",
+      "well_known_uri": "https://match.bot/.well-known/agent-card.json",
+      "endpoint": "https://match.bot/api/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "agent-registration",
+        "per-agent-key-handshake",
+        "public-room",
+        "private-agent-chat-and-peers-beta"
+      ],
+      "registry_id": "779cf22b-d473-4fb1-9a1d-46493bc254b1",
       "status": "discovered",
       "authority": "none"
     }
