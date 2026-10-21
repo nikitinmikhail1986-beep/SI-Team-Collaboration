@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-20T21:43:04.479550+00:00",
+  "generated_at": "2026-10-21T04:59:04.127515+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -545,6 +545,37 @@
         "messaging"
       ],
       "registry_id": "9249ca9e-a65f-48cc-a932-363ce2628af6",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "TESSA Marketing & Technology",
+      "author": "TESSA Marketing & Technology",
+      "gap": "procurement",
+      "matched_query": "rfq",
+      "well_known_uri": "https://aiagent.tessa.tech/.well-known/agent-card.json",
+      "endpoint": "https://aiagent.tessa.tech/",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "tessa-services",
+        "tessa-case-studies",
+        "ai-readiness-assessment",
+        "find-professional-services-firm",
+        "get-wcag-audit",
+        "get-seo-offer",
+        "get-advertising-offer",
+        "get-web-ai-development-offer",
+        "seo-assessment",
+        "ad-tracking-assessment",
+        "website-assessment",
+        "request-strategy-session",
+        "request-introduction",
+        "claim-listing",
+        "request-quote"
+      ],
+      "registry_id": "a8592942-a978-4449-ab29-051c49d2bd9f",
       "status": "discovered",
       "authority": "none"
     },
@@ -1266,6 +1297,26 @@
       "authority": "none"
     },
     {
+      "agent_name": "Increatus Tools (Agent OS public capabilities)",
+      "author": "Increatus (Rob Reid)",
+      "gap": "research",
+      "matched_query": "knowledge",
+      "well_known_uri": "https://studio.tail7ba746.ts.net/.well-known/agent-card.json",
+      "endpoint": "https://studio.tail7ba746.ts.net/agents/tools/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "tools.ask",
+        "tools.calculate_ratio",
+        "tools.knowledge_lookup",
+        "tools.request_capability"
+      ],
+      "registry_id": "4c21a103-253f-49a4-bb05-96173ab6da20",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "P0 Agent Economy Index",
       "author": "P0",
       "gap": "research",
@@ -1326,26 +1377,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "match.bot",
-      "author": "Unknown",
-      "gap": "legal",
-      "matched_query": "policy",
-      "well_known_uri": "https://match.bot/.well-known/agent-card.json",
-      "endpoint": "https://match.bot/api/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "agent-registration",
-        "per-agent-key-handshake",
-        "public-room",
-        "private-agent-chat-and-peers-beta"
-      ],
-      "registry_id": "779cf22b-d473-4fb1-9a1d-46493bc254b1",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Baby (Jingin) — Increatus",
       "author": "Increatus",
       "gap": "finance",
@@ -1382,26 +1413,6 @@
         "prepare-booking-links"
       ],
       "registry_id": "4b0ed4fa-60ae-4b40-bede-d6b5c6447d80",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "SKYROS Economic Agent Platform",
-      "author": "Unknown",
-      "gap": "finance",
-      "matched_query": "economic",
-      "well_known_uri": "https://vlgibwclecuhnnrgycnx.supabase.co/functions/v1/cerberrus-network-api/.well-known/agent-card.json",
-      "endpoint": "https://vlgibwclecuhnnrgycnx.supabase.co/functions/v1/cerberrus-network-api/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "capability-catalog",
-        "lead-recovery-quote",
-        "lead-recovery-assessment",
-        "lead-recovery-48h"
-      ],
-      "registry_id": "4460205b-6246-48b7-a103-fc30e3e4f57f",
       "status": "discovered",
       "authority": "none"
     }
