@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-21T17:20:57.517657+00:00",
+  "generated_at": "2026-10-21T21:49:12.652479+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -666,60 +666,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "PaidHandshake Exchange",
-      "author": "PaidHandshake Exchange",
-      "gap": "research",
-      "matched_query": "research",
-      "well_known_uri": "https://paidhandshake.com/.well-known/agent-card.json",
-      "endpoint": "https://paidhandshake.com/a2a/jsonrpc",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "live-fulfillment-proof",
-        "verified-answer-market",
-        "free-inventory-and-sample",
-        "machine-paid-search",
-        "universal-paid-work",
-        "machine-native-x402-commerce",
-        "recurring-paid-watch",
-        "search-and-rank",
-        "current-research-and-verify",
-        "quote-result-access",
-        "create-checkout-handoff"
-      ],
-      "registry_id": "5a9b9900-4b26-48c8-a3b9-194f3a6cdaf1",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Magic You Agentic Commerce Lab",
-      "author": "Magic You",
-      "gap": "legal",
-      "matched_query": "compliance",
-      "well_known_uri": "https://magic-you-agentic-commerce-lab.j-radom.chatgpt.site/.well-known/agent-card.json",
-      "endpoint": "https://magic-you-agentic-commerce-lab.j-radom.chatgpt.site/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "list-open-collaboration-tasks",
-        "submit-experiment-work",
-        "get-submission-status",
-        "review-experiment-submission",
-        "list-commercialization-experiments",
-        "propose-commercialization-experiment",
-        "recommend-experiment-handoff",
-        "record-experiment-result",
-        "product-facts-and-evidence-gaps",
-        "commercialization-experiment-design",
-        "critique-commercialization-experiment"
-      ],
-      "registry_id": "1bddda7e-84ea-4a98-a3f9-ad8d09560579",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Agent Economy OS 2047 — A2A Commerce Directory",
       "author": "Agent Economy OS 2047",
       "gap": "independent_review",
@@ -1031,6 +977,28 @@
       "authority": "none"
     },
     {
+      "agent_name": "FREIA — France Real Estate Intelligence Agent",
+      "author": "JLV Labs",
+      "gap": "legal",
+      "matched_query": "legal",
+      "well_known_uri": "https://freia.jlv-labs.cloud/.well-known/agent-card.json",
+      "endpoint": "https://freia.jlv-labs.cloud/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "freia.document",
+        "freia.market",
+        "freia.cadastre",
+        "freia.urbanism",
+        "freia.regulation",
+        "freia.decision"
+      ],
+      "registry_id": "dafaaf4a-446d-451e-8f95-850d70c5ed9c",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Ambr",
       "author": "Ambr",
       "gap": "architecture_construction",
@@ -1093,28 +1061,6 @@
         "end-lease"
       ],
       "registry_id": "2d3b5022-3e60-4c58-b4c7-044923f43fe5",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Golden Cat Concierge",
-      "author": "Golden Cat Premium Deluxe",
-      "gap": "interoperability",
-      "matched_query": "handoff",
-      "well_known_uri": "https://golden-cat-network.bronkobologna.chatgpt.site/.well-known/agent-card.json",
-      "endpoint": "https://golden-cat-network.bronkobologna.chatgpt.site/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "collaboration",
-        "guest",
-        "playground",
-        "discover",
-        "missions",
-        "heartbeat"
-      ],
-      "registry_id": "46a86268-b2cd-4aca-a466-23d89f341521",
       "status": "discovered",
       "authority": "none"
     },
@@ -1287,6 +1233,27 @@
       "authority": "none"
     },
     {
+      "agent_name": "FlowFresh: South African export fruit reference data (information only)",
+      "author": "FlowFresh (Flowpoint Consulting Pty Ltd)",
+      "gap": "interoperability",
+      "matched_query": "a2a",
+      "well_known_uri": "https://ff-sa-fruit-data.flowfresh.workers.dev/.well-known/agent-card.json",
+      "endpoint": "https://ff-sa-fruit-data.flowfresh.workers.dev/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "list_products",
+        "get_season",
+        "get_specs",
+        "contact_route",
+        "get_market_access"
+      ],
+      "registry_id": "d8a857e7-c172-42ca-b55a-ac57d70e9748",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "AFMR Discovery Agent",
       "author": "Agent Failure Mode Registry",
       "gap": "research",
@@ -1403,6 +1370,26 @@
         "seasonal-rhythm"
       ],
       "registry_id": "2e35db18-2026-4346-8bee-40dccbcb84e1",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Baby (Jingin) — Increatus",
+      "author": "Increatus",
+      "gap": "finance",
+      "matched_query": "commercial",
+      "well_known_uri": "https://whatsapp-commerce-os-production-9241.up.railway.app/.well-known/agent-card.json",
+      "endpoint": "https://whatsapp-commerce-os-production-9241.up.railway.app/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "products",
+        "property",
+        "popups",
+        "agents"
+      ],
+      "registry_id": "04452e6f-5761-4f1e-b2a7-05bba0dff300",
       "status": "discovered",
       "authority": "none"
     }
