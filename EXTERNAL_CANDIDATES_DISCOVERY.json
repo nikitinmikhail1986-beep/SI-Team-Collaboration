@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-21T04:59:04.127515+00:00",
+  "generated_at": "2026-10-21T12:01:15.713886+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -580,6 +580,36 @@
       "authority": "none"
     },
     {
+      "agent_name": "Wiggle",
+      "author": "agent coordination substrate",
+      "gap": "legal",
+      "matched_query": "legal",
+      "well_known_uri": "https://aichatroom.net/.well-known/agent-card.json",
+      "endpoint": "https://aichatroom.net/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "signup",
+        "messaging",
+        "inbox",
+        "room_create",
+        "private_rooms",
+        "invite",
+        "artifact_upload",
+        "roles",
+        "polls",
+        "directory",
+        "report",
+        "blog",
+        "contact",
+        "memory"
+      ],
+      "registry_id": "2a8572c7-8d8e-4887-bbd6-77fe42db8ede",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "LUMEN B2B Agent",
       "author": "LUMEN B2B Zero",
       "gap": "finance",
@@ -1002,28 +1032,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "allagents",
-      "author": "Unknown",
-      "gap": "legal",
-      "matched_query": "legal",
-      "well_known_uri": "https://allagents.app/.well-known/agent-card.json",
-      "endpoint": "https://allagents.app/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "find",
-        "list",
-        "operator",
-        "discover",
-        "relay",
-        "mcp"
-      ],
-      "registry_id": "4bac7ffc-c964-43e2-acbb-302beca35838",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Ambr",
       "author": "Ambr",
       "gap": "architecture_construction",
@@ -1042,6 +1050,28 @@
         "agent_handshake"
       ],
       "registry_id": "302e6847-be69-4308-a494-1a6214e95093",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "CityDesk Colony",
+      "author": "CityDesk",
+      "gap": "interoperability",
+      "matched_query": "a2a",
+      "well_known_uri": "https://citydesk-chi.vercel.app/.well-known/agent-card.json",
+      "endpoint": "https://citydesk-chi.vercel.app/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "colony-join",
+        "community-activities",
+        "mcp",
+        "suggestion-council",
+        "pay",
+        "colony-propose"
+      ],
+      "registry_id": "4998de3c-5e70-4f40-b6e4-1984a7bda397",
       "status": "discovered",
       "authority": "none"
     },
@@ -1149,6 +1179,27 @@
         "agent_registration"
       ],
       "registry_id": "dce706a3-ae6a-4694-ad0d-f31402d7c1f3",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "P0 Agent Economy Index",
+      "author": "P0",
+      "gap": "research",
+      "matched_query": "knowledge",
+      "well_known_uri": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/.well-known/agent-card.json",
+      "endpoint": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "find-paid-services",
+        "market-report",
+        "paid-data-products",
+        "x402-test-target",
+        "order-service"
+      ],
+      "registry_id": "1cc45959-ea26-456c-951a-8bb62f5baf1e",
       "status": "discovered",
       "authority": "none"
     },
@@ -1317,26 +1368,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "P0 Agent Economy Index",
-      "author": "P0",
-      "gap": "research",
-      "matched_query": "knowledge",
-      "well_known_uri": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/.well-known/agent-card.json",
-      "endpoint": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "find-paid-services",
-        "market-report",
-        "paid-data-products",
-        "order-service"
-      ],
-      "registry_id": "1cc45959-ea26-456c-951a-8bb62f5baf1e",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Elderly Care Match",
       "author": "Elderly Care Match",
       "gap": "legal",
@@ -1393,26 +1424,6 @@
         "agents"
       ],
       "registry_id": "04452e6f-5761-4f1e-b2a7-05bba0dff300",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "TravelFinder by BeachFinder",
-      "author": "BeachFinder",
-      "gap": "finance",
-      "matched_query": "commercial",
-      "well_known_uri": "https://travelfinder.online/.well-known/agent.json",
-      "endpoint": "https://travelfinder.online/a2a/jsonrpc",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "get-commercial-catalog",
-        "find-budget-weekends",
-        "reprice-weekend",
-        "prepare-booking-links"
-      ],
-      "registry_id": "4b0ed4fa-60ae-4b40-bede-d6b5c6447d80",
       "status": "discovered",
       "authority": "none"
     }
