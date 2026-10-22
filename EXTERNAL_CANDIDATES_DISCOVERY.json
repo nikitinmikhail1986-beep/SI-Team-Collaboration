@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-21T21:49:12.652479+00:00",
+  "generated_at": "2026-10-22T05:00:28.658436+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -390,8 +390,8 @@
     {
       "agent_name": "Ops Control HQ Utility Agent",
       "author": "Ops Control HQ",
-      "gap": "independent_review",
-      "matched_query": "audit",
+      "gap": "legal",
+      "matched_query": "policy",
       "well_known_uri": "https://tkoqkknsezxavtxfywkm.supabase.co/functions/v1/agent402-register-origin-shim/.well-known/agent-card.json",
       "endpoint": "https://tkoqkknsezxavtxfywkm.supabase.co/functions/v1/agent402-register-origin-shim",
       "healthy": true,
@@ -692,6 +692,32 @@
       "authority": "none"
     },
     {
+      "agent_name": "01Mind",
+      "author": "01Mind",
+      "gap": "legal",
+      "matched_query": "compliance",
+      "well_known_uri": "https://01mind.net/.well-known/agent-card.json",
+      "endpoint": "https://01mind.net/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "render-document",
+        "email-send-action-api",
+        "legal-research-knowledge-api",
+        "au-tax-compliance-pack",
+        "gdpr-compliance-pack",
+        "hipaa-compliance-pack",
+        "asic-accc-guidance-pack",
+        "aviation-safety-pack",
+        "agent-economy-venue-intelligence",
+        "pub_9a615b4fed78"
+      ],
+      "registry_id": "9e381d24-5fdb-4f5a-bab7-9a097d8deaf2",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "GF Agent Toll",
       "author": "GF Pick",
       "gap": "finance",
@@ -721,7 +747,7 @@
       "agent_name": "ShadowGraph Market Intelligence",
       "author": "ShadowGraph",
       "gap": "independent_review",
-      "matched_query": "review",
+      "matched_query": "evidence",
       "well_known_uri": "https://shadowgraph-live.floot.app/.well-known/agent-card.json",
       "endpoint": "https://shadowalpha.online/_api/a2a",
       "healthy": true,
@@ -886,6 +912,29 @@
       "authority": "none"
     },
     {
+      "agent_name": "CarGene",
+      "author": "CarGene",
+      "gap": "legal",
+      "matched_query": "legal",
+      "well_known_uri": "https://car-gene.com/.well-known/agent-card.json",
+      "endpoint": "https://api.car-gene.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "search_vehicles",
+        "get_vehicle",
+        "get_vehicle_relationships",
+        "get_sales_figures",
+        "check_part_fitment",
+        "search_shops",
+        "search_used_cars"
+      ],
+      "registry_id": "1c6ec915-93c4-4835-a996-3e7cde58c72c",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "makeup.land",
       "author": "א. ט. הפקות בע״מ / A.T. Hafakot Ltd.",
       "gap": "procurement",
@@ -1043,49 +1092,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "GetBody",
-      "author": "GetBody",
-      "gap": "interoperability",
-      "matched_query": "mcp",
-      "well_known_uri": "https://getbody.md/.well-known/agent-card.json",
-      "endpoint": "https://getbody.md/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "do-physical-task",
-        "search-listings",
-        "request-lease",
-        "query-lease",
-        "open-control-session",
-        "end-lease"
-      ],
-      "registry_id": "2d3b5022-3e60-4c58-b4c7-044923f43fe5",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Agent Commons",
-      "author": "Dooza",
-      "gap": "independent_review",
-      "matched_query": "review",
-      "well_known_uri": "https://agents.dooza.ai/.well-known/agent-card.json",
-      "endpoint": "https://commons.dooza.ai/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "job-board",
-        "public-coordination",
-        "shared-knowledge",
-        "human-assistance",
-        "feature-requests"
-      ],
-      "registry_id": "4584e653-d797-452f-a856-b3add77018fc",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "INAM Protocol Registry",
       "author": "INAM Protocol",
       "gap": "independent_review",
@@ -1103,6 +1109,27 @@
         "check"
       ],
       "registry_id": "add51cac-77dd-49e9-9641-fb8912658b5d",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Agent Commons",
+      "author": "Dooza",
+      "gap": "research",
+      "matched_query": "research",
+      "well_known_uri": "https://agents.dooza.ai/.well-known/agent-card.json",
+      "endpoint": "https://commons.dooza.ai/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "job-board",
+        "public-coordination",
+        "shared-knowledge",
+        "human-assistance",
+        "feature-requests"
+      ],
+      "registry_id": "4584e653-d797-452f-a856-b3add77018fc",
       "status": "discovered",
       "authority": "none"
     },
@@ -1233,27 +1260,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "FlowFresh: South African export fruit reference data (information only)",
-      "author": "FlowFresh (Flowpoint Consulting Pty Ltd)",
-      "gap": "interoperability",
-      "matched_query": "a2a",
-      "well_known_uri": "https://ff-sa-fruit-data.flowfresh.workers.dev/.well-known/agent-card.json",
-      "endpoint": "https://ff-sa-fruit-data.flowfresh.workers.dev/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "list_products",
-        "get_season",
-        "get_specs",
-        "contact_route",
-        "get_market_access"
-      ],
-      "registry_id": "d8a857e7-c172-42ca-b55a-ac57d70e9748",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "AFMR Discovery Agent",
       "author": "Agent Failure Mode Registry",
       "gap": "research",
@@ -1334,26 +1340,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "Elderly Care Match",
-      "author": "Elderly Care Match",
-      "gap": "legal",
-      "matched_query": "legal",
-      "well_known_uri": "https://www.elderlycarematch.com/.well-known/agent-card.json",
-      "endpoint": "https://www.elderlycarematch.com/a2a/v1",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "find-care-facilities",
-        "get-facility-details",
-        "search-care-guides",
-        "request-placement-help"
-      ],
-      "registry_id": "718cd1d2-ea55-418c-a7ea-81529fc21938",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Robin's Studio",
       "author": "Robin's Studio",
       "gap": "legal",
@@ -1374,22 +1360,42 @@
       "authority": "none"
     },
     {
-      "agent_name": "Baby (Jingin) — Increatus",
-      "author": "Increatus",
-      "gap": "finance",
-      "matched_query": "commercial",
-      "well_known_uri": "https://whatsapp-commerce-os-production-9241.up.railway.app/.well-known/agent-card.json",
-      "endpoint": "https://whatsapp-commerce-os-production-9241.up.railway.app/a2a",
+      "agent_name": "match.bot",
+      "author": "Unknown",
+      "gap": "legal",
+      "matched_query": "policy",
+      "well_known_uri": "https://match.bot/.well-known/agent-card.json",
+      "endpoint": "https://match.bot/api/a2a",
       "healthy": true,
       "conformance": true,
       "uptime_percentage": 100.0,
       "skills": [
-        "products",
-        "property",
-        "popups",
-        "agents"
+        "agent-registration",
+        "per-agent-key-handshake",
+        "public-room",
+        "private-agent-chat-and-peers-beta"
       ],
-      "registry_id": "04452e6f-5761-4f1e-b2a7-05bba0dff300",
+      "registry_id": "779cf22b-d473-4fb1-9a1d-46493bc254b1",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Elderly Care Match",
+      "author": "Elderly Care Match",
+      "gap": "finance",
+      "matched_query": "finance",
+      "well_known_uri": "https://www.elderlycarematch.com/.well-known/agent-card.json",
+      "endpoint": "https://www.elderlycarematch.com/a2a/v1",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "find-care-facilities",
+        "get-facility-details",
+        "search-care-guides",
+        "request-placement-help"
+      ],
+      "registry_id": "718cd1d2-ea55-418c-a7ea-81529fc21938",
       "status": "discovered",
       "authority": "none"
     }
