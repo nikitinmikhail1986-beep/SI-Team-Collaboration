@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-22T05:00:28.658436+00:00",
+  "generated_at": "2026-10-22T12:03:49.989768+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -718,32 +718,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "GF Agent Toll",
-      "author": "GF Pick",
-      "gap": "finance",
-      "matched_query": "economic",
-      "well_known_uri": "https://gfpick-agent-api.vercel.app/.well-known/agent-card.json",
-      "endpoint": "https://api.gfpick.com/a2a/rpc",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "gf.list_services",
-        "gf.free_profit_check",
-        "gf.sa_landed_cost",
-        "gf.gcc_opportunity_score",
-        "gf.gcc_product_decision",
-        "gf.gcc_portfolio_rank",
-        "gf.gcc_merchant_pack",
-        "gf.x402_agent_pilot",
-        "gf.x402_agent_growth",
-        "gf.x402_agent_scale"
-      ],
-      "registry_id": "f95bd2bf-a239-419a-8f75-c8e5d3844d28",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "ShadowGraph Market Intelligence",
       "author": "ShadowGraph",
       "gap": "independent_review",
@@ -842,6 +816,30 @@
       "authority": "none"
     },
     {
+      "agent_name": "CarGene",
+      "author": "CarGene",
+      "gap": "legal",
+      "matched_query": "legal",
+      "well_known_uri": "https://car-gene.com/.well-known/agent-card.json",
+      "endpoint": "https://api.car-gene.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "search_vehicles",
+        "get_vehicle",
+        "get_vehicle_relationships",
+        "get_sales_figures",
+        "check_part_fitment",
+        "search_shops",
+        "search_used_cars",
+        "get_us_import_eligibility"
+      ],
+      "registry_id": "1c6ec915-93c4-4835-a996-3e7cde58c72c",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "FrameAnyPhoto",
       "author": "FrameAnyPhoto",
       "gap": "legal",
@@ -908,29 +906,6 @@
         "leaderboard"
       ],
       "registry_id": "ca38dad5-9e2c-4b64-983d-7f9a0065f3a0",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "CarGene",
-      "author": "CarGene",
-      "gap": "legal",
-      "matched_query": "legal",
-      "well_known_uri": "https://car-gene.com/.well-known/agent-card.json",
-      "endpoint": "https://api.car-gene.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "search_vehicles",
-        "get_vehicle",
-        "get_vehicle_relationships",
-        "get_sales_figures",
-        "check_part_fitment",
-        "search_shops",
-        "search_used_cars"
-      ],
-      "registry_id": "1c6ec915-93c4-4835-a996-3e7cde58c72c",
       "status": "discovered",
       "authority": "none"
     },
@@ -1048,6 +1023,28 @@
       "authority": "none"
     },
     {
+      "agent_name": "allagents",
+      "author": "Unknown",
+      "gap": "finance",
+      "matched_query": "finance",
+      "well_known_uri": "https://allagents.app/.well-known/agent-card.json",
+      "endpoint": "https://allagents.app/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "find",
+        "list",
+        "operator",
+        "discover",
+        "relay",
+        "mcp"
+      ],
+      "registry_id": "4bac7ffc-c964-43e2-acbb-302beca35838",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Ambr",
       "author": "Ambr",
       "gap": "architecture_construction",
@@ -1092,6 +1089,49 @@
       "authority": "none"
     },
     {
+      "agent_name": "GetBody",
+      "author": "GetBody",
+      "gap": "interoperability",
+      "matched_query": "mcp",
+      "well_known_uri": "https://getbody.md/.well-known/agent-card.json",
+      "endpoint": "https://getbody.md/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "do-physical-task",
+        "search-listings",
+        "request-lease",
+        "query-lease",
+        "open-control-session",
+        "end-lease"
+      ],
+      "registry_id": "2d3b5022-3e60-4c58-b4c7-044923f43fe5",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Agent Commons",
+      "author": "Dooza",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://agents.dooza.ai/.well-known/agent-card.json",
+      "endpoint": "https://commons.dooza.ai/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "job-board",
+        "public-coordination",
+        "shared-knowledge",
+        "human-assistance",
+        "feature-requests"
+      ],
+      "registry_id": "4584e653-d797-452f-a856-b3add77018fc",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "INAM Protocol Registry",
       "author": "INAM Protocol",
       "gap": "independent_review",
@@ -1109,27 +1149,6 @@
         "check"
       ],
       "registry_id": "add51cac-77dd-49e9-9641-fb8912658b5d",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Agent Commons",
-      "author": "Dooza",
-      "gap": "research",
-      "matched_query": "research",
-      "well_known_uri": "https://agents.dooza.ai/.well-known/agent-card.json",
-      "endpoint": "https://commons.dooza.ai/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "job-board",
-        "public-coordination",
-        "shared-knowledge",
-        "human-assistance",
-        "feature-requests"
-      ],
-      "registry_id": "4584e653-d797-452f-a856-b3add77018fc",
       "status": "discovered",
       "authority": "none"
     },
@@ -1193,6 +1212,27 @@
         "negotiate-payment-lane"
       ],
       "registry_id": "3e2c47f7-903d-44c3-b506-7da0a39fe380",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Agent Economic Trust",
+      "author": "Agent Economic Trust",
+      "gap": "finance",
+      "matched_query": "economic",
+      "well_known_uri": "https://agent-economic-passport.caoviedoc.workers.dev/.well-known/agent.json",
+      "endpoint": "https://agent-economic-passport.caoviedoc.workers.dev/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "trust-before-action",
+        "issue-economic-passport",
+        "record-outcome",
+        "continuous-trust-monitor",
+        "learning-metrics"
+      ],
+      "registry_id": "904b5483-271b-457f-9405-021f97a6a079",
       "status": "discovered",
       "authority": "none"
     },
@@ -1356,46 +1396,6 @@
         "seasonal-rhythm"
       ],
       "registry_id": "2e35db18-2026-4346-8bee-40dccbcb84e1",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "match.bot",
-      "author": "Unknown",
-      "gap": "legal",
-      "matched_query": "policy",
-      "well_known_uri": "https://match.bot/.well-known/agent-card.json",
-      "endpoint": "https://match.bot/api/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "agent-registration",
-        "per-agent-key-handshake",
-        "public-room",
-        "private-agent-chat-and-peers-beta"
-      ],
-      "registry_id": "779cf22b-d473-4fb1-9a1d-46493bc254b1",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Elderly Care Match",
-      "author": "Elderly Care Match",
-      "gap": "finance",
-      "matched_query": "finance",
-      "well_known_uri": "https://www.elderlycarematch.com/.well-known/agent-card.json",
-      "endpoint": "https://www.elderlycarematch.com/a2a/v1",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "find-care-facilities",
-        "get-facility-details",
-        "search-care-guides",
-        "request-placement-help"
-      ],
-      "registry_id": "718cd1d2-ea55-418c-a7ea-81529fc21938",
       "status": "discovered",
       "authority": "none"
     }

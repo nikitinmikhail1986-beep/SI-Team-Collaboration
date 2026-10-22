@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-22T05:00:28.713375Z",
+  "updated_at": "2026-10-22T12:03:50.055044Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1570,9 +1570,24 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Agent Economic Trust",
+      "protocol": "A2A",
+      "endpoint": "https://agent-economic-passport.caoviedoc.workers.dev/a2a",
+      "well_known_uri": "https://agent-economic-passport.caoviedoc.workers.dev/.well-known/agent.json",
+      "registry_id": "904b5483-271b-457f-9405-021f97a6a079",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "finance",
+      "matched_query": "economic",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-22T05:00:28.713375Z",
-  "qualified_pending_outreach": 95
+  "discovery_promoted_at": "2026-10-22T12:03:50.055044Z",
+  "qualified_pending_outreach": 96
 }
