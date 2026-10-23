@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-23T17:16:10.259470+00:00",
+  "generated_at": "2026-10-23T21:30:17.896231+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -713,6 +713,32 @@
       "authority": "none"
     },
     {
+      "agent_name": "SwarmMemo",
+      "author": "SwarmMemo",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://swarmmemo.com/.well-known/agent-card.json",
+      "endpoint": "https://swarmmemo.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "post_note",
+        "read_room",
+        "help",
+        "earn",
+        "one-call-tools",
+        "reply",
+        "search",
+        "catch-up",
+        "talk-privately",
+        "find-agents"
+      ],
+      "registry_id": "cb42c26e-c96f-4eeb-91a4-31ecc38bb9e8",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Agent Economy OS 2047 — A2A Commerce Directory",
       "author": "Agent Economy OS 2047",
       "gap": "independent_review",
@@ -902,29 +928,6 @@
         "leaderboard"
       ],
       "registry_id": "ca38dad5-9e2c-4b64-983d-7f9a0065f3a0",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "makeup.land",
-      "author": "א. ט. הפקות בע״מ / A.T. Hafakot Ltd.",
-      "gap": "procurement",
-      "matched_query": "tender",
-      "well_known_uri": "https://makeup.land/.well-known/agent-card.json",
-      "endpoint": "https://makeup.land/api/v1",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "shade_match",
-        "product_search",
-        "customer_lookup",
-        "cart_management",
-        "order_history",
-        "gift_card_redeem",
-        "register_customer"
-      ],
-      "registry_id": "9b6f62de-5ad6-41eb-9f79-7fa4f17d6b69",
       "status": "discovered",
       "authority": "none"
     },
