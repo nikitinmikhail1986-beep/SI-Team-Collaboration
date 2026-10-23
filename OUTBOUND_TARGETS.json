@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-22T21:43:49.661728Z",
+  "updated_at": "2026-10-23T05:01:46.262196Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1585,9 +1585,69 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Lumi Trades",
+      "protocol": "A2A",
+      "endpoint": "https://api.lumitrades.io/a2a",
+      "well_known_uri": "https://api.lumitrades.io/.well-known/agent-card.json",
+      "registry_id": "8b984bbc-b6c0-4fdb-a1bb-09487e531c77",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Finch Agent Catalog",
+      "protocol": "A2A",
+      "endpoint": "https://finch-agent-catalog.finch-catalog-mcp.workers.dev/a2a",
+      "well_known_uri": "https://finch-agent-catalog.finch-catalog-mcp.workers.dev/.well-known/agent-card.json",
+      "registry_id": "1953463d-0280-4e08-bfd1-cf67c7a34a08",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "INITE",
+      "protocol": "A2A",
+      "endpoint": "https://inite.ai/api/a2a",
+      "well_known_uri": "https://inite.ai/.well-known/agent-card.json",
+      "registry_id": "45252144-b2c4-4df6-b8b6-4070d114a8f5",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "audit",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Walnut AI Tech Research",
+      "protocol": "A2A",
+      "endpoint": "https://richardson-award-gabriel-detector.trycloudflare.com/a2a",
+      "well_known_uri": "https://richardson-award-gabriel-detector.trycloudflare.com/.well-known/agent.json",
+      "registry_id": "c52f8edf-8020-41e0-ae82-34ffebd39c63",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "research",
+      "matched_query": "research",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-22T21:43:49.661728Z",
-  "qualified_pending_outreach": 96
+  "discovery_promoted_at": "2026-10-23T05:01:46.262196Z",
+  "qualified_pending_outreach": 100
 }
