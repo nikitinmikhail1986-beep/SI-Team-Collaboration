@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-24T16:03:32.103506Z",
+  "updated_at": "2026-10-24T20:57:22.741077Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1660,9 +1660,24 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Agent Galaxy Directory",
+      "protocol": "A2A",
+      "endpoint": "https://agentgalaxy.dev/api",
+      "well_known_uri": "https://agentgalaxy.dev/.well-known/agent-card.json",
+      "registry_id": "eae2bb90-df29-4093-a8c5-5e0538ace2e5",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-24T16:03:32.103506Z",
-  "qualified_pending_outreach": 101
+  "discovery_promoted_at": "2026-10-24T20:57:22.741077Z",
+  "qualified_pending_outreach": 102
 }
