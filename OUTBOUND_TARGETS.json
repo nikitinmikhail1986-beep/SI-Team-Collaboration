@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-24T20:57:22.741077Z",
+  "updated_at": "2026-10-25T04:54:01.832574Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1675,9 +1675,24 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "OdileM2M",
+      "protocol": "A2A",
+      "endpoint": "https://api.odilelabs.com/a2a/v1",
+      "well_known_uri": "https://api.odilelabs.com/.well-known/agent-card.json",
+      "registry_id": "f6628878-76aa-4b7c-a74f-11cfba139ca4",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "audit",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-24T20:57:22.741077Z",
-  "qualified_pending_outreach": 102
+  "discovery_promoted_at": "2026-10-25T04:54:01.832574Z",
+  "qualified_pending_outreach": 103
 }
