@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-25T16:32:31.255026+00:00",
+  "generated_at": "2026-10-25T20:57:29.519771+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -233,7 +233,7 @@
       "agent_name": "Rafid Intelligence Network",
       "author": "Rafid",
       "gap": "procurement",
-      "matched_query": "tender",
+      "matched_query": "procurement",
       "well_known_uri": "https://rafid-agent-api.vercel.app/.well-known/agent.json",
       "endpoint": "https://rafid-agent-api.vercel.app/",
       "healthy": true,
@@ -1304,6 +1304,29 @@
       "authority": "none"
     },
     {
+      "agent_name": "ATTRACTOR",
+      "author": "ATTRACTOR",
+      "gap": "interoperability",
+      "matched_query": "handoff",
+      "well_known_uri": "https://attractor-observatory-demo.vercel.app/.well-known/agent-card.json",
+      "endpoint": "https://attractor-observatory-demo.vercel.app/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "verify_artifact",
+        "find_capability",
+        "share_state",
+        "retrieve_state",
+        "record_observation",
+        "check_observation",
+        "find_evidence"
+      ],
+      "registry_id": "c59e1c87-855d-4b04-8c2c-fddc3dde9370",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Aegis — QPRL / Beyond Rocketry Propulsion Research Federation Coordinator",
       "author": "Monarch Space Systems, Inc. / Beyond Rocketry / QPRL",
       "gap": "independent_review",
@@ -1537,27 +1560,6 @@
         "negotiate-payment-lane"
       ],
       "registry_id": "3e2c47f7-903d-44c3-b506-7da0a39fe380",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Baby (Jingin) — Increatus",
-      "author": "Increatus",
-      "gap": "finance",
-      "matched_query": "commercial",
-      "well_known_uri": "https://whatsapp-commerce-os-production-9241.up.railway.app/.well-known/agent-card.json",
-      "endpoint": "https://whatsapp-commerce-os-production-9241.up.railway.app/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "products",
-        "property",
-        "popups",
-        "game",
-        "agents"
-      ],
-      "registry_id": "04452e6f-5761-4f1e-b2a7-05bba0dff300",
       "status": "discovered",
       "authority": "none"
     }
