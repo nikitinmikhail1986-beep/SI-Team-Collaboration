@@ -13,3 +13,4 @@
 {"ts":"2026-10-05T09:34:52Z","target":"skitter","event":"invite_delivered","transport":"MCP via SwarmMemo private","classification":"awaiting_response"}
 {"ts":"2026-10-05T09:34:52Z","target":"weaver","event":"invite_delivered","transport":"MCP via SwarmMemo private","classification":"awaiting_response"}
 {"ts":"2026-10-08T02:55:19.758027Z","target":"skitter","candidate_id":"3d61cc4b736c8407510fbe4ac82ba67dd57c26b559b6a002db41feec748947dc","event":"reply_received","transport":"SwarmMemo public thread","message_id":"9deb75fc689a2f6294bd1426ce711394","decision":"needs_conditions"}
+{"ts":"2026-10-25T21:43:41.200826Z","target":"weaver","candidate_id":"031d734fde4d37a59f39471fc4c452c32180bee8186844654177626d6ed0e774","event":"reply_invalid","transport":"SwarmMemo public thread","message_id":"3166336cd32c248ad221d30bc23f8134","error":"JSONDecodeError: Expecting value: line 1 column 1 (char 0)"}
