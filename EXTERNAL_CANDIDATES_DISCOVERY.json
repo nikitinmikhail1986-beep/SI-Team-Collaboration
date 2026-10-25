@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-25T11:44:28.392822+00:00",
+  "generated_at": "2026-10-25T16:32:31.255026+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -597,8 +597,8 @@
     {
       "agent_name": "Ops Control HQ Utility Agent",
       "author": "Ops Control HQ",
-      "gap": "finance",
-      "matched_query": "finance",
+      "gap": "legal",
+      "matched_query": "policy",
       "well_known_uri": "https://tkoqkknsezxavtxfywkm.supabase.co/functions/v1/agent402-register-origin-shim/.well-known/agent-card.json",
       "endpoint": "https://tkoqkknsezxavtxfywkm.supabase.co/functions/v1/agent402-register-origin-shim",
       "healthy": true,
@@ -934,6 +934,33 @@
       "authority": "none"
     },
     {
+      "agent_name": "Magic You Agentic Commerce Lab",
+      "author": "Magic You",
+      "gap": "legal",
+      "matched_query": "compliance",
+      "well_known_uri": "https://magic-you-agentic-commerce-lab.j-radom.chatgpt.site/.well-known/agent-card.json",
+      "endpoint": "https://magic-you-agentic-commerce-lab.j-radom.chatgpt.site/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "list-open-collaboration-tasks",
+        "submit-experiment-work",
+        "get-submission-status",
+        "review-experiment-submission",
+        "list-commercialization-experiments",
+        "propose-commercialization-experiment",
+        "recommend-experiment-handoff",
+        "record-experiment-result",
+        "product-facts-and-evidence-gaps",
+        "commercialization-experiment-design",
+        "critique-commercialization-experiment"
+      ],
+      "registry_id": "1bddda7e-84ea-4a98-a3f9-ad8d09560579",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "PaidHandshake Exchange",
       "author": "PaidHandshake Exchange",
       "gap": "finance",
@@ -1009,6 +1036,32 @@
         "free-enterprise-technical-fit"
       ],
       "registry_id": "a7534921-8f0b-4a61-8324-477c8a87f329",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "GF Agent Toll",
+      "author": "GF Pick",
+      "gap": "finance",
+      "matched_query": "economic",
+      "well_known_uri": "https://gfpick-agent-api.vercel.app/.well-known/agent-card.json",
+      "endpoint": "https://api.gfpick.com/a2a/rpc",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "gf.list_services",
+        "gf.free_profit_check",
+        "gf.sa_landed_cost",
+        "gf.gcc_opportunity_score",
+        "gf.gcc_product_decision",
+        "gf.gcc_portfolio_rank",
+        "gf.gcc_merchant_pack",
+        "gf.x402_agent_pilot",
+        "gf.x402_agent_growth",
+        "gf.x402_agent_scale"
+      ],
+      "registry_id": "f95bd2bf-a239-419a-8f75-c8e5d3844d28",
       "status": "discovered",
       "authority": "none"
     },
@@ -1505,48 +1558,6 @@
         "agents"
       ],
       "registry_id": "04452e6f-5761-4f1e-b2a7-05bba0dff300",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Agent Economic Trust",
-      "author": "Agent Economic Trust",
-      "gap": "finance",
-      "matched_query": "economic",
-      "well_known_uri": "https://agent-economic-passport.caoviedoc.workers.dev/.well-known/agent.json",
-      "endpoint": "https://agent-economic-passport.caoviedoc.workers.dev/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "trust-before-action",
-        "issue-economic-passport",
-        "record-outcome",
-        "continuous-trust-monitor",
-        "learning-metrics"
-      ],
-      "registry_id": "904b5483-271b-457f-9405-021f97a6a079",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Shiftmoor by CyberMax",
-      "author": "CyberMax",
-      "gap": "procurement",
-      "matched_query": "tender",
-      "well_known_uri": "https://shiftmoor.cybermax-tools.workers.dev/.well-known/agent-card.json",
-      "endpoint": "https://shiftmoor.cybermax-tools.workers.dev/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "check_page",
-        "free_key",
-        "manage_watches",
-        "change_feed",
-        "agent_check_page"
-      ],
-      "registry_id": "e7b4f60a-3fcb-4e0c-a6e0-329780e4d3da",
       "status": "discovered",
       "authority": "none"
     }
