@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-26T13:16:48.310214+00:00",
+  "generated_at": "2026-10-26T22:45:23.063684+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -233,7 +233,7 @@
       "agent_name": "Rafid Intelligence Network",
       "author": "Rafid",
       "gap": "procurement",
-      "matched_query": "procurement",
+      "matched_query": "tender",
       "well_known_uri": "https://rafid-agent-api.vercel.app/.well-known/agent.json",
       "endpoint": "https://rafid-agent-api.vercel.app/",
       "healthy": true,
@@ -436,47 +436,6 @@
         "uniswap_traders"
       ],
       "registry_id": "8989b794-4c09-4960-9d13-af23a2394cb7",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Agent Exchange",
-      "author": "RileyCraig14",
-      "gap": "finance",
-      "matched_query": "finance",
-      "well_known_uri": "https://x402-agent-store.rileycraig14.workers.dev/.well-known/agent.json",
-      "endpoint": "https://store.agentexchange.work/",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "free-samples",
-        "agent-planets",
-        "agent-wallet-lounge",
-        "web-search",
-        "wikipedia",
-        "token-security",
-        "dex-data",
-        "token-launches",
-        "base-wave-radar",
-        "crosschain-radar",
-        "chain-heartbeat",
-        "onchain-reads",
-        "prediction-odds",
-        "brand-check",
-        "crypto-ai-visibility",
-        "sales-qualify",
-        "clearing-house",
-        "visibility-index",
-        "signal-feed",
-        "risk-spread",
-        "defi-yields",
-        "crypto-prices",
-        "gov-treasury",
-        "truck-profit",
-        "truck-cpm"
-      ],
-      "registry_id": "d34896a6-9771-4e45-a6ac-228b5c976e3e",
       "status": "discovered",
       "authority": "none"
     },
@@ -720,36 +679,6 @@
         "request-quote"
       ],
       "registry_id": "a8592942-a978-4449-ab29-051c49d2bd9f",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Finch Agent Catalog",
-      "author": "Finch Agent Catalog (community)",
-      "gap": "independent_review",
-      "matched_query": "review",
-      "well_known_uri": "https://finch-agent-catalog.finch-catalog-mcp.workers.dev/.well-known/agent-card.json",
-      "endpoint": "https://finch-agent-catalog.finch-catalog-mcp.workers.dev/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "trace_crypto_funds",
-        "check_wallet_address_risk",
-        "analyze_hyperliquid_us_stock_perp",
-        "screen_wheel_strategy_options",
-        "compare_sector_returns_vs_sp500",
-        "monitor_market_trading_setups",
-        "assess_onchain_business",
-        "analyze_singapore_condo",
-        "tailor_resume_to_job",
-        "find_job_openings",
-        "research_brief_science_health",
-        "debug_or_review_code",
-        "audit_website_for_growth",
-        "book_appointment_by_phone"
-      ],
-      "registry_id": "1953463d-0280-4e08-bfd1-cf67c7a34a08",
       "status": "discovered",
       "authority": "none"
     },
@@ -1076,55 +1005,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "Burs-IA Agent Station",
-      "author": "Burs-IA",
-      "gap": "interoperability",
-      "matched_query": "handoff",
-      "well_known_uri": "https://burs-ia.com/.well-known/agent-card.json",
-      "endpoint": "https://burs-ia.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "instant-check-in",
-        "capability-discovery",
-        "collaboration-request",
-        "bursia-relay-invitation",
-        "human-bridge-request",
-        "human-supervised-autonomy",
-        "session-continuity",
-        "protocol-bridge",
-        "verification-request"
-      ],
-      "registry_id": "beed69a5-3e55-493e-a75b-78901e5e01e8",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Lumi Trades",
-      "author": "Lumi Trades",
-      "gap": "independent_review",
-      "matched_query": "review",
-      "well_known_uri": "https://api.lumitrades.io/.well-known/agent-card.json",
-      "endpoint": "https://api.lumitrades.io/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "trust_check",
-        "vendor_trust",
-        "vendor_report",
-        "catalog",
-        "seller_monitoring",
-        "trust_feed",
-        "samples",
-        "quote"
-      ],
-      "registry_id": "8b984bbc-b6c0-4fdb-a1bb-09487e531c77",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Muse",
       "author": "Glytch Works",
       "gap": "research",
@@ -1217,6 +1097,29 @@
         "build"
       ],
       "registry_id": "182ad98d-aac9-47e8-a842-9755dad443a5",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "INITE",
+      "author": "inite LLC",
+      "gap": "independent_review",
+      "matched_query": "audit",
+      "well_known_uri": "https://inite.ai/.well-known/agent-card.json",
+      "endpoint": "https://inite.ai/api/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "analyze_site",
+        "get_analysis",
+        "check_identity",
+        "match_mcp",
+        "match_tools",
+        "find_business",
+        "inite_book_call"
+      ],
+      "registry_id": "45252144-b2c4-4df6-b8b6-4070d114a8f5",
       "status": "discovered",
       "authority": "none"
     },
@@ -1468,6 +1371,28 @@
       "authority": "none"
     },
     {
+      "agent_name": "Zinvyl Fixed-Scope Qualification Agent",
+      "author": "G.B. Industry LLC d/b/a Zinvyl",
+      "gap": "procurement",
+      "matched_query": "procurement",
+      "well_known_uri": "https://zinvyl.com/marketplace/.well-known/agent-card.json",
+      "endpoint": "https://zinvyl.com/marketplace/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "find-zinvyl-service",
+        "qualify-fixed-scope-work",
+        "purchase-fixed-scope-work",
+        "buy-workflow-health-check",
+        "buy-csv-cleanup-starter",
+        "apply-as-zinvyl-provider"
+      ],
+      "registry_id": "a4cf9bc2-7d70-4f50-bf8f-9bfa8135457f",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Ambr",
       "author": "Ambr",
       "gap": "architecture_construction",
@@ -1550,6 +1475,48 @@
         "feature-requests"
       ],
       "registry_id": "4584e653-d797-452f-a856-b3add77018fc",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Agent Health Monitor (AHM)",
+      "author": "Digital Intensity Ltd",
+      "gap": "research",
+      "matched_query": "standards",
+      "well_known_uri": "https://agenthealthmonitor.xyz/.well-known/agent.json",
+      "endpoint": "https://agenthealthmonitor.xyz/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "trust_score_evaluation",
+        "agent_health_monitoring",
+        "verifiable_credential_issuance",
+        "trust_report_generation",
+        "agent_registration"
+      ],
+      "registry_id": "dce706a3-ae6a-4694-ad0d-f31402d7c1f3",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "AlgoVoi Payable Rail",
+      "author": "AlgoVoi",
+      "gap": "legal",
+      "matched_query": "compliance",
+      "well_known_uri": "https://pay.algovoi.co.uk/.well-known/agent-card.json",
+      "endpoint": "https://pay.algovoi.co.uk/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "pay-verify-receipt",
+        "pay-verify-rfc9421",
+        "pay-compliance-receipt",
+        "pay-url-screen",
+        "negotiate-payment-lane"
+      ],
+      "registry_id": "3e2c47f7-903d-44c3-b506-7da0a39fe380",
       "status": "discovered",
       "authority": "none"
     }
