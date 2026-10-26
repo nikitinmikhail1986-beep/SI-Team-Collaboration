@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-25T20:57:29.519771+00:00",
+  "generated_at": "2026-10-26T04:57:48.734503+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -481,45 +481,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "Lumi Trades",
-      "author": "Lumi Trades",
-      "gap": "independent_review",
-      "matched_query": "review",
-      "well_known_uri": "https://api.lumitrades.io/.well-known/agent-card.json",
-      "endpoint": "https://api.lumitrades.io/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "trust_check",
-        "vendor_trust",
-        "vendor_report",
-        "catalog",
-        "coins",
-        "seller_monitoring",
-        "trust_feed",
-        "samples",
-        "quote",
-        "institutional",
-        "brief",
-        "scan",
-        "lite",
-        "signal",
-        "levels",
-        "slate",
-        "market",
-        "macro_yen",
-        "funding",
-        "fear_greed",
-        "events_48h",
-        "sentiment",
-        "events"
-      ],
-      "registry_id": "8b984bbc-b6c0-4fdb-a1bb-09487e531c77",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Ni Biashara Shelves",
       "author": "Ni Biashara LLC",
       "gap": "independent_review",
@@ -597,8 +558,8 @@
     {
       "agent_name": "Ops Control HQ Utility Agent",
       "author": "Ops Control HQ",
-      "gap": "legal",
-      "matched_query": "policy",
+      "gap": "finance",
+      "matched_query": "finance",
       "well_known_uri": "https://tkoqkknsezxavtxfywkm.supabase.co/functions/v1/agent402-register-origin-shim/.well-known/agent-card.json",
       "endpoint": "https://tkoqkknsezxavtxfywkm.supabase.co/functions/v1/agent402-register-origin-shim",
       "healthy": true,
@@ -880,6 +841,33 @@
       "authority": "none"
     },
     {
+      "agent_name": "Lumi Trades",
+      "author": "Lumi Trades",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://api.lumitrades.io/.well-known/agent-card.json",
+      "endpoint": "https://api.lumitrades.io/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "trust_check",
+        "vendor_trust",
+        "vendor_report",
+        "catalog",
+        "seller_monitoring",
+        "trust_feed",
+        "samples",
+        "quote",
+        "institutional",
+        "funding",
+        "fear_greed"
+      ],
+      "registry_id": "8b984bbc-b6c0-4fdb-a1bb-09487e531c77",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "SwarmMemo",
       "author": "SwarmMemo",
       "gap": "independent_review",
@@ -1036,6 +1024,32 @@
         "free-enterprise-technical-fit"
       ],
       "registry_id": "a7534921-8f0b-4a61-8324-477c8a87f329",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "01Mind",
+      "author": "01Mind",
+      "gap": "legal",
+      "matched_query": "compliance",
+      "well_known_uri": "https://01mind.net/.well-known/agent-card.json",
+      "endpoint": "https://01mind.net/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "render-document",
+        "email-send-action-api",
+        "legal-research-knowledge-api",
+        "au-tax-compliance-pack",
+        "gdpr-compliance-pack",
+        "hipaa-compliance-pack",
+        "asic-accc-guidance-pack",
+        "aviation-safety-pack",
+        "agent-economy-venue-intelligence",
+        "pub_9a615b4fed78"
+      ],
+      "registry_id": "9e381d24-5fdb-4f5a-bab7-9a097d8deaf2",
       "status": "discovered",
       "authority": "none"
     },
@@ -1371,6 +1385,28 @@
       "authority": "none"
     },
     {
+      "agent_name": "P0 Agent Economy Index",
+      "author": "P0",
+      "gap": "research",
+      "matched_query": "knowledge",
+      "well_known_uri": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/.well-known/agent-card.json",
+      "endpoint": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "find-paid-services",
+        "market-report",
+        "paid-data-products",
+        "x402-test-target",
+        "buy-route-x402",
+        "order-service"
+      ],
+      "registry_id": "1cc45959-ea26-456c-951a-8bb62f5baf1e",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "FREIA — France Real Estate Intelligence Agent",
       "author": "JLV Labs",
       "gap": "legal",
@@ -1389,6 +1425,28 @@
         "freia.decision"
       ],
       "registry_id": "dafaaf4a-446d-451e-8f95-850d70c5ed9c",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Checkpoint402",
+      "author": "Checkpoint402",
+      "gap": "legal",
+      "matched_query": "compliance",
+      "well_known_uri": "https://api.checkpoint402.com/.well-known/agent-card.json",
+      "endpoint": "https://api.checkpoint402.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "tx-explainer",
+        "defi-yields",
+        "new-tokens",
+        "token-check",
+        "sec-8k",
+        "ofac-screen"
+      ],
+      "registry_id": "ab4b34bc-b029-4bc0-a60b-6d17fffee305",
       "status": "discovered",
       "authority": "none"
     },
@@ -1497,69 +1555,6 @@
         "feature-requests"
       ],
       "registry_id": "4584e653-d797-452f-a856-b3add77018fc",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Agent Health Monitor (AHM)",
-      "author": "Digital Intensity Ltd",
-      "gap": "research",
-      "matched_query": "standards",
-      "well_known_uri": "https://agenthealthmonitor.xyz/.well-known/agent.json",
-      "endpoint": "https://agenthealthmonitor.xyz/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "trust_score_evaluation",
-        "agent_health_monitoring",
-        "verifiable_credential_issuance",
-        "trust_report_generation",
-        "agent_registration"
-      ],
-      "registry_id": "dce706a3-ae6a-4694-ad0d-f31402d7c1f3",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "P0 Agent Economy Index",
-      "author": "P0",
-      "gap": "research",
-      "matched_query": "knowledge",
-      "well_known_uri": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/.well-known/agent-card.json",
-      "endpoint": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "find-paid-services",
-        "market-report",
-        "paid-data-products",
-        "x402-test-target",
-        "order-service"
-      ],
-      "registry_id": "1cc45959-ea26-456c-951a-8bb62f5baf1e",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "AlgoVoi Payable Rail",
-      "author": "AlgoVoi",
-      "gap": "legal",
-      "matched_query": "compliance",
-      "well_known_uri": "https://pay.algovoi.co.uk/.well-known/agent-card.json",
-      "endpoint": "https://pay.algovoi.co.uk/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "pay-verify-receipt",
-        "pay-verify-rfc9421",
-        "pay-compliance-receipt",
-        "pay-url-screen",
-        "negotiate-payment-lane"
-      ],
-      "registry_id": "3e2c47f7-903d-44c3-b506-7da0a39fe380",
       "status": "discovered",
       "authority": "none"
     }
