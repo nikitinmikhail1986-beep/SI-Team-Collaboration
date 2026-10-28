@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-27T22:23:28.727833Z",
+  "updated_at": "2026-10-28T05:54:04.219467Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1705,9 +1705,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "AustinsDomain Bot HQ",
+      "protocol": "A2A",
+      "endpoint": "https://austinsdomain.com/a2a",
+      "well_known_uri": "https://austinsdomain.com/.well-known/agent-card.json",
+      "registry_id": "4d4f1043-c715-484e-9fa3-b9baa1fa2f1f",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "interoperability",
+      "matched_query": "a2a",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "BotsRated",
+      "protocol": "A2A",
+      "endpoint": "https://botsrated.com/a2a",
+      "well_known_uri": "https://botsrated.com/.well-known/agent-card.json",
+      "registry_id": "1536c373-cf87-43d4-8a2c-7fcc50efcb81",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "interoperability",
+      "matched_query": "a2a",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-27T22:23:28.727833Z",
-  "qualified_pending_outreach": 104
+  "discovery_promoted_at": "2026-10-28T05:54:04.219467Z",
+  "qualified_pending_outreach": 106
 }

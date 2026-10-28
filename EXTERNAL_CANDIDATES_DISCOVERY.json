@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-27T22:23:28.664706+00:00",
+  "generated_at": "2026-10-28T05:54:04.172963+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -618,6 +618,7 @@
         "be.legal.read",
         "nl.legal.lookup",
         "nl.rechtspraak.lookup",
+        "be.notary.prepare",
         "be.vies.validate"
       ],
       "registry_id": "125be81b-7326-41cd-85a2-7e0c2aa031b8",
@@ -652,6 +653,36 @@
         "request-quote"
       ],
       "registry_id": "a8592942-a978-4449-ab29-051c49d2bd9f",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Finch Agent Catalog",
+      "author": "Finch Agent Catalog (community)",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://finch-agent-catalog.finch-catalog-mcp.workers.dev/.well-known/agent-card.json",
+      "endpoint": "https://finch-agent-catalog.finch-catalog-mcp.workers.dev/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "trace_crypto_funds",
+        "check_wallet_address_risk",
+        "analyze_hyperliquid_us_stock_perp",
+        "screen_wheel_strategy_options",
+        "compare_sector_returns_vs_sp500",
+        "monitor_market_trading_setups",
+        "assess_onchain_business",
+        "analyze_singapore_condo",
+        "tailor_resume_to_job",
+        "find_job_openings",
+        "research_brief_science_health",
+        "debug_or_review_code",
+        "audit_website_for_growth",
+        "book_appointment_by_phone"
+      ],
+      "registry_id": "1953463d-0280-4e08-bfd1-cf67c7a34a08",
       "status": "discovered",
       "authority": "none"
     },
@@ -768,33 +799,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "Citiview Agent Market",
-      "author": "Citiview Group",
-      "gap": "independent_review",
-      "matched_query": "verification",
-      "well_known_uri": "https://agents.citiviewgroup.com/.well-known/agent-card.json",
-      "endpoint": "https://agents.citiviewgroup.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "agent-productivity",
-        "agent-network",
-        "files-records",
-        "agent-infrastructure",
-        "research-cited",
-        "safety-checks",
-        "web-research",
-        "documents-media",
-        "ai-utilities",
-        "crypto-defi",
-        "business-finance"
-      ],
-      "registry_id": "0b013240-b0fb-4a3e-b990-880756df11a3",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Magic You Agentic Commerce Lab",
       "author": "Magic You",
       "gap": "legal",
@@ -874,6 +878,32 @@
       "authority": "none"
     },
     {
+      "agent_name": "01Mind",
+      "author": "01Mind",
+      "gap": "legal",
+      "matched_query": "compliance",
+      "well_known_uri": "https://01mind.net/.well-known/agent-card.json",
+      "endpoint": "https://01mind.net/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "render-document",
+        "email-send-action-api",
+        "legal-research-knowledge-api",
+        "au-tax-compliance-pack",
+        "gdpr-compliance-pack",
+        "hipaa-compliance-pack",
+        "asic-accc-guidance-pack",
+        "aviation-safety-pack",
+        "agent-economy-venue-intelligence",
+        "pub_9a615b4fed78"
+      ],
+      "registry_id": "9e381d24-5fdb-4f5a-bab7-9a097d8deaf2",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "GF Agent Toll",
       "author": "GF Pick",
       "gap": "finance",
@@ -921,6 +951,31 @@
         "deep-research"
       ],
       "registry_id": "f380c972-9ce1-4617-b4aa-8d3be0ab80f9",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "AustinsDomain Bot HQ",
+      "author": "AustinsDomain",
+      "gap": "interoperability",
+      "matched_query": "a2a",
+      "well_known_uri": "https://austinsdomain.com/.well-known/agent-card.json",
+      "endpoint": "https://austinsdomain.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "welcome",
+        "join-in-one-call",
+        "check-in",
+        "board",
+        "wall",
+        "notes",
+        "top-bot-vote",
+        "top-site-vote",
+        "read-api"
+      ],
+      "registry_id": "4d4f1043-c715-484e-9fa3-b9baa1fa2f1f",
       "status": "discovered",
       "authority": "none"
     },
@@ -1185,25 +1240,25 @@
       "authority": "none"
     },
     {
-      "agent_name": "ATTRACTOR",
-      "author": "ATTRACTOR",
+      "agent_name": "BotsRated",
+      "author": "BotsRated",
       "gap": "interoperability",
-      "matched_query": "handoff",
-      "well_known_uri": "https://attractor-observatory-demo.vercel.app/.well-known/agent-card.json",
-      "endpoint": "https://attractor-observatory-demo.vercel.app/a2a",
+      "matched_query": "a2a",
+      "well_known_uri": "https://botsrated.com/.well-known/agent-card.json",
+      "endpoint": "https://botsrated.com/a2a",
       "healthy": true,
       "conformance": true,
       "uptime_percentage": 100.0,
       "skills": [
-        "verify_artifact",
-        "find_capability",
-        "share_state",
-        "retrieve_state",
-        "record_observation",
-        "check_observation",
-        "find_evidence"
+        "preflight",
+        "find",
+        "coverage",
+        "sample",
+        "check",
+        "report",
+        "best"
       ],
-      "registry_id": "c59e1c87-855d-4b04-8c2c-fddc3dde9370",
+      "registry_id": "1536c373-cf87-43d4-8a2c-7fcc50efcb81",
       "status": "discovered",
       "authority": "none"
     },
@@ -1384,6 +1439,28 @@
       "authority": "none"
     },
     {
+      "agent_name": "Golden Cat Concierge",
+      "author": "Golden Cat Premium Deluxe",
+      "gap": "interoperability",
+      "matched_query": "handoff",
+      "well_known_uri": "https://golden-cat-network.bronkobologna.chatgpt.site/.well-known/agent-card.json",
+      "endpoint": "https://golden-cat-network.bronkobologna.chatgpt.site/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "collaboration",
+        "guest",
+        "playground",
+        "discover",
+        "missions",
+        "heartbeat"
+      ],
+      "registry_id": "46a86268-b2cd-4aca-a466-23d89f341521",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "INAM Protocol Registry",
       "author": "INAM Protocol",
       "gap": "independent_review",
@@ -1443,69 +1520,6 @@
         "agent_registration"
       ],
       "registry_id": "dce706a3-ae6a-4694-ad0d-f31402d7c1f3",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "AlgoVoi Payable Rail",
-      "author": "AlgoVoi",
-      "gap": "legal",
-      "matched_query": "compliance",
-      "well_known_uri": "https://pay.algovoi.co.uk/.well-known/agent-card.json",
-      "endpoint": "https://pay.algovoi.co.uk/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "pay-verify-receipt",
-        "pay-verify-rfc9421",
-        "pay-compliance-receipt",
-        "pay-url-screen",
-        "negotiate-payment-lane"
-      ],
-      "registry_id": "3e2c47f7-903d-44c3-b506-7da0a39fe380",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Baby (Jingin) — Increatus",
-      "author": "Increatus",
-      "gap": "finance",
-      "matched_query": "commercial",
-      "well_known_uri": "https://whatsapp-commerce-os-production-9241.up.railway.app/.well-known/agent-card.json",
-      "endpoint": "https://whatsapp-commerce-os-production-9241.up.railway.app/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "products",
-        "property",
-        "popups",
-        "game",
-        "agents"
-      ],
-      "registry_id": "04452e6f-5761-4f1e-b2a7-05bba0dff300",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Agent Economic Trust",
-      "author": "Agent Economic Trust",
-      "gap": "finance",
-      "matched_query": "economic",
-      "well_known_uri": "https://agent-economic-passport.caoviedoc.workers.dev/.well-known/agent.json",
-      "endpoint": "https://agent-economic-passport.caoviedoc.workers.dev/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "trust-before-action",
-        "issue-economic-passport",
-        "record-outcome",
-        "continuous-trust-monitor",
-        "learning-metrics"
-      ],
-      "registry_id": "904b5483-271b-457f-9405-021f97a6a079",
       "status": "discovered",
       "authority": "none"
     }
