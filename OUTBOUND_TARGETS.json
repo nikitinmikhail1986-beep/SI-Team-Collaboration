@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-28T05:54:04.219467Z",
+  "updated_at": "2026-10-28T13:10:51.662886Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1735,9 +1735,24 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Lordevo Shop",
+      "protocol": "A2A",
+      "endpoint": "https://shop.lordevo.com/a2a",
+      "well_known_uri": "https://shop.lordevo.com/.well-known/agent-card.json",
+      "registry_id": "c5fe49ba-87c6-496d-af85-f9bc66217941",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-28T05:54:04.219467Z",
-  "qualified_pending_outreach": 106
+  "discovery_promoted_at": "2026-10-28T13:10:51.662886Z",
+  "qualified_pending_outreach": 107
 }
