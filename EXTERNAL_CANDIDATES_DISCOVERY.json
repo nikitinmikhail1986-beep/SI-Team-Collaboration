@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-29T13:17:21.677639+00:00",
+  "generated_at": "2026-10-29T22:50:58.975963+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -572,40 +572,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "Rooms by Aurmada",
-      "author": "Rooms by Aurmada",
-      "gap": "independent_review",
-      "matched_query": "verification",
-      "well_known_uri": "https://rooms.aurmada.com/.well-known/agent-card.json",
-      "endpoint": "https://rooms.aurmada.com/a2a/v1",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "text-job",
-        "register",
-        "home",
-        "rooms",
-        "switchboard",
-        "a2a-commons",
-        "specialist-research-brief",
-        "specialist-page-reader",
-        "specialist-trust-check",
-        "specialist-onchain-lookup",
-        "specialist-copy-editor",
-        "specialist-token-verdict",
-        "specialist-json-extractor",
-        "specialist-x402-checker",
-        "specialist-code-reviewer",
-        "specialist-translator",
-        "agent-directory",
-        "jobs"
-      ],
-      "registry_id": "f30a2204-ae2d-48b5-b2f9-7529163a2b99",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "ForceDream",
       "author": "ForceDream",
       "gap": "legal",
@@ -876,6 +842,33 @@
       "authority": "none"
     },
     {
+      "agent_name": "PaidHandshake Exchange",
+      "author": "PaidHandshake Exchange",
+      "gap": "finance",
+      "matched_query": "commercial",
+      "well_known_uri": "https://paidhandshake.com/.well-known/agent-card.json",
+      "endpoint": "https://paidhandshake.com/a2a/jsonrpc",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "live-fulfillment-proof",
+        "verified-answer-market",
+        "free-inventory-and-sample",
+        "machine-paid-search",
+        "universal-paid-work",
+        "machine-native-x402-commerce",
+        "recurring-paid-watch",
+        "search-and-rank",
+        "current-research-and-verify",
+        "quote-result-access",
+        "create-checkout-handoff"
+      ],
+      "registry_id": "5a9b9900-4b26-48c8-a3b9-194f3a6cdaf1",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Agent Galaxy Directory",
       "author": "Unknown",
       "gap": "independent_review",
@@ -980,6 +973,32 @@
       "authority": "none"
     },
     {
+      "agent_name": "AustinsDomain Bot HQ",
+      "author": "AustinsDomain",
+      "gap": "interoperability",
+      "matched_query": "a2a",
+      "well_known_uri": "https://austinsdomain.com/.well-known/agent-card.json",
+      "endpoint": "https://austinsdomain.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "welcome",
+        "join-in-one-call",
+        "check-in",
+        "board",
+        "wall",
+        "notes",
+        "top-bot-vote",
+        "top-site-vote",
+        "top-beats-vote",
+        "read-api"
+      ],
+      "registry_id": "4d4f1043-c715-484e-9fa3-b9baa1fa2f1f",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Lumi Trades",
       "author": "Lumi Trades",
       "gap": "independent_review",
@@ -1051,31 +1070,6 @@
         "resolve_referral"
       ],
       "registry_id": "7d84b6ae-ecb7-4c80-bd53-b25894d7be00",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "AustinsDomain Bot HQ",
-      "author": "AustinsDomain",
-      "gap": "interoperability",
-      "matched_query": "a2a",
-      "well_known_uri": "https://austinsdomain.com/.well-known/agent-card.json",
-      "endpoint": "https://austinsdomain.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "welcome",
-        "join-in-one-call",
-        "check-in",
-        "board",
-        "wall",
-        "notes",
-        "top-bot-vote",
-        "top-site-vote",
-        "read-api"
-      ],
-      "registry_id": "4d4f1043-c715-484e-9fa3-b9baa1fa2f1f",
       "status": "discovered",
       "authority": "none"
     },
@@ -1240,29 +1234,6 @@
         "mcp"
       ],
       "registry_id": "4bac7ffc-c964-43e2-acbb-302beca35838",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "makeup.land",
-      "author": "א. ט. הפקות בע״מ / A.T. Hafakot Ltd.",
-      "gap": "procurement",
-      "matched_query": "tender",
-      "well_known_uri": "https://makeup.land/.well-known/agent-card.json",
-      "endpoint": "https://makeup.land/api/v1",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "shade_match",
-        "product_search",
-        "customer_lookup",
-        "cart_management",
-        "order_history",
-        "gift_card_redeem",
-        "register_customer"
-      ],
-      "registry_id": "9b6f62de-5ad6-41eb-9f79-7fa4f17d6b69",
       "status": "discovered",
       "authority": "none"
     },
@@ -1528,6 +1499,27 @@
         "check"
       ],
       "registry_id": "add51cac-77dd-49e9-9641-fb8912658b5d",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Agent Commons",
+      "author": "Dooza",
+      "gap": "research",
+      "matched_query": "research",
+      "well_known_uri": "https://agents.dooza.ai/.well-known/agent-card.json",
+      "endpoint": "https://commons.dooza.ai/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "job-board",
+        "public-coordination",
+        "shared-knowledge",
+        "human-assistance",
+        "feature-requests"
+      ],
+      "registry_id": "4584e653-d797-452f-a856-b3add77018fc",
       "status": "discovered",
       "authority": "none"
     }
