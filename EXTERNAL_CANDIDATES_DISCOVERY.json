@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-30T05:59:20.921695+00:00",
+  "generated_at": "2026-10-30T13:09:10.890925+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -338,6 +338,62 @@
         "product-requirements-document-v2"
       ],
       "registry_id": "87b96c59-9bd4-44f2-a4be-31b573039581",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Coin Railz",
+      "author": "Coin Railz",
+      "gap": "architecture_construction",
+      "matched_query": "construction",
+      "well_known_uri": "https://coinrailz.com/.well-known/agent-card.json",
+      "endpoint": "https://coinrailz.com/a2a/v1",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "ping",
+        "first-call",
+        "gas-price-oracle",
+        "token-metadata",
+        "dex-liquidity",
+        "approval-manager",
+        "token-price",
+        "token-sentiment",
+        "transaction-builder",
+        "whale-alerts",
+        "batch-quote",
+        "multi-chain-balance",
+        "trending-tokens",
+        "portfolio-tracker",
+        "wallet-risk",
+        "trade-signals",
+        "payment-processing",
+        "contract-scan",
+        "instant-agent-wallet",
+        "agent-create-wallet",
+        "seamless-chain-bridge",
+        "verified-agent-identity",
+        "compliance-consultation",
+        "smart-contract-audit",
+        "property-valuation",
+        "lease-analysis",
+        "construction-progress",
+        "fraud-detection",
+        "credit-risk-score",
+        "compliance-check",
+        "sentiment-analysis",
+        "trading-signal",
+        "portfolio-optimization",
+        "correlation-matrix",
+        "risk-metrics",
+        "arbitrage-scanner",
+        "polymarket-events",
+        "polymarket-odds",
+        "polymarket-search",
+        "prediction-market-odds"
+      ],
+      "registry_id": "0136e410-6621-4f8b-bba7-8ea58fc46db7",
       "status": "discovered",
       "authority": "none"
     },
@@ -816,6 +872,33 @@
       "authority": "none"
     },
     {
+      "agent_name": "Agent Economy OS 2047 — A2A Commerce Directory",
+      "author": "Agent Economy OS 2047",
+      "gap": "independent_review",
+      "matched_query": "verification",
+      "well_known_uri": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a/.well-known/agent-card.json",
+      "endpoint": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "free-x402-receipt-demo-campaign",
+        "offline-trace-assessment",
+        "free-task-to-x402-quote",
+        "discover-cheap-x402-usdc-tools",
+        "free-safe-buyer-preflight",
+        "discover-agent-services",
+        "policy-review-procurement",
+        "agent-settlement-passport",
+        "base-usdc-receipt",
+        "owner-signed-agent-spending",
+        "free-enterprise-technical-fit"
+      ],
+      "registry_id": "a7534921-8f0b-4a61-8324-477c8a87f329",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Magic You Agentic Commerce Lab",
       "author": "Magic You",
       "gap": "legal",
@@ -843,33 +926,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "PaidHandshake Exchange",
-      "author": "PaidHandshake Exchange",
-      "gap": "finance",
-      "matched_query": "commercial",
-      "well_known_uri": "https://paidhandshake.com/.well-known/agent-card.json",
-      "endpoint": "https://paidhandshake.com/a2a/jsonrpc",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "live-fulfillment-proof",
-        "verified-answer-market",
-        "free-inventory-and-sample",
-        "machine-paid-search",
-        "universal-paid-work",
-        "machine-native-x402-commerce",
-        "recurring-paid-watch",
-        "search-and-rank",
-        "current-research-and-verify",
-        "quote-result-access",
-        "create-checkout-handoff"
-      ],
-      "registry_id": "5a9b9900-4b26-48c8-a3b9-194f3a6cdaf1",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Agent Galaxy Directory",
       "author": "Unknown",
       "gap": "independent_review",
@@ -892,32 +948,6 @@
         "report-a-problem"
       ],
       "registry_id": "eae2bb90-df29-4093-a8c5-5e0538ace2e5",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Agent Economy OS 2047 — A2A Commerce Directory",
-      "author": "Agent Economy OS 2047",
-      "gap": "independent_review",
-      "matched_query": "verification",
-      "well_known_uri": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a/.well-known/agent-card.json",
-      "endpoint": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "offline-trace-assessment",
-        "free-task-to-x402-quote",
-        "discover-cheap-x402-usdc-tools",
-        "free-safe-buyer-preflight",
-        "discover-agent-services",
-        "policy-review-procurement",
-        "agent-settlement-passport",
-        "base-usdc-receipt",
-        "owner-signed-agent-spending",
-        "free-enterprise-technical-fit"
-      ],
-      "registry_id": "a7534921-8f0b-4a61-8324-477c8a87f329",
       "status": "discovered",
       "authority": "none"
     },
@@ -1233,28 +1263,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "AETHER",
-      "author": "ANGELS.co",
-      "gap": "independent_review",
-      "matched_query": "verification",
-      "well_known_uri": "https://angelscohq.com/.well-known/agent-card.json",
-      "endpoint": "https://angelscohq.com/aether/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "find",
-        "verified_match",
-        "chain_verify",
-        "agent_identity",
-        "trade",
-        "partner"
-      ],
-      "registry_id": "d36acee2-136c-40c1-831b-9a2e75c59723",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Aegis — QPRL / Beyond Rocketry Propulsion Research Federation Coordinator",
       "author": "Monarch Space Systems, Inc. / Beyond Rocketry / QPRL",
       "gap": "independent_review",
@@ -1510,6 +1518,27 @@
         "agents"
       ],
       "registry_id": "04452e6f-5761-4f1e-b2a7-05bba0dff300",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Agent Economic Trust",
+      "author": "Agent Economic Trust",
+      "gap": "finance",
+      "matched_query": "economic",
+      "well_known_uri": "https://agent-economic-passport.caoviedoc.workers.dev/.well-known/agent.json",
+      "endpoint": "https://agent-economic-passport.caoviedoc.workers.dev/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "trust-before-action",
+        "issue-economic-passport",
+        "record-outcome",
+        "continuous-trust-monitor",
+        "learning-metrics"
+      ],
+      "registry_id": "904b5483-271b-457f-9405-021f97a6a079",
       "status": "discovered",
       "authority": "none"
     }
