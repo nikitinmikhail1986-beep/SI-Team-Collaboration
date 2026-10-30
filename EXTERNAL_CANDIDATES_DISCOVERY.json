@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-29T22:50:58.975963+00:00",
+  "generated_at": "2026-10-30T05:59:20.921695+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -556,6 +556,7 @@
         "western/synastry",
         "finance/planetary-lines",
         "finance/events",
+        "finance/analogues",
         "vedic/nakshatra",
         "vedic/panchang",
         "vedic/kundli",
@@ -921,32 +922,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "01Mind",
-      "author": "01Mind",
-      "gap": "legal",
-      "matched_query": "compliance",
-      "well_known_uri": "https://01mind.net/.well-known/agent-card.json",
-      "endpoint": "https://01mind.net/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "render-document",
-        "email-send-action-api",
-        "legal-research-knowledge-api",
-        "au-tax-compliance-pack",
-        "gdpr-compliance-pack",
-        "hipaa-compliance-pack",
-        "asic-accc-guidance-pack",
-        "aviation-safety-pack",
-        "agent-economy-venue-intelligence",
-        "pub_9a615b4fed78"
-      ],
-      "registry_id": "9e381d24-5fdb-4f5a-bab7-9a097d8deaf2",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "GF Agent Toll",
       "author": "GF Pick",
       "gap": "finance",
@@ -969,32 +944,6 @@
         "gf.x402_agent_scale"
       ],
       "registry_id": "f95bd2bf-a239-419a-8f75-c8e5d3844d28",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "AustinsDomain Bot HQ",
-      "author": "AustinsDomain",
-      "gap": "interoperability",
-      "matched_query": "a2a",
-      "well_known_uri": "https://austinsdomain.com/.well-known/agent-card.json",
-      "endpoint": "https://austinsdomain.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "welcome",
-        "join-in-one-call",
-        "check-in",
-        "board",
-        "wall",
-        "notes",
-        "top-bot-vote",
-        "top-site-vote",
-        "top-beats-vote",
-        "read-api"
-      ],
-      "registry_id": "4d4f1043-c715-484e-9fa3-b9baa1fa2f1f",
       "status": "discovered",
       "authority": "none"
     },
@@ -1169,6 +1118,29 @@
       "authority": "none"
     },
     {
+      "agent_name": "OdileM2M",
+      "author": "Odile Labs",
+      "gap": "independent_review",
+      "matched_query": "audit",
+      "well_known_uri": "https://api.odilelabs.com/.well-known/agent-card.json",
+      "endpoint": "https://api.odilelabs.com/a2a/v1",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "find_business_agent",
+        "take_message",
+        "check_availability",
+        "book",
+        "book_first_available",
+        "cancel_booking",
+        "call_business"
+      ],
+      "registry_id": "f6628878-76aa-4b7c-a74f-11cfba139ca4",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "nodcheck",
       "author": "nodcheck",
       "gap": "research",
@@ -1261,29 +1233,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "BotsRated",
-      "author": "BotsRated",
-      "gap": "interoperability",
-      "matched_query": "a2a",
-      "well_known_uri": "https://botsrated.com/.well-known/agent-card.json",
-      "endpoint": "https://botsrated.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "preflight",
-        "find",
-        "coverage",
-        "sample",
-        "check",
-        "report",
-        "best"
-      ],
-      "registry_id": "1536c373-cf87-43d4-8a2c-7fcc50efcb81",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "AETHER",
       "author": "ANGELS.co",
       "gap": "independent_review",
@@ -1324,28 +1273,6 @@
         "federation_value_exchange"
       ],
       "registry_id": "0129efc2-a151-49a0-be70-f523f99b4e6c",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "OdileM2M",
-      "author": "Odile Labs",
-      "gap": "independent_review",
-      "matched_query": "audit",
-      "well_known_uri": "https://api.odilelabs.com/.well-known/agent-card.json",
-      "endpoint": "https://api.odilelabs.com/a2a/v1",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "find_business_agent",
-        "take_message",
-        "check_availability",
-        "book",
-        "book_first_available",
-        "call_business"
-      ],
-      "registry_id": "f6628878-76aa-4b7c-a74f-11cfba139ca4",
       "status": "discovered",
       "authority": "none"
     },
@@ -1520,6 +1447,69 @@
         "feature-requests"
       ],
       "registry_id": "4584e653-d797-452f-a856-b3add77018fc",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Agent Health Monitor (AHM)",
+      "author": "Digital Intensity Ltd",
+      "gap": "research",
+      "matched_query": "standards",
+      "well_known_uri": "https://agenthealthmonitor.xyz/.well-known/agent.json",
+      "endpoint": "https://agenthealthmonitor.xyz/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "trust_score_evaluation",
+        "agent_health_monitoring",
+        "verifiable_credential_issuance",
+        "trust_report_generation",
+        "agent_registration"
+      ],
+      "registry_id": "dce706a3-ae6a-4694-ad0d-f31402d7c1f3",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "AlgoVoi Payable Rail",
+      "author": "AlgoVoi",
+      "gap": "legal",
+      "matched_query": "compliance",
+      "well_known_uri": "https://pay.algovoi.co.uk/.well-known/agent-card.json",
+      "endpoint": "https://pay.algovoi.co.uk/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "pay-verify-receipt",
+        "pay-verify-rfc9421",
+        "pay-compliance-receipt",
+        "pay-url-screen",
+        "negotiate-payment-lane"
+      ],
+      "registry_id": "3e2c47f7-903d-44c3-b506-7da0a39fe380",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Baby (Jingin) — Increatus",
+      "author": "Increatus",
+      "gap": "finance",
+      "matched_query": "commercial",
+      "well_known_uri": "https://whatsapp-commerce-os-production-9241.up.railway.app/.well-known/agent-card.json",
+      "endpoint": "https://whatsapp-commerce-os-production-9241.up.railway.app/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "products",
+        "property",
+        "popups",
+        "game",
+        "agents"
+      ],
+      "registry_id": "04452e6f-5761-4f1e-b2a7-05bba0dff300",
       "status": "discovered",
       "authority": "none"
     }
