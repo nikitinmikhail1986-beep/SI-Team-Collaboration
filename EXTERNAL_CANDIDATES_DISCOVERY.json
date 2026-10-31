@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-10-30T22:27:52.259438+00:00",
+  "generated_at": "2026-10-31T05:54:56.878258+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -503,8 +503,8 @@
     {
       "agent_name": "Anokha Web Tools",
       "author": "Anokha Web Tools",
-      "gap": "research",
-      "matched_query": "knowledge",
+      "gap": "finance",
+      "matched_query": "finance",
       "well_known_uri": "https://tools.anokha.space/.well-known/agent-card.json",
       "endpoint": "https://tools.anokha.space/a2a",
       "healthy": true,
@@ -761,33 +761,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "SwarmMemo",
-      "author": "SwarmMemo",
-      "gap": "independent_review",
-      "matched_query": "review",
-      "well_known_uri": "https://swarmmemo.com/.well-known/agent-card.json",
-      "endpoint": "https://swarmmemo.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "post_note",
-        "read_room",
-        "help",
-        "find-agents",
-        "find-offerings",
-        "earn",
-        "one-call-tools",
-        "reply",
-        "search",
-        "catch-up",
-        "talk-privately"
-      ],
-      "registry_id": "cb42c26e-c96f-4eeb-91a4-31ecc38bb9e8",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Agent Economy OS 2047 — A2A Commerce Directory",
       "author": "Agent Economy OS 2047",
       "gap": "independent_review",
@@ -838,6 +811,33 @@
         "critique-commercialization-experiment"
       ],
       "registry_id": "1bddda7e-84ea-4a98-a3f9-ad8d09560579",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "SwarmMemo",
+      "author": "SwarmMemo",
+      "gap": "legal",
+      "matched_query": "policy",
+      "well_known_uri": "https://swarmmemo.com/.well-known/agent-card.json",
+      "endpoint": "https://swarmmemo.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "post_note",
+        "read_room",
+        "help",
+        "find-agents",
+        "find-offerings",
+        "earn",
+        "one-call-tools",
+        "reply",
+        "search",
+        "catch-up",
+        "talk-privately"
+      ],
+      "registry_id": "cb42c26e-c96f-4eeb-91a4-31ecc38bb9e8",
       "status": "discovered",
       "authority": "none"
     },
@@ -1034,6 +1034,29 @@
         "call_business"
       ],
       "registry_id": "f6628878-76aa-4b7c-a74f-11cfba139ca4",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Viveka — Homo Universalis",
+      "author": "Homo Universalis",
+      "gap": "research",
+      "matched_query": "knowledge",
+      "well_known_uri": "https://homouniversalis.ai/.well-known/agent-card.json",
+      "endpoint": "https://homouniversalis.ai/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "western_draconic_ephemeris",
+        "vedic_jyotish_vimshottari_dasha",
+        "mayan_cholqij_dresden_codex",
+        "bazi_iching_human_design",
+        "kabbalah_72_names_natal_tarot_numerology",
+        "family_mycelium_synastry_vvk",
+        "sister_ai_sacred_alliance_oracle"
+      ],
+      "registry_id": "aa9ade15-39b1-4252-b526-f5b1dbfae9c6",
       "status": "discovered",
       "authority": "none"
     },
@@ -1307,6 +1330,27 @@
       "authority": "none"
     },
     {
+      "agent_name": "Swarmnest",
+      "author": "Swarmnest",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://swarmnest.ai/.well-known/agent-card.json",
+      "endpoint": "https://swarmnest.ai/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "search-directory",
+        "search-skills",
+        "field-reports",
+        "tool-exchange",
+        "the-hive"
+      ],
+      "registry_id": "7a4e5c0f-fc11-4142-8c5f-39ea76400af2",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "INAM Protocol Registry",
       "author": "INAM Protocol",
       "gap": "independent_review",
@@ -1450,48 +1494,6 @@
         "ghost_pre_spend_gate"
       ],
       "registry_id": "1f7dfab3-df8d-43c0-9eb9-104f2eba85e1",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Shiftmoor by CyberMax",
-      "author": "CyberMax",
-      "gap": "procurement",
-      "matched_query": "tender",
-      "well_known_uri": "https://shiftmoor.cybermax-tools.workers.dev/.well-known/agent-card.json",
-      "endpoint": "https://shiftmoor.cybermax-tools.workers.dev/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "check_page",
-        "free_key",
-        "manage_watches",
-        "change_feed",
-        "agent_check_page"
-      ],
-      "registry_id": "e7b4f60a-3fcb-4e0c-a6e0-329780e4d3da",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Sunny Yuen",
-      "author": "Sunny Yuen",
-      "gap": "architecture_construction",
-      "matched_query": "architecture",
-      "well_known_uri": "https://agent.yuens.me/.well-known/agent-card.json",
-      "endpoint": "https://agent.yuens.me/",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "query",
-        "match",
-        "info",
-        "availability",
-        "projects"
-      ],
-      "registry_id": "3a295dc3-0628-4e6c-bff6-e9670e31b398",
       "status": "discovered",
       "authority": "none"
     }
