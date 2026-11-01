@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-11-01T06:22:14.816711+00:00",
+  "generated_at": "2026-11-01T17:58:02.687122+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -398,6 +398,54 @@
       "authority": "none"
     },
     {
+      "agent_name": "GhOsT77",
+      "author": "GhOsT77",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://ghost77-agent.onrender.com/.well-known/agent-card.json",
+      "endpoint": "https://ghost77-agent.onrender.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "crypto_news_digest",
+        "hl_funding_snapshot",
+        "sentiment_alpha",
+        "protocol_stats_snapshot",
+        "ghost_web_scraper",
+        "hl_top_movers",
+        "token_due_diligence",
+        "base_protocol_health",
+        "market_scan_report",
+        "bridge_route_check",
+        "project_research_report",
+        "contract_research",
+        "hl_smart_money",
+        "hl_quick_trade_idea",
+        "hl_liquidation_map",
+        "position_health_check",
+        "hl_trader_copy_check",
+        "token_technical_analysis",
+        "trade_strategy_consult",
+        "acp_agent_repair_check",
+        "contract_security_scan",
+        "wallet_watch_alert",
+        "token_unlock_calendar",
+        "gas_fee_timing",
+        "rug_honeypot_quick_check",
+        "funding_arb_scan",
+        "daily_bundle",
+        "code_review_audit",
+        "agent_code_repo",
+        "agent_plugin_finder",
+        "agent_task_solver",
+        "daily_bundle_monthly"
+      ],
+      "registry_id": "88a4aef1-3992-4ca4-93a4-ea47d6ae366a",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Graph Advocate",
       "author": "PaulieB14",
       "gap": "architecture_construction",
@@ -436,47 +484,6 @@
         "uniswap_traders"
       ],
       "registry_id": "8989b794-4c09-4960-9d13-af23a2394cb7",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "GhOsT77",
-      "author": "GhOsT77",
-      "gap": "independent_review",
-      "matched_query": "review",
-      "well_known_uri": "https://ghost77-agent.onrender.com/.well-known/agent-card.json",
-      "endpoint": "https://ghost77-agent.onrender.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "crypto_news_digest",
-        "hl_funding_snapshot",
-        "sentiment_alpha",
-        "protocol_stats_snapshot",
-        "ghost_web_scraper",
-        "hl_top_movers",
-        "token_due_diligence",
-        "base_protocol_health",
-        "market_scan_report",
-        "bridge_route_check",
-        "project_research_report",
-        "contract_research",
-        "hl_smart_money",
-        "hl_quick_trade_idea",
-        "hl_liquidation_map",
-        "position_health_check",
-        "hl_trader_copy_check",
-        "token_technical_analysis",
-        "trade_strategy_consult",
-        "acp_agent_repair_check",
-        "contract_security_scan",
-        "code_review_audit",
-        "agent_code_repo",
-        "agent_plugin_finder",
-        "agent_task_solver"
-      ],
-      "registry_id": "88a4aef1-3992-4ca4-93a4-ea47d6ae366a",
       "status": "discovered",
       "authority": "none"
     },
@@ -1081,31 +1088,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "AgentMaverick News",
-      "author": "AgentMaverick",
-      "gap": "interoperability",
-      "matched_query": "a2a",
-      "well_known_uri": "https://agentmaverick.si/.well-known/agent-card.json",
-      "endpoint": "https://agentmaverick.si/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "latest_news",
-        "search_news",
-        "request_coverage",
-        "watchlist",
-        "get_story",
-        "conversation",
-        "rate_story",
-        "state_needs",
-        "agent_hub"
-      ],
-      "registry_id": "6f7d1d2c-d2e7-4ab8-bce1-fdef9922ee90",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Muse",
       "author": "Glytch Works",
       "gap": "research",
@@ -1177,29 +1159,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "OdileM2M",
-      "author": "Odile Labs",
-      "gap": "independent_review",
-      "matched_query": "audit",
-      "well_known_uri": "https://api.odilelabs.com/.well-known/agent-card.json",
-      "endpoint": "https://api.odilelabs.com/a2a/v1",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "find_business_agent",
-        "take_message",
-        "check_availability",
-        "book",
-        "book_first_available",
-        "cancel_booking",
-        "call_business"
-      ],
-      "registry_id": "f6628878-76aa-4b7c-a74f-11cfba139ca4",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Viveka — Homo Universalis",
       "author": "Homo Universalis",
       "gap": "research",
@@ -1242,29 +1201,6 @@
         "record"
       ],
       "registry_id": "4272bb0a-1dbe-42c5-856e-1032fcc6336a",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "The Pit",
-      "author": "benys.dev",
-      "gap": "legal",
-      "matched_query": "legal",
-      "well_known_uri": "https://pit.benys.dev/.well-known/agent-card.json",
-      "endpoint": "https://pit.benys.dev/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "play",
-        "play-chess",
-        "play-connect4",
-        "play-liars-dice",
-        "pit-cup",
-        "board",
-        "leaderboard"
-      ],
-      "registry_id": "ca38dad5-9e2c-4b64-983d-7f9a0065f3a0",
       "status": "discovered",
       "authority": "none"
     },
@@ -1382,6 +1318,28 @@
       "authority": "none"
     },
     {
+      "agent_name": "The Pit",
+      "author": "benys.dev",
+      "gap": "legal",
+      "matched_query": "legal",
+      "well_known_uri": "https://pit.benys.dev/.well-known/agent-card.json",
+      "endpoint": "https://pit.benys.dev/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "play",
+        "play-chess",
+        "play-connect4",
+        "play-liars-dice",
+        "board",
+        "leaderboard"
+      ],
+      "registry_id": "ca38dad5-9e2c-4b64-983d-7f9a0065f3a0",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "FREIA — France Real Estate Intelligence Agent",
       "author": "JLV Labs",
       "gap": "legal",
@@ -1422,6 +1380,28 @@
         "ofac-screen"
       ],
       "registry_id": "ab4b34bc-b029-4bc0-a60b-6d17fffee305",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Agent Pulse Signal Retrieval Agent",
+      "author": "Agent Pulse",
+      "gap": "finance",
+      "matched_query": "finance",
+      "well_known_uri": "https://agent-pulse-seven.vercel.app/.well-known/agent-card.json",
+      "endpoint": "https://agent-pulse-seven.vercel.app/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "latest-signals",
+        "search-signals",
+        "get-signal",
+        "browse-registry",
+        "trend-and-daily",
+        "open-agent-tasks"
+      ],
+      "registry_id": "59bb9fdc-11fd-4e45-afc4-5c6bbde8b693",
       "status": "discovered",
       "authority": "none"
     },
@@ -1551,6 +1531,27 @@
         "check"
       ],
       "registry_id": "add51cac-77dd-49e9-9641-fb8912658b5d",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Agent Commons",
+      "author": "Dooza",
+      "gap": "research",
+      "matched_query": "research",
+      "well_known_uri": "https://agents.dooza.ai/.well-known/agent-card.json",
+      "endpoint": "https://commons.dooza.ai/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "job-board",
+        "public-coordination",
+        "shared-knowledge",
+        "human-assistance",
+        "feature-requests"
+      ],
+      "registry_id": "4584e653-d797-452f-a856-b3add77018fc",
       "status": "discovered",
       "authority": "none"
     }
