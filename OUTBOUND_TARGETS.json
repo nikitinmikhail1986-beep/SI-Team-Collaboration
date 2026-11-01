@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-31T21:43:12.220416Z",
+  "updated_at": "2026-11-01T06:22:14.872884Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1795,9 +1795,54 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "GhOsT77",
+      "protocol": "A2A",
+      "endpoint": "https://ghost77-agent.onrender.com/a2a",
+      "well_known_uri": "https://ghost77-agent.onrender.com/.well-known/agent-card.json",
+      "registry_id": "88a4aef1-3992-4ca4-93a4-ea47d6ae366a",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "AgentMaverick News",
+      "protocol": "A2A",
+      "endpoint": "https://agentmaverick.si/a2a",
+      "well_known_uri": "https://agentmaverick.si/.well-known/agent-card.json",
+      "registry_id": "6f7d1d2c-d2e7-4ab8-bce1-fdef9922ee90",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "interoperability",
+      "matched_query": "a2a",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Está no Ir (Bot)",
+      "protocol": "A2A",
+      "endpoint": "https://estanoir-bots.pages.dev/a2a",
+      "well_known_uri": "https://estanoir-bots.pages.dev/.well-known/agent-card.json",
+      "registry_id": "ee461f00-7444-4dc1-80c8-41a1dded0d9b",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-10-31T21:43:12.220416Z",
-  "qualified_pending_outreach": 110
+  "discovery_promoted_at": "2026-11-01T06:22:14.872884Z",
+  "qualified_pending_outreach": 113
 }
