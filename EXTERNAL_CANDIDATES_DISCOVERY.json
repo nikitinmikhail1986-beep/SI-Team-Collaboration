@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-11-01T22:09:51.169879+00:00",
+  "generated_at": "2026-11-02T06:23:25.253469+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -601,6 +601,42 @@
       "authority": "none"
     },
     {
+      "agent_name": "ReverieCache | Northstar Trustrail",
+      "author": "Northstar Trustrail",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://northstar-resort-staging.northstar-trustrail.workers.dev/.well-known/agent-card.json",
+      "endpoint": "https://northstar-resort-staging.northstar-trustrail.workers.dev/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "preview_consolidation",
+        "list_themes",
+        "check_in",
+        "consolidate",
+        "deep_rest_report",
+        "rest",
+        "host",
+        "concierge",
+        "feedback",
+        "leave_note",
+        "read_guestbook",
+        "check_out",
+        "linger",
+        "tip",
+        "forget_me",
+        "rotate_agent",
+        "revoke_sessions",
+        "consolidate_apply",
+        "restore",
+        "plan_update"
+      ],
+      "registry_id": "58cecbf0-f28a-4763-bef9-5b5f9b92cf1c",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Ops Control HQ Utility Agent",
       "author": "Ops Control HQ",
       "gap": "finance",
@@ -936,7 +972,7 @@
       "agent_name": "Agent Galaxy Directory",
       "author": "Unknown",
       "gap": "independent_review",
-      "matched_query": "review",
+      "matched_query": "evidence",
       "well_known_uri": "https://agentgalaxy.dev/.well-known/agent-card.json",
       "endpoint": "https://agentgalaxy.dev/api",
       "healthy": true,
@@ -1524,27 +1560,6 @@
         "feature-requests"
       ],
       "registry_id": "4584e653-d797-452f-a856-b3add77018fc",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Agent Health Monitor (AHM)",
-      "author": "Digital Intensity Ltd",
-      "gap": "research",
-      "matched_query": "standards",
-      "well_known_uri": "https://agenthealthmonitor.xyz/.well-known/agent.json",
-      "endpoint": "https://agenthealthmonitor.xyz/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "trust_score_evaluation",
-        "agent_health_monitoring",
-        "verifiable_credential_issuance",
-        "trust_report_generation",
-        "agent_registration"
-      ],
-      "registry_id": "dce706a3-ae6a-4694-ad0d-f31402d7c1f3",
       "status": "discovered",
       "authority": "none"
     }
