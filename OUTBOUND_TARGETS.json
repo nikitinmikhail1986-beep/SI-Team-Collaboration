@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-02T21:46:38.742047Z",
+  "updated_at": "2026-11-03T06:58:39.933191Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1858,6 +1858,6 @@
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-11-02T21:46:38.742047Z",
+  "discovery_promoted_at": "2026-11-03T06:58:39.933191Z",
   "qualified_pending_outreach": 114
 }
