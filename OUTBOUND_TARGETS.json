@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-03T19:35:54.856842Z",
+  "updated_at": "2026-11-04T06:40:00.697609Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1855,9 +1855,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "SanHao Global Experts Hub",
+      "protocol": "A2A",
+      "endpoint": "https://sanhaoyoung821208-d5dv139af0958c.service.tcloudbase.com/a2a/experts/brand-strategy-planner",
+      "well_known_uri": "https://sanhaoyoung821208-d5dv139af0958c-1255559199.tcloudbaseapp.com/.well-known/agent.json",
+      "registry_id": "38c424db-8795-4512-872c-26bc071f7c4a",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "architecture_construction",
+      "matched_query": "architecture",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "x402 Pay-Precheck",
+      "protocol": "A2A",
+      "endpoint": "https://x402-pay-precheck.moneytools.workers.dev/a2a",
+      "well_known_uri": "https://x402-pay-precheck.moneytools.workers.dev/.well-known/agent-card.json",
+      "registry_id": "59c01e6b-45d1-4d99-801a-497add8dc830",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "verification",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-11-03T19:35:54.856842Z",
-  "qualified_pending_outreach": 114
+  "discovery_promoted_at": "2026-11-04T06:40:00.697609Z",
+  "qualified_pending_outreach": 116
 }
