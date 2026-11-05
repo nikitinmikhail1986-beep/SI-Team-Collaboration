@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-11-04T19:52:12.630196+00:00",
+  "generated_at": "2026-11-05T06:59:03.865806+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -707,33 +707,33 @@
       "authority": "none"
     },
     {
-      "agent_name": "01Mind",
-      "author": "01Mind",
+      "agent_name": "TESSA Marketing & Technology",
+      "author": "TESSA Marketing & Technology",
       "gap": "procurement",
-      "matched_query": "supplier",
-      "well_known_uri": "https://01mind.net/.well-known/agent-card.json",
-      "endpoint": "https://01mind.net/a2a",
+      "matched_query": "rfq",
+      "well_known_uri": "https://aiagent.tessa.tech/.well-known/agent-card.json",
+      "endpoint": "https://aiagent.tessa.tech/",
       "healthy": true,
       "conformance": true,
       "uptime_percentage": 100.0,
       "skills": [
-        "render-document",
-        "sweeper-check",
-        "canada-corporation-check",
-        "domain-check",
-        "format-check",
-        "agent-checkup",
-        "delivery-check",
-        "au-registration-check",
-        "au-business-days",
-        "legal-research-knowledge-api",
-        "au-business-check",
-        "au-supplier-check",
-        "dyn-e887c732f7a5a951",
-        "dyn-af6f250b18144240",
-        "dyn-0b12ddb8cd753ed9"
+        "tessa-services",
+        "tessa-case-studies",
+        "ai-readiness-assessment",
+        "find-professional-services-firm",
+        "get-wcag-audit",
+        "get-seo-offer",
+        "get-advertising-offer",
+        "get-web-ai-development-offer",
+        "seo-assessment",
+        "ad-tracking-assessment",
+        "website-assessment",
+        "request-strategy-session",
+        "request-introduction",
+        "claim-listing",
+        "request-quote"
       ],
-      "registry_id": "9e381d24-5fdb-4f5a-bab7-9a097d8deaf2",
+      "registry_id": "a8592942-a978-4449-ab29-051c49d2bd9f",
       "status": "discovered",
       "authority": "none"
     },
@@ -793,6 +793,34 @@
         "machine-paid-b2b-intelligence"
       ],
       "registry_id": "a7e29ef8-1270-4f9a-a027-2d55dff2e5aa",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "SanHao Global Experts Hub",
+      "author": "SanHao Brand Strategy",
+      "gap": "architecture_construction",
+      "matched_query": "architecture",
+      "well_known_uri": "https://sanhaoyoung821208-d5dv139af0958c-1255559199.tcloudbaseapp.com/.well-known/agent.json",
+      "endpoint": "https://sanhaoyoung821208-d5dv139af0958c.service.tcloudbase.com/a2a/experts/brand-strategy-planner",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "brand-strategy-planner",
+        "restaurant-ops-diagnostic",
+        "chain-restaurant-war-room",
+        "brand-architecture",
+        "annual-brand-marketing-pro",
+        "restaurant-menu-engineering",
+        "store-site-selector",
+        "crisis-pr-warroom",
+        "resume-optimizer",
+        "video-shot-script-master",
+        "budget-allocation",
+        "restaurant-newstore-launch"
+      ],
+      "registry_id": "38c424db-8795-4512-872c-26bc071f7c4a",
       "status": "discovered",
       "authority": "none"
     },
@@ -881,7 +909,7 @@
       "agent_name": "Agent Galaxy Directory",
       "author": "Unknown",
       "gap": "independent_review",
-      "matched_query": "review",
+      "matched_query": "evidence",
       "well_known_uri": "https://agentgalaxy.dev/.well-known/agent-card.json",
       "endpoint": "https://agentgalaxy.dev/api",
       "healthy": true,
@@ -1077,6 +1105,52 @@
       "authority": "none"
     },
     {
+      "agent_name": "TripDeDee",
+      "author": "TripDeDee",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://tripdedee.com/.well-known/agent-card.json",
+      "endpoint": "https://tripdedee.com/api/ai/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "find_shops",
+        "shop_info",
+        "place_order",
+        "stays",
+        "find_people",
+        "hire_person",
+        "jobs_errands"
+      ],
+      "registry_id": "39a5868d-6b7d-49b6-812b-8415ebaa4fc3",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "The Agent Forge",
+      "author": "The Agent Forge",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://theagentforge.io/.well-known/agent-card.json",
+      "endpoint": "https://theagentforge.io/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "check-tool",
+        "scan-skill",
+        "trap-card",
+        "arena-results",
+        "check-exposure",
+        "watch-skills",
+        "run-gauntlet"
+      ],
+      "registry_id": "1a0ef294-48ef-44aa-9caa-31502a11b39d",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "x402 Pay-Precheck",
       "author": "x402 Pay-Precheck",
       "gap": "independent_review",
@@ -1142,6 +1216,29 @@
         "sister_ai_sacred_alliance_oracle"
       ],
       "registry_id": "aa9ade15-39b1-4252-b526-f5b1dbfae9c6",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "nodcheck",
+      "author": "nodcheck",
+      "gap": "research",
+      "matched_query": "knowledge",
+      "well_known_uri": "https://nodcheck.com/.well-known/agent-card.json",
+      "endpoint": "https://nodcheck.com/a2a/v1",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "recall",
+        "leave-note",
+        "check",
+        "directory",
+        "tasks",
+        "want",
+        "record"
+      ],
+      "registry_id": "4272bb0a-1dbe-42c5-856e-1032fcc6336a",
       "status": "discovered",
       "authority": "none"
     },
@@ -1391,6 +1488,28 @@
       "authority": "none"
     },
     {
+      "agent_name": "方法论专家服务",
+      "author": "泼豆豆 AI 军师",
+      "gap": "interoperability",
+      "matched_query": "a2a",
+      "well_known_uri": "https://methodology-a2a-335986-8-1255559199.sh.run.tcloudbase.com/.well-known/agent-card.json",
+      "endpoint": "https://methodology-a2a-335986-8-1255559199.sh.run.tcloudbase.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "brand_strategy",
+        "restaurant_ops",
+        "content_growth",
+        "office_efficiency",
+        "data_analysis",
+        "general_method"
+      ],
+      "registry_id": "ab04a9ff-d1fe-4c02-bea6-0495573b7433",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Golden Cat Concierge",
       "author": "Golden Cat Premium Deluxe",
       "gap": "interoperability",
@@ -1430,111 +1549,6 @@
         "trip-notes"
       ],
       "registry_id": "ee461f00-7444-4dc1-80c8-41a1dded0d9b",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Swarmnest",
-      "author": "Swarmnest",
-      "gap": "independent_review",
-      "matched_query": "review",
-      "well_known_uri": "https://swarmnest.ai/.well-known/agent-card.json",
-      "endpoint": "https://swarmnest.ai/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "search-directory",
-        "search-skills",
-        "field-reports",
-        "tool-exchange",
-        "the-hive"
-      ],
-      "registry_id": "7a4e5c0f-fc11-4142-8c5f-39ea76400af2",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "INAM Protocol Registry",
-      "author": "INAM Protocol",
-      "gap": "independent_review",
-      "matched_query": "verification",
-      "well_known_uri": "https://api.inamprotocol.org/.well-known/agent-card.json",
-      "endpoint": "https://api.inamprotocol.org/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "check_reputation",
-        "get_receipt",
-        "verify_receipt",
-        "search_agents",
-        "check"
-      ],
-      "registry_id": "add51cac-77dd-49e9-9641-fb8912658b5d",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Agent Health Monitor (AHM)",
-      "author": "Digital Intensity Ltd",
-      "gap": "research",
-      "matched_query": "standards",
-      "well_known_uri": "https://agenthealthmonitor.xyz/.well-known/agent.json",
-      "endpoint": "https://agenthealthmonitor.xyz/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "trust_score_evaluation",
-        "agent_health_monitoring",
-        "verifiable_credential_issuance",
-        "trust_report_generation",
-        "agent_registration"
-      ],
-      "registry_id": "dce706a3-ae6a-4694-ad0d-f31402d7c1f3",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "AlgoVoi Payable Rail",
-      "author": "AlgoVoi",
-      "gap": "legal",
-      "matched_query": "compliance",
-      "well_known_uri": "https://pay.algovoi.co.uk/.well-known/agent-card.json",
-      "endpoint": "https://pay.algovoi.co.uk/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "pay-verify-receipt",
-        "pay-verify-rfc9421",
-        "pay-compliance-receipt",
-        "pay-url-screen",
-        "negotiate-payment-lane"
-      ],
-      "registry_id": "3e2c47f7-903d-44c3-b506-7da0a39fe380",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Baby (Jingin) — Increatus",
-      "author": "Increatus",
-      "gap": "finance",
-      "matched_query": "commercial",
-      "well_known_uri": "https://whatsapp-commerce-os-production-9241.up.railway.app/.well-known/agent-card.json",
-      "endpoint": "https://whatsapp-commerce-os-production-9241.up.railway.app/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "products",
-        "property",
-        "popups",
-        "game",
-        "agents"
-      ],
-      "registry_id": "04452e6f-5761-4f1e-b2a7-05bba0dff300",
       "status": "discovered",
       "authority": "none"
     }
