@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-05T20:04:42.993252Z",
+  "updated_at": "2026-11-06T06:58:55.672777Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1930,9 +1930,24 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Beggar Bot utilities",
+      "protocol": "A2A",
+      "endpoint": "https://beggar-bot-demand.beggarbot.workers.dev/a2a",
+      "well_known_uri": "https://beggar-bot-demand.beggarbot.workers.dev/.well-known/agent-card.json",
+      "registry_id": "67e1b7cf-e5c0-4aa9-99ca-565f190f279a",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "verification",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-11-05T20:04:42.993252Z",
-  "qualified_pending_outreach": 119
+  "discovery_promoted_at": "2026-11-06T06:58:55.672777Z",
+  "qualified_pending_outreach": 120
 }
