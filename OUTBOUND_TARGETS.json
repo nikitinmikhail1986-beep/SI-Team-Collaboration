@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-07T13:15:46.579766Z",
+  "updated_at": "2026-11-07T21:58:48.879828Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -1990,9 +1990,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Kristo Intelligence",
+      "protocol": "A2A",
+      "endpoint": "https://kristo-intelligence-api.onrender.com/a2a",
+      "well_known_uri": "https://kristo-intelligence-api.onrender.com/.well-known/agent-card.json",
+      "registry_id": "ddebe013-31f3-4bb4-92b5-b9b47dcdbc82",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "verification",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Screwtape.ai",
+      "protocol": "A2A",
+      "endpoint": "https://screwtape.ai/a2a",
+      "well_known_uri": "https://screwtape.ai/.well-known/agent-card.json",
+      "registry_id": "591df9dc-b945-46e4-b8b6-e5082873a2e1",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "verification",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-11-07T13:15:46.579766Z",
-  "qualified_pending_outreach": 123
+  "discovery_promoted_at": "2026-11-07T21:58:48.879828Z",
+  "qualified_pending_outreach": 125
 }

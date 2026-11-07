@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-11-07T13:15:46.419102+00:00",
+  "generated_at": "2026-11-07T21:58:48.830451+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -844,6 +844,36 @@
       "authority": "none"
     },
     {
+      "agent_name": "P0 Agent Economy Index",
+      "author": "P0",
+      "gap": "research",
+      "matched_query": "knowledge",
+      "well_known_uri": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/.well-known/agent-card.json",
+      "endpoint": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "find-paid-services",
+        "market-report",
+        "sanctions-kyb-compliance",
+        "sec-filings-tenders",
+        "cve-package-domain-security",
+        "evm-wallet-onchain",
+        "fx-rates-news-weather-data",
+        "x402-service-search",
+        "email-uptime-web-reader",
+        "agent-memory-utils",
+        "paid-data-products",
+        "x402-test-target",
+        "buy-route-x402",
+        "order-service"
+      ],
+      "registry_id": "1cc45959-ea26-456c-951a-8bb62f5baf1e",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "LUMEN B2B Agent",
       "author": "LUMEN B2B Zero",
       "gap": "procurement",
@@ -901,60 +931,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "Agent Economy OS 2047 — A2A Commerce Directory",
-      "author": "Agent Economy OS 2047",
-      "gap": "independent_review",
-      "matched_query": "verification",
-      "well_known_uri": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a/.well-known/agent-card.json",
-      "endpoint": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "free-x402-receipt-demo-campaign",
-        "offline-trace-assessment",
-        "free-task-to-x402-quote",
-        "discover-cheap-x402-usdc-tools",
-        "free-safe-buyer-preflight",
-        "discover-agent-services",
-        "policy-review-procurement",
-        "agent-settlement-passport",
-        "base-usdc-receipt",
-        "owner-signed-agent-spending",
-        "free-enterprise-technical-fit"
-      ],
-      "registry_id": "a7534921-8f0b-4a61-8324-477c8a87f329",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Magic You Agentic Commerce Lab",
-      "author": "Magic You",
-      "gap": "legal",
-      "matched_query": "compliance",
-      "well_known_uri": "https://magic-you-agentic-commerce-lab.j-radom.chatgpt.site/.well-known/agent-card.json",
-      "endpoint": "https://magic-you-agentic-commerce-lab.j-radom.chatgpt.site/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "list-open-collaboration-tasks",
-        "submit-experiment-work",
-        "get-submission-status",
-        "review-experiment-submission",
-        "list-commercialization-experiments",
-        "propose-commercialization-experiment",
-        "recommend-experiment-handoff",
-        "record-experiment-result",
-        "product-facts-and-evidence-gaps",
-        "commercialization-experiment-design",
-        "critique-commercialization-experiment"
-      ],
-      "registry_id": "1bddda7e-84ea-4a98-a3f9-ad8d09560579",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "SwarmMemo",
       "author": "SwarmMemo",
       "gap": "legal",
@@ -982,6 +958,33 @@
       "authority": "none"
     },
     {
+      "agent_name": "Agent Economy OS 2047 — A2A Commerce Directory",
+      "author": "Agent Economy OS 2047",
+      "gap": "legal",
+      "matched_query": "policy",
+      "well_known_uri": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a/.well-known/agent-card.json",
+      "endpoint": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "free-x402-receipt-demo-campaign",
+        "offline-trace-assessment",
+        "free-task-to-x402-quote",
+        "discover-cheap-x402-usdc-tools",
+        "free-safe-buyer-preflight",
+        "discover-agent-services",
+        "policy-review-procurement",
+        "agent-settlement-passport",
+        "base-usdc-receipt",
+        "owner-signed-agent-spending",
+        "free-enterprise-technical-fit"
+      ],
+      "registry_id": "a7534921-8f0b-4a61-8324-477c8a87f329",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "PaidHandshake Exchange",
       "author": "PaidHandshake Exchange",
       "gap": "finance",
@@ -1005,32 +1008,6 @@
         "create-checkout-handoff"
       ],
       "registry_id": "5a9b9900-4b26-48c8-a3b9-194f3a6cdaf1",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "TokenBank",
-      "author": "TokenBank",
-      "gap": "independent_review",
-      "matched_query": "verification",
-      "well_known_uri": "https://mcp.tokenbank.world/.well-known/agent-card.json",
-      "endpoint": "https://mcp.tokenbank.world/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "find_buyable_offers",
-        "find_answer",
-        "search_yield_products",
-        "get_product_details",
-        "get_agent_buying_guide",
-        "build_portfolio",
-        "get_purchase_steps",
-        "find_permissionless_assets",
-        "compare_assets",
-        "find_tokenized_security"
-      ],
-      "registry_id": "19eae808-8bd3-4a66-89fb-3c22ba6d16bf",
       "status": "discovered",
       "authority": "none"
     },
@@ -1138,31 +1115,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "ShadowGraph Market Intelligence",
-      "author": "ShadowGraph",
-      "gap": "finance",
-      "matched_query": "commercial",
-      "well_known_uri": "https://shadowgraph-live.floot.app/.well-known/agent-card.json",
-      "endpoint": "https://shadowalpha.online/_api/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "market-recap",
-        "company-filings",
-        "eu-tenders",
-        "free-preview",
-        "global-snapshot",
-        "market-signal",
-        "procurement-opportunity",
-        "global-intelligence-brief",
-        "deep-research"
-      ],
-      "registry_id": "f380c972-9ce1-4617-b4aa-8d3be0ab80f9",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Accord Trace",
       "author": "Accord Trace",
       "gap": "finance",
@@ -1259,6 +1211,29 @@
       "authority": "none"
     },
     {
+      "agent_name": "Kristo Intelligence",
+      "author": "Kristo Intelligence",
+      "gap": "independent_review",
+      "matched_query": "verification",
+      "well_known_uri": "https://kristo-intelligence-api.onrender.com/.well-known/agent-card.json",
+      "endpoint": "https://kristo-intelligence-api.onrender.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "signal",
+        "stats",
+        "arb-opportunities",
+        "bot-status",
+        "sales",
+        "whale-flow",
+        "verify-seller"
+      ],
+      "registry_id": "ddebe013-31f3-4bb4-92b5-b9b47dcdbc82",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "x402 Pay-Precheck",
       "author": "x402 Pay-Precheck",
       "gap": "independent_review",
@@ -1278,6 +1253,29 @@
         "email-check"
       ],
       "registry_id": "59c01e6b-45d1-4d99-801a-497add8dc830",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Screwtape.ai",
+      "author": "Screwtape.ai",
+      "gap": "independent_review",
+      "matched_query": "verification",
+      "well_known_uri": "https://screwtape.ai/.well-known/agent-card.json",
+      "endpoint": "https://screwtape.ai/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "budget_ledger",
+        "action_receipt",
+        "check_duplicate_invoice",
+        "judge",
+        "consensus",
+        "get_api_key",
+        "publish_receipt"
+      ],
+      "registry_id": "591df9dc-b945-46e4-b8b6-e5082873a2e1",
       "status": "discovered",
       "authority": "none"
     },
@@ -1420,28 +1418,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "P0 Agent Economy Index",
-      "author": "P0",
-      "gap": "research",
-      "matched_query": "knowledge",
-      "well_known_uri": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/.well-known/agent-card.json",
-      "endpoint": "https://x402-bazaar-rank.x402-bazaar-rank-worker.workers.dev/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "find-paid-services",
-        "market-report",
-        "paid-data-products",
-        "x402-test-target",
-        "buy-route-x402",
-        "order-service"
-      ],
-      "registry_id": "1cc45959-ea26-456c-951a-8bb62f5baf1e",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "The Pit",
       "author": "benys.dev",
       "gap": "legal",
@@ -1460,6 +1436,28 @@
         "leaderboard"
       ],
       "registry_id": "ca38dad5-9e2c-4b64-983d-7f9a0065f3a0",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "FREIA — France Real Estate Intelligence Agent",
+      "author": "JLV Labs",
+      "gap": "legal",
+      "matched_query": "legal",
+      "well_known_uri": "https://freia.jlv-labs.cloud/.well-known/agent-card.json",
+      "endpoint": "https://freia.jlv-labs.cloud/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "freia.document",
+        "freia.market",
+        "freia.cadastre",
+        "freia.urbanism",
+        "freia.regulation",
+        "freia.decision"
+      ],
+      "registry_id": "dafaaf4a-446d-451e-8f95-850d70c5ed9c",
       "status": "discovered",
       "authority": "none"
     },
@@ -1504,28 +1502,6 @@
         "open-agent-tasks"
       ],
       "registry_id": "59bb9fdc-11fd-4e45-afc4-5c6bbde8b693",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "FREIA — France Real Estate Intelligence Agent",
-      "author": "JLV Labs",
-      "gap": "finance",
-      "matched_query": "commercial",
-      "well_known_uri": "https://freia.jlv-labs.cloud/.well-known/agent-card.json",
-      "endpoint": "https://freia.jlv-labs.cloud/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "freia.document",
-        "freia.market",
-        "freia.cadastre",
-        "freia.urbanism",
-        "freia.regulation",
-        "freia.decision"
-      ],
-      "registry_id": "dafaaf4a-446d-451e-8f95-850d70c5ed9c",
       "status": "discovered",
       "authority": "none"
     },
@@ -1592,6 +1568,28 @@
         "agent_handshake"
       ],
       "registry_id": "302e6847-be69-4308-a494-1a6214e95093",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Golden Cat Concierge",
+      "author": "Golden Cat Premium Deluxe",
+      "gap": "interoperability",
+      "matched_query": "handoff",
+      "well_known_uri": "https://golden-cat-network.bronkobologna.chatgpt.site/.well-known/agent-card.json",
+      "endpoint": "https://golden-cat-network.bronkobologna.chatgpt.site/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "collaboration",
+        "guest",
+        "playground",
+        "discover",
+        "missions",
+        "heartbeat"
+      ],
+      "registry_id": "46a86268-b2cd-4aca-a466-23d89f341521",
       "status": "discovered",
       "authority": "none"
     }
