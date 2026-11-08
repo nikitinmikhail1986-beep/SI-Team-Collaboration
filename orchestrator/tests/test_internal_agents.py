@@ -1,3 +1,4 @@
+import inspect
 import threading
 import unittest
 
@@ -36,6 +37,10 @@ class InternalAgentCoordinatorTests(unittest.TestCase):
         self.assertEqual(status["state"], "ready")
         self.assertEqual(status["online_count"], 25)
         self.assertEqual(status["profile_count"], 25)
+
+    def test_default_task_timeout_covers_three_sequential_worker_calls(self):
+        timeout = inspect.signature(execute_internal_task).parameters["timeout"].default
+        self.assertGreaterEqual(timeout, 3 * 180)
 
     def test_two_executors_exchange_results_before_independent_review(self):
         first = "proektnye-agenty__inzhener-vk"

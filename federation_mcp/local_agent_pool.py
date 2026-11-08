@@ -150,7 +150,7 @@ def _generate(profile_id: str, task: dict) -> dict:
         "prompt": model_prompt,
         "format": schema,
         "stream": False,
-        "options": {"temperature": 0, "num_predict": 384, "num_ctx": 12_288},
+        "options": {"temperature": 0, "num_predict": 2048, "num_ctx": 12_288},
     }
     request = Request(OLLAMA_URL, data=json.dumps(body).encode("utf-8"), headers={"Content-Type": "application/json"}, method="POST")
     try:
@@ -206,7 +206,8 @@ def _agent_loop(profile_id: str, token: str, stop: threading.Event, logger: logg
                     pass
                 raise
         except Exception as exc:
-            logger.warning("worker loop error agent_id=%s error=%s", profile_id, type(exc).__name__)
+            detail = re.sub(r"[\r\n\t]", " ", str(exc))[:160]
+            logger.warning("worker loop error agent_id=%s error=%s detail=%s", profile_id, type(exc).__name__, detail)
             stop.wait(5)
 
 

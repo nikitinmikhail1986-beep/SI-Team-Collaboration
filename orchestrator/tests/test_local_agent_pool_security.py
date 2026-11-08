@@ -1,4 +1,5 @@
 import unittest
+from unittest.mock import patch
 
 from federation_mcp.local_agent_pool import (
     GATEWAY_URL,
@@ -32,6 +33,31 @@ class LocalAgentPoolSecurityTests(unittest.TestCase):
     def test_assignment_prompt_is_bounded(self):
         with self.assertRaisesRegex(RuntimeError, "prompt is invalid"):
             _generate("proektnye-agenty__inzhener-vk", {"agent_id": "proektnye-agenty__inzhener-vk", "phase": "executor-1", "prompt": "x" * 32001})
+
+    def test_generation_budget_allows_complete_structured_agent_response(self):
+        class Response:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *args):
+                return False
+
+            def read(self, _limit):
+                return b'{"response":"{\\"output\\":\\"bounded response\\"}"}'
+
+        def inspect_request(request, timeout):
+            import json
+            body = json.loads(request.data)
+            self.assertEqual(body["options"]["num_predict"], 2048)
+            self.assertLessEqual(timeout, 180)
+            return Response()
+
+        with patch("federation_mcp.local_agent_pool._http.open", side_effect=inspect_request):
+            result = _generate(
+                "proektnye-agenty__inzhener-vk",
+                {"agent_id": "proektnye-agenty__inzhener-vk", "phase": "executor-1", "prompt": "test"},
+            )
+        self.assertEqual(result, {"output": "bounded response"})
 
 
 if __name__ == "__main__":

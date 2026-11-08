@@ -207,7 +207,7 @@ def worker_fail(params: dict) -> dict:
     return {"accepted": True}
 
 
-def execute_internal_task(params: dict, timeout: float = 180.0) -> dict:
+def execute_internal_task(params: dict, timeout: float = 600.0) -> dict:
     if not isinstance(params, dict):
         raise InternalAgentError("task parameters must be an object")
     outcome = params.get("outcome")
