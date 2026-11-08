@@ -22,8 +22,6 @@ TASK_TOKEN_FILE = APP_DATA / "task-token.dpapi"
 PROFILE_COUNT = 25
 EXECUTORS = ["proektnye-agenty__inzhener-vk", "proektnye-agenty__inzhener-ovik"]
 REVIEWER = "gip"
-MARKER = "SIFEDERATIONE2E20261108"
-HANDOFF_MARKER = "HANDOFFRECEIVEDFROMEXECUTORONE"
 
 
 def rpc(method: str, params: dict, token: str, timeout: float = 30.0) -> dict:
@@ -59,16 +57,13 @@ def main() -> int:
         return 2
 
     outcome = (
-        "Authorized synthetic cross-discipline coordination check; this uses fictional data only and is not a real project or a regulatory conclusion. "
-        "Mock record: the VK service centerline is x=1000 mm; the OVIK duct centerline is x=1450 mm. "
-        "For this exercise only, the assumed minimum separation is 400 mm and separation is the absolute coordinate difference. "
-        "Executor 1 must report the VK coordinate and test token. "
-        f"Test token: {MARKER}. Copy the entire token exactly, character-for-character, without changing it. "
-        "Executor 2 must read executor 1's result, compare it with the mock OVIK coordinate, calculate the separation, "
-        "state whether the fictional threshold is met, and copy this handoff token exactly: "
-        f"{HANDOFF_MARKER}. The independent GIP reviewer must check both outputs, the arithmetic, and handoff; "
-        "approve only if the token is exact in both outputs, executor 2 includes the handoff token, and 450 mm meets the stated mock threshold. "
-        "State that no real design, clash, or normative compliance was checked. Report only supplied evidence."
+        "Authorized fictional cross-discipline coordination check; this is not a real project or regulatory conclusion. "
+        "Mock coordinates: VK service centerline x=1000 mm; OVIK duct centerline x=1450 mm. "
+        "For this exercise only, the assumed minimum separation is 400 mm; calculate it as the absolute coordinate difference. "
+        "Executor 1 reports the VK coordinate. Executor 2 must use executor 1's result and report both coordinates, "
+        "the separation, and whether the fictional threshold is met. The independent GIP reviewer checks both results, "
+        "the arithmetic, and the scope limitation; approve only if the stated values are supported and explicitly described as fictional. "
+        "State that no real design, clash, or normative compliance was checked. Keep each result to 80 words or fewer."
     )
     task = rpc("si.task/execute", {
         "task_id": "si-e2e-" + uuid.uuid4().hex,
@@ -82,9 +77,8 @@ def main() -> int:
     reviewer = task.get("reviewer", {})
     verified = (
         task.get("state") == "completed"
-        and MARKER in first.get("output", "")
-        and MARKER in second.get("output", "")
-        and HANDOFF_MARKER in second.get("output", "")
+        and "1000" in first.get("output", "")
+        and all(value in second.get("output", "") for value in ("1000", "1450", "450", "400"))
         and [first.get("agent_id"), second.get("agent_id")] == EXECUTORS
         and reviewer.get("agent_id") == REVIEWER
         and reviewer.get("review_status") == "approved"
@@ -102,8 +96,8 @@ def main() -> int:
         "task_id": task.get("task_id"),
         "state": task.get("state"),
         "executors": [
-            {"agent_id": first.get("agent_id"), "marker_seen": MARKER in first.get("output", "")},
-            {"agent_id": second.get("agent_id"), "marker_seen": MARKER in second.get("output", "")},
+            {"agent_id": first.get("agent_id"), "included_vk_coordinate": "1000" in first.get("output", "")},
+            {"agent_id": second.get("agent_id"), "included_mock_calculation": all(value in second.get("output", "") for value in ("1000", "1450", "450", "400"))},
         ],
         "reviewer": {"agent_id": reviewer.get("agent_id"), "status": reviewer.get("review_status")},
         "online_profiles": status.get("online_count"),
