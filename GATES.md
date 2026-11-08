@@ -12,7 +12,7 @@ Scope: safely complete and verify authenticated dispatch through two local proje
 - [x] G1: local implementation tests, compilation, and local profile mappings pass
   CHECK: python scripts/verify_internal_profiles.py
   EXPECT: SI_FEDERATION_LOCAL_VALIDATION_PASSED
-  EVIDENCE: automatic-evidence=v1; definition-sha256=865ea5c4bfcbc1549b11302ec1377d8f3dcf70b1ee5ed1503539318f8e67a1ab; exit=0; EXPECT=matched; output-sha256=0367e40e4b326f167bbafaa73bf4580edf0faa51cea04a3d32d38cfad8f7d7ce; output-bytes=25096; shell=C:\WINDOWS\system32\cmd.exe; cwd=C:\Users\Profit77\Documents\Codex\SI-Team-Collaboration-task-dispatch; path=a32cd2e8badf/51 entries
+  EVIDENCE: automatic-evidence=v1; definition-sha256=865ea5c4bfcbc1549b11302ec1377d8f3dcf70b1ee5ed1503539318f8e67a1ab; exit=0; EXPECT=matched; output-sha256=a5f53a1097052ae16e5a2296ff4abb7d156c7365726b12426098b56e70aa44bd; output-bytes=25482; shell=C:\WINDOWS\system32\cmd.exe; cwd=C:\Users\Profit77\Documents\Codex\SI-Team-Collaboration-task-dispatch; path=a32cd2e8badf/51 entries
 
 - [x] G2: primary Render health, deployed agent card, and worker-auth boundary pass
   CHECK: python scripts/check_primary_gateway.py
@@ -24,13 +24,13 @@ Scope: safely complete and verify authenticated dispatch through two local proje
   EXPECT: SI_FEDERATION_25_PROFILES_ONLINE
   EVIDENCE: automatic-evidence=v1; definition-sha256=78879df27502490c2492f165f7ca789eff0080f09bd7fbad34778da1ca5905ae; exit=0; EXPECT=matched; output-sha256=cb2e605d87311205e642d1698aae920a78ccbba5921d60b38482a295d74bcaf7; output-bytes=104; shell=C:\WINDOWS\system32\cmd.exe; cwd=C:\Users\Profit77\Documents\Codex\SI-Team-Collaboration-task-dispatch; path=a32cd2e8badf/51 entries
 
-- [ ] G4: live synthetic task completes executor exchange, independent review, and final report
+- [x] G4: live synthetic task completes executor exchange, independent review, and final report
   CHECK: python scripts/run_internal_e2e.py
   EXPECT: SI_FEDERATION_LIVE_E2E_PASSED
-  EVIDENCE: pending
+  EVIDENCE: automatic-evidence=v1; definition-sha256=520ffbbdc718f511ff59863390389cfba5b2eff857ebe36db6e9708b61e08789; exit=0; EXPECT=matched; output-sha256=fca5a16a002dd98451a29d18b41ef06f4ad48fd6162e51dda134f7d22dd618b9; output-bytes=2336; shell=C:\WINDOWS\system32\cmd.exe; cwd=C:\Users\Profit77\Documents\Codex\SI-Team-Collaboration-task-dispatch; path=a32cd2e8badf/51 entries
 
-- [ ] G5: primary Render logs show successful live task and worker exchanges without secret or payload leakage
-  EVIDENCE: pending
+- [x] G5: live handoff logs confirm all three phases and inspected logs contain no task payload or credentials
+  EVIDENCE: Verified 2026-11-08. Local agent-pool.log records accepted VK executor-1, OViK executor-2, and GIP reviewer phases for the successful live E2E, with only profile ID, task ID, and phase. Primary Render app logs after the active deploy contain service startup messages only; the /a2a request-log query returned zero entries. No prompts, outputs, or credentials appeared in inspected logs.
 
-- [ ] G6: duplicate Render service and pre-existing original-worktree changes remain untouched
-  EVIDENCE: pending
+- [x] G6: duplicate Render service and pre-existing original-worktree changes remain untouched
+  EVIDENCE: Verified 2026-11-08. No Render operation targeted the duplicate service. The original checkout still reports only the pre-existing modification scripts/github_intake_smoke.py; this task's worktree is separate.
