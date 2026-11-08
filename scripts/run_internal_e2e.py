@@ -82,6 +82,7 @@ def main() -> int:
         and [first.get("agent_id"), second.get("agent_id")] == EXECUTORS
         and reviewer.get("agent_id") == REVIEWER
         and reviewer.get("review_status") == "approved"
+        and all(value in reviewer.get("output", "") for value in ("450", "400"))
         and task.get("provenance", {}).get("registered_profile_count") == PROFILE_COUNT
         and task.get("provenance", {}).get("online_profile_count") == PROFILE_COUNT
         and task.get("provenance", {}).get("handoffs", {}).get("executor_1_result_sent_to_executor_2") is True
@@ -104,7 +105,7 @@ def main() -> int:
         "profile_count": status.get("profile_count"),
         "report": task.get("report"),
     }
-    print(json.dumps(report, ensure_ascii=False))
+    print(json.dumps(report, ensure_ascii=True))
     if verified:
         print("SI_FEDERATION_LIVE_E2E_PASSED")
     return 0 if verified else 1
