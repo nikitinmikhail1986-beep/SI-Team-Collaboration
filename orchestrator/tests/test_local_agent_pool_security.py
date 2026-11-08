@@ -51,7 +51,10 @@ class LocalAgentPoolSecurityTests(unittest.TestCase):
         def inspect_request(request, timeout):
             import json
             body = json.loads(request.data)
-            self.assertEqual(body["options"]["num_predict"], 2048)
+            self.assertEqual(body["options"]["num_predict"], 512)
+            self.assertEqual(body["options"]["num_ctx"], 8192)
+            self.assertIs(body["think"], False)
+            self.assertIn("at most 80 words", body["system"])
             self.assertLessEqual(timeout, 180)
             return Response()
 
