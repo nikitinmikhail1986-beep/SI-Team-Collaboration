@@ -58,6 +58,25 @@ class A2ATaskHttpTests(unittest.TestCase):
         self.assertIn("agent profiles are not configured", result["error"]["message"])
         self.assertNotIn("result", result)
 
+    def test_worker_routes_require_a_separate_bearer_token(self):
+        body = json.dumps({
+            "jsonrpc": "2.0",
+            "id": "worker-status",
+            "method": "si.worker/status",
+            "params": {},
+        }).encode()
+        request = Request(self.url, data=body, headers={"Content-Type": "application/json"}, method="POST")
+        with patch.dict("os.environ", {"SI_WORKER_API_TOKEN": "worker-secret"}, clear=False):
+            with urlopen(request, timeout=2) as response:
+                result = json.loads(response.read().decode())
+        self.assertEqual(result["error"]["code"], -32001)
+
+        request = Request(self.url, data=body, headers={"Content-Type": "application/json", "Authorization": "Bearer worker-secret"}, method="POST")
+        with patch.dict("os.environ", {"SI_WORKER_API_TOKEN": "worker-secret"}, clear=False):
+            with urlopen(request, timeout=2) as response:
+                authorized = json.loads(response.read().decode())
+        self.assertEqual(authorized["result"]["profile_count"], 25)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -7,6 +7,7 @@ import uuid
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
+from .internal_agents import InternalAgentError, execute_internal_task, worker_complete, worker_fail, worker_poll, worker_status
 from .task_execution import TaskExecutionError, execute_task
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -68,7 +69,17 @@ def rpc_result(method: str, params: dict) -> dict:
             "grants_authority": False,
         }
     if method == "si.task/execute":
+        if os.environ.get("SI_EXECUTION_MODE", "external_a2a") == "local_profile_workers":
+            return execute_internal_task(params)
         return execute_task(params)
+    if method == "si.worker/poll":
+        return worker_poll(params)
+    if method == "si.worker/complete":
+        return worker_complete(params)
+    if method == "si.worker/fail":
+        return worker_fail(params)
+    if method == "si.worker/status":
+        return worker_status()
     if method in {"message/send", "message.send", "SendMessage"}:
         message = params.get("message") or {}
         incoming_id = str(message.get("messageId") or uuid.uuid4())
@@ -143,8 +154,9 @@ class Handler(BaseHTTPRequestHandler):
                 return
             try:
                 method = req["method"]
-                if method == "si.task/execute":
-                    expected = os.environ.get("SI_TASK_API_TOKEN", "")
+                if method == "si.task/execute" or method.startswith("si.worker/"):
+                    token_key = "SI_WORKER_API_TOKEN" if method.startswith("si.worker/") else "SI_TASK_API_TOKEN"
+                    expected = os.environ.get(token_key, "")
                     supplied = self.headers.get("Authorization", "")
                     if not expected or not hmac.compare_digest(supplied, f"Bearer {expected}"):
                         self._json(200, {"jsonrpc": "2.0", "id": req["id"], "error": {"code": -32001, "message": "Unauthorized"}})
@@ -154,6 +166,8 @@ class Handler(BaseHTTPRequestHandler):
             except KeyError:
                 self._json(200, {"jsonrpc": "2.0", "id": req["id"], "error": {"code": -32601, "message": "Method not found"}})
             except TaskExecutionError as exc:
+                self._json(200, {"jsonrpc": "2.0", "id": req["id"], "error": {"code": -32000, "message": str(exc)}})
+            except InternalAgentError as exc:
                 self._json(200, {"jsonrpc": "2.0", "id": req["id"], "error": {"code": -32000, "message": str(exc)}})
         except Exception:
             self._json(400, {"jsonrpc": "2.0", "id": None, "error": {"code": -32700, "message": "Parse error"}})
