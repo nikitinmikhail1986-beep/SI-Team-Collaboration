@@ -1,5 +1,8 @@
+import os
+import tempfile
 import unittest
 from unittest.mock import patch
+from pathlib import Path
 
 from federation_mcp.local_agent_pool import (
     GATEWAY_URL,
@@ -52,11 +55,15 @@ class LocalAgentPoolSecurityTests(unittest.TestCase):
             self.assertLessEqual(timeout, 180)
             return Response()
 
-        with patch("federation_mcp.local_agent_pool._http.open", side_effect=inspect_request):
-            result = _generate(
-                "proektnye-agenty__inzhener-vk",
-                {"agent_id": "proektnye-agenty__inzhener-vk", "phase": "executor-1", "prompt": "test"},
-            )
+        with tempfile.TemporaryDirectory() as profile_dir:
+            profile_path = Path(profile_dir) / "proektnye-agenty__inzhener-vk.toml"
+            profile_path.write_text('developer_instructions = "Test profile instructions."\n', encoding="utf-8")
+            with patch.dict(os.environ, {"CODEX_AGENT_PROFILE_DIR": profile_dir}):
+                with patch("federation_mcp.local_agent_pool._http.open", side_effect=inspect_request):
+                    result = _generate(
+                        "proektnye-agenty__inzhener-vk",
+                        {"agent_id": "proektnye-agenty__inzhener-vk", "phase": "executor-1", "prompt": "test"},
+                    )
         self.assertEqual(result, {"output": "bounded response"})
 
 
