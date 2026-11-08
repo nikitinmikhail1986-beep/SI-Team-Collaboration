@@ -32,7 +32,14 @@ def rpc(method: str, params: dict, token: str, timeout: float = 30.0) -> dict:
     request = Request(GATEWAY_URL, data=body, headers={"Content-Type": "application/json", "Authorization": f"Bearer {token}"}, method="POST")
     with HTTP.open(request, timeout=timeout) as response:
         result = json.loads(response.read(1_000_001).decode("utf-8"))
-    if result.get("id") != request_id or "result" not in result:
+    if result.get("id") != request_id:
+        raise RuntimeError("main Render returned an invalid A2A response")
+    if "error" in result:
+        error = result["error"] if isinstance(result["error"], dict) else {}
+        code = error.get("code")
+        message = str(error.get("message", "unknown A2A error"))[:200]
+        raise RuntimeError(f"main Render rejected A2A request code={code} message={message}")
+    if "result" not in result:
         raise RuntimeError("main Render returned an invalid A2A response")
     return result["result"]
 
@@ -52,13 +59,16 @@ def main() -> int:
         return 2
 
     outcome = (
-        "Authorized synthetic project-coordination handoff test; contains no user or project data. "
-        "This is fictional test data, not a technical design or regulatory-compliance claim. "
+        "Authorized synthetic cross-discipline coordination check; this uses fictional data only and is not a real project or a regulatory conclusion. "
+        "Mock record: the VK service centerline is x=1000 mm; the OVIK duct centerline is x=1450 mm. "
+        "For this exercise only, the assumed minimum separation is 400 mm and separation is the absolute coordinate difference. "
+        "Executor 1 must report the VK coordinate and test token. "
         f"Test token: {MARKER}. Copy the entire token exactly, character-for-character, without changing it. "
-        "The second executor must inspect the first result, confirm the token, and copy this handoff token exactly: "
-        f"{HANDOFF_MARKER}. It must say whether the handoff is complete. "
-        "The independent GIP reviewer must compare both results and approve only if each contains the exact token "
-        f"and the second executor contains {HANDOFF_MARKER}. Report only the evidence provided."
+        "Executor 2 must read executor 1's result, compare it with the mock OVIK coordinate, calculate the separation, "
+        "state whether the fictional threshold is met, and copy this handoff token exactly: "
+        f"{HANDOFF_MARKER}. The independent GIP reviewer must check both outputs, the arithmetic, and handoff; "
+        "approve only if the token is exact in both outputs, executor 2 includes the handoff token, and 450 mm meets the stated mock threshold. "
+        "State that no real design, clash, or normative compliance was checked. Report only supplied evidence."
     )
     task = rpc("si.task/execute", {
         "task_id": "si-e2e-" + uuid.uuid4().hex,
@@ -67,7 +77,7 @@ def main() -> int:
         "outcome": outcome,
         "executor_ids": EXECUTORS,
         "reviewer_id": REVIEWER,
-    }, task_token, timeout=210)
+    }, task_token, timeout=660)
     first, second = task.get("executors", [{}, {}])
     reviewer = task.get("reviewer", {})
     verified = (
