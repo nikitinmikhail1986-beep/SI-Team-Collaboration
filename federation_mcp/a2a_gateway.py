@@ -28,6 +28,9 @@ def load_card(base_url: str) -> dict:
         ],
         "defaultInputModes": ["text/plain", "application/json"],
         "defaultOutputModes": ["application/json"],
+        "securitySchemes": {
+            "siTaskBearer": {"type": "http", "scheme": "bearer", "bearerFormat": "opaque token"}
+        },
         "skills": [
             {
                 "id": c["id"],
@@ -38,6 +41,7 @@ def load_card(base_url: str) -> dict:
                     "Discover SI Federation and inspect its public trial entry path.",
                     "Request a bounded federation trial without receiving operational authority."
                 ],
+                **({"security": [{"siTaskBearer": []}]} if c["id"] == "si_task_execute" else {}),
             }
             for c in raw.get("capabilities", [])
         ],
@@ -63,7 +67,7 @@ def rpc_result(method: str, params: dict) -> dict:
             "join_url": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration/issues/new?template=federation-trial.yml",
             "grants_authority": False,
         }
-    if method == "si.task.execute":
+    if method == "si.task/execute":
         return execute_task(params)
     if method in {"message/send", "message.send", "SendMessage"}:
         message = params.get("message") or {}
@@ -139,7 +143,7 @@ class Handler(BaseHTTPRequestHandler):
                 return
             try:
                 method = req["method"]
-                if method == "si.task.execute":
+                if method == "si.task/execute":
                     expected = os.environ.get("SI_TASK_API_TOKEN", "")
                     supplied = self.headers.get("Authorization", "")
                     if not expected or not hmac.compare_digest(supplied, f"Bearer {expected}"):

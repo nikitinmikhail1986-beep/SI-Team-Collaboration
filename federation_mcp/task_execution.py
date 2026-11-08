@@ -51,13 +51,58 @@ def load_profiles(raw: str | None = None) -> list[AgentProfile]:
         if not isinstance(capabilities, list) or not all(isinstance(item, str) for item in capabilities):
             raise TaskExecutionError(f"invalid capabilities for {agent_id}")
         parsed = urlparse(endpoint if isinstance(endpoint, str) else "")
-        if parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password:
+        if (parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password
+                or parsed.query or parsed.fragment):
             raise TaskExecutionError(f"agent endpoint for {agent_id} must be an HTTPS URL")
         if token_env is not None and (not isinstance(token_env, str) or not token_env.isidentifier()):
             raise TaskExecutionError(f"invalid token environment key for {agent_id}")
         profiles.append(AgentProfile(agent_id, role, tuple(capabilities), endpoint, token_env))
         seen.add(agent_id)
     return profiles
+
+
+def _message_parts(message: object) -> list[dict]:
+    if not isinstance(message, dict):
+        return []
+    parts = message.get("parts", [])
+    return [part for part in parts if isinstance(part, dict)] if isinstance(parts, list) else []
+
+
+def _normalize_result(profile: AgentProfile, result: object) -> dict:
+    """Normalize either A2A Message or completed Task into useful output."""
+    if not isinstance(result, dict):
+        raise TaskExecutionError(f"agent {profile.agent_id} returned an invalid A2A result")
+
+    upstream_task_id = None
+    if result.get("kind") == "task" or "status" in result:
+        status = result.get("status")
+        state = status.get("state") if isinstance(status, dict) else None
+        if state != "completed":
+            raise TaskExecutionError(f"agent {profile.agent_id} task did not complete")
+        upstream_task_id = result.get("id")
+        parts: list[dict] = []
+        artifacts = result.get("artifacts", [])
+        if isinstance(artifacts, list):
+            for artifact in artifacts:
+                parts.extend(_message_parts(artifact))
+        history = result.get("history", [])
+        if isinstance(history, list):
+            parts.extend(part for message in history for part in _message_parts(message))
+        if not parts:
+            parts.extend(_message_parts(status.get("message") if isinstance(status, dict) else None))
+    else:
+        if result.get("kind") not in (None, "message") or result.get("role") != "agent":
+            raise TaskExecutionError(f"agent {profile.agent_id} returned an invalid A2A message")
+        parts = _message_parts(result)
+
+    data_values = [part["data"] for part in parts if part.get("kind") == "data" and isinstance(part.get("data"), dict)]
+    texts = [part["text"] for part in parts if part.get("kind") == "text" and isinstance(part.get("text"), str) and part["text"].strip()]
+    structured_output = next((item.get("output") for item in data_values if isinstance(item.get("output"), str) and item["output"].strip()), None)
+    output = structured_output or "\n".join(texts)
+    if not isinstance(output, str) or not output.strip():
+        raise TaskExecutionError(f"agent {profile.agent_id} returned no usable output")
+    review_status = next((item.get("review_status") for item in data_values if item.get("review_status") is not None), None)
+    return {"output": output, "review_status": review_status, "upstream_task_id": upstream_task_id}
 
 
 def _call_agent(profile: AgentProfile, task_id: str, context_id: str, prompt: str, timeout: float) -> dict:
@@ -92,17 +137,9 @@ def _call_agent(profile: AgentProfile, task_id: str, context_id: str, prompt: st
     except (URLError, TimeoutError, OSError, ValueError) as exc:
         raise TaskExecutionError(f"agent {profile.agent_id} transport failed: {type(exc).__name__}") from exc
     if (not isinstance(payload, dict) or payload.get("jsonrpc") != "2.0"
-            or payload.get("id") != request_id or "result" not in payload):
+            or payload.get("id") != request_id or "result" not in payload or "error" in payload):
         raise TaskExecutionError(f"agent {profile.agent_id} returned an invalid A2A response")
-    result = payload["result"]
-    parts = result.get("parts", []) if isinstance(result, dict) else []
-    data = next((part.get("data") for part in parts if isinstance(part, dict) and part.get("kind") == "data"), None)
-    if not isinstance(data, dict) or data.get("agent_id") != profile.agent_id or data.get("task_id") != task_id:
-        raise TaskExecutionError(f"agent {profile.agent_id} response provenance did not match")
-    output = data.get("output")
-    if data.get("status") != "completed" or not isinstance(output, str) or not output.strip():
-        raise TaskExecutionError(f"agent {profile.agent_id} did not return a completed result")
-    return data
+    return _normalize_result(profile, payload["result"])
 
 
 def execute_task(params: dict, profiles: list[AgentProfile] | None = None, timeout: float = 30.0) -> dict:
@@ -153,5 +190,13 @@ def execute_task(params: dict, profiles: list[AgentProfile] | None = None, timeo
         "reviewer": {"agent_id": reviewer.agent_id, "output": review["output"], "review_status": review_status},
         "review_status": review_status,
         "report": f"Task {task_id} state={state}; independent reviewer {reviewer.agent_id} returned {review_status}.",
-        "provenance": {"transport": "A2A JSON-RPC message/send", "agent_count": 3},
+        "provenance": {
+            "transport": "A2A JSON-RPC message/send",
+            "agent_count": 3,
+            "upstream_task_ids": {
+                selected[0].agent_id: first["upstream_task_id"],
+                selected[1].agent_id: second["upstream_task_id"],
+                reviewer.agent_id: review["upstream_task_id"],
+            },
+        },
     }

@@ -24,7 +24,7 @@ class A2ATaskHttpTests(unittest.TestCase):
         body = json.dumps({
             "jsonrpc": "2.0",
             "id": "http-test",
-            "method": "si.task.execute",
+            "method": "si.task/execute",
             "params": {"outcome": "Check coordination", "capability": "bim"},
         }).encode()
         headers = {"Content-Type": "application/json"}

@@ -1,6 +1,6 @@
 # A2A task execution
 
-The gateway exposes `si.task.execute` for bounded project work. It is separate from federation recruitment.
+The gateway exposes the namespaced custom method `si.task/execute` for bounded project work. It is separate from federation recruitment.
 
 ## Request
 
@@ -10,7 +10,7 @@ Send JSON-RPC 2.0 to `/a2a` with `Authorization: Bearer <SI_TASK_API_TOKEN>`:
 {
   "jsonrpc": "2.0",
   "id": "caller-request-id",
-  "method": "si.task.execute",
+  "method": "si.task/execute",
   "params": {
     "task_id": "stable-task-id",
     "context_id": "stable-conversation-id",
@@ -34,6 +34,6 @@ Set `SI_TASK_API_TOKEN` and `SI_AGENT_PROFILES_JSON` in the service environment.
 ]
 ```
 
-Each referenced token environment variable is read at request time and sent only to its configured HTTPS endpoint. The service requires two capable executors and a distinct reviewer on three distinct endpoints. It sends the first result to the second executor, then sends both results to the reviewer. Responses must include a `data` part with the configured `agent_id`, the same `task_id`, `status: "completed"` and a non-empty `output`. The reviewer must also return `review_status` as `approved`, `needs_revision` or `rejected`. Only `approved` yields task state `completed`; the other verdicts remain non-complete states. Any missing, failed or mismatched response fails the request; no partial report is returned.
+Each referenced token environment variable is read at request time and sent only to its configured HTTPS endpoint. The service requires two capable executors and a distinct reviewer on three distinct endpoints. It sends the first result to the second executor, then sends both results to the reviewer. It accepts the standard A2A `Message` response or a `Task` response whose state is `completed`; output is collected from text parts or an optional structured `data.output`. The reviewer must include an explicit structured `data.review_status` of `approved`, `needs_revision` or `rejected`. Only `approved` yields task state `completed`; the other verdicts remain non-complete states. The configured HTTPS endpoint binds the response to its operator-selected profile; agents are not required to echo non-standard identity fields. Upstream A2A task IDs are recorded when supplied. Any missing, failed or mismatched response fails the request; no partial report is returned.
 
 A profile entry is configuration, not proof of availability. The first successful task execution is evidence that an endpoint answered. Populate this registry only with actual authorized agent endpoints; local CLI profiles are not A2A endpoints. Scaling the list to 25 does not establish that 25 agents are reachable.

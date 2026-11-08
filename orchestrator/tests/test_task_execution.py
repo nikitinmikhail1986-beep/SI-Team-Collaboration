@@ -39,8 +39,8 @@ class TaskExecutionTests(unittest.TestCase):
             body = json.loads(request.data)
             message = body["params"]["message"]
             prompt = message["parts"][0]["text"]
-            prompts.append((message["metadata"]["assigned_agent_id"], prompt))
-            agent_id = message["metadata"]["assigned_agent_id"]
+            agent_id = next(agent for agent in ("executor-a", "executor-b", "reviewer-c") if agent not in [p[0] for p in prompts])
+            prompts.append((agent_id, prompt))
             outputs = {
                 "executor-a": "Finding A with source evidence.",
                 "executor-b": "Finding B; checked peer finding A.",
@@ -49,13 +49,23 @@ class TaskExecutionTests(unittest.TestCase):
             return FakeResponse({
                 "jsonrpc": "2.0",
                 "id": body["id"],
-                "result": {"parts": [{"kind": "data", "data": {
-                    "agent_id": agent_id,
-                    "task_id": message["metadata"]["task_id"],
-                    "status": "completed",
-                    "output": outputs[agent_id],
-                    **({"review_status": "approved"} if agent_id == "reviewer-c" else {}),
-                }}]},
+                "result": ({
+                    "kind": "task",
+                    "id": f"upstream-{agent_id}",
+                    "contextId": "upstream-context",
+                    "status": {"state": "completed"},
+                    "artifacts": [{"parts": [
+                        {"kind": "text", "text": outputs[agent_id]},
+                        *([{"kind": "data", "data": {"review_status": "approved"}}] if agent_id == "reviewer-c" else []),
+                    ]}],
+                } if agent_id == "executor-b" else {
+                    "kind": "message",
+                    "role": "agent",
+                    "parts": [
+                        {"kind": "text", "text": outputs[agent_id]},
+                        *([{"kind": "data", "data": {"review_status": "approved"}}] if agent_id == "reviewer-c" else []),
+                    ],
+                }),
             })
 
         with patch("federation_mcp.task_execution.urlopen", side_effect=respond):
@@ -72,6 +82,7 @@ class TaskExecutionTests(unittest.TestCase):
         self.assertEqual(report["task_id"], "task-1")
         self.assertEqual(report["review_status"], "approved")
         self.assertEqual(report["reviewer"]["agent_id"], "reviewer-c")
+        self.assertEqual(report["provenance"]["upstream_task_ids"]["executor-b"], "upstream-executor-b")
 
     def test_missing_two_workers_fails_closed(self):
         with self.assertRaisesRegex(TaskExecutionError, "two capable executors"):
@@ -79,6 +90,34 @@ class TaskExecutionTests(unittest.TestCase):
                 {"capability": "bim", "outcome": "Review BIM"},
                 self.profiles[:1],
             )
+
+    def test_profile_endpoint_rejects_embedded_query_credentials(self):
+        values = [{
+            "agent_id": "agent-a",
+            "role": "executor",
+            "capabilities": ["bim"],
+            "endpoint": "https://agent.example/a2a?token=do-not-embed",
+        }]
+        with self.assertRaisesRegex(TaskExecutionError, "HTTPS URL"):
+            load_profiles(json.dumps(values))
+
+    def test_nonterminal_a2a_task_is_not_used_as_a_result(self):
+        def respond(request, timeout):
+            body = json.loads(request.data)
+            return FakeResponse({
+                "jsonrpc": "2.0",
+                "id": body["id"],
+                "result": {
+                    "kind": "task",
+                    "id": "upstream-pending",
+                    "status": {"state": "working"},
+                    "artifacts": [],
+                },
+            })
+
+        with patch("federation_mcp.task_execution.urlopen", side_effect=respond):
+            with self.assertRaisesRegex(TaskExecutionError, "task did not complete"):
+                execute_task({"capability": "bim", "outcome": "Review BIM"}, self.profiles)
 
     def test_reviewer_must_use_distinct_endpoint(self):
         profiles = [
@@ -89,23 +128,18 @@ class TaskExecutionTests(unittest.TestCase):
         with self.assertRaisesRegex(TaskExecutionError, "distinct A2A endpoints"):
             execute_task({"capability": "bim", "outcome": "Review BIM"}, profiles)
 
-    def test_agent_provenance_mismatch_is_rejected(self):
+    def test_standard_a2a_message_does_not_need_custom_identity_echo(self):
         def respond(request, timeout):
             body = json.loads(request.data)
             message = body["params"]["message"]
             return FakeResponse({
                 "jsonrpc": "2.0",
                 "id": body["id"],
-                "result": {"parts": [{"kind": "data", "data": {
-                    "agent_id": "spoofed",
-                    "task_id": message["metadata"]["task_id"],
-                    "status": "completed",
-                    "output": "not accepted",
-                }}]},
+                "result": {"kind": "message", "role": "agent", "parts": [{"kind": "text", "text": "A2A result from configured endpoint."}]},
             })
 
         with patch("federation_mcp.task_execution.urlopen", side_effect=respond):
-            with self.assertRaisesRegex(TaskExecutionError, "provenance"):
+            with self.assertRaisesRegex(TaskExecutionError, "independent reviewer omitted"):
                 execute_task({"capability": "bim", "outcome": "Review BIM"}, self.profiles)
 
     def test_non_approved_review_verdict_never_reports_completed(self):
@@ -115,18 +149,13 @@ class TaskExecutionTests(unittest.TestCase):
                     body = json.loads(request.data)
                     message = body["params"]["message"]
                     agent_id = message["metadata"]["assigned_agent_id"]
-                    data = {
-                        "agent_id": agent_id,
-                        "task_id": message["metadata"]["task_id"],
-                        "status": "completed",
-                        "output": f"Result from {agent_id}",
-                    }
+                    data = {"output": f"Result from {agent_id}"}
                     if agent_id == "reviewer-c":
                         data["review_status"] = verdict
                     return FakeResponse({
                         "jsonrpc": "2.0",
                         "id": body["id"],
-                        "result": {"parts": [{"kind": "data", "data": data}]},
+                        "result": {"kind": "message", "role": "agent", "parts": [{"kind": "data", "data": data}]},
                     })
 
                 with patch("federation_mcp.task_execution.urlopen", side_effect=respond):
