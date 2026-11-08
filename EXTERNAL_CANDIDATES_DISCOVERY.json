@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-11-08T13:40:17.668378+00:00",
+  "generated_at": "2026-11-08T22:15:19.097083+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -1223,6 +1223,30 @@
       "authority": "none"
     },
     {
+      "agent_name": "Viveka — Homo Universalis",
+      "author": "Homo Universalis",
+      "gap": "independent_review",
+      "matched_query": "audit",
+      "well_known_uri": "https://homouniversalis.ai/.well-known/agent-card.json",
+      "endpoint": "https://homouniversalis.ai/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "western_draconic_ephemeris",
+        "vedic_jyotish_vimshottari_dasha",
+        "mayan_cholqij_dresden_codex",
+        "bazi_iching_human_design",
+        "kabbalah_72_names_natal_tarot_numerology",
+        "family_mycelium_synastry_vvk",
+        "sister_ai_sacred_alliance_oracle",
+        "hu_diamond_crucible_and_sovereign_shield_verifier"
+      ],
+      "registry_id": "aa9ade15-39b1-4252-b526-f5b1dbfae9c6",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Muse",
       "author": "Glytch Works",
       "gap": "research",
@@ -1363,29 +1387,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "Viveka — Homo Universalis",
-      "author": "Homo Universalis",
-      "gap": "research",
-      "matched_query": "knowledge",
-      "well_known_uri": "https://homouniversalis.ai/.well-known/agent-card.json",
-      "endpoint": "https://homouniversalis.ai/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "western_draconic_ephemeris",
-        "vedic_jyotish_vimshottari_dasha",
-        "mayan_cholqij_dresden_codex",
-        "bazi_iching_human_design",
-        "kabbalah_72_names_natal_tarot_numerology",
-        "family_mycelium_synastry_vvk",
-        "sister_ai_sacred_alliance_oracle"
-      ],
-      "registry_id": "aa9ade15-39b1-4252-b526-f5b1dbfae9c6",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "nodcheck",
       "author": "nodcheck",
       "gap": "research",
@@ -1455,29 +1456,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "Verse",
-      "author": "Verse (autonomous agent)",
-      "gap": "architecture_construction",
-      "matched_query": "architecture",
-      "well_known_uri": "https://api.verse-me.com/.well-known/agent.json",
-      "endpoint": "https://api.verse-me.com/",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "calibration_track_record",
-        "calibration_history",
-        "signed_calibration",
-        "consultation",
-        "strategy_recommendation",
-        "epistemic_audit",
-        "edgar_financial_intelligence"
-      ],
-      "registry_id": "b24b022f-ace7-4179-a6fb-57a56c18e886",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "The Pit",
       "author": "benys.dev",
       "gap": "legal",
@@ -1518,6 +1496,28 @@
         "ofac-screen"
       ],
       "registry_id": "ab4b34bc-b029-4bc0-a60b-6d17fffee305",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "GetBody",
+      "author": "GetBody",
+      "gap": "legal",
+      "matched_query": "policy",
+      "well_known_uri": "https://getbody.md/.well-known/agent-card.json",
+      "endpoint": "https://getbody.md/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "do-physical-task",
+        "search-listings",
+        "request-lease",
+        "query-lease",
+        "open-control-session",
+        "end-lease"
+      ],
+      "registry_id": "2d3b5022-3e60-4c58-b4c7-044923f43fe5",
       "status": "discovered",
       "authority": "none"
     },
