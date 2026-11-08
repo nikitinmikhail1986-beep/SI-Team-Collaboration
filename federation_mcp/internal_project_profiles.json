@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "profile_source": "CODEX_AGENT_PROFILE_DIR or ~/.codex/agents",
+  "profiles": [
+    {"agent_id":"gip","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"arhitektor-ar","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"konstruktor-kr","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"bim-menedzher","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"inzhener-eom","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"inzhener-ovik","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"inzhener-ss","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"normokontrol-pp87","role":"reviewer","capabilities":["independent_review"]},
+    {"agent_id":"razbor-obyekta","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"ruk-proekta","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"smetchik-lsr-vor","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"tehnolog-specifikacii","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"proektnye-agenty__arhitektor-ar","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"proektnye-agenty__delovaya-perepiska","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"proektnye-agenty__dizayner-interyerov","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"proektnye-agenty__inzhener-eom-ss","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"proektnye-agenty__inzhener-gp","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"proektnye-agenty__inzhener-ovik","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"proektnye-agenty__inzhener-pb","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"proektnye-agenty__inzhener-pos","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"proektnye-agenty__inzhener-vk","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"proektnye-agenty__konstruktor-kr","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"proektnye-agenty__normokontrol-pp87","role":"reviewer","capabilities":["independent_review"]},
+    {"agent_id":"proektnye-agenty__smetchik-lsr-vor","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"proektnye-agenty__tehnolog-specifikacii","role":"executor","capabilities":["project_coordination"]}
+  ]
+}
