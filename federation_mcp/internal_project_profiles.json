@@ -2,7 +2,7 @@
   "schema_version": 1,
   "profile_source": "CODEX_AGENT_PROFILE_DIR or ~/.codex/agents",
   "profiles": [
-    {"agent_id":"gip","role":"executor","capabilities":["project_coordination"]},
+    {"agent_id":"gip","role":"reviewer","capabilities":["independent_review"]},
     {"agent_id":"arhitektor-ar","role":"executor","capabilities":["project_coordination"]},
     {"agent_id":"konstruktor-kr","role":"executor","capabilities":["project_coordination"]},
     {"agent_id":"bim-menedzher","role":"executor","capabilities":["project_coordination"]},

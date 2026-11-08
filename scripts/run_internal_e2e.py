@@ -21,8 +21,9 @@ WORKER_TOKEN_FILE = APP_DATA / "worker-token.dpapi"
 TASK_TOKEN_FILE = APP_DATA / "task-token.dpapi"
 PROFILE_COUNT = 25
 EXECUTORS = ["proektnye-agenty__inzhener-vk", "proektnye-agenty__inzhener-ovik"]
-REVIEWER = "proektnye-agenty__normokontrol-pp87"
-MARKER = "SI-FEDERATION-E2E-20261108"
+REVIEWER = "gip"
+MARKER = "SIFEDERATIONE2E20261108"
+HANDOFF_MARKER = "HANDOFFRECEIVEDFROMEXECUTORONE"
 
 
 def rpc(method: str, params: dict, token: str, timeout: float = 30.0) -> dict:
@@ -51,10 +52,13 @@ def main() -> int:
         return 2
 
     outcome = (
-        "Authorized synthetic connectivity test; contains no user or project data. "
-        f"Each executor must state the exact marker {MARKER}. The second executor must inspect the first result. "
-        "The independent reviewer must inspect both results and approve only if both contain the exact marker. "
-        "Report only what you actually received."
+        "Authorized synthetic project-coordination handoff test; contains no user or project data. "
+        "This is fictional test data, not a technical design or regulatory-compliance claim. "
+        f"Test token: {MARKER}. Copy the entire token exactly, character-for-character, without changing it. "
+        "The second executor must inspect the first result, confirm the token, and copy this handoff token exactly: "
+        f"{HANDOFF_MARKER}. It must say whether the handoff is complete. "
+        "The independent GIP reviewer must compare both results and approve only if each contains the exact token "
+        f"and the second executor contains {HANDOFF_MARKER}. Report only the evidence provided."
     )
     task = rpc("si.task/execute", {
         "task_id": "si-e2e-" + uuid.uuid4().hex,
@@ -70,6 +74,7 @@ def main() -> int:
         task.get("state") == "completed"
         and MARKER in first.get("output", "")
         and MARKER in second.get("output", "")
+        and HANDOFF_MARKER in second.get("output", "")
         and [first.get("agent_id"), second.get("agent_id")] == EXECUTORS
         and reviewer.get("agent_id") == REVIEWER
         and reviewer.get("review_status") == "approved"
