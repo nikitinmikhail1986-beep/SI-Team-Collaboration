@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-11-07T21:58:48.830451+00:00",
+  "generated_at": "2026-11-08T06:16:46.915581+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -931,6 +931,33 @@
       "authority": "none"
     },
     {
+      "agent_name": "Agent Economy OS 2047 — A2A Commerce Directory",
+      "author": "Agent Economy OS 2047",
+      "gap": "independent_review",
+      "matched_query": "verification",
+      "well_known_uri": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a/.well-known/agent-card.json",
+      "endpoint": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "free-x402-receipt-demo-campaign",
+        "offline-trace-assessment",
+        "free-task-to-x402-quote",
+        "discover-cheap-x402-usdc-tools",
+        "free-safe-buyer-preflight",
+        "discover-agent-services",
+        "policy-review-procurement",
+        "agent-settlement-passport",
+        "base-usdc-receipt",
+        "owner-signed-agent-spending",
+        "free-enterprise-technical-fit"
+      ],
+      "registry_id": "a7534921-8f0b-4a61-8324-477c8a87f329",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "SwarmMemo",
       "author": "SwarmMemo",
       "gap": "legal",
@@ -954,33 +981,6 @@
         "talk-privately"
       ],
       "registry_id": "cb42c26e-c96f-4eeb-91a4-31ecc38bb9e8",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Agent Economy OS 2047 — A2A Commerce Directory",
-      "author": "Agent Economy OS 2047",
-      "gap": "legal",
-      "matched_query": "policy",
-      "well_known_uri": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a/.well-known/agent-card.json",
-      "endpoint": "https://jzallxzbbdtelcpabfgr.supabase.co/functions/v1/agent-economy-a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "free-x402-receipt-demo-campaign",
-        "offline-trace-assessment",
-        "free-task-to-x402-quote",
-        "discover-cheap-x402-usdc-tools",
-        "free-safe-buyer-preflight",
-        "discover-agent-services",
-        "policy-review-procurement",
-        "agent-settlement-passport",
-        "base-usdc-receipt",
-        "owner-signed-agent-spending",
-        "free-enterprise-technical-fit"
-      ],
-      "registry_id": "a7534921-8f0b-4a61-8324-477c8a87f329",
       "status": "discovered",
       "authority": "none"
     },
@@ -1207,29 +1207,6 @@
         "jobs_errands"
       ],
       "registry_id": "39a5868d-6b7d-49b6-812b-8415ebaa4fc3",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Kristo Intelligence",
-      "author": "Kristo Intelligence",
-      "gap": "independent_review",
-      "matched_query": "verification",
-      "well_known_uri": "https://kristo-intelligence-api.onrender.com/.well-known/agent-card.json",
-      "endpoint": "https://kristo-intelligence-api.onrender.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "signal",
-        "stats",
-        "arb-opportunities",
-        "bot-status",
-        "sales",
-        "whale-flow",
-        "verify-seller"
-      ],
-      "registry_id": "ddebe013-31f3-4bb4-92b5-b9b47dcdbc82",
       "status": "discovered",
       "authority": "none"
     },
@@ -1590,6 +1567,27 @@
         "heartbeat"
       ],
       "registry_id": "46a86268-b2cd-4aca-a466-23d89f341521",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Está no Ir (Bot)",
+      "author": "Está no Ir (travel notebook, not a travel agency)",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://estanoir-bots.pages.dev/.well-known/agent-card.json",
+      "endpoint": "https://estanoir-bots.pages.dev/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "published-trips",
+        "short-trip-idea",
+        "review-my-plan",
+        "plan-b",
+        "trip-notes"
+      ],
+      "registry_id": "ee461f00-7444-4dc1-80c8-41a1dded0d9b",
       "status": "discovered",
       "authority": "none"
     }
