@@ -40,7 +40,7 @@ A profile entry is configuration, not proof of availability. The first successfu
 
 ## Internal profiles on the connected Windows PC
 
-The gateway can also use the 25 profiles listed in `internal_project_profiles.json`. `SI_EXECUTION_MODE=local_profile_workers` enables the internal worker queue. The local pool in `federation_mcp.local_agent_pool` reads the matching profile instructions from `%USERPROFILE%\.codex\agents` (or `CODEX_AGENT_PROFILE_DIR`), calls a locally installed Ollama model, and polls the primary A2A gateway over outbound HTTPS. The PC needs no public inbound port. Worker results use separately authenticated `si.worker/poll`, `si.worker/complete`, `si.worker/fail`, and `si.worker/status` methods; these are internal gateway methods and are not advertised as external agent cards.
+The gateway can also use the 25 profiles listed in `internal_project_profiles.json`. `SI_EXECUTION_MODE=local_profile_workers` enables the internal worker queue. The local pool in `federation_mcp.local_agent_pool` reads the matching profile instructions from `%USERPROFILE%\.codex\agents` (or `CODEX_AGENT_PROFILE_DIR`), calls a locally installed Ollama model, and polls the primary A2A gateway over outbound HTTPS. The PC needs no public inbound port. Worker results use separately authenticated `si.worker/poll`, `si.worker/complete`, `si.worker/fail`, and `si.worker/status` methods; these are internal gateway methods and are not advertised as external agent cards. The GIP profile is the general cross-discipline reviewer; normokontrol profiles remain available for documentation-compliance reviews.
 
 Configure these variables on the primary `si-federation-a2a` service only:
 

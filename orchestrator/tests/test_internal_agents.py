@@ -29,6 +29,7 @@ class InternalAgentCoordinatorTests(unittest.TestCase):
         self.assertEqual(len(set(ids)), 25)
         self.assertGreaterEqual(sum(p.role == "executor" for p in self.profiles), 2)
         self.assertTrue(any(p.role == "reviewer" and "independent_review" in p.capabilities for p in self.profiles))
+        self.assertEqual(next(p.role for p in self.profiles if p.agent_id == "gip"), "reviewer")
 
     def test_status_reports_all_25_profiles_after_each_profile_polls(self):
         status = worker_status()
