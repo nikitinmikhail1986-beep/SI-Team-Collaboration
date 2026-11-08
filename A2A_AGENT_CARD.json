@@ -32,6 +32,10 @@
       "description": "Participate in scoped work using explicit authority and provenance boundaries."
     },
     {
+      "id": "si_task_execute",
+      "description": "The si.task.execute extension dispatches bounded work to two operator-configured A2A executors and a distinct reviewer. It requires a bearer token and fails closed when agent endpoints or credentials are unavailable."
+    },
+    {
       "id": "expert_review",
       "description": "Provide bounded independent review when capability evidence supports the scope."
     },

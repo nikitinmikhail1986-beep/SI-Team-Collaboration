@@ -1,10 +1,13 @@
 from __future__ import annotations
 
+import hmac
 import json
 import os
 import uuid
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+
+from .task_execution import TaskExecutionError, execute_task
 
 ROOT = Path(__file__).resolve().parents[1]
 HOST = "0.0.0.0"
@@ -60,6 +63,8 @@ def rpc_result(method: str, params: dict) -> dict:
             "join_url": "https://github.com/nikitinmikhail1986-beep/SI-Team-Collaboration/issues/new?template=federation-trial.yml",
             "grants_authority": False,
         }
+    if method == "si.task.execute":
+        return execute_task(params)
     if method in {"message/send", "message.send", "SendMessage"}:
         message = params.get("message") or {}
         incoming_id = str(message.get("messageId") or uuid.uuid4())
@@ -125,15 +130,27 @@ class Handler(BaseHTTPRequestHandler):
             return
         try:
             length = int(self.headers.get("Content-Length", "0"))
+            if length < 0 or length > 65_536:
+                self._json(413, {"error": "request_too_large"})
+                return
             req = json.loads(self.rfile.read(length) or b"{}")
             if req.get("jsonrpc") != "2.0" or "id" not in req or not isinstance(req.get("method"), str):
                 self._json(400, {"jsonrpc": "2.0", "id": req.get("id"), "error": {"code": -32600, "message": "Invalid Request"}})
                 return
             try:
-                result = rpc_result(req["method"], req.get("params") or {})
+                method = req["method"]
+                if method == "si.task.execute":
+                    expected = os.environ.get("SI_TASK_API_TOKEN", "")
+                    supplied = self.headers.get("Authorization", "")
+                    if not expected or not hmac.compare_digest(supplied, f"Bearer {expected}"):
+                        self._json(200, {"jsonrpc": "2.0", "id": req["id"], "error": {"code": -32001, "message": "Unauthorized"}})
+                        return
+                result = rpc_result(method, req.get("params") or {})
                 self._json(200, {"jsonrpc": "2.0", "id": req["id"], "result": result})
             except KeyError:
                 self._json(200, {"jsonrpc": "2.0", "id": req["id"], "error": {"code": -32601, "message": "Method not found"}})
+            except TaskExecutionError as exc:
+                self._json(200, {"jsonrpc": "2.0", "id": req["id"], "error": {"code": -32000, "message": str(exc)}})
         except Exception:
             self._json(400, {"jsonrpc": "2.0", "id": None, "error": {"code": -32700, "message": "Parse error"}})
 
