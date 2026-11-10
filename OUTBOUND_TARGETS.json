@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-10T07:28:44.532290Z",
+  "updated_at": "2026-11-10T19:50:52.165535Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -2125,9 +2125,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "ipvolt",
+      "protocol": "A2A",
+      "endpoint": "https://ipvolt.com/beta/a2a",
+      "well_known_uri": "https://ipvolt.com/.well-known/agent-card.json",
+      "registry_id": "518cee06-419d-4b6c-989e-ef7c293afde3",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "interoperability",
+      "matched_query": "a2a",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "MON$TER Agent Challenge",
+      "protocol": "A2A",
+      "endpoint": "https://monstermoney.ai/a2a",
+      "well_known_uri": "https://monstermoney.ai/.well-known/agent-card.json",
+      "registry_id": "8bfd7424-3581-40a8-b8a3-9358d5afe59f",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "interoperability",
+      "matched_query": "a2a",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-11-10T07:28:44.532290Z",
-  "qualified_pending_outreach": 132
+  "discovery_promoted_at": "2026-11-10T19:50:52.165535Z",
+  "qualified_pending_outreach": 134
 }
