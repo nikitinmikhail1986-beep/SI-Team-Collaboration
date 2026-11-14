@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-11-14T18:15:33.728660+00:00",
+  "generated_at": "2026-11-14T22:36:00.588265+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -177,7 +177,7 @@
       "agent_name": "Beggar Bot utilities",
       "author": "Beggar Bot",
       "gap": "independent_review",
-      "matched_query": "verification",
+      "matched_query": "audit",
       "well_known_uri": "https://beggar-bot-demand.beggarbot.workers.dev/.well-known/agent-card.json",
       "endpoint": "https://beggar-bot-demand.beggarbot.workers.dev/a2a",
       "healthy": true,
@@ -412,14 +412,12 @@
         "audit-address",
         "audit-preflight",
         "audit-checklist",
-        "agent-honesty-scan",
+        "audit-honesty",
         "corpus-search",
         "corpus-bundle",
         "chat-pro",
         "lanes-live",
         "util-suite",
-        "mcp-tools",
-        "manual-fiat",
         "perp-funding",
         "perp-basis",
         "x402-status",
@@ -428,7 +426,6 @@
         "stats",
         "escrow-status",
         "paid-status",
-        "board-task",
         "board-post",
         "intel-venue-map",
         "intel-board-economics",
@@ -447,7 +444,10 @@
         "candles",
         "price",
         "base-balance",
-        "erc20-balance"
+        "erc20-balance",
+        "erc20-metadata",
+        "block-number",
+        "chain-tx"
       ],
       "registry_id": "26255f74-d179-4c14-aa2a-28254af21710",
       "status": "discovered",
@@ -936,6 +936,38 @@
         "base-token-risk-signals"
       ],
       "registry_id": "efad5d4b-6be5-4f08-a082-c7f2b672cbe2",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Angel — security checks and market data for agents",
+      "author": "Oroboros Design",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://angel.oroboros-design.com/.well-known/agent.json",
+      "endpoint": "https://angel.oroboros-design.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "preflight",
+        "input_guard",
+        "token_risk",
+        "swap_route",
+        "regime",
+        "signal",
+        "signal_sample",
+        "vertrauen",
+        "sauber",
+        "recherche",
+        "ouro_check",
+        "edition",
+        "apeiron",
+        "now",
+        "wish",
+        "gespraech"
+      ],
+      "registry_id": "6b72d568-5f3b-44d1-956e-7aabc3d95e3b",
       "status": "discovered",
       "authority": "none"
     },
@@ -1499,29 +1531,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "INITE",
-      "author": "inite LLC",
-      "gap": "independent_review",
-      "matched_query": "audit",
-      "well_known_uri": "https://inite.ai/.well-known/agent-card.json",
-      "endpoint": "https://inite.ai/api/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "analyze_site",
-        "get_analysis",
-        "check_identity",
-        "match_mcp",
-        "match_tools",
-        "find_business",
-        "inite_book_call"
-      ],
-      "registry_id": "45252144-b2c4-4df6-b8b6-4070d114a8f5",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "nodcheck",
       "author": "nodcheck",
       "gap": "research",
@@ -1541,6 +1550,29 @@
         "record"
       ],
       "registry_id": "4272bb0a-1dbe-42c5-856e-1032fcc6336a",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "INITE",
+      "author": "inite LLC",
+      "gap": "legal",
+      "matched_query": "policy",
+      "well_known_uri": "https://inite.ai/.well-known/agent-card.json",
+      "endpoint": "https://inite.ai/api/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "analyze_site",
+        "get_analysis",
+        "check_identity",
+        "match_mcp",
+        "match_tools",
+        "find_business",
+        "inite_book_call"
+      ],
+      "registry_id": "45252144-b2c4-4df6-b8b6-4070d114a8f5",
       "status": "discovered",
       "authority": "none"
     },
@@ -1587,28 +1619,6 @@
         "register_customer"
       ],
       "registry_id": "9b6f62de-5ad6-41eb-9f79-7fa4f17d6b69",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "x402 Pay-Precheck",
-      "author": "x402 Pay-Precheck",
-      "gap": "independent_review",
-      "matched_query": "verification",
-      "well_known_uri": "https://x402-pay-precheck.moneytools.workers.dev/.well-known/agent-card.json",
-      "endpoint": "https://x402-pay-precheck.moneytools.workers.dev/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "x402-recommend",
-        "x402-precheck",
-        "x402-verify",
-        "partner-program",
-        "solana-mint-check",
-        "web-read"
-      ],
-      "registry_id": "59c01e6b-45d1-4d99-801a-497add8dc830",
       "status": "discovered",
       "authority": "none"
     },
