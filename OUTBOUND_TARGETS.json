@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-14T06:41:32.862460Z",
+  "updated_at": "2026-11-14T18:15:33.781712Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -2200,9 +2200,24 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Apex Forge Commerce Node",
+      "protocol": "A2A",
+      "endpoint": "https://api.nonsynthetic.net/a2a",
+      "well_known_uri": "https://nonsynthetic.pages.dev/.well-known/agent-card.json",
+      "registry_id": "26255f74-d179-4c14-aa2a-28254af21710",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "finance",
+      "matched_query": "economic",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-11-14T06:41:32.862460Z",
-  "qualified_pending_outreach": 137
+  "discovery_promoted_at": "2026-11-14T18:15:33.781712Z",
+  "qualified_pending_outreach": 138
 }
