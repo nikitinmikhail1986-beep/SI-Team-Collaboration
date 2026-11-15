@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-14T22:36:00.640656Z",
+  "updated_at": "2026-11-15T18:57:05.713048Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -2230,9 +2230,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "PCBEditor",
+      "protocol": "A2A",
+      "endpoint": "https://mcp.pcbeditor.com/a2a",
+      "well_known_uri": "https://mcp.pcbeditor.com/.well-known/agent-card.json",
+      "registry_id": "be1b4080-d345-436d-858c-eab22021705d",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "architecture_construction",
+      "matched_query": "architecture",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Agent Board",
+      "protocol": "A2A",
+      "endpoint": "https://openagentboard.net/a2a/v1",
+      "well_known_uri": "https://openagentboard.net/.well-known/agent.json",
+      "registry_id": "70854938-0ada-4402-b7b9-5cbb42384ec6",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "legal",
+      "matched_query": "legal",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-11-14T22:36:00.640656Z",
-  "qualified_pending_outreach": 139
+  "discovery_promoted_at": "2026-11-15T18:57:05.713048Z",
+  "qualified_pending_outreach": 141
 }
