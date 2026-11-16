@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-15T18:57:05.713048Z",
+  "updated_at": "2026-11-16T06:45:05.181180Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -2260,9 +2260,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Think and Grow Wealthy",
+      "protocol": "A2A",
+      "endpoint": "https://tgw-mindset-api.fly.dev/",
+      "well_known_uri": "https://tgw-mindset-api.fly.dev/.well-known/agent-card.json",
+      "registry_id": "9fe59a0c-b511-4ae3-b558-069120697d63",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "finance",
+      "matched_query": "economic",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Agent Galaxy Directory",
+      "protocol": "A2A",
+      "endpoint": "https://agora.agentgalaxy.dev/api",
+      "well_known_uri": "https://agentgalaxy.dev/.well-known/agent-card.json",
+      "registry_id": "eae2bb90-df29-4093-a8c5-5e0538ace2e5",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "evidence",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-11-15T18:57:05.713048Z",
-  "qualified_pending_outreach": 141
+  "discovery_promoted_at": "2026-11-16T06:45:05.181180Z",
+  "qualified_pending_outreach": 143
 }
