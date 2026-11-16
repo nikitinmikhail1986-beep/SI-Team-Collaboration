@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-16T06:45:05.181180Z",
+  "updated_at": "2026-11-16T22:17:41.522316Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -2290,9 +2290,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "iQuota Hotels",
+      "protocol": "A2A",
+      "endpoint": "https://iquota.io/a2a",
+      "well_known_uri": "https://iquota.io/.well-known/agent-card.json",
+      "registry_id": "12e22cdf-6446-4501-9549-a3a82ca8f50c",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "legal",
+      "matched_query": "policy",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "NASTARTUJTO.cz & STARTITUP.io – Obchodní AI Agent pro weby, marketing a řízení firmy",
+      "protocol": "A2A",
+      "endpoint": "https://startitup.io/a2a/sales",
+      "well_known_uri": "https://startitup.io/.well-known/agent-card.json",
+      "registry_id": "714fa0d0-74f4-495d-9bdb-70fa9883b72d",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "audit",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-11-16T06:45:05.181180Z",
-  "qualified_pending_outreach": 143
+  "discovery_promoted_at": "2026-11-16T22:17:41.522316Z",
+  "qualified_pending_outreach": 145
 }
