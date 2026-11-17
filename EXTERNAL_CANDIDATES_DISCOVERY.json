@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-11-16T22:17:41.404556+00:00",
+  "generated_at": "2026-11-17T08:05:51.010114+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -408,6 +408,7 @@
       "conformance": true,
       "uptime_percentage": 100.0,
       "skills": [
+        "analyze_wifi",
         "company_due_diligence",
         "company_risk_batch",
         "due_diligence_oman_company",
@@ -446,8 +447,7 @@
         "portfolio_exposure_check",
         "trade_risk_score",
         "vehicle_value_estimate",
-        "shipping_cost_estimate",
-        "cv_job_match"
+        "shipping_cost_estimate"
       ],
       "registry_id": "433192d2-a60c-49a3-a06f-9f8a583a0773",
       "status": "discovered",
@@ -464,6 +464,7 @@
       "conformance": true,
       "uptime_percentage": 100.0,
       "skills": [
+        "crypto-market-snapshot-v1",
         "ens-lookup-v1",
         "token-risk-check-v1",
         "wallet-nonce-v1",
@@ -502,8 +503,7 @@
         "government-surplus-auction-search-v1",
         "merchant-trust-check-v1",
         "vat-validate-v1",
-        "iban-validate-v1",
-        "lei-lookup-v1"
+        "iban-validate-v1"
       ],
       "registry_id": "87b96c59-9bd4-44f2-a4be-31b573039581",
       "status": "discovered",
@@ -611,7 +611,7 @@
       "agent_name": "Ni Biashara Shelves",
       "author": "Ni Biashara LLC",
       "gap": "legal",
-      "matched_query": "legal",
+      "matched_query": "compliance",
       "well_known_uri": "https://agents.nibiashara.biz/.well-known/agent-card.json",
       "endpoint": "https://agents.nibiashara.biz/a2a",
       "healthy": true,
@@ -998,33 +998,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "SwarmMemo",
-      "author": "SwarmMemo",
-      "gap": "legal",
-      "matched_query": "policy",
-      "well_known_uri": "https://swarmmemo.com/.well-known/agent-card.json",
-      "endpoint": "https://swarmmemo.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "post_note",
-        "read_room",
-        "help",
-        "find-agents",
-        "find-offerings",
-        "earn",
-        "one-call-tools",
-        "reply",
-        "search",
-        "catch-up",
-        "talk-privately"
-      ],
-      "registry_id": "cb42c26e-c96f-4eeb-91a4-31ecc38bb9e8",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "PaidHandshake Exchange",
       "author": "PaidHandshake Exchange",
       "gap": "finance",
@@ -1201,29 +1174,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "Kristo Intelligence",
-      "author": "Kristo Intelligence",
-      "gap": "independent_review",
-      "matched_query": "verification",
-      "well_known_uri": "https://kristo-intelligence-api.onrender.com/.well-known/agent-card.json",
-      "endpoint": "https://kristo-intelligence-api.onrender.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "signal",
-        "stats",
-        "arb-opportunities",
-        "bot-status",
-        "sales",
-        "whale-flow",
-        "verify-seller"
-      ],
-      "registry_id": "ddebe013-31f3-4bb4-92b5-b9b47dcdbc82",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "nodcheck",
       "author": "nodcheck",
       "gap": "research",
@@ -1312,6 +1262,28 @@
         "edgar_financial_intelligence"
       ],
       "registry_id": "b24b022f-ace7-4179-a6fb-57a56c18e886",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Pakish.NET hosting inquiry assistant",
+      "author": "Pakish.NET",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://pakish.net/.well-known/agent-card.json",
+      "endpoint": "https://pakish.net/api/agent-commerce/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "pakish_get_catalog",
+        "pakish_create_inquiry",
+        "pakish_create_quote",
+        "pakish_get_quote",
+        "pakish_reply_to_inquiry",
+        "pakish_get_reply_history"
+      ],
+      "registry_id": "0b8adb8e-9bfc-42c1-bba2-c0e7916cd77a",
       "status": "discovered",
       "authority": "none"
     },
@@ -1514,28 +1486,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "Golden Cat Concierge",
-      "author": "Golden Cat Premium Deluxe",
-      "gap": "interoperability",
-      "matched_query": "handoff",
-      "well_known_uri": "https://golden-cat-network.bronkobologna.chatgpt.site/.well-known/agent-card.json",
-      "endpoint": "https://golden-cat-network.bronkobologna.chatgpt.site/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "collaboration",
-        "guest",
-        "playground",
-        "discover",
-        "missions",
-        "heartbeat"
-      ],
-      "registry_id": "46a86268-b2cd-4aca-a466-23d89f341521",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "Está no Ir (Bot)",
       "author": "Está no Ir (travel notebook, not a travel agency)",
       "gap": "independent_review",
@@ -1616,6 +1566,48 @@
         "agent_registration"
       ],
       "registry_id": "dce706a3-ae6a-4694-ad0d-f31402d7c1f3",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "SpecStream",
+      "author": "SpecStream",
+      "gap": "procurement",
+      "matched_query": "procurement",
+      "well_known_uri": "https://api.specstream.ai/.well-known/agent-card.json",
+      "endpoint": "https://api.specstream.ai/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "search-api",
+        "extract-api",
+        "companies-and-local-businesses",
+        "people-and-job-posts",
+        "filings-tenders-and-grants"
+      ],
+      "registry_id": "c14fa867-879e-475c-8b29-5551a7a4f5b8",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Baby (Jingin) — Increatus",
+      "author": "Increatus",
+      "gap": "procurement",
+      "matched_query": "supplier",
+      "well_known_uri": "https://whatsapp-commerce-os-production-9241.up.railway.app/.well-known/agent-card.json",
+      "endpoint": "https://whatsapp-commerce-os-production-9241.up.railway.app/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "products",
+        "property",
+        "popups",
+        "game",
+        "agents"
+      ],
+      "registry_id": "04452e6f-5761-4f1e-b2a7-05bba0dff300",
       "status": "discovered",
       "authority": "none"
     }

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-16T22:17:41.522316Z",
+  "updated_at": "2026-11-17T08:05:51.058959Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -2320,9 +2320,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Pakish.NET hosting inquiry assistant",
+      "protocol": "A2A",
+      "endpoint": "https://pakish.net/api/agent-commerce/a2a",
+      "well_known_uri": "https://pakish.net/.well-known/agent-card.json",
+      "registry_id": "0b8adb8e-9bfc-42c1-bba2-c0e7916cd77a",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "SpecStream",
+      "protocol": "A2A",
+      "endpoint": "https://api.specstream.ai/a2a",
+      "well_known_uri": "https://api.specstream.ai/.well-known/agent-card.json",
+      "registry_id": "c14fa867-879e-475c-8b29-5551a7a4f5b8",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "procurement",
+      "matched_query": "procurement",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-11-16T22:17:41.522316Z",
-  "qualified_pending_outreach": 145
+  "discovery_promoted_at": "2026-11-17T08:05:51.058959Z",
+  "qualified_pending_outreach": 147
 }
