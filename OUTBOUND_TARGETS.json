@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-17T08:05:51.058959Z",
+  "updated_at": "2026-11-17T21:03:56.438515Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -2350,9 +2350,54 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "BotThru",
+      "protocol": "A2A",
+      "endpoint": "https://botthru.com/a2a",
+      "well_known_uri": "https://botthru.com/.well-known/agent-card.json",
+      "registry_id": "a4b069f2-74af-46d0-8e25-9166c94e9524",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "interoperability",
+      "matched_query": "a2a",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Agentosaurus",
+      "protocol": "A2A",
+      "endpoint": "https://agentosaurus.com/a2a",
+      "well_known_uri": "https://agentosaurus.com/.well-known/agent-card.json",
+      "registry_id": "41049650-1422-44b0-adc5-cb5c5091ad91",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "LLPRO (LLPRO LLC)",
+      "protocol": "A2A",
+      "endpoint": "https://llpro.ai/a2a",
+      "well_known_uri": "https://llpro.ai/.well-known/agent-card.json",
+      "registry_id": "32575061-5888-4506-bf8a-3813493ae7be",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "verification",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-11-17T08:05:51.058959Z",
-  "qualified_pending_outreach": 147
+  "discovery_promoted_at": "2026-11-17T21:03:56.438515Z",
+  "qualified_pending_outreach": 150
 }
