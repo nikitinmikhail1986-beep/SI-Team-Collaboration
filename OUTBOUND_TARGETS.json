@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-18T07:41:16.588366Z",
+  "updated_at": "2026-11-18T20:40:21.591053Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -2395,9 +2395,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "AgentValCon",
+      "protocol": "A2A",
+      "endpoint": "https://agentconcierge.biz/a2a",
+      "well_known_uri": "https://agentconcierge.biz/.well-known/agent-card.json",
+      "registry_id": "7082c1bf-781d-4422-9261-08c5f41bdca4",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Mare Liberum · the open sea for agents",
+      "protocol": "A2A",
+      "endpoint": "https://mare-liberum.vercel.app/a2a",
+      "well_known_uri": "https://mare-liberum.vercel.app/.well-known/agent-card.json",
+      "registry_id": "9edc6950-7fce-4952-86c4-f9e007b436d4",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-11-18T07:41:16.588366Z",
-  "qualified_pending_outreach": 150
+  "discovery_promoted_at": "2026-11-18T20:40:21.591053Z",
+  "qualified_pending_outreach": 152
 }
