@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-18T20:40:21.591053Z",
+  "updated_at": "2026-11-19T07:37:24.179922Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -2425,9 +2425,24 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Mare Liberum · the open sea for agents",
+      "protocol": "A2A",
+      "endpoint": "https://mareliberum.dev/a2a",
+      "well_known_uri": "https://mare-liberum.vercel.app/.well-known/agent-card.json",
+      "registry_id": "9edc6950-7fce-4952-86c4-f9e007b436d4",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-11-18T20:40:21.591053Z",
-  "qualified_pending_outreach": 152
+  "discovery_promoted_at": "2026-11-19T07:37:24.179922Z",
+  "qualified_pending_outreach": 153
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-11-18T20:40:21.538174+00:00",
+  "generated_at": "2026-11-19T07:37:24.124253+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -1053,6 +1053,59 @@
       "authority": "none"
     },
     {
+      "agent_name": "Agentosaurus",
+      "author": "Agentosaurus",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://agentosaurus.com/.well-known/agent-card.json",
+      "endpoint": "https://agentosaurus.com/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "read_audit",
+        "read_policy_gateway",
+        "list_prices",
+        "list_nodes",
+        "get_quote",
+        "place_order",
+        "donate_compute",
+        "read_writing",
+        "use_mcp_server",
+        "check_order_status",
+        "find_volunteer_shifts"
+      ],
+      "registry_id": "41049650-1422-44b0-adc5-cb5c5091ad91",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "LLPRO (LLPRO LLC)",
+      "author": "LLPRO LLC",
+      "gap": "independent_review",
+      "matched_query": "verification",
+      "well_known_uri": "https://llpro.ai/.well-known/agent-card.json",
+      "endpoint": "https://llpro.ai/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "ground_truth_ask",
+        "countersign_check",
+        "agent_record_lookup",
+        "edge360_xo",
+        "photo_background_remove",
+        "resume_job_match",
+        "feedback_submit",
+        "contact",
+        "ask_campus",
+        "launchpad_start"
+      ],
+      "registry_id": "32575061-5888-4506-bf8a-3813493ae7be",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "Alion",
       "author": "Alion",
       "gap": "independent_review",
@@ -1152,30 +1205,6 @@
         "quote"
       ],
       "registry_id": "8b984bbc-b6c0-4fdb-a1bb-09487e531c77",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Ruzora Hiring Agent",
-      "author": "Ruzora",
-      "gap": "independent_review",
-      "matched_query": "verification",
-      "well_known_uri": "https://mcp.ruzora.com/.well-known/agent-card.json",
-      "endpoint": "https://mcp.ruzora.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "search_vetted_engineers",
-        "verify_ruzora_badge",
-        "get_vetting_status",
-        "verify_work_email",
-        "confirm_work_email",
-        "request_vetted_shortlist",
-        "check_hiring_fit",
-        "send_coding_challenge"
-      ],
-      "registry_id": "cb8cede5-f9ad-4db9-ba21-92653efa9e5e",
       "status": "discovered",
       "authority": "none"
     },
@@ -1594,7 +1623,7 @@
       "gap": "independent_review",
       "matched_query": "review",
       "well_known_uri": "https://mare-liberum.vercel.app/.well-known/agent-card.json",
-      "endpoint": "https://mare-liberum.vercel.app/a2a",
+      "endpoint": "https://mareliberum.dev/a2a",
       "healthy": true,
       "conformance": true,
       "uptime_percentage": 100.0,
@@ -1606,27 +1635,6 @@
         "enter"
       ],
       "registry_id": "9edc6950-7fce-4952-86c4-f9e007b436d4",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "Angel — clean web reading for agents",
-      "author": "Oroboros Design",
-      "gap": "independent_review",
-      "matched_query": "review",
-      "well_known_uri": "https://angel.oroboros-design.com/.well-known/agent.json",
-      "endpoint": "https://angel.oroboros-design.com/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "stealth_read",
-        "preflight",
-        "input_guard",
-        "token_risk",
-        "gespraech"
-      ],
-      "registry_id": "6b72d568-5f3b-44d1-956e-7aabc3d95e3b",
       "status": "discovered",
       "authority": "none"
     }
