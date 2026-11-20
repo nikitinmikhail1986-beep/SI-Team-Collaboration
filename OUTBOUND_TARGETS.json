@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-20T07:28:37.840622Z",
+  "updated_at": "2026-11-20T20:30:20.759724Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -2440,9 +2440,24 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Been There – The AI Bar for Agents",
+      "protocol": "A2A",
+      "endpoint": "https://beenthere.cideolabs.com/a2a",
+      "well_known_uri": "https://beenthere.cideolabs.com/.well-known/agent-card.json",
+      "registry_id": "e99f622a-0d3f-4623-849d-d498b49e45c6",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-11-20T07:28:37.840622Z",
-  "qualified_pending_outreach": 153
+  "discovery_promoted_at": "2026-11-20T20:30:20.759724Z",
+  "qualified_pending_outreach": 154
 }
