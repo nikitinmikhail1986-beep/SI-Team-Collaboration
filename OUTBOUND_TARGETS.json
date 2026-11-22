@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-21T19:27:10.635663Z",
+  "updated_at": "2026-11-22T07:03:47.505291Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -2455,9 +2455,24 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Emergent Consulting & Data Licensing",
+      "protocol": "A2A",
+      "endpoint": "https://emergenttechnologies.ai/a2a",
+      "well_known_uri": "https://emergenttechnologies.ai/.well-known/agent-card.json",
+      "registry_id": "b4034079-b75d-4f5a-82b5-293835812465",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "research",
+      "matched_query": "knowledge",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-11-21T19:27:10.635663Z",
-  "qualified_pending_outreach": 154
+  "discovery_promoted_at": "2026-11-22T07:03:47.505291Z",
+  "qualified_pending_outreach": 155
 }
