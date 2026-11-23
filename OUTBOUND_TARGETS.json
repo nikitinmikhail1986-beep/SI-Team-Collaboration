@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-22T19:49:45.081968Z",
+  "updated_at": "2026-11-23T07:51:42.772217Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -2470,9 +2470,39 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "AgentsRank",
+      "protocol": "A2A",
+      "endpoint": "https://agentsrank.ai/api/a2a",
+      "well_known_uri": "https://agentsrank.ai/.well-known/agent.json",
+      "registry_id": "80d0e33b-6707-4e79-aba7-bad4e16408b9",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Emergent Technologies",
+      "protocol": "A2A",
+      "endpoint": "https://emergent.is/a2a",
+      "well_known_uri": "https://emergent.is/.well-known/agent-card.json",
+      "registry_id": "cc55590f-f094-476a-bc62-4866fc2355a6",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "research",
+      "matched_query": "knowledge",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-11-22T19:49:45.081968Z",
-  "qualified_pending_outreach": 155
+  "discovery_promoted_at": "2026-11-23T07:51:42.772217Z",
+  "qualified_pending_outreach": 157
 }
