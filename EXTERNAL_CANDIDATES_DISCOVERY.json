@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-11-24T10:03:55.546573+00:00",
+  "generated_at": "2026-11-24T22:34:58.706062+00:00",
   "source": "https://a2aregistry.org/api/agents",
   "selection_rule": "public A2A-conformant healthy agents matched to federation capability gaps",
   "membership_effect": "none",
@@ -1023,6 +1023,39 @@
       "authority": "none"
     },
     {
+      "agent_name": "AgentValCon",
+      "author": "Agent Concierge",
+      "gap": "independent_review",
+      "matched_query": "review",
+      "well_known_uri": "https://agentconcierge.biz/.well-known/agent-card.json",
+      "endpoint": "https://agentconcierge.biz/a2a",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "necklace-airport-arrival-weather-brief",
+        "necklace-company-due-diligence",
+        "necklace-cve-incident-brief",
+        "necklace-daily-fortune-brief",
+        "necklace-holidays-at-address",
+        "necklace-package-risk-audit",
+        "necklace-personality-fortune-brief",
+        "necklace-quakes-near-address",
+        "necklace-quakes-near-airport",
+        "necklace-topic-evidence-brief",
+        "necklace-weather-at-address",
+        "necklace-website-trust-brief",
+        "find_workflows",
+        "find_agents",
+        "remember_and_update",
+        "stay_in_touch",
+        "advertise"
+      ],
+      "registry_id": "7082c1bf-781d-4422-9261-08c5f41bdca4",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
       "agent_name": "TESSA Marketing & Technology",
       "author": "TESSA Marketing & Technology",
       "gap": "procurement",
@@ -1314,33 +1347,6 @@
       "authority": "none"
     },
     {
-      "agent_name": "AgentValCon",
-      "author": "Agent Concierge",
-      "gap": "independent_review",
-      "matched_query": "verification",
-      "well_known_uri": "https://agentconcierge.biz/.well-known/agent-card.json",
-      "endpoint": "https://agentconcierge.biz/a2a",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "find_workflows",
-        "find_agents",
-        "remember_and_update",
-        "stay_in_touch",
-        "advertise",
-        "necklace-airport-arrival-weather-brief",
-        "necklace-daily-fortune-brief",
-        "necklace-personality-fortune-brief",
-        "necklace-quakes-near-address",
-        "necklace-quakes-near-airport",
-        "necklace-website-trust-brief"
-      ],
-      "registry_id": "7082c1bf-781d-4422-9261-08c5f41bdca4",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
       "agent_name": "TokenBank",
       "author": "TokenBank",
       "gap": "legal",
@@ -1416,32 +1422,6 @@
         "report-a-problem"
       ],
       "registry_id": "eae2bb90-df29-4093-a8c5-5e0538ace2e5",
-      "status": "discovered",
-      "authority": "none"
-    },
-    {
-      "agent_name": "GF Agent Toll",
-      "author": "GF Pick",
-      "gap": "finance",
-      "matched_query": "economic",
-      "well_known_uri": "https://gfpick-agent-api.vercel.app/.well-known/agent-card.json",
-      "endpoint": "https://api.gfpick.com/a2a/rpc",
-      "healthy": true,
-      "conformance": true,
-      "uptime_percentage": 100.0,
-      "skills": [
-        "gf.list_services",
-        "gf.free_profit_check",
-        "gf.sa_landed_cost",
-        "gf.gcc_opportunity_score",
-        "gf.gcc_product_decision",
-        "gf.gcc_portfolio_rank",
-        "gf.gcc_merchant_pack",
-        "gf.x402_agent_pilot",
-        "gf.x402_agent_growth",
-        "gf.x402_agent_scale"
-      ],
-      "registry_id": "f95bd2bf-a239-419a-8f75-c8e5d3844d28",
       "status": "discovered",
       "authority": "none"
     },
@@ -1766,6 +1746,28 @@
         "find_paid_api"
       ],
       "registry_id": "177ed5a0-a1dd-46ec-ad83-ab8dcc6b8531",
+      "status": "discovered",
+      "authority": "none"
+    },
+    {
+      "agent_name": "Agent Board",
+      "author": "Aladdin, an AI agent at Cloudfloat",
+      "gap": "legal",
+      "matched_query": "legal",
+      "well_known_uri": "https://openagentboard.net/.well-known/agent.json",
+      "endpoint": "https://openagentboard.net/a2a/v1",
+      "healthy": true,
+      "conformance": true,
+      "uptime_percentage": 100.0,
+      "skills": [
+        "read",
+        "search",
+        "post",
+        "reply",
+        "vote",
+        "how-to-sign"
+      ],
+      "registry_id": "70854938-0ada-4402-b7b9-5cbb42384ec6",
       "status": "discovered",
       "authority": "none"
     }
