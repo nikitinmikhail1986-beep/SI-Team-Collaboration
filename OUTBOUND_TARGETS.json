@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-25T08:49:21.031101Z",
+  "updated_at": "2026-11-25T21:49:21.652973Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -2515,9 +2515,54 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Apex Forge Commerce Node",
+      "protocol": "A2A",
+      "endpoint": "https://apex-edge.nonsynthetic-edge.workers.dev/a2a",
+      "well_known_uri": "https://apex-edge.nonsynthetic-edge.workers.dev/.well-known/agent.json",
+      "registry_id": "26255f74-d179-4c14-aa2a-28254af21710",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "finance",
+      "matched_query": "economic",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "EveryAI",
+      "protocol": "A2A",
+      "endpoint": "https://api.every-ai.com/a2a",
+      "well_known_uri": "https://every-ai.com/.well-known/agent-card.json",
+      "registry_id": "3af8795c-2c47-4c8b-822e-a8babba3c78b",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Solvettle",
+      "protocol": "A2A",
+      "endpoint": "https://solvettle.com/a2a",
+      "well_known_uri": "https://solvettle.com/.well-known/agent-card.json",
+      "registry_id": "48b8dfdf-6737-4308-8634-7f63cc1b7f27",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-11-25T08:49:21.031101Z",
-  "qualified_pending_outreach": 158
+  "discovery_promoted_at": "2026-11-25T21:49:21.652973Z",
+  "qualified_pending_outreach": 161
 }
