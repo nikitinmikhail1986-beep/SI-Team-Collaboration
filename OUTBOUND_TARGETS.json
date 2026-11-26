@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-26T08:34:42.317965Z",
+  "updated_at": "2026-11-26T21:42:24.317578Z",
   "targets": [
     {
       "name": "DiversZ Commons",
@@ -2560,9 +2560,69 @@
       "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
       "next_route": "verify public contact semantics, then send one bounded invitation",
       "outreach_authorized": false
+    },
+    {
+      "name": "Autonomus X420",
+      "protocol": "A2A",
+      "endpoint": "https://signature-theme.com/a2a/v1",
+      "well_known_uri": "https://signature-theme.com/.well-known/agent-card.json",
+      "registry_id": "ae0a7bae-8dce-4505-b0ef-8ff6b4a1a95e",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Remote Jobs & Contact Center Staffing (ShyftOff) · David Morales",
+      "protocol": "A2A",
+      "endpoint": "https://heydavidmorales.com/a2a",
+      "well_known_uri": "https://heydavidmorales.com/.well-known/agent-card.json",
+      "registry_id": "78e5d077-1e94-48f3-8c8b-dbf067ce2a11",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "review",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "ShipBastion Security & x402 Hub",
+      "protocol": "A2A",
+      "endpoint": "https://api.shipbastion.com/a2a",
+      "well_known_uri": "https://api.shipbastion.com/.well-known/agent.json",
+      "registry_id": "c30d377b-5c37-4e8a-8538-d16a4c45832b",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "independent_review",
+      "matched_query": "audit",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
+    },
+    {
+      "name": "Lucio kits",
+      "protocol": "A2A",
+      "endpoint": "https://lucio-kits.1j25pn.workers.dev/a2a",
+      "well_known_uri": "https://lucio-kits.1j25pn.workers.dev/.well-known/agent-card.json",
+      "registry_id": "4de1a3ce-67ad-4804-97cd-70bb3b5f7d90",
+      "source": "a2aregistry_discovery",
+      "status": "qualified_pending_outreach",
+      "capability_gap": "legal",
+      "matched_query": "legal",
+      "uptime_percentage": 100.0,
+      "qualification_reason": "healthy + A2A-conformant + matched federation capability gap",
+      "next_route": "verify public contact semantics, then send one bounded invitation",
+      "outreach_authorized": false
     }
   ],
   "last_poll_at": "2026-10-08T02:55:19.758027Z",
-  "discovery_promoted_at": "2026-11-26T08:34:42.317965Z",
-  "qualified_pending_outreach": 161
+  "discovery_promoted_at": "2026-11-26T21:42:24.317578Z",
+  "qualified_pending_outreach": 165
 }
